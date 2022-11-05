@@ -1,23 +1,23 @@
-<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
-    <div class=" flex flex-wrap md:justify-between md:space-y-3 xl:justify-between justify-between  items-center">
+{{-- <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+    <div class=" flex flex-wrap md:justify-between md:space-y-3 xl:justify-between justify-between  items-center"> --}}
 
         {{-- Logo & Title --}}
-        <div class="mb-2 md:mb-4 order-1">
+        {{-- <div class="mb-2 md:mb-4 order-1">
             <a href="/" class="flex items-center text-xl">
                 <img src="{{ asset('/img/logo.png') }}" class="h-12 mx-4 ">
                 <span class="font-Alhurra text-xl md:text-2xl font-bold text-gray-700">صندوق الكرم</span>
             </a>
-        </div>
+        </div> --}}
 
         {{-- Left --}}
-        <div class="@guest md:hidden @endguest md:order-3 flex">
+        {{-- <div class="@guest md:hidden @endguest md:order-3 flex"> --}}
             {{-- dropdwon button and box info --}}
-            <div class="flex items-center md:order-2 ">
+            {{-- <div class="flex items-center md:order-2 "> --}}
                 {{-- Profile Dropdown --}}
-                @auth
+                {{-- @auth
 
-                <div class="flex justify-around items-center md:order-2 md:-mt-4 @guest hidden @endguest ml-2">
-                    @admin
+                <div class="flex justify-around items-center md:order-2 md:-mt-4 @guest hidden @endguest ml-2"> --}}
+                    {{-- @admin
                     <div class="hidden   md:flex justify-around   ml-10  text-gray-500 text-base text-center ">
 
                         <div class="flex flex-col mx-2 border-b border-gray-200">
@@ -81,21 +81,21 @@
                 @endauth
 
 
-            </div>
+            </div> --}}
 
             {{-- Mobile buttion --}}
-            <button data-collapse-toggle="mobile-menu-2" type="button"
+            {{-- <button data-collapse-toggle="mobile-menu-2" type="button"
                 class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
                 aria-controls="mobile-menu-2" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <i class="fa-solid fa-ellipsis text-2xl"></i>
 
             </button>
-        </div>
+        </div> --}}
 
 
         {{-- List and sign in/up --}}
-        <div class="hidden justify-center items-center w-full md:flex  md:flex-initial md:w-full xl:w-auto md:order-3 xl:order-2"
+        {{-- <div class="hidden justify-center items-center w-full md:flex  md:flex-initial md:w-full xl:w-auto md:order-3 xl:order-2"
             id="mobile-menu-2">
             <ul class="flex flex-col mt-4 md:flex-row  md:-mt-1 md:text-sm md:font-medium ">
                 @foreach ($menu->items as $item)
@@ -113,10 +113,10 @@
                 @endforeach
 
                 @foreach ($leftMenu->items as $item)
-                <li class="md:mx-8  md:hidden ">
+                <li class="md:mx-8  md:hidden "> --}}
 
                     {{-- Has no submenu --}}
-                    <a href="{{ route($item->route) }}"
+                    {{-- <a href="{{ route($item->route) }}"
                         class="block py-2 pl-3 pr-4 text-center {{ $item->active ? 'text-primary-500 border-primary-100' : 'text-gray-700 hover:bg-gray-300 rounded-lg border-gray-100 hover:scale-110 duration-200 ' }} border-b ">
                         {{ $item->name }}
                     </a>
@@ -127,10 +127,10 @@
             </ul>
 
 
-        </div>
+        </div> --}}
 
         {{-- leftmenu --}}
-        <div class="hidden  w-full md:flex mt-1 md:w-auto md:order-2 xl:order-3">
+        {{-- <div class="hidden  w-full md:flex mt-1 md:w-auto md:order-2 xl:order-3">
 
             <ul class="flex flex-col mt-4 md:flex-row  md:-mt-4  md:text-sm md:font-medium ">
 
@@ -153,5 +153,5 @@
         </div>
 
     </div>
-</nav>
+</nav> --}}
 
