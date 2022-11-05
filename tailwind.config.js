@@ -16,6 +16,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                changa: ['Changa', 'sans-serif'],
             },
         },
     },

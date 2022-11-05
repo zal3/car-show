@@ -7,10 +7,18 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <style>
+        .home {
+            font-family: 'Changa', sans-serif;
+        }
+    </style>
     <link rel="icon" type="image/png" href="img/logo.png">
 
 
     <!-- Fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;605;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@807&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +39,7 @@
     {{-- <script src="{{ mix('resources/js/app.js') }}" defer></script> --}}
 </head>
 
-<body class="font-NotoKufi bg-white h-screen " dir="rtl">
+<body id="home" class="bg-white h-screen " dir="rtl">
     <x-jet-banner />
 
     <div class=" w-full  ">

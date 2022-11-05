@@ -1,38 +1,46 @@
 <div>
-    <section class="home" id=home >
-        <div class="text">
-            <h1><span>المعرض</span> الدولي<br> للسيارات</h1>
-            <p> sssssss</p>
-            <div class="app-stores">
-                <img src="{{ asset('img/ios.png') }}" alt="">
-                <img src="{{ asset('img/play.png') }}" alt="">
+    <div>
+        <img src="{{ asset('img/car.png') }}" alt="hero" class="car">
+        <section class="home" id=home>
+            <div class="text">
+                <h1><span>المعرض</span> الدولي<br> للسيارات</h1>
+                <h5>للحصول على أفضل سيارة في المدينة</h5>
+                <div class="app-stores">
+                    <img src="{{ asset('img/ios.png') }}" alt="">
+                    <img src="{{ asset('img/play.png') }}" alt="">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </div>
 <style scoped>
     .home {
         width: 100%;
         min-height: 100vh;
         position: relative;
-        display: grid ;
+        display: grid;
         align-items: center;
-        background: url({{ asset('img/car.png') }});
+        margin-right: 30px;
+    }
+    .car {
         background-size: cover;
         background-position: center right;
         background-repeat: no-repeat;
-        background-inverse:  right;
-        /* -webkit-transform:scaleX(-1); */
+        background-inverse: right;
+        position: absolute;
+        -webkit-transform:scaleX(-1);
     }
 
 
     .text h1 {
         font-size: 3.5rem;
         letter-spacing: 2px;
+        font-weight: 700;
+
     }
 
     .text span {
-        color: var(--main-color);
+        color: #ED563B
     }
 
     .text p {
