@@ -1,3 +1,3 @@
 <div>
-    hello from main
+    الصفحة الرئيسية
 </div>
