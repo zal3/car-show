@@ -1,5 +1,5 @@
 <div>
-    <section class="home img" id=home >
+    <section class="home" id=home >
         <div class="text">
             <h1><span>المعرض</span> الدولي<br> للسيارات</h1>
             <p> sssssss</p>
@@ -17,14 +17,14 @@
         position: relative;
         display: grid ;
         align-items: center;
-    }
-    .home img {
         background: url({{ asset('img/car.png') }});
         background-size: cover;
         background-position: center right;
         background-repeat: no-repeat;
-        -webkit-transform:scaleY(-1);
+        background-inverse:  right;
+        /* -webkit-transform:scaleX(-1); */
     }
+
 
     .text h1 {
         font-size: 3.5rem;
