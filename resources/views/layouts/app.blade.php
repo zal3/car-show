@@ -11,13 +11,30 @@
         .home {
             font-family: 'Changa', sans-serif;
         }
-        .orange{
+        .bg-orange{
+            background-color:#FF6B45 ;
+        }
+        .text-orange{
             color: #ED563B ;
         }
     </style>
     <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="/resources/css/swiper-bundle.min.css">
+
 {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> --}}
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+{{-- <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.min.css"
+    /> --}}
 
     <!-- Fonts -->
 
@@ -61,6 +78,31 @@
     @stack('modals')
 
     @livewireScripts
+    {{-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script  src="/resources/js/swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> --}}
+
+    <!-- Initialize Swiper -->
+    {{-- <script>
+      var swiperPopular = new Swiper('.swiper-container', {
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+        grabCursor: true,
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+    });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
     </script>
     <script>
