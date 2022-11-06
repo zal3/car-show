@@ -6,7 +6,6 @@
                 <h1><span>المعرض</span> الدولي<br> للسيارات</h1>
                 <h5>للحصول على أفضل سيارة في المدينة
                     <br> بأفضل سعر وجودة
-
                 </h5>
                 <div class="app-stores">
                     <button class="btn"> ابدا رحلتك </button>
@@ -22,11 +21,11 @@
                     </div>
                     <div class="input-box">
                         <span>اختر الوقت</span>
-                        <input type="date" name="" id="" >
+                        <input type="date" name="" id="">
                     </div>
                     <div class="input-box">
                         <span> وقت الاعادة</span>
-                        <input type="date" name="" id="" >
+                        <input type="date" name="" id="">
                     </div>
                     <input type="submit" name="" id="" class="btn">
                 </form>
@@ -44,13 +43,14 @@
         align-items: center;
         margin-right: 30px;
     }
+
     .car {
         background-size: cover;
         background-position: center right;
         background-repeat: no-repeat;
         background-inverse: right;
         position: absolute;
-        -webkit-transform:scaleX(-1);
+        -webkit-transform: scaleX(-1);
         display: grid;
     }
 
@@ -82,13 +82,14 @@
         margin-right: 1rem;
         corsor: pointer;
         background: #ED563B;
-        padding: 15px 20px 15px 20px  ;
+        padding: 15px 20px 15px 20px;
         color: rgb(255, 255, 255);
     }
+
     .app-stores .btn:hover {
         border-color: #eb3616;
-    background-color: #df3a1d;
-    box-shadow: 0 4px 50px #d3543e;
+        background-color: #df3a1d;
+        box-shadow: 0 4px 50px #d3543e;
     }
 
     /* form-container */
@@ -104,14 +105,17 @@
         padding: 20px;
         border-radius: 0.5rem;
     }
+
     .input-box {
         flex: 1 1 7rem;
         flex-direction: column;
         display: flex;
     }
+
     .input-box span {
         font-weight: 500;
     }
+
     .input-box input {
         padding: 7px;
         outline: none;
@@ -120,8 +124,9 @@
         outline: none;
         font-size: 1rem;
     }
+
     .form-container form .btn {
-        flex : 1 1 7rem;
+        flex: 1 1 7rem;
         padding: 10px 36px;
         margin-top: 1rem;
         border: none;
@@ -132,7 +137,8 @@
         font-weight: 500;
 
     }
-    .form-container form .btn:hover{
+
+    .form-container form .btn:hover {
         background: #ED563B;
     }
 </style>
