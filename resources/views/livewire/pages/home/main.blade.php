@@ -2,19 +2,19 @@
     <div>
         <img src="{{ asset('img/car.png') }}" alt="hero" class="car">
         <section class="home" id=home>
-            <div class="text">
-                <h1><span>المعرض</span> الدولي<br> للسيارات</h1>
-                <h5>للحصول على أفضل سيارة في المدينة
+            <div class="text"  >
+                <h1  data-aos="fade-up" data-aos-delay="150" ><span   >المعرض</span> الدولي<br> للسيارات</h1>
+                <h5 data-aos="fade-up" data-aos-delay="300" >للحصول على أفضل سيارة في المدينة
                     <br> بأفضل سعر وجودة
                 </h5>
-                <div class="app-stores">
+                <div class="app-stores" data-aos="fade-up" data-aos-delay="400" >
                     <button class="btn"> ابدا رحلتك </button>
                     <button class="btn"> السيارات </button>
                 </div>
             </div>
             {{-- form-container --}}
             <div class="form-container">
-                <form action="">
+                <form action=""  data-aos="fade-up" data-aos-delay="200">
                     <div class="input-box">
                         <span>الموقع</span>
                         <input type="search" name="" id="" placeholder="ابحث عن مدينة">
@@ -32,16 +32,18 @@
             </div>
         </section>
     </div>
+
 </div>
 <style scoped>
     .home {
         width: 100%;
-        top: 80px;
-        min-height: 115vh;
+        /* top: 80px; */
+        min-height: 130vh;
         position: relative;
         display: grid;
         align-items: center;
         margin-right: 30px;
+
     }
 
     .car {
@@ -53,13 +55,14 @@
         -webkit-transform: scaleX(-1);
         display: grid;
     }
-
+    .text{
+        margin-top: 90px;
+    }
 
     .text h1 {
         font-size: 3.5rem;
         letter-spacing: 2px;
         font-weight: 700;
-
     }
 
     .text span {

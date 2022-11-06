@@ -13,7 +13,8 @@
         }
     </style>
     <link rel="icon" type="image/png" href="img/logo.png">
-
+{{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> --}}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Fonts -->
 
@@ -57,6 +58,14 @@
     @stack('modals')
 
     @livewireScripts
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+    </script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 150,
+        });
+    </script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     {{-- <x-livewire-alert::scripts /> --}}
     {{-- <script src="//unpkg.com/alpinejs" defer></script> --}}
