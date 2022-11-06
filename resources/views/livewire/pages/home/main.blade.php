@@ -48,7 +48,7 @@
         </div>
     </div>
     {{-- last car --}}
-    <div>
+    <div class="popular section" id="popular">
 
     </div>
 
