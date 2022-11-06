@@ -11,6 +11,9 @@
         .home {
             font-family: 'Changa', sans-serif;
         }
+        .orange{
+            color: #ED563B ;
+        }
     </style>
     <link rel="icon" type="image/png" href="img/logo.png">
 {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> --}}
@@ -40,7 +43,7 @@
     {{-- <script src="{{ mix('resources/js/app.js') }}" defer></script> --}}
 </head>
 
-<body id="home" class="bg-white h-screen " dir="rtl">
+<body id="home"  class="bg-white h-screen home " dir="rtl">
     <x-jet-banner />
 
     <div class=" w-full  ">

@@ -1,8 +1,9 @@
-<div class="home" id="home">
-    <img src="{{ asset('img/car.png') }}" alt="hero" class="car">hhhhh
-    <div class="ho" id="ho">
+<div>
+    <img src="{{ asset('img/car.png') }}" alt="hero" class="car">
+    <div class="ho">
+
         <div class="text">
-            <h1 data-aos="fade-up" data-aos-delay="150"><span>المعرض</span> الدولي<br> للسيارات</h1>
+            <h1 data-aos="fade-up" data-aos-delay="150"><span class="orange">المعرض</span> الدولي<br> للسيارات</h1>
             <h5 data-aos="fade-up" data-aos-delay="300">للحصول على أفضل سيارة في المدينة
                 <br> بأفضل سعر وجودة
             </h5>
@@ -30,7 +31,7 @@
             </form>
         </div>
     </div>
-    <!-- about section -->
+    {{-- about section  --}}
     <div class="about" id="about">
         <div class="video-container" data-aos="fade-left" data-aos-delay="300">
             <video src="{{ asset('img/car.mp4') }}" muted autoplay loop class="video"></video>
@@ -41,18 +42,18 @@
             <p>
                 معرضنا عام لنماذج السيارات الحالية، أو الظهور الأول، أو السيارات المبتكرة، <br>أو الكلاسيكيات خارج
                 الإنتاج
-                لتجارة السيارات الحديثة كل ما هو جديد في عالم السيارات ,   <br>اسعار تنافسية
+                لتجارة السيارات الحديثة كل ما هو جديد في عالم السيارات , <br>اسعار تنافسية
             </p>
             <a href="#" class="pt-6 text-blue-900">اعرف المزيد</a>
         </div>
     </div>
+    {{-- last car --}}
+    <div>
+
+    </div>
+
 </div>
 <style scoped>
-    .home{
-        width: 100%;
-
-        overflow: hidden;
-    }
     .ho {
         width: 100%;
         /* top: 80px; */
@@ -84,9 +85,9 @@
         font-weight: 700;
     }
 
-    .text span {
+    /* .text span {
         color: #ED563B
-    }
+    } */
 
     .text p {
         margin: 0 0.5rem 0 1rem;
@@ -157,7 +158,6 @@
         color: #fff;
         font-size: 1rem;
         font-weight: 500;
-
     }
 
     .form-container form .btn:hover {
@@ -188,7 +188,6 @@
         color: #ED563B;
         /* font-weight: bolder; */
         font-size: 3vw;
-
     }
 
     .about .content2 h3 {
