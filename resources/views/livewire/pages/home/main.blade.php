@@ -1,41 +1,59 @@
-<div>
-    <div>
-        <img src="{{ asset('img/car.png') }}" alt="hero" class="car">
-        <section class="home" id=home>
-            <div class="text"  >
-                <h1  data-aos="fade-up" data-aos-delay="150" ><span   >المعرض</span> الدولي<br> للسيارات</h1>
-                <h5 data-aos="fade-up" data-aos-delay="300" >للحصول على أفضل سيارة في المدينة
-                    <br> بأفضل سعر وجودة
-                </h5>
-                <div class="app-stores" data-aos="fade-up" data-aos-delay="400" >
-                    <button class="btn"> ابدا رحلتك </button>
-                    <button class="btn"> السيارات </button>
+<div class="home" id="home">
+    <img src="{{ asset('img/car.png') }}" alt="hero" class="car">hhhhh
+    <div class="ho" id="ho">
+        <div class="text">
+            <h1 data-aos="fade-up" data-aos-delay="150"><span>المعرض</span> الدولي<br> للسيارات</h1>
+            <h5 data-aos="fade-up" data-aos-delay="300">للحصول على أفضل سيارة في المدينة
+                <br> بأفضل سعر وجودة
+            </h5>
+            <div class="app-stores" data-aos="fade-up" data-aos-delay="400">
+                <button class="btn"> ابدا رحلتك </button>
+                <button class="btn"> السيارات </button>
+            </div>
+        </div>
+        {{-- form-container --}}
+        <div class="form-container">
+            <form action="" data-aos="fade-up" data-aos-delay="200">
+                <div class="input-box">
+                    <span>الموقع</span>
+                    <input type="search" name="" id="" placeholder="ابحث عن مدينة">
                 </div>
-            </div>
-            {{-- form-container --}}
-            <div class="form-container">
-                <form action=""  data-aos="fade-up" data-aos-delay="200">
-                    <div class="input-box">
-                        <span>الموقع</span>
-                        <input type="search" name="" id="" placeholder="ابحث عن مدينة">
-                    </div>
-                    <div class="input-box">
-                        <span>اختر الوقت</span>
-                        <input type="date" name="" id="">
-                    </div>
-                    <div class="input-box">
-                        <span> وقت الاعادة</span>
-                        <input type="date" name="" id="">
-                    </div>
-                    <input type="submit" name="" id="" class="btn">
-                </form>
-            </div>
-        </section>
+                <div class="input-box">
+                    <span>اختر الوقت</span>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="input-box">
+                    <span> وقت الاعادة</span>
+                    <input type="date" name="" id="">
+                </div>
+                <input type="submit" name="" id="" class="btn">
+            </form>
+        </div>
     </div>
-
+    <!-- about section -->
+    <div class="about" id="about">
+        <div class="video-container" data-aos="fade-left" data-aos-delay="300">
+            <video src="{{ asset('img/car.mp4') }}" muted autoplay loop class="video"></video>
+        </div>
+        <div class="content2" data-aos="fade-right" data-aos-delay="600">
+            <span class="aboutspan">لماذا نحن !!</span>
+            <h3 class="about">البصرة ,شارع الوفود </h3>
+            <p>
+                معرضنا عام لنماذج السيارات الحالية، أو الظهور الأول، أو السيارات المبتكرة، <br>أو الكلاسيكيات خارج
+                الإنتاج
+                لتجارة السيارات الحديثة كل ما هو جديد في عالم السيارات ,   <br>اسعار تنافسية
+            </p>
+            <a href="#" class="pt-6 text-blue-900">اعرف المزيد</a>
+        </div>
+    </div>
 </div>
 <style scoped>
-    .home {
+    .home{
+        width: 100%;
+
+        overflow: hidden;
+    }
+    .ho {
         width: 100%;
         /* top: 80px; */
         min-height: 130vh;
@@ -55,7 +73,8 @@
         -webkit-transform: scaleX(-1);
         display: grid;
     }
-    .text{
+
+    .text {
         margin-top: 90px;
     }
 
@@ -143,5 +162,43 @@
 
     .form-container form .btn:hover {
         background: #ED563B;
+    }
+
+    /* about */
+    .about {
+        display: flex;
+        margin: 5rem;
+    }
+
+    .about .video-container {
+        flex: 1 1 30rem;
+    }
+
+    .about .video-container video {
+        border-radius: 1rem;
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .about .content2 {
+        flex: 1 1 30rem;
+    }
+
+    .about .content2 span {
+        color: #ED563B;
+        /* font-weight: bolder; */
+        font-size: 3vw;
+
+    }
+
+    .about .content2 h3 {
+        color: #000000;
+        font-size: 2rem;
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .about .content2 p {
+        font-size: 1rem;
+        color: rgb(124, 124, 124);
     }
 </style>
