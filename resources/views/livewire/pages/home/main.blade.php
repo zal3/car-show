@@ -33,7 +33,7 @@
         </div>
     </div>
     {{-- about section  --}}
-    <div class="about flex"  id="about">
+    <div class="about flex" id="about">
         <div class="video-container" data-aos="fade-left" data-aos-delay="300">
             <video src="{{ asset('img/car.mp4') }}" muted autoplay loop class="video"></video>
         </div>
@@ -49,7 +49,7 @@
         </div>
     </div>
     {{-- last car --}}
-    <div class="popular section "  id="popular">
+    <div class="popular section " id="popular">
         <div class="flex justify-between items-center ">
             <h2 class=" text-5xl text-black font-bold px-4 mx-4">احدث السيارات</h2>
             <button class="text-blue  text-xl mt-4"> لرؤية المزيد </button>
@@ -91,19 +91,19 @@
     <div class="container">
         <div>
             <div class="flex justify-center items-center">
-                <div class="items-center">
-<h2 class="text-xl text-black -4 mx-4 my-4">طريقة التأجير</h2>
-                <h1 class="text-3xl text-black font-bold px-4 mx-4">أجر سيارة بثلاث خطوات سهلة </h1>
+                <div class="grid  items-center justify-center">
+                    <h2 class="text-xl text-black  mx-4 my-4">طريقة التأجير</h2>
+                    <h1 class="text-3xl text-black font-bold px-4 mx-4">أجر سيارة بثلاث خطوات سهلة </h1>
                 </div>
 
             </div>
         </div>
 
-        <div class="flex justify-center gap-4 m-auto">
+        <div class="flex  justify-center gap-4 m-auto">
             <div class="block p-6 max-w-4xl text-center">
-                <i class="fa-solid fa-location-dot text-6xl text-orange" ></i>
+                <i class="fa-solid fa-location-dot text-6xl text-orange"></i>
                 <h1 class="text-3xl text-black my-4">أختر الموقع </h1>
-                <h4>    Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia exercitationem dolores
+                <h4> Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia exercitationem dolores
                     assumenda doloribus?</h4>
             </div>
             <div class="block p-6 max-w-4xl text-center">
@@ -114,10 +114,9 @@
             </div>
             <div class="block p-6 max-w-4xl text-center">
                 <i class="fa-solid fa-car-side text-6xl text-orange"></i>
-    <h1 class="text-3xl text-black my-4">أجر سيارة </h1>[][[.['[;;.,lhhhhhhhhhhh']]]
+                <h1 class="text-3xl text-black my-4">أجر سيارة </h1>[][[.['[;;.,lhhhhhhhhhhh']]]
                 <h4>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia exercitationem dolores
                     assumenda doloribus?</h4>
-
             </div>
         </div>
     </div>
