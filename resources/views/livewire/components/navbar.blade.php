@@ -123,45 +123,6 @@
         </div>
     </div>
 </nav> --}}
-
-<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-  <div class="container flex justify-center-gap mx-auto  ">
-    <a href="https://flowbite.com/" class="flex items-center " >
-        <img src="{{ asset('img/logo.png') }}" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
-    </a>
-  
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-    <ul class="flex flex-col p-4 mt-4 bg-gray-20 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-500">
-        <li>
-          <a href="#" class="block py-4 pr-8 pl-7 ml-6 text-white bg- rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">الرئيسية</a>
-        </li>
-        
-        <li>
-          <a href="#" class="block py-4 pr-8 pl-7 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">السيارات</a>
-        </li>
-        <li>
-          <a href="#" class="block py-4 pr-8 pl-7 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">من نحن</a>
-        </li>
-        <li>
-          <a href="#" class="block py-4 pr-8 pl-7 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">تسجيل</a>
-        </li>
-        <li>
-          <a href="#" class="block py-4 pr-8 pl-7 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">تواصل معنا</a>
-        </li>
-      </ul>
-      
-    </div>
-    
-<form class="flex items-center  justify-center-gap mx-auto  pl-0 ml-6">   
-    <label for="simple-search" class="sr-only">serch</label>
-    <div class="relative w-full">
-        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-orange dark:text-orange" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-        </div>
-        <input type="text" id="simple-search" class="bg-orange border border-orange-500 text-orange-500 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full pl-10 p-2.5  dark:bg-orange-500 dark:border-orange-500 dark:placeholder-orange-500 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" placeholder="بحث" required="">
-    </div>
-  
-</form>
-
-  </div>
+<nav>
+المعرض الدولي للسيارات 
 </nav>
