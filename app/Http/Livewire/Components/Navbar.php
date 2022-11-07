@@ -29,29 +29,29 @@ class Navbar extends Component
             ],
             [
                 'name' => 'الحالات',
-                'route' => 'cases',
+                'route' => 'home',
                 'icon' => 'hand-holding-heart',
             ],
             [
                 'name' => 'التبرع',
-                'route' => 'donate',
+                'route' => 'home',
                 'icon' => 'circle-info',
                 'permissions' => 2,
 
             ],
             [
                 'name' => 'المتبرعين ',
-                'route' => 'donors',
+                'route' => 'home',
                 'icon' => 'donors',
             ],
             [
                 'name' => 'الصندوق',
-                'route' => 'about',
+                'route' => 'home',
                 'icon' => 'circle-info',
             ],
             [
                 'name' => 'الاداريين',
-                'route' => 'admins',
+                'route' => 'home',
                 'icon' => 'circle-info',
                 'permissions' => 4,
             ],

@@ -54,7 +54,7 @@
                 </svg>
             </a>
         </div>
-        <p class="mt-8 text-base leading-6 text-center text-gray-100">
+        <p class="mt-8 text-base  leading-6 text-center text-white">
             ©  . 2023 science students
         </p>
     </div>
