@@ -1,4 +1,4 @@
-<nav class="">
+<nav class="bg-gray fixed z-10 w-full">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
             <!-- Mobile menu button-->
@@ -17,20 +17,20 @@
                     </svg>
                 </button>
             </div> --}}
-            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
+            <div class=" gap-10 flex  items-center sm:items-stretch sm:justify-center mt-4 ">
                 <div class="flex-shrink-0 flex items-center ">
-                    <a href="/" class="flex items-center text-xl">
-                        <img src="{{ asset('/img/logo.png') }}" class="h-12 mx-4 ">
+                    <a href="/" class="">
+                        <img src="{{ asset('/img/logo.png') }}" class="h-14 mx-4 ">
                     </a>
                 </div>
-                <div class="hidden sm:block sm:ml-6">
+                <div class="flex justify-start sm:block sm:ml-6">
                     <div class="flex  gap-3">
                         @foreach ($menu->items as $item)
                             <a href="{{ route($item->route) }}"
-                                @if ($item->active) class="bg-gray-700  text-black px-3
-                            py-2 rounded-md text-sm font-medium "
-                            @else class="text-gray-700  hover:bg-gray-500 hover:text-white px-3 py-2 rounded-md
-                            text-sm font-medium" @endif>
+                                @if ($item->active) class=" text-orange px-3
+                            py-2 rounded-md text-xl font-medium "
+                            @else class="text-gray-700  hover:text-orange-600 px-3 py-2 rounded-md
+                            text-xl font-medium" @endif>
                                 {{ $item->name }}</a>
                         @endforeach
                     </div>
@@ -107,6 +107,7 @@
     </div>
 
 </nav>
+
 {{-- <nav class="bg-gray w-full fixed  px-2 sm:px-4 py-2.5 z-10">
     <div class="container flex justify-center-gap mx-auto  ">
         <a href="" class="flex items-center ">

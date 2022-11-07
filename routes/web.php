@@ -2,7 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Pages\{
-    Home\Main as Home};
+    Home\Main as Home,
+    About\Main as About,
+    Car\Main as Car,
+    Contact\Main as Contact,
+    Rental\Main as Rental,
+};
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +18,21 @@ use App\Http\Livewire\Pages\{
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//home
 Route::get('/', Home::class)->name('home');
+
+//about
+Route::get('/about', About::class)->name('about');
+
+//car
+Route::get('/car', Car::class)->name('car');
+
+//contact
+Route::get('/contact', Contact::class)->name('contact');
+
+//rental
+Route::get('/rental', Rental::class)->name('rental');
+
 // Route::middleware([
 //     'auth:sanctum',
 //     config('jetstream.auth_session'),

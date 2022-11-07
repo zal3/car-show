@@ -28,36 +28,28 @@ class Navbar extends Component
 
             ],
             [
-                'name' => 'الحالات',
-                'route' => 'home',
+                'name' => 'السيارات',
+                'route' => 'car',
                 'icon' => 'hand-holding-heart',
             ],
             [
-                'name' => 'التبرع',
-                'route' => 'home',
+                'name' => 'تأجير السيارات',
+                'route' => 'rental',
                 'icon' => 'circle-info',
-                'permissions' => 2,
+                // 'permissions' => 4,
+            ],
+            [
+                'name' => 'المعرض',
+                'route' => 'about',
+                'icon' => 'circle-info',
+                // 'permissions' => 2,
 
             ],
             [
-                'name' => 'المتبرعين ',
-                'route' => 'home',
-                'icon' => 'donors',
-            ],
-            [
-                'name' => 'الصندوق',
-                'route' => 'home',
+                'name' => 'تواصل معنا ',
+                'route' => 'contact',
                 'icon' => 'circle-info',
             ],
-            [
-                'name' => 'الاداريين',
-                'route' => 'home',
-                'icon' => 'circle-info',
-                'permissions' => 4,
-            ],
-
-
-
 
         ]);
 
