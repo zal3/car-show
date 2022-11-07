@@ -103,20 +103,17 @@
             <div class="block p-6 max-w-4xl text-center">
                 <i class="fa-solid fa-location-dot text-6xl text-orange" ></i>
                 <h1 class="text-3xl text-black my-4">أختر الموقع </h1>
-                <h4>    Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia exercitationem dolores
-                    assumenda doloribus?</h4>
+                <h4>  اختر موقع رحلتك لحجز السيارة التي تود تجربتها في رحلتك مع الانتباه في اختيار الموقع بشكل مضبوط لكي تتابع معنا تكمله حجز سيارتك</h4>
             </div>
             <div class="block p-6 max-w-4xl text-center">
                 <i class="fa-solid fa-calendar-check text-6xl text-orange"></i>
                 <h1 class="text-3xl text-black my-4"> أختر الموعد</h1>
-                <h4>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia exercitationem dolores
-                    assumenda doloribus?</h4>
+                <h4> حدد وقت حجز السيارة مع وقت انتهاء التأجير والاهتمام بوقت استلام وتسليم السيارة في الوقت الذي تم تحديده </h4>
             </div>
             <div class="block p-6 max-w-4xl text-center">
                 <i class="fa-solid fa-car-side text-6xl text-orange"></i>
-    <h1 class="text-3xl text-black my-4">أجر سيارة </h1>[][[.['[;;.,lhhhhhhhhhhh']]]
-                <h4>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia exercitationem dolores
-                    assumenda doloribus?</h4>
+    <h1 class="text-3xl text-black my-4">أجر سيارة </h1>
+                <h4>اختر السيارة التي ترغب في تأجيرها لطفاً نرجو الاهتمام بنظافه السيارة ونتمنى لكم وقت ممتع</h4>
 
             </div>
         </div>
