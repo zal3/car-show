@@ -11,39 +11,40 @@
         .home {
             font-family: 'Changa', sans-serif;
         }
-        .bg-orange{
-            background-color:#FF6B45 ;
+
+        .bg-orange {
+            background-color: #FF6B45;
         }
-        .text-orange{
-            color: #ED563B ;
+
+        .text-orange {
+            color: #ED563B;
         }
-        .text-blue{
-            color: #474FA0 ;
+
+        .text-blue {
+            color: #474FA0;
         }
-        .bg-gray{
-            background-color: #EEEFF1 ;
+
+        .bg-gray {
+            background-color: #EEEFF1;
         }
     </style>
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="/resources/css/swiper-bundle.min.css">
 
-{{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> --}}
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> --}}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-{{-- swiper --}}
-<link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-{{-- <link
+    {{-- swiper --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    {{-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     /> --}}
-{{-- ////////// --}}
+    {{-- ////////// --}}
     <!-- Fonts -->
 
-<link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;605;700;800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@807&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;605;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@807&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,20 +65,23 @@
     {{-- <script src="{{ mix('resources/js/app.js') }}" defer></script> --}}
 </head>
 
-<body id="home"  class="bg-white h-screen home " dir="rtl">
+<body id="home" class="bg-white h-screen home " dir="rtl">
     <x-jet-banner />
 
     <div class=" w-full  ">
         <div class="">@livewire('components.navbar')</div>
 
         <!-- Page Content -->
-        <main class=" lg:p-10 lg:mt-5 overflow-y-auto  rounded-lg bg-white ">
+        <main class=" lg:p-10 lg:mt-5 overflow-y-auto overflow-x-hidden  rounded-lg bg-white ">
 
             <div>
                 {{ $slot }}
             </div>
         </main>
+
+        <div class="">@livewire('components.footer')</div>
     </div>
+
 
     @stack('modals')
 
@@ -87,35 +91,34 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".popular__container", {
-        //  loop: true,
-        spaceBetween: 24,
-        slidesPerView: 'auto',
-        grabCursor: true,
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        },
-      });
+        var swiper = new Swiper(".popular__container", {
+            //  loop: true,
+            spaceBetween: 24,
+            slidesPerView: 'auto',
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
     </script>
 
     {{-- //////// --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init({
             duration: 800,
@@ -130,4 +133,5 @@
         integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>

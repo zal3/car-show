@@ -88,34 +88,29 @@
         </div>
     </div>
     {{-- car rate  --}}
-    <div class="container">
-        <div>
-            <div class="flex justify-center items-center">
-                <div class="grid  items-center justify-center">
-                    <h2 class="text-xl text-black  mx-4 my-4">طريقة التأجير</h2>
-                    <h1 class="text-3xl text-black font-bold px-4 mx-4">أجر سيارة بثلاث خطوات سهلة </h1>
-                </div>
-
-            </div>
-        </div>
-
+    <div class=" rate">
+        <h2 class="text-xl text-black  mx-0 my-4 flex justify-center">طريقة التأجير</h2>
+        <h1 class="text-3xl text-black font-bold px-4 mx-4 flex justify-center">أجر سيارة بثلاث خطوات سهلة </h1>
         <div class="flex  justify-center gap-4 m-auto">
-            <div class="block p-6 max-w-4xl text-center">
-                <i class="fa-solid fa-location-dot text-6xl text-orange"></i>
-                <h1 class="text-3xl text-black my-4">أختر الموقع </h1>
-                <h4> Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia exercitationem dolores
+            <div class="block p-6 max-w-4xl text-center hov">
+                <i class="fa-solid fa-location-dot text-6xl text-orange my-4  "></i>
+                <h1 class=" text-3xl text-black my-4 ">أختر الموقع </h1>
+                <h4 class="my-4"> Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia
+                    exercitationem dolores
                     assumenda doloribus?</h4>
             </div>
-            <div class="block p-6 max-w-4xl text-center">
-                <i class="fa-solid fa-calendar-check text-6xl text-orange"></i>
+            <div class="block p-6 max-w-4xl text-center hov">
+                <i class="fa-solid fa-calendar-check text-6xl my-4 text-orange "></i>
                 <h1 class="text-3xl text-black my-4"> أختر الموعد</h1>
-                <h4>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia exercitationem dolores
+                <h4 class="my-4">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia
+                    exercitationem dolores
                     assumenda doloribus?</h4>
             </div>
-            <div class="block p-6 max-w-4xl text-center">
-                <i class="fa-solid fa-car-side text-6xl text-orange"></i>
-                <h1 class="text-3xl text-black my-4">أجر سيارة </h1>[][[.['[;;.,lhhhhhhhhhhh']]]
-                <h4>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia exercitationem dolores
+            <div class="block p-6 max-w-4xl text-center hov">
+                <i class="fa-solid fa-car-side text-6xl my-4 text-orange "></i>
+                <h1 class="text-3xl text-black my-4">أجر سيارة </h1>
+                <h4 class="my-4">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Incidunt quis, quia
+                    exercitationem dolores
                     assumenda doloribus?</h4>
             </div>
         </div>
@@ -301,5 +296,14 @@
 
     .ss {
         margin: 1rem 4rem 0 0;
+    }
+
+    /* car rate */
+    .rate {
+        margin: 6rem 4rem;
+    }
+    .hov:hover{
+        transition: .3s;
+        transform: translateY(-.5rem);
     }
 </style>
