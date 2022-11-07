@@ -17,6 +17,12 @@
         .text-orange{
             color: #ED563B ;
         }
+        .text-blue{
+            color: #474FA0 ;
+        }
+        .bg-gray{
+            background-color: #EEEFF1 ;
+        }
     </style>
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="/resources/css/swiper-bundle.min.css">

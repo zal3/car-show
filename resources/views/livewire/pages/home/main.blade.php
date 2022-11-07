@@ -49,21 +49,21 @@
         </div>
     </div>
     {{-- last car --}}
-    <div class="popular section "  id="popular">
+    <div class="popular section " id="popular">
         <div class="flex  justify-between items-center ">
             <h2 class=" text-5xl text-black font-bold px-4 mx-4">احدث السيارات</h2>
-            <button class="text-blue-800  text-xl mt-4"> لرؤية المزيد </button>
+            <button class="text-blue  text-xl mt-4"> لرؤية المزيد </button>
         </div>
-        <div class="popular__container container swiper  "data-aos="fade-left" >
-            <div class="swiper-wrapper" >
+        <div class="popular__container container swiper  "data-aos="fade-left">
+            <div class="swiper-wrapper">
                 @for ($i = 0; $i < 9; $i++)
-                    <div class="swiper-slide  ss" >
-                        <article class=" popular__card  px-6 py-6  overflow-hidden relative w-64 bg-gray-800">
+                    <div class="swiper-slide  ss">
+                        <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-64 bg-gray">
                             <div class="shape shape__smaller"></div>
                             <h1 class="popular__title text-orange ">بورش </h1>
                             <h3 class="popular__subtitle">توربو </h3>
-                            <img src="{{ asset('img/cars/popular2.png') }}" alt="" class="popular__img">
-                            <div class="popular___data text-white text-md grid grid-cols-2  mb-6">
+                            <img src="{{ asset('img/cars/popular1.png') }}" alt="" class="popular__img">
+                            <div class="popular___data text-black text-md grid grid-cols-2  mb-6">
                                 <div class="popular___data-group ">
                                     <i class="fa-solid fa-gauge-high"></i> 3.7 Sec
                                 </div>
@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                             <div class="grid grid-cols-2 justify-between">
-                                <div class=" text-white left-2 bottom-2 absolute"> $ 1,000,000</div>
+                                <div class=" text-black left-2 bottom-2 absolute"> $ 1,000,000</div>
                                 <button class="button popular__button bg-orange ">
                                     <i class="fa-solid fa-bag-shopping"></i>
                                 </button>
@@ -85,6 +85,23 @@
                 @endfor
             </div>
             <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    {{-- car rate  --}}
+    <div class="container">
+        <div class="flex justify-center gap-4 m-auto">
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <h1>أختر الموقع </h1>
+            </div>
+            <div>
+                <i class="fa-solid fa-calendar-check"></i>
+                <h1> أختر الموعد</h1>
+            </div>
+            <div>
+                <i class="fa-solid fa-car-side"></i>
+                <h1>أجر سيارة </h1>
+            </div>
         </div>
     </div>
 </div>
@@ -229,10 +246,11 @@
         position: relative;
     }
 
-    .popular{
+    .popular {
         margin-left: 4rem;
         margin-right: 4rem;
     }
+
     .popular__title {
         font-size: 1.5rem;
         margin-bottom: .25rem;
