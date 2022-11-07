@@ -28,7 +28,7 @@
                     <span> وقت الاعادة</span>
                     <input type="date" name="" id="">
                 </div>
-                <input type="submit" name="" id="" class="btn">
+                <button type="submit" id="" class="btn"> تأجير</button>
             </form>
         </div>
     </div>
@@ -49,12 +49,16 @@
         </div>
     </div>
     {{-- last car --}}
-    <div class="popular section " id="popular">
-        <h2 class=" text-5xl text-black font-bold px-4 mx-4">احدث السيارات</h2>
-        <div class="popular__container container swiper ">
-            <div class="swiper-wrapper grid grid-cols-4">
-                @for ($i = 0; $i < 4; $i++)
-                        <article class="swiper-slide popular__card  px-6 py-6 mb-4  overflow-hidden relative w-64 bg-gray-800">
+    <div class="popular section "  id="popular">
+        <div class="flex  justify-between items-center ">
+            <h2 class=" text-5xl text-black font-bold px-4 mx-4">احدث السيارات</h2>
+            <button class="text-blue-800  text-xl mt-4"> لرؤية المزيد </button>
+        </div>
+        <div class="popular__container container swiper  "data-aos="fade-left" >
+            <div class="swiper-wrapper" >
+                @for ($i = 0; $i < 9; $i++)
+                    <div class="swiper-slide  ss" >
+                        <article class=" popular__card  px-6 py-6  overflow-hidden relative w-64 bg-gray-800">
                             <div class="shape shape__smaller"></div>
                             <h1 class="popular__title text-orange ">بورش </h1>
                             <h3 class="popular__subtitle">توربو </h3>
@@ -77,12 +81,12 @@
                                 </button>
                             </div>
                         </article>
+                    </div>
                 @endfor
-                {{-- <div class="swiper-pagination"></div> --}}
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
-
 </div>
 <style scoped>
     .ho {
@@ -154,7 +158,6 @@
     }
 
     .form-container form .btn {
-        flex: 1 1 7rem;
         padding: 10px 36px;
         margin-top: 1rem;
         border: none;
@@ -207,13 +210,7 @@
 
     /* popular */
     .popular__container {
-        padding-top: 1rem;
-    }
-
-    .shape__smaller {
-        width: 180px;
-        height: 180px;
-        filter: blur(64px);
+        padding: 2rem 2rem 2rem 2rem;
     }
 
     .popular__card {
@@ -232,6 +229,10 @@
         position: relative;
     }
 
+    .popular{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
     .popular__title {
         font-size: 1.5rem;
         margin-bottom: .25rem;
@@ -262,5 +263,9 @@
 
     .popular__card:hover .popular__img {
         transform: translateY(-.25rem);
+    }
+
+    .ss {
+        margin: 1rem 4rem 0 0;
     }
 </style>
