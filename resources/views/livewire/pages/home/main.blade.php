@@ -33,7 +33,7 @@
         </div>
     </div>
     {{-- about section  --}}
-    <div class="about flex" id="about">
+    <div class="about flex"  id="about">
         <div class="video-container" data-aos="fade-left" data-aos-delay="300">
             <video src="{{ asset('img/car.mp4') }}" muted autoplay loop class="video"></video>
         </div>
@@ -49,8 +49,8 @@
         </div>
     </div>
     {{-- last car --}}
-    <div class="popular section " id="popular">
-        <div class="flex  justify-between items-center ">
+    <div class="popular section "  id="popular">
+        <div class="flex justify-between items-center ">
             <h2 class=" text-5xl text-black font-bold px-4 mx-4">احدث السيارات</h2>
             <button class="text-blue  text-xl mt-4"> لرؤية المزيد </button>
         </div>
@@ -98,6 +98,7 @@
 
             </div>
         </div>
+
         <div class="flex justify-center gap-4 m-auto">
             <div class="block p-6 max-w-4xl text-center">
                 <i class="fa-solid fa-location-dot text-6xl text-orange" ></i>
