@@ -27,6 +27,9 @@
         .bg-gray {
             background-color: #EEEFF1;
         }
+        .home2{
+            margin-top: 5rem;
+        }
     </style>
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="/resources/css/swiper-bundle.min.css">
@@ -74,7 +77,7 @@
         <!-- Page Content -->
         <main class=" lg:p-10 lg:mt-4  overflow-y-auto  overflow-x-hidden  rounded-lg bg-white ">
 
-            <div>
+            <div class="home2">
                 {{ $slot }}
             </div>
         </main>

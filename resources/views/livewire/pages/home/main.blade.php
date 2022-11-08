@@ -1,4 +1,4 @@
-<div>
+<div >
     <img src="{{ asset('img/car.png') }}" alt="hero" class="car">
     <div class="ho w-full relative grid items-center mx-4 px-4">
         <div class="text">
@@ -119,7 +119,8 @@
 </div>
 <style scoped>
     .ho {
-        min-height: 130vh;
+        min-height: 115vh;
+
     }
 
     .car {
@@ -130,10 +131,12 @@
         position: absolute;
         -webkit-transform: scaleX(-1);
         display: grid;
+        top: 0;
+            display: absolute;
     }
 
     .text {
-        margin-top: 90px;
+        /* margin-top: 70px; */
     }
 
     .text h1 {
