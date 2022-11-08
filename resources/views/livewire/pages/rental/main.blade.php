@@ -59,8 +59,6 @@
         left: 400px;
         border-radius: 0.9rem;
         margin-bottom: 2rem;
-
-
     }
 
     .input-box {
