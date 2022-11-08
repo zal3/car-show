@@ -1,3 +1,62 @@
+<div class="help-section">
+            <div class="inner-width">
+                <h1 class="section-title">الخدمات</h1>
+                <div class="border"></div>
+                    <div class="help-container">
+                        <div class="help-box">
+                            <div class="help-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="help-title">Editing errors</div>
+                            <div class="help-desc">Our website makes regular changes to the websiteso be sure to contact us if you encounter any problems</div>
+                        </div>
+
+
+                        <div class="help-box">
+                            <div class="help-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <div class="help-title">Android</div>
+                            <div class="help-desc">You can log in and browse the site through mobile devices</div>
+                        </div>
+
+                        <div class="help-box">
+                            <div class="help-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="help-title">Database</div>
+                            <div class="help-desc">Update site databases every year to accommodate passenger tickets within one year</div>
+                        </div>
+
+                        <div class="help-box">
+                            <div class="help-icon">
+                                <i class="fas fa-object-ungroup"></i>
+                            </div>
+                            <div class="help-title">Professional Correspondent</div>
+                            <div class="help-desc">If you need any help, you can contact our team</div>
+                        </div>
+
+                        <div class="help-box">
+                            <div class="help-icon">
+                                <i class="fas fa-brush"></i>
+                            </div>
+                            <div class="help-title">full scan</div>
+                            <div class="help-desc">Conducting a full site survey may avoid any problems while browsing the site</div>
+                        </div>
+
+                        <div class="help-box">
+                            <div class="help-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="help-title">Web developement</div>
+                            <div class="help-desc">Our site is making periodic developments on the site, so be sure to contact us if you encounter any problems</div>
+                        </div>
+
+                    </div>
+                
+            </div>
+        </div>
+
 <div>
     <div class=" rate">
         <h2 class="text-xl text-black  mx-0 my-4 flex justify-center">طريقة التأجير</h2>
@@ -47,6 +106,98 @@
 
 
 <style scoped>
+   /* serves */
+  
+.help-section{
+    padding: 60px 0;
+}
+.inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.section-title{
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.border{
+    width: 160px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 40px auto;
+
+}
+.help-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.help-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+    
+}
+.help-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid  #ED563B;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+.help-icon i{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+    
+    
+}
+.help-box:hover .help-icon{
+background:  #ED563B;
+color: #fff;
+}
+.help-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom:10px ;
+    color: #000000;
+
+}
+.help-desc{
+    font-size: 14px;
+    color: #000000;
+
+
+}
+
+@media  screen and (max-width:960px) {
+    .help-box{
+        max-width: 45%;
+    }
+    
+}
+@media  screen and (max-width:768px) {
+    .help-box{
+        max-width: 50%;
+    }
+    
+}
+@media  screen and (max-width:400px) {
+    .help-box{
+        max-width: 100%;
+    }
+    
+}
+
     /* car rate */
     .rate {
         margin: 6rem 2rem 2rem;
