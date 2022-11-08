@@ -32,32 +32,53 @@
 </div>
 
 <div class="form-container ">
-            <form class=" flex flex-wrap items-center absolute bg-white" action="" data-aos="fade-up"
+            <form class="  flex-wrap items-center  bg-white" action="" data-aos="fade-up"
                 data-aos-delay="200">
                 <div class="input-box">
                     <span>الموقع</span>
                     <input type="search" name="" id="" placeholder="ابحث عن مدينة">
                 </div>
+                <br>
                 <div class="input-box">
                     <span>اختر الوقت</span>
                     <input type="date" name="" id="">
                 </div>
+                <br>
+
                 <div class="input-box">
                     <span> وقت الاعادة</span>
                     <input type="date" name="" id="">
                 </div>
+                
                 <button type="submit" id="" class="btn"> تأجير</button>
             </form>
         </div>
-    </div>
+</div>
+<br>
+<br>
+<br>
+
+
+
     <style scoped>
-    /* form-container */
+   
+        /* car rate */
+    .rate {
+        margin: 6rem 4rem;
+    }
+    .hov:hover{
+        transition: .3s;
+        transform: translateY(-.5rem);
+    }
+     /* form-container */
     .form-container form {
         gap: 1rem;
-        bottom: 8rem;
+        bottom: 1rem;
         left: 400px;
         padding: 20px;
-        border-radius: 0.5rem;
+        border-radius: 0.9rem;
+        
+        
     }
 
     .input-box {
@@ -77,6 +98,9 @@
         border-radius: 0.5rem;
         outline: none;
         font-size: 1rem;
+        
+        
+
     }
 
     .form-container form .btn {
@@ -88,17 +112,10 @@
         color: #fff;
         font-size: 1rem;
         font-weight: 500;
+        
     }
 
     .form-container form .btn:hover {
         background: #ED563B;
-    }
-        /* car rate */
-    .rate {
-        margin: 6rem 4rem;
-    }
-    .hov:hover{
-        transition: .3s;
-        transform: translateY(-.5rem);
     }
     </style>
