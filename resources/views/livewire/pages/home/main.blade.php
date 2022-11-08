@@ -119,7 +119,7 @@
 </div>
 <style scoped>
     .ho {
-        min-height: 115vh;
+        min-height: 120vh;
 
     }
 
@@ -136,7 +136,7 @@
     }
 
     .text {
-        /* margin-top: 70px; */
+        margin-top: 40px;
     }
 
     .text h1 {

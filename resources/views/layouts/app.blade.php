@@ -27,6 +27,9 @@
         .bg-gray {
             background-color: #EEEFF1;
         }
+        .home2{
+            margin-top: 4.5rem;
+        }
     </style>
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="/resources/css/swiper-bundle.min.css">
