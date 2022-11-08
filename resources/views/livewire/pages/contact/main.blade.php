@@ -44,8 +44,6 @@
         position: relative;
         margin: 6rem auto;
     }
-    .bl{
-        margin-top: 5rem;
-    }
+
 
 </style>
