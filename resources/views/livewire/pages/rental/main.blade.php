@@ -5,7 +5,7 @@
         <div class="help-container">
             <div class="help-box">
                 <div class="help-icon ">
-                    <svg class="-rotate-90" enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50"
+                    <svg class=" mr-2n" enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50"
                         width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect fill="none" height="50" width="50" />
@@ -228,17 +228,20 @@
         transition: 0.3s linear;
     }
 
-    .help-icon i {
-        line-height: 70px;
+    .help-icon svg {
+        width: 50px;
+        height: 40px;
+        line-height: 40px;
         transform: rotate(-45deg);
         font-size: 26px;
-
-
+        margin-right: .5rem;
+        margin-top: .5rem;
+        margin-bottom: .25rem;
     }
 
     .help-box:hover .help-icon {
         background: #ED563B;
-        color: #fff;
+
     }
 
     .help-title {
