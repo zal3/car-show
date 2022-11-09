@@ -11,27 +11,27 @@
                                 <form action="" class="form contact-form" method="post">
                                     <div class="input-group-wrap">
                                         <div class="input-group">
-                                            <input type="text" class="input" placeholder="الاسم" required
-                                                name="name">
+                                            <input type="text" class="input focus:ring-0 " placeholder="الاسم"
+                                                required name="name">
                                             <span class="bar"></span>
                                         </div>
                                         <div class="input-group">
-                                            <input type="email" class="input" placeholder="ايميل" required
-                                                name="email">
+                                            <input type="email" class="input focus:ring-0 " placeholder="ايميل"
+                                                required name="email">
                                             <span class="bar"></span>
                                         </div>
                                     </div>
                                     <div class="input-group">
-                                        <input type="text" class="input outline-none" placeholder="العنوان" required
-                                            name="titsubject">
+                                        <input type="text" class="input  focus:ring-0  " placeholder="العنوان"
+                                            required name="titsubject">
                                         <span class="bar"></span>
                                     </div>
                                     <div class="input-group">
-                                        <textarea class="input" cols="30" rows="8" placeholder="الموضوع" required name="subject"></textarea>
+                                        <textarea class="input focus:ring-0 " cols="30" rows="8" placeholder="الموضوع" required name="subject"></textarea>
                                         <span class="bar"></span>
                                     </div>
                                     <button type="submit"
-                                        class="btn form-btn btn-purple border border-gray-900 items-center px-4 py-2 mt-2 ">ارسال
+                                        class="btn form-btn btn-purple border border-gray-900 items-center px-4 py-2 mt-2 hover:bg-orange-700 hover:text-white hover:border-white ">ارسال
                                         <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                                     </button>
                                 </form>
@@ -52,45 +52,46 @@
     </div>
 </div>
 <style>
-                .map-container {
-                    height: 380px;
-                    /* z-index: -1; */
-                }
+    .map-container {
+        height: 380px;
+        /* z-index: -1; */
+    }
 
-                .bgck {
-                    background: linear-gradient(to right, #dfe6e9, #07090a91);
-                }
+    .bgck {
+        background: linear-gradient(to left, hsl(31, 100%, 95%), #030a0e98);
+    }
 
-                .input {
-                    border: none;
-                    background-color: transparent;
-                    border-bottom: black 2px solid;
-                    font-weight: normal;
-                    display: block;
-                    width: 100%;
-                    border-bottom: 2px solid#fff;
-                    padding-left: 0;
-                }
 
-                .bar {
-                    display: block;
-                    position: relative;
-                }
+    .input {
+        border: none;
+        background-color: transparent;
+        border-bottom: black 2px solid;
+        font-weight: normal;
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid#fff;
+        padding-left: 0;
+    }
 
-                .bar::after {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 3px;
-                    background-color: #473b2ce8;
-                    transform: scaleX(0);
-                    transform-origin: right;
-                    transition: transform .5s;
-                }
+    .bar {
+        display: block;
+        position: relative;
+    }
 
-                .contact-form .input:focus+.bar::after {
-                    transform: scaleX(1);
-                }
-            </style>
+    .bar::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #ed563be8;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .5s;
+    }
+
+    .contact-form .input:focus+.bar::after {
+        transform: scaleX(1);
+    }
+</style>

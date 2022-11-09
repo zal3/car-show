@@ -137,25 +137,25 @@
                     <div class="text-white">
                         <img src="{{ asset('img/team/w1.jpg') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محسن </h2>
-                        <div class="flex justify-center  gg hover:text-orange">
-                            <i class="fa-solid fa-envelope"></i>
-                            <i class="fa-brands fa-github"></i>
+                        <div class="flex justify-center  gg ">
+                            <i class="fa-solid fa-envelope hover:text-orange-700"></i>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
                     <div class="text-white ">
                         <img src="{{ asset('img/team/w2.jpg') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محسن </h2>
-                        <div class="flex justify-center  gg hover:text-orange">
-                            <i class="fa-solid fa-envelope"></i>
-                            <i class="fa-brands fa-github"></i>
+                        <div class="flex justify-center  gg ">
+                            <i class="fa-solid fa-envelope hover:text-orange-700"></i>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
                     <div class="text-white ">
                         <img src="{{ asset('img/team/w4.jpg') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محسن </h2>
-                        <div class="flex justify-center  gg hover:text-orange">
-                            <i class="fa-solid fa-envelope"></i>
-                            <i class="fa-brands fa-github"></i>
+                        <div class="flex justify-center  gg ">
+                            <i class="fa-solid fa-envelope hover:text-orange-700"></i>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
                 </div>
@@ -349,8 +349,7 @@
     }
 
     .popular {
-        margin-left: 4rem;
-        margin-right: 4rem;
+        margin: 3rem 4rem ;
     }
 
     .popular__title {
