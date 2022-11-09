@@ -5,7 +5,7 @@
         <div class="help-container">
             <div class="help-box">
                 <div class="help-icon ">
-                    <svg class="rotate-180" enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50"
+                    <svg class="-rotate-90" enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50"
                         width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect fill="none" height="50" width="50" />
