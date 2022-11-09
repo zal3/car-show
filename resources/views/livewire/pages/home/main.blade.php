@@ -1,5 +1,9 @@
-<div >
+
+<div>
+    <link rel="stylesheet" href="{{ mix('resources/css/home.css') }}">
+
     <img src="{{ asset('img/car.png') }}" alt="hero" class="car">
+    {{-- home --}}
     <div class="ho w-full relative grid items-center mx-4 px-4">
         <div class="text">
             <h1 class="font-bold " data-aos="fade-up" data-aos-delay="150"><span class="text-orange">المعرض</span>
@@ -32,6 +36,40 @@
             </form>
         </div>
     </div>
+
+    {{-- car rate  --}}
+    <div class=" rate">
+        <h2 class="text-xl text-black   flex justify-center mb-3">طريقة التأجير</h2>
+        <h1 class="text-3xl text-black font-bold px-4  flex justify-center">أجر سيارة بثلاث خطوات سهلة </h1>
+        <div class="flex  justify-between gap-4 items-center">
+            <div class="block p-6 max-w-4xl text-center hov">
+                <i class="fa-solid fa-location-dot text-6xl text-orange my-4  "></i>
+                <h1 class=" text-3xl text-black my-4 ">أختر الموقع </h1>
+                <h1 >
+                    اختر موقع رحلتك لحجز السيارة التي
+                    <br> تود تجربتها في رحلتك مع
+                     الانتباه في اختيار الموقع بشكل مضبوط لكي
+                    تتابع معنا تكمله حجز سيارتك
+                </h1>
+            </div>
+            <div class="block p-6 max-w-4xl text-center hov">
+                <i class="fa-solid fa-calendar-check text-6xl my-4 text-orange "></i>
+                <h1 class="text-3xl text-black my-4"> أختر الموعد</h1>
+                <h1 >
+                    حدد وقت حجز السيارة مع وقت انتهاء التأجير والاهتمام بوقت استلام وتسليم السيارة في الوقت الذي تم
+                    تحديده
+                </h1>
+            </div>
+            <div class="block p-6 max-w-4xl text-center hov">
+                <i class="fa-solid fa-car-side text-6xl my-4 text-orange "></i>
+                <h1 class="text-3xl text-black my-4">أجر سيارة </h1>
+                <h1 >
+                    اختر السيارة التي ترغب في تأجيرها لطفاً نرجو الاهتمام
+                     بنظافه السيارة ونتمنى لكم وقت ممتع</h1>
+            </div>
+        </div>
+    </div>
+
     {{-- about section  --}}
     <div class="about flex" id="about">
         <div class="video-container" data-aos="fade-left" data-aos-delay="300">
@@ -48,6 +86,7 @@
             <a href="#" class="pt-6 text-blue-900">اعرف المزيد</a>
         </div>
     </div>
+
     {{-- last car --}}
     <div class="popular section " id="popular">
         <div class="flex justify-between items-center ">
@@ -84,40 +123,88 @@
                     </div>
                 @endfor
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination mb-3 pb-3"></div>
         </div>
     </div>
-    {{-- car rate  --}}
-    <div class=" rate">
-        <h2 class="text-xl text-black  mx-0 my-4 flex justify-center">طريقة التأجير</h2>
-        <h1 class="text-3xl text-black font-bold px-4 mx-4 flex justify-center">أجر سيارة بثلاث خطوات سهلة </h1>
-        <div class="flex  justify-center gap-4 m-auto">
-            <div class="block p-6 max-w-4xl text-center hov">
-                <i class="fa-solid fa-location-dot text-6xl text-orange my-4  "></i>
-                <h1 class=" text-3xl text-black my-4 ">أختر الموقع </h1>
-                <h4 class="my-4">
- اختر موقع رحلتك لحجز السيارة التي تود تجربتها في رحلتك مع الانتباه في اختيار الموقع بشكل مضبوط لكي
-                    تتابع معنا تكمله حجز سيارتك
-</h4>
-            </div>
-            <div class="block p-6 max-w-4xl text-center hov">
-                <i class="fa-solid fa-calendar-check text-6xl my-4 text-orange "></i>
-                <h1 class="text-3xl text-black my-4"> أختر الموعد</h1>
-                <h4 class="my-4">
-حدد وقت حجز السيارة مع وقت انتهاء التأجير والاهتمام بوقت استلام وتسليم السيارة في الوقت الذي تم
-                    تحديده
-</h4>
-            </div>
-            <div class="block p-6 max-w-4xl text-center hov">
-                <i class="fa-solid fa-car-side text-6xl my-4 text-orange "></i>
-                <h1 class="text-3xl text-black my-4">أجر سيارة </h1>
-                <h4 class="my-4">
-               اختر السيارة التي ترغب في تأجيرها لطفاً نرجو الاهتمام بنظافه السيارة ونتمنى لكم وقت ممتع</h4>
+
+    {{-- team --}}
+    <div>
+        <!-- banner section starts  -->
+
+        <div class="banner">
+            <div class="content" >
+                <div class="px-4 flex items-center justify-start mx-4 ggg ">
+                    <div class="text-white">
+                        <img src="{{ asset('img/team/w1.jpg') }}" alt="" class="w-20 h-20 rounded-full">
+                        <h2 class="my-4"> حوراء محسن </h2>
+                        <div class="flex justify-center  gg hover:text-orange">
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                    <div class="text-white ">
+                        <img src="{{ asset('img/team/w2.jpg') }}" alt="" class="w-20 h-20 rounded-full">
+                        <h2 class="my-4"> حوراء محسن </h2>
+                        <div class="flex justify-center  gg hover:text-orange">
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                    <div class="text-white ">
+                        <img src="{{ asset('img/team/w4.jpg') }}" alt="" class="w-20 h-20 rounded-full">
+                        <h2 class="my-4"> حوراء محسن </h2>
+                        <div class="flex justify-center  gg hover:text-orange">
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <style scoped>
+
+    .gg{
+        gap: 1rem;
+    }
+    .ggg{
+        gap: 2rem;
+        margin: 2rem 4rem;
+    }
+    .banner {
+        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/team/team2.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 4rem 2rem;
+        background-attachment: fixed;
+        text-align: center;
+    }
+
+    .banner .content span {
+        font-size: 1.5rem;
+        color: #29d9d5;
+    }
+
+    .banner .content h3 {
+        font-size: 3rem;
+        color: #fff;
+        margin-top: 1rem;
+    }
+
+    .banner .content p {
+        max-width: 60rem;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+        color: #aaa;
+        line-height: 2;
+    }
+
+    .continuer {
+        padding: 0 5rem;
+        margin: 0 auto;
+    }
+
     .ho {
         min-height: 120vh;
 
@@ -132,7 +219,7 @@
         -webkit-transform: scaleX(-1);
         display: grid;
         top: 0;
-            display: absolute;
+        display: absolute;
     }
 
     .text {
@@ -304,10 +391,14 @@
 
     /* car rate */
     .rate {
-        margin: 6rem 4rem;
+        margin: 4rem 4rem;
     }
-    .hov:hover{
+
+    .hov:hover {
         transition: .3s;
         transform: translateY(-.5rem);
     }
+
+
 </style>
+
