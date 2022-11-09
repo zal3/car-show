@@ -128,7 +128,7 @@
     width: 160px;
     height: 2px;
     background: #82ccdd;
-    margin: 40px auto;
+    margin: 10px auto;
 
 }
 .help-container{
