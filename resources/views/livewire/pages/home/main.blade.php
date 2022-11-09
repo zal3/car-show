@@ -135,7 +135,7 @@
             <div class="content" >
                 <div class="px-4 flex items-center justify-start mx-4 ggg ">
                     <div class="text-white">
-                        <img src="{{ asset('img/team/w1.jpg') }}" alt="" class="w-20 h-20 rounded-full">
+                        <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محسن </h2>
                         <div class="flex justify-center  gg ">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                     <div class="text-white ">
-                        <img src="{{ asset('img/team/w2.jpg') }}" alt="" class="w-20 h-20 rounded-full">
+                        <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محسن </h2>
                         <div class="flex justify-center  gg ">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                     <div class="text-white ">
-                        <img src="{{ asset('img/team/w4.jpg') }}" alt="" class="w-20 h-20 rounded-full">
+                        <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محسن </h2>
                         <div class="flex justify-center  gg ">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
