@@ -7,7 +7,7 @@
        <div class="swiper-wrapper">
 
             <div class="swiper-slide box">
-                <img src="{{ asset('img/cars/popular4.png') }}" alt="">
+                <img src="{{ asset('img/cars/car1.jpg') }}" alt="">
                 <div class="content">
                     <h3>new model</h3>
                     <div class="stars">
@@ -21,7 +21,7 @@
                     <a href="#" class="btn">check out</a>
                 </div>
                 <div class="swiper-slide box">
-                <img src="{{ asset('img/cars/popular4.png') }}" alt="">
+                <img src="{{ asset('img/cars/car2.jpg') }}" alt="">
                 <div class="content">
                     <h3>new model</h3>
                     <div class="stars">
@@ -35,7 +35,7 @@
                     <a href="#" class="btn">check out</a>
                 </div>
                 <div class="swiper-slide box">
-                <img src="{{ asset('img/cars/popular4.png') }}" alt="">
+                <img src="{{ asset('img/cars/car3.jpg') }}" alt="">
                 <div class="content">
                     <h3>new model</h3>
                     <div class="stars">
@@ -49,7 +49,7 @@
                     <a href="#" class="btn">check out</a>
                 </div>
                 <div class="swiper-slide box">
-                <img src="{{ asset('img/cars/popular4.png') }}" alt="">
+                <img src="{{ asset('img/cars/car4.jpg') }}" alt="">
                 <div class="content">
                     <h3>new model</h3>
                     <div class="stars">
@@ -71,7 +71,7 @@
 <div class="swiper-wrapper">
 
      <div class="swiper-slide box">
-         <img src="{{ asset('img/cars/popular4.png') }}" alt="">
+         <img src="{{ asset('img/cars/car5.jpg') }}" alt="">
          <div class="content">
              <h3>new model</h3>
              <div class="stars">
@@ -85,7 +85,7 @@
              <a href="#" class="btn">check out</a>
          </div>
          <div class="swiper-slide box">
-         <img src="{{ asset('img/cars/popular4.png') }}" alt="">
+         <img src="{{ asset('img/cars/car6.jpg') }}" alt="">
          <div class="content">
              <h3>new model</h3>
              <div class="stars">
@@ -152,7 +152,8 @@
 
 .featured .featured-slider .box img{
     height: 13rem;
-    margin-right: 310px;
+    margin-right: 400px;
+
 }
 
 .featured .featured-slider .box:hover img{

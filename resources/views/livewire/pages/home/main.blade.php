@@ -18,20 +18,9 @@
         </div>
         {{-- form-container --}}
         <div class="form-container ">
-            <form class=" flex flex-wrap items-center absolute bg-white" action="" data-aos="fade-up"
+            <form class=" flex flex-wrap items-center absolute" action="" data-aos="fade-up"
                 data-aos-delay="200">
-                <div class="input-box">
-                    <span>الموقع</span>
-                    <input type="search" name="" id="" placeholder="ابحث عن مدينة">
-                </div>
-                <div class="input-box">
-                    <span>اختر الوقت</span>
-                    <input type="date" name="" id="">
-                </div>
-                <div class="input-box">
-                    <span> وقت الاعادة</span>
-                    <input type="date" name="" id="">
-                </div>
+              
                 <button type="submit" id="" class="btn"> تأجير</button>
             </form>
         </div>
@@ -39,33 +28,27 @@
 
     {{-- car rate  --}}
     <div class=" rate">
-        <h2 class="text-xl text-black   flex justify-center mb-3">طريقة التأجير</h2>
-        <h1 class="text-3xl text-black font-bold px-4  flex justify-center">أجر سيارة بثلاث خطوات سهلة </h1>
-        <div class="flex  justify-between gap-4 items-center">
-            <div class="block p-6 max-w-4xl text-center hov">
-                <i class="fa-solid fa-location-dot text-6xl text-orange my-4  "></i>
-                <h1 class=" text-3xl text-black my-4 ">أختر الموقع </h1>
-                <h1 >
-                    اختر موقع رحلتك لحجز السيارة التي
-                    <br> تود تجربتها في رحلتك مع
-                     الانتباه في اختيار الموقع بشكل مضبوط لكي
-                    تتابع معنا تكمله حجز سيارتك
-                </h1>
+    <div class=" rate">
+        <h2 class="text-xl text-black  mx-0 my-4 flex justify-center">طريقة التأجير</h2>
+        <h1 class="text-3xl text-black font-bold px-4 mx-4 flex justify-center">أجر سيارة بثلاث خطوات سهلة </h1>
+        <div class="flex  justify-center gap-6 m-auto">
+            <div class="block p-6 max-w-4xl text-center ">
+                <i class="fa-solid fa-location-dot text-4xl text-orange my-4  "></i>
+                <h1 class=" text-2xl text-black my-4  ">أختر الموقع </h1>
             </div>
-            <div class="block p-6 max-w-4xl text-center hov">
-                <i class="fa-solid fa-calendar-check text-6xl my-4 text-orange "></i>
-                <h1 class="text-3xl text-black my-4"> أختر الموعد</h1>
-                <h1 >
-                    حدد وقت حجز السيارة مع وقت انتهاء التأجير والاهتمام بوقت استلام وتسليم السيارة في الوقت الذي تم
-                    تحديده
-                </h1>
+            <div class="flex justify-center items-center text-4xl">
+                <i class="fa-solid fa-arrow-left flex justify-center items-center"></i>
             </div>
-            <div class="block p-6 max-w-4xl text-center hov">
-                <i class="fa-solid fa-car-side text-6xl my-4 text-orange "></i>
-                <h1 class="text-3xl text-black my-4">أجر سيارة </h1>
-                <h1 >
-                    اختر السيارة التي ترغب في تأجيرها لطفاً نرجو الاهتمام
-                     بنظافه السيارة ونتمنى لكم وقت ممتع</h1>
+            <div class="block p-6 max-w-4xl text-center ">
+                <i class="fa-solid fa-calendar-check text-4xl my-4 text-orange "></i>
+                <h1 class="text-2xl text-black my-4"> حدد موعد</h1>
+            </div>
+            <div class="flex justify-center items-center text-4xl">
+                <i class="fa-solid fa-arrow-left "></i>
+            </div>
+            <div class="block p-6 max-w-4xl text-center ">
+                <i class="fa-solid fa-car-side text-4xl my-4 text-orange "></i>
+                <h1 class="text-2xl text-black my-4">أجر سيارة </h1>
             </div>
         </div>
     </div>
@@ -390,7 +373,8 @@
 
     /* car rate */
     .rate {
-        margin: 4rem 4rem;
+        margin: 6rem 2rem 2rem;
+
     }
 
     .hov:hover {
