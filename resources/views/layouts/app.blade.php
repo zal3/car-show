@@ -60,12 +60,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    {{-- <link rel="stylesheet" href="{{ mix('resources/css/app.css') }}"> --}}
+    <link rel="stylesheet" href="{{ mix('resources/css/app.css') }}">
+
 
     @livewireStyles
 
     <!-- Scripts -->
-    {{-- <script src="{{ mix('resources/js/app.js') }}" defer></script> --}}
+    <script src="{{ mix('resources/js/app.js') }}" defer></script>
 </head>
 
 <body id="home" class="bg-white h-screen home " dir="rtl">
@@ -75,7 +76,7 @@
         <div class="">@livewire('components.navbar')</div>
 
         <!-- Page Content -->
-        <main class=" lg:p-10 lg:mt-4  overflow-y-auto  overflow-x-hidden  rounded-lg bg-white ">
+        <main class="   overflow-y-auto  overflow-x-hidden  rounded-lg bg-white ">
 
             <div class="home2">
                 {{ $slot }}
