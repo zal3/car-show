@@ -1,151 +1,103 @@
-<div class="featured" id="featured">
-
-    <h1 class="heading"> <span>أنواع</span> السيارات</h1>
-
-    <div class="swiper featured-slider">
-
-       <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="{{ asset('img/cars/car1.jpg') }}" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-                    <div class="stars">
+<div class="popular section " id="popular">
+        <div class="flex justify-between items-center ">
+            <h2 class=" text-3xl text-black font-bold pt-15 mr-10 pb-20">انواع السيارات</h2>
+        </div>
+        <div class="popular__container container swiper  "data-aos="fade-left">
+            <div class="swiper-wrapper">
+              
+                    <div class="swiper-slide  ss">
+                        <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-64 bg-gray ">
+                            <div class="shape shape__smaller"></div>
+                            <img src="{{ asset('img/cars/car1.jpg') }}" alt="" class="popular__img ">
+                            <div class="content">
+                    <h3 class="new flex justify-center">new model</h3>
+                    <div class="stars flex justify-center  text-orange">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <div class="price"> /-$55,000</div>
-                    <a href="#" class="btn">check out</a>
+                    <div class="price flex justify-center"> /-$55,000</div>
+                    <a href="#" class="btn flex justify-center  ">check out</a>
                 </div>
-                <div class="swiper-slide box">
-                <img src="{{ asset('img/cars/car2.jpg') }}" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-                    <div class="stars">
+                        </article>
+                    </div>
+                    
+                    <div class="swiper-slide  ss">
+                        <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-64 bg-gray">
+                            <div class="shape shape__smaller"></div>
+                            <img src="{{ asset('img/cars/car4.jpg') }}" alt="" class="popular__img">
+                            <div class="content">
+                    <h3 class="flex justify-center">new model</h3>
+                    <div class="stars flex justify-center  text-orange">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <div class="price">/-$55,000</div>
-                    <a href="#" class="btn">check out</a>
+                    <div class="price flex justify-center"> /-$55,000</div>
+                    <a href="#" class="btn flex justify-center">check out</a>
                 </div>
-                <div class="swiper-slide box">
-                <img src="{{ asset('img/cars/car3.jpg') }}" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-                    <div class="stars">
+                        </article>
+                    </div>
+                    <div class="swiper-slide  ss">
+                        <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-64 bg-gray">
+                            <div class="shape shape__smaller"></div>
+                            <img src="{{ asset('img/cars/car2.jpg') }}" alt="" class="popular__img">
+                            <div class="content">
+                    <h3 class="new flex justify-center">new model</h3>
+                    <div class="stars flex justify-center  text-orange">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <div class="price">/-$55,000</div>
-                    <a href="#" class="btn">check out</a>
+                    <div class="price flex justify-center"> /-$55,000</div>
+                    <a href="#" class="btn flex justify-center">check out</a>
                 </div>
-                <div class="swiper-slide box">
-                <img src="{{ asset('img/cars/car4.jpg') }}" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-                    <div class="stars">
+                        </article>
+                    </div> <div class="swiper-slide  ss">
+                        <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-64 bg-gray">
+                            <div class="shape shape__smaller"></div>
+                            <img src="{{ asset('img/cars/car3.jpg') }}" alt="" class="popular__img">
+                            <div class="content">
+                    <h3 class="nwe flex justify-center">new model</h3>
+                    <div class="stars flex justify-center  text-orange">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <div class="price">/-$55,000</div>
-                    <a href="#" class="btn">check out</a>
+                    <div class="price flex justify-center"> /-$55,000</div>
+                    <a href="#" class="btn flex justify-center">check out</a>
                 </div>
+                        </article>
+                    </div>
                
             </div>
-            <div class="swiper-pagination"></div>
-            </div>
-            <div class="swiper featured-slider">
-
-<div class="swiper-wrapper">
-
-     <div class="swiper-slide box">
-         <img src="{{ asset('img/cars/car5.jpg') }}" alt="">
-         <div class="content">
-             <h3>new model</h3>
-             <div class="stars">
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star-half-alt"></i>
-             </div>
-             <div class="price">/-$55,000</div>
-             <a href="#" class="btn">check out</a>
-         </div>
-         <div class="swiper-slide box">
-         <img src="{{ asset('img/cars/car6.jpg') }}" alt="">
-         <div class="content">
-             <h3>new model</h3>
-             <div class="stars">
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star-half-alt"></i>
-             </div>
-             <div class="price">/-$55,000</div>
-             <a href="#" class="btn">check out</a>
-         </div>
-         <div class="swiper-slide box">
-         <img src="{{ asset('img/cars/popular4.png') }}" alt="">
-         <div class="content">
-             <h3>new model</h3>
-             <div class="stars">
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star-half-alt"></i>
-             </div>
-             <div class="price">/-$55,000</div>
-             <a href="#" class="btn">check out</a>
-         </div>
-         <div class="swiper-slide box">
-         <img src="{{ asset('img/cars/popular4.png') }}" alt="">
-         <div class="content">
-             <h3>new model</h3>
-             <div class="stars">
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star-half-alt"></i>
-             </div>
-             <div class="price"> /-$55,000</div>
-             <a href="#" class="btn">check out</a>
-         </div>
-        
-     </div>
-     <div class="swiper-pagination"></div>
-     </div>
-</div>
-
-           
+            <div class="swiper-pagination mb-3 pb-3"></div>
+        </div>
+    </div>
 <style scoped>
   .featured .featured-slider{
     padding:1rem;
     padding-bottom: 4rem;
+    
 
 }
 
 .featured .featured-slider .box{
-    padding:2rem;
     text-align: center;
-    box-shadow: var(--box-shadow);
+    padding:2rem;
+    box-shadow:var(--box-shadow);
     border:var(--border);
     border-radius: .5rem;
+    
+    
     
     
 }
@@ -179,14 +131,15 @@
 
 .featured .featured-slider .box .content .price{
     font-size: 2.5rem;
-    color:var(--black);
+    color:#000;
 }
-.featured h1{
+.popular section h2{
     font-size: 1.5rem;
     margin-right:10px;
     padding-top: 15px;
 
 }
+
   </style>
   <script>
     var swiper = new Swiper(".featured-slider", {
