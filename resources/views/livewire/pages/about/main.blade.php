@@ -1,24 +1,32 @@
 <div>
-    {{-- show --}}
-    <div class="flex  justify-center items-center" >
-        <div class="grid grid-cols-2 gap-6 basis-1/2 mx-28 ">
-            <div class="bg-gray flex  justify-end items-center h-20">
-                <div>ssssssssssssssssssssssss</div>
-                </div>
-
-            <div class="bg-gray rounded-md">something</div>
-            <div class="bg-gray rounded-md">something</div>
-            <div class="bg-gray rounded-md">something</div>
-            <div class="bg-gray rounded-md">something</div>
-            <div class="bg-gray rounded-md">something</div>
+    {{-- video --}}
+    <div>
+        <div class="absolute inset-0 flex items-center justify-center ">
+            <video src="{{ asset('img/car.mp4') }}" muted autoplay loop
+                class="container mx-auto w-full h-96 object-cover opacity-60"></video></video>
         </div>
-        <div class="basis-1/2">
-            <img src="{{ asset('img/car-shoow.jpg') }}" alt="hero" class="h-1/2 ">
+        <div>
+            <h1 class="flex justify-center  font-bold text-7xl mt-56  ">المعرض الدولي للسيارات </h1>
         </div>
     </div>
 
+    {{-- brand --}}
+    <div class="flex gap-12 justify-center items-center mt-48">
+                <img src="{{ asset('img/about/BMW.png') }}" alt="" >
+                                <img src="{{ asset('img/about/Jeep.png') }}" alt="" >
+                <img src="{{ asset('img/about/Audi.png') }}" alt="" >
+                <img src="{{ asset('img/about/Kia-1.png') }}" alt="" >
+                <img src="{{ asset('img/about/Hyundai.png') }}" alt="" >
+                <img src="{{ asset('img/about/Ford.png') }}" alt="" >
+                <img src="{{ asset('img/about/Jaguar.png') }}" alt="" >
+
+    </div>
+
+
+
+
     {{-- /* serves */ --}}
-    <div class="help-section">
+    <div class="help-section bg-gray-900">
         <div class="inner-width">
             <h1 class="section-title">الخدمات</h1>
             <div class="border"></div>
@@ -70,8 +78,8 @@
                 </div>
                 <div class="help-box">
                     <div class="help-icon">
-                        <svg id="Layer_1_1_" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64"
-                            xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        <svg id="Layer_1_1_" style="enable-background:new 0 0 64 64;" version="1.1"
+                            viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g>
                                 <rect height="16" style="fill:#3F3A34;" width="2" x="53"
@@ -92,7 +100,8 @@
                         </svg>
                     </div>
                     <div class="help-title">اصلاح</div>
-                    <div class="help-desc">قد يحتاج الفرد فقط إلى خدمات من شركة إصلاح السيارات مرة واحدة في السنة ,لدينا
+                    <div class="help-desc">قد يحتاج الفرد فقط إلى خدمات من شركة إصلاح السيارات مرة واحدة في السنة
+                        ,لدينا
                         قسم إصلاح المحرك و التشخيص الإلكتروني
                     </div>
                 </div>
@@ -150,6 +159,48 @@
             </div>
         </div>
     </div>
+
+    {{-- show --}}
+    <div class="flex relative  justify-center items-center">
+        <div class="grid grid-cols-2  basis-1/2 mx-28 ">
+            <div class=" flex gap-5 font-bold  items-center h-16">
+                <img src="{{ asset('img/about/1.png') }}" alt="" class="w-10 h-12 ">
+                <div>خدمات موثوقة</div>
+            </div>
+
+            <div class=" flex gap-5 font-bold  items-center h-16">
+                <img src="{{ asset('img/about/2.png') }}" alt="" class="w-10 h-12">
+                <div>العمال الموهوبين</div>
+            </div>
+            <div class=" flex gap-5 font-bold    items-center h-16">
+                <img src="{{ asset('img/about/3.png') }}" alt="" class="w-10 h-12">
+                <div>دائما مفتوح لك</div>
+            </div>
+            <div class=" flex gap-5 font-bold    items-center h-16">
+                <img src="{{ asset('img/about/4.png') }}" alt="" class="w-10 h-12">
+                <div>فنيين خبراء</div>
+            </div>
+            <div class=" flex gap-5 font-bold    items-center h-16">
+                <img src="{{ asset('img/about/5.png') }}" alt="" class="w-10 h-12">
+                <div>أسعار لا تقبل المنافسة</div>
+            </div>
+            <div class=" flex gap-5 font-bold    items-center h-16">
+                <img src="{{ asset('img/about/6.png') }}" alt="" class="w-10 h-12">
+                <div>مؤهل مهنيا</div>
+            </div>
+            <div class=" flex gap-5 font-bold    items-center h-16">
+                <img src="{{ asset('img/about/7.png') }}" alt="" class="w-10 h-12">
+                <div>خدمة احترافية</div>
+            </div>
+            <div class=" flex gap-5 font-bold    items-center h-16">
+                <img src="{{ asset('img/about/8.png') }}" alt="" class="w-10 h-12">
+                <div>مراجعات إيجابية</div>
+            </div>
+        </div>
+        <div class="basis-1/2 ml-16">
+            <img src="{{ asset('img/car-shoow.jpg') }}" alt="hero" class="h-1/2 ">
+        </div>
+    </div>
 </div>
 <style scoped>
     /* show */
@@ -168,7 +219,7 @@
 
     .section-title {
         text-align: center;
-        color: #000000;
+        color: #ffffff;
         text-transform: uppercase;
         font-size: 30px;
     }
@@ -200,7 +251,7 @@
         display: inline-block;
         width: 70px;
         height: 70px;
-        border: 3px solid #ED563B;
+        border: 3px solid #ffffff;
         transform: rotate(45deg);
         margin-bottom: 30px;
         margin-top: 16px;
@@ -219,7 +270,7 @@
     }
 
     .help-box:hover .help-icon {
-        background: #ED563B;
+        background: #ffffff;
 
     }
 
@@ -227,7 +278,7 @@
         font-size: 18px;
         text-transform: uppercase;
         margin-bottom: 10px;
-        color: #000000;
+        color: #ffffff;
 
     }
 
