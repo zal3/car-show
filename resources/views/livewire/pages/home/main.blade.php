@@ -1,7 +1,4 @@
-
 <div>
-    <link rel="stylesheet" href="{{ mix('resources/css/home.css') }}">
-
     <img src="{{ asset('img/car.png') }}" alt="hero" class="car">
     {{-- home --}}
     <div class="ho w-full relative grid items-center mx-4 px-4">
@@ -16,42 +13,10 @@
                 <button class="btn w-48   cursor-pointer bg-orange  text-white"> السيارات </button>
             </div>
         </div>
-        {{-- form-container --}}
-        <div class="form-container ">
-            <form class=" flex flex-wrap items-center absolute" action="" data-aos="fade-up"
-                data-aos-delay="200">
-              
-                <button type="submit" id="" class="btn"> تأجير</button>
-            </form>
-        </div>
+
     </div>
 
-    {{-- car rate  --}}
-    <div class=" rate">
-    <div class=" rate">
-        <h2 class="text-xl text-black  mx-0 my-4 flex justify-center">طريقة التأجير</h2>
-        <h1 class="text-3xl text-black font-bold px-4 mx-4 flex justify-center">أجر سيارة بثلاث خطوات سهلة </h1>
-        <div class="flex  justify-center gap-6 m-auto">
-            <div class="block p-6 max-w-4xl text-center ">
-                <i class="fa-solid fa-location-dot text-4xl text-orange my-4  "></i>
-                <h1 class=" text-2xl text-black my-4  ">أختر الموقع </h1>
-            </div>
-            <div class="flex justify-center items-center text-4xl">
-                <i class="fa-solid fa-arrow-left flex justify-center items-center"></i>
-            </div>
-            <div class="block p-6 max-w-4xl text-center ">
-                <i class="fa-solid fa-calendar-check text-4xl my-4 text-orange "></i>
-                <h1 class="text-2xl text-black my-4"> حدد موعد</h1>
-            </div>
-            <div class="flex justify-center items-center text-4xl">
-                <i class="fa-solid fa-arrow-left "></i>
-            </div>
-            <div class="block p-6 max-w-4xl text-center ">
-                <i class="fa-solid fa-car-side text-4xl my-4 text-orange "></i>
-                <h1 class="text-2xl text-black my-4">أجر سيارة </h1>
-            </div>
-        </div>
-    </div>
+
 
     {{-- about section  --}}
     <div class="about flex" id="about">
@@ -66,7 +31,7 @@
                 الإنتاج
                 لتجارة السيارات الحديثة كل ما هو جديد في عالم السيارات , <br>اسعار تنافسية
             </p>
-            <a href="#" class="pt-6 text-blue-900">اعرف المزيد</a>
+            <a href="#" class="pt-6 text-blue-900 font-bold">اعرف المزيد</a>
         </div>
     </div>
 
@@ -106,7 +71,37 @@
                     </div>
                 @endfor
             </div>
-            <div class="swiper-pagination mb-3 pb-3"></div>
+            <div class="swiper-pagination  "></div>
+        </div>
+    </div>
+
+    {{-- car rate  --}}
+    <div class=" rate">
+        <h1 class="text-3xl text-black font-bold px-4 mx-4 flex justify-center">أجر سيارة بثلاث خطوات سهلة </h1>
+        <div class="flex  justify-center gap-6 m-auto">
+            <div class="block p-6 max-w-4xl text-center ">
+                <i class="fa-solid fa-location-dot text-4xl text-orange my-4  "></i>
+                <h1 class=" text-2xl text-black my-4  ">أختر الموقع </h1>
+            </div>
+            <div class="flex justify-center items-center text-4xl">
+                <i class="fa-solid fa-arrow-left flex justify-center items-center"></i>
+            </div>
+            <div class="block p-6 max-w-4xl text-center ">
+                <i class="fa-solid fa-calendar-check text-4xl my-4 text-orange "></i>
+                <h1 class="text-2xl text-black my-4"> حدد موعد</h1>
+            </div>
+            <div class="flex justify-center items-center text-4xl">
+                <i class="fa-solid fa-arrow-left "></i>
+            </div>
+            <div class="block p-6 max-w-4xl text-center ">
+                <i class="fa-solid fa-car-side text-4xl my-4 text-orange "></i>
+                <h1 class="text-2xl text-black my-4">أجر سيارة </h1>
+            </div>
+        </div>
+        {{-- form-container --}}
+
+        <div class=" flex justify-center bg-blue  items-center " action="" >
+            <button type="submit" id="" class="btnn"> تأجير</button>
         </div>
     </div>
 
@@ -115,8 +110,8 @@
         <!-- banner section starts  -->
 
         <div class="banner">
-            <div class="content" >
-                <div class="px-4 flex items-center justify-start mx-4 ggg ">
+            <div class="content">
+                <div class="px-4 flex items-center justify-start mx-4 ggg "data-aos="fade-up" data-aos-delay="200">
                     <div class="text-white">
                         <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محسن </h2>
@@ -147,14 +142,15 @@
     </div>
 </div>
 <style scoped>
-
-    .gg{
+    .gg {
         gap: 1rem;
     }
-    .ggg{
+
+    .ggg {
         gap: 2rem;
         margin: 2rem 4rem;
     }
+
     .banner {
         background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/team/team2.jpg) no-repeat;
         background-size: cover;
@@ -189,8 +185,7 @@
     }
 
     .ho {
-        min-height: 120vh;
-
+        min-height: 90vh;
     }
 
     .car {
@@ -205,9 +200,9 @@
         display: absolute;
     }
 
-    .text {
-        margin-top: 40px;
-    }
+    /* .text {
+        margin-bottom: 8rem;
+    } */
 
     .text h1 {
         font-size: 3.5rem;
@@ -231,7 +226,7 @@
         box-shadow: 0 4px 50px #d3543e;
     }
 
-    /* form-container */
+    /* form-container
     .form-container form {
         gap: 1rem;
         bottom: 8rem;
@@ -257,9 +252,9 @@
         border-radius: 0.5rem;
         outline: none;
         font-size: 1rem;
-    }
+    } */
 
-    .form-container form .btn {
+    .btnn {
         padding: 10px 36px;
         margin-top: 1rem;
         border: none;
@@ -270,13 +265,13 @@
         font-weight: 500;
     }
 
-    .form-container form .btn:hover {
+    .btnn:hover {
         background: #ED563B;
     }
 
     /* about */
     .about {
-        margin: 5rem;
+        margin: 10rem 5rem 5rem 5rem;
     }
 
     .about .video-container {
@@ -332,7 +327,7 @@
     }
 
     .popular {
-        margin: 3rem 4rem ;
+        margin: 3rem 4rem;
     }
 
     .popular__title {
@@ -381,7 +376,4 @@
         transition: .3s;
         transform: translateY(-.5rem);
     }
-
-
 </style>
-
