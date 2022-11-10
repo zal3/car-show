@@ -21,10 +21,8 @@
                             <polygon points="32,28 24,39 27,30 22,30 27,20 32,20 27,28 " />
                         </svg>
                     </div>
-                    <div class="help-title">ENGINE </div>
-                    <div class="help-desc">Our website makes regular changes to the websiteso be sure to contact us if
-                        you
-                        encounter any problems</div>
+                    <div class="help-title">المحرك  </div>
+                    <div class="help-desc"> , يمكنك الحصول على احدث المحركات مع سيارتك  بارخص الاسعار إن بنية محرك 6 سلندر يجعله مناسب للتكامل المستقبلي للدعم الكهربائي في سيارات هايبرد و سيارات بلج ان هايبرد  </div>
                 </div>
                 <div class="help-box">
                     <div class="help-icon rotate-3">
@@ -45,8 +43,8 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="help-title">Android</div>
-                    <div class="help-desc">You can log in and browse the site through mobile devices</div>
+                    <div class="help-title">الاطارات</div>
+                    <div class="help-desc">إذا كانت رحلتك علي طرق جافة أو رطبة أو غير معبدة إطاراتنا ستساعدك علي المضي قدما دون توقف. لتحصل على أفضل إطارات السيارات</div>
                 </div>
                 <div class="help-box">
                     <div class="help-icon">
@@ -71,9 +69,8 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="help-title">Database</div>
-                    <div class="help-desc">Update site databases every year to accommodate passenger tickets within one
-                        year
+                    <div class="help-title">اصلاح</div>
+                    <div class="help-desc">قد يحتاج الفرد فقط إلى خدمات من شركة إصلاح السيارات مرة واحدة في السنة  ,لدينا قسم إصلاح المحرك و التشخيص الإلكتروني
                     </div>
                 </div>
                 <div class="help-box">
@@ -97,8 +94,8 @@
                                 stroke-width="12" x1="104" x2="152" y1="32" y2="32" />
                         </svg>
                     </div>
-                    <div class="help-title">Professional Correspondent</div>
-                    <div class="help-desc">If you need any help, you can contact our team</div>
+                    <div class="help-title">تاجير سيارة</div>
+                    <div class="help-desc">سيارات للإيجار اليومي والشهري وتوصيل لكافة أنحاء  العراق  مشوارك معنا صار اسهل (مصداقية - موثوقية - امان) <br><a class="text-blue-700">المزيد</a></div>
                 </div>
                 <div class="help-box">
                     <div class="help-icon">
@@ -121,8 +118,9 @@
                             <rect height="11" width="3" x="36" y="23" />
                         </svg>
                     </div>
-                    <div class="help-title">full scan</div>
-                    <div class="help-desc">Conducting a full site survey may avoid any problems while browsing the site
+                    <div class="help-title">بطاريات </div>
+                    <div class="help-desc">نقدم خدمة تبديل البطاريات في مكانك افضل انواع البطاريات
+                        تسريع عمليات الشحن 200 مرة، مقارنةً بمعدلات شحن البطاريات الكلاسيكية الموجودة اليوم.
                     </div>
                 </div>
             </div>

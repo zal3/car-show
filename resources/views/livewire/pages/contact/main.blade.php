@@ -1,7 +1,7 @@
 <div>
     <div class="container my-24 px-6 mx-auto">
         <section class="mb-32 text-gray-800 text-center">
-            <div class="px-6 py-12 md:px-12">
+            <div class="px-6  md:px-12">
                 <div class="container mx-auto xl:px-32">
                     <div class="grid lg:grid-cols-2  items-center">
                         <div class="bgck md:mt-12 lg:mt-0 mb-12 lg:mb-0">
