@@ -1,12 +1,12 @@
 <div class="popular section  " id="popular" >
-        <div class="flex justify-between items-center  ">
+        <div class="flex justify-between items-center   ">
             <h2 class=" text-3xl  text-black font-bold pt-20 mr-10 pb-20">انواع السيارات</h2>
         </div>
         <div class="popular__container container swiper pb-5  "data-aos="fade-left ">
             <div class="swiper-wrapper">
               
                     <div class="swiper-slide  ss">
-                        <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-65  bg-gray rounded-3xl hover:bg-yellow-300  ">
+                        <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-65  bg-gray rounded-3xl hover:bg-yellow-300   ">
                             <div class="shape shape__smaller"></div>
                             <img src="{{ asset('img/cars/car1.jpg') }}" alt="" class="popular__img rounded-3xl  hover:translate-y-1 ">
                             <div class="content">
@@ -139,7 +139,7 @@
                         </article>
                     </div> 
                     <div class="swiper-slide  ss">
-                        <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-65 bg-gray rounded-3xl hover:bg-yellow-300 ">
+                        <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-65 bg-gray rounded-3xl hover:bg-yellow-300  ">
                             <div class="shape shape__smaller"></div>
                             <img src="{{ asset('img/cars/car3.jpg') }}" alt="" class="popular__img rounded-3xl hover:translate-y-1">
                             <div class="content">
