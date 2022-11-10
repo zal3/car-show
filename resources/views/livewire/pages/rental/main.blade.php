@@ -53,6 +53,7 @@
     /* car rate */
     .rate {
         margin: 4rem 4rem;
+        
     }
     
 
