@@ -26,25 +26,22 @@
 
 
     {{-- /* serves */ --}}
-    <div class="help-section bg-gray-900">
+    <div class="help-section bg-slate-900">
         <div class="inner-width">
             <h1 class="section-title">الخدمات</h1>
             <div class="border"></div>
             <div class="help-container">
                 <div class="help-box">
-                    <div class="help-icon ">
-                        <i icon="mdi:engine"></i>
-
-                    </div>
+                    <div class="help-icon text-5xl  ">
+<iconify-icon icon="mdi:engine" class="mt-2 -rotate-45 "></iconify-icon>                    </div>
                     <div class="help-title">المحرك </div>
                     <div class="help-desc"> , يمكنك الحصول على احدث المحركات مع سيارتك بارخص الاسعار إن بنية محرك 6
                         سلندر يجعله مناسب للتكامل المستقبلي للدعم الكهربائي في سيارات هايبرد و سيارات بلج ان هايبرد
                     </div>
                 </div>
                 <div class="help-box">
-                    <div class="help-icon">
-                        <i icon="mdi:engine"></i>
-                    </div>
+                    <div class="help-icon text-5xl mt-4">
+<iconify-icon icon="game-icons:car-wheel"  class="mt-2"></iconify-icon>                    </div>
                     <div class="help-title">الاطارات</div>
                     <div class="help-desc">إذا كانت رحلتك علي طرق جافة أو رطبة أو غير معبدة إطاراتنا ستساعدك علي المضي
                         قدما دون توقف. لتحصل على أفضل إطارات السيارات</div>
@@ -66,7 +63,7 @@
                     </div>
                     <div class="help-title">تاجير سيارة</div>
                     <div class="help-desc">سيارات للإيجار اليومي والشهري وتوصيل لكافة أنحاء العراق مشوارك معنا صار اسهل
-                        (مصداقية - موثوقية - امان) <br><a class="text-blue-700">المزيد</a></div>
+                        (مصداقية - موثوقية - امان) <br><a class="text-blue-400">المزيد</a></div>
                 </div>
                 <div class="help-box">
                     <div class="help-icon">
@@ -121,6 +118,12 @@
         <div class="basis-1/2 ml-16">
             <img src="{{ asset('img/car-shoow.jpg') }}" alt="hero" class="h-1/2 ">
         </div>
+    </div>
+
+    {{-- contact --}}
+    <div class="bg-slate-900 p-12  ">
+        <h1 class="flex  justify-center mb-8 text-5xl text-white  "> هل انت مهتم بخدماتنا ؟</h1>
+        <button class="flex  justify-center m-auto bg-white rounded-full px-6 py-2  "> اتصل بنا </button>
     </div>
 </div>
 <style scoped>
