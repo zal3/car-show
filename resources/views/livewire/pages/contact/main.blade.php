@@ -9,27 +9,17 @@
                                 style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
                                 <h2 class="text-3xl font-bold mb-4"> تواصل معنا </h2>
                                 <form action="" class="form contact-form" method="post">
-                                    <div class="input-group-wrap">
-                                        <div class="input-group">
-                                            <input type="text" class="input focus:ring-0 " placeholder="الاسم"
+                                            <input type="text" class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " placeholder="الاسم"
                                                 required name="name">
                                             <span class="bar"></span>
-                                        </div>
-                                        <div class="input-group">
-                                            <input type="email" class="input focus:ring-0 " placeholder="ايميل"
+                                            <input type="email" class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " placeholder="ايميل"
                                                 required name="email">
                                             <span class="bar"></span>
-                                        </div>
-                                    </div>
-                                    <div class="input-group">
-                                        <input type="text" class="input  focus:ring-0  " placeholder="العنوان"
+                                        <input type="text" class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " placeholder="العنوان"
                                             required name="titsubject">
                                         <span class="bar"></span>
-                                    </div>
-                                    <div class="input-group">
-                                        <textarea class="input focus:ring-0 " cols="30" rows="8" placeholder="الموضوع" required name="subject"></textarea>
+                                        <textarea class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " cols="30" rows="8" placeholder="الموضوع" required name="subject"></textarea>
                                         <span class="bar"></span>
-                                    </div>
                                     <button type="submit"
                                         class="btn form-btn btn-purple border border-gray-900 items-center px-4 py-2 mt-2 hover:bg-orange-700 hover:text-white hover:border-white ">ارسال
                                         <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
@@ -54,23 +44,10 @@
 <style>
     .map-container {
         height: 380px;
-        /* z-index: -1; */
     }
 
     .bgck {
         background: linear-gradient(to left, hsl(31, 100%, 95%), #030a0e98);
-    }
-
-
-    .input {
-        border: none;
-        background-color: transparent;
-        border-bottom: black 2px solid;
-        font-weight: normal;
-        display: block;
-        width: 100%;
-        border-bottom: 2px solid#fff;
-        padding-left: 0;
     }
 
     .bar {

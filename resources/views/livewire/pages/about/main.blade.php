@@ -12,28 +12,25 @@
 
     {{-- brand --}}
     <div class="flex gap-12 justify-center items-center mt-52 mb-10">
-                <img src="{{ asset('img/about/BMW.png') }}" alt="" >
-                                <img src="{{ asset('img/about/Jeep.png') }}" alt="" >
-                <img src="{{ asset('img/about/Audi.png') }}" alt="" >
-                <img src="{{ asset('img/about/Kia-1.png') }}" alt="" >
-                <img src="{{ asset('img/about/Hyundai.png') }}" alt="" >
-                <img src="{{ asset('img/about/Ford.png') }}" alt="" >
-                <img src="{{ asset('img/about/Jaguar.png') }}" alt="" >
+        <img src="{{ asset('img/about/BMW.png') }}" alt="">
+        <img src="{{ asset('img/about/Jeep.png') }}" alt="">
+        <img src="{{ asset('img/about/Audi.png') }}" alt="">
+        <img src="{{ asset('img/about/Kia-1.png') }}" alt="">
+        <img src="{{ asset('img/about/Hyundai.png') }}" alt="">
+        <img src="{{ asset('img/about/Ford.png') }}" alt="">
+        <img src="{{ asset('img/about/Jaguar.png') }}" alt="">
 
     </div>
 
-
-
-
     {{-- /* serves */ --}}
-    <div class="help-section bg-slate-900">
-        <div class="inner-width">
-            <h1 class="section-title">الخدمات</h1>
-            <div class="border"></div>
+    <div class="p-16 bg-slate-900">
+        <div class=" m-auto px-12 overflow-hidden ">
+            <h1 class="text-center p-4 text-white mb-4 mx-auto flex justify-center text-3xl w-fit  border-b-2  ">الخدمات</h1>
             <div class="help-container">
                 <div class="help-box">
                     <div class="help-icon text-5xl  ">
-<iconify-icon icon="mdi:engine" class="mt-2 -rotate-45 "></iconify-icon>                    </div>
+                        <iconify-icon icon="mdi:engine" class="mt-2 -rotate-45 "></iconify-icon>
+                    </div>
                     <div class="help-title">المحرك </div>
                     <div class="help-desc"> , يمكنك الحصول على احدث المحركات مع سيارتك بارخص الاسعار إن بنية محرك 6
                         سلندر يجعله مناسب للتكامل المستقبلي للدعم الكهربائي في سيارات هايبرد و سيارات بلج ان هايبرد
@@ -41,7 +38,8 @@
                 </div>
                 <div class="help-box">
                     <div class="help-icon text-5xl mt-4">
-<iconify-icon icon="game-icons:car-wheel"  class="mt-2"></iconify-icon>                    </div>
+                        <iconify-icon icon="game-icons:car-wheel" class="mt-2"></iconify-icon>
+                    </div>
                     <div class="help-title">الاطارات</div>
                     <div class="help-desc">إذا كانت رحلتك علي طرق جافة أو رطبة أو غير معبدة إطاراتنا ستساعدك علي المضي
                         قدما دون توقف. لتحصل على أفضل إطارات السيارات</div>
@@ -125,52 +123,22 @@
         <h1 class="flex  justify-center mb-8 text-5xl text-white  "> هل انت مهتم بخدماتنا ؟</h1>
         <button class="flex  justify-center m-auto bg-white rounded-full px-6 py-2  "> اتصل بنا </button>
     </div>
+
 </div>
 <style scoped>
-    /* show */
     /* serves */
-    .help-section {
-        padding: 60px 0;
-    }
-
-    .inner-width {
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        padding: 0 20px;
-        overflow: hidden;
-    }
-
-    .section-title {
-        text-align: center;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-size: 30px;
-    }
-
-    .border {
-        width: 160px;
-        height: 2px;
-        background: #82ccdd;
-        margin: 10px auto;
-
-    }
-
     .help-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .help-box {
         max-width: 33.33%;
         padding: 10px;
         text-align: center;
         color: #ddd;
         cursor: pointer;
-
     }
-
     .help-icon {
         display: inline-block;
         width: 70px;
@@ -181,7 +149,6 @@
         margin-top: 16px;
         transition: 0.3s linear;
     }
-
     .help-icon svg {
         width: 50px;
         height: 40px;
@@ -192,46 +159,34 @@
         margin-top: .5rem;
         margin-bottom: .25rem;
     }
-
     .help-box:hover .help-icon {
         background: #ffffff;
         color: #000000;
     }
-
     .help-title {
         font-size: 18px;
         text-transform: uppercase;
         margin-bottom: 10px;
         color: #ffffff;
-
     }
-
     .help-desc {
         font-size: 14px;
         color: #ffffff;
-
-
     }
-
     @media screen and (max-width:960px) {
         .help-box {
             max-width: 45%;
         }
-
     }
-
     @media screen and (max-width:768px) {
         .help-box {
             max-width: 50%;
         }
-
     }
-
     @media screen and (max-width:400px) {
         .help-box {
             max-width: 100%;
         }
-
     }
 </style>
 <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
