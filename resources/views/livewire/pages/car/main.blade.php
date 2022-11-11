@@ -1,4 +1,5 @@
 <div class="popular section  " id="popular" >
+    
     <div class="flex justify-between items-center    ">
         <h2 class=" text-3xl  text-black font-bold pt-20 mr-10 pb-2">انواع السيارات</h2>
     </div>
@@ -22,4 +23,5 @@
         </article>
         @endfor
     </div>
+    
 </div>
