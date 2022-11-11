@@ -6,7 +6,7 @@
             <div class="swiper-wrapper">
               
                     <div class="swiper-slide  ss">
-                        <article class=" popular__card bg-gray px-6 py-6 mr-5 overflow-hidden relative w-80  bg-gray rounded-3xl hover:bg-yellow-300   ">
+                        <article class=" popular__card bg-gray px-6 py-6 mr-5 overflow-hidden relative w-65  bg-gray rounded-3xl hover:bg-yellow-300   ">
                             <div class="shape shape__smaller"></div>
                             <img src="{{ asset('img/cars/car1.jpg') }}" alt="" class="popular__img rounded-3xl  hover:translate-y-1 ">
                             <div class="content">
