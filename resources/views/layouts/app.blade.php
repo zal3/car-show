@@ -76,7 +76,7 @@
         <div class="">@livewire('components.navbar')</div>
 
         <!-- Page Content -->
-        <main class="   overflow-y-auto  overflow-x-hidden  rounded-lg bg-white ">
+        <main class="   overflow-y-auto  overflow-x-hidden  bg-white ">
 
             <div class="home2">
                 {{ $slot }}
