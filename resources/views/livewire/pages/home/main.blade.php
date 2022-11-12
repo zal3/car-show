@@ -83,14 +83,14 @@
                 <i class="fa-solid fa-location-dot text-4xl text-orange my-4  "></i>
                 <h1 class=" text-2xl text-black my-4  ">أختر الموقع </h1>
             </div>
-            <div class="flex justify-center items-center text-4xl">
+            <div class="flex justify-center items-center text-4xl ">
                 <i class="fa-solid fa-arrow-left flex justify-center items-center"></i>
             </div>
             <div class="block p-6 max-w-4xl text-center ">
                 <i class="fa-solid fa-calendar-check text-4xl my-4 text-orange "></i>
                 <h1 class="text-2xl text-black my-4"> حدد موعد</h1>
             </div>
-            <div class="flex justify-center items-center text-4xl">
+            <div class="flex justify-center items-center text-4xl ">
                 <i class="fa-solid fa-arrow-left "></i>
             </div>
             <div class="block p-6 max-w-4xl text-center ">
