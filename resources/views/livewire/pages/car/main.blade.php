@@ -1,7 +1,6 @@
-<div class="popular section  " id="popular" >
-    
+<div class="popular section  "  >
     <div class="flex justify-between items-center    ">
-        <h2 class=" text-3xl  text-black font-bold pt-20 mr-10 pb-2">انواع السيارات</h2>
+        <h2 class=" text-3xl  text-black font-bold pt-8 mr-10 pb-2">انواع السيارات</h2>
     </div>
     <div class="grid grid-cols-4 gap-6 items-center justify-center p-9" > 
         @foreach ($cars as $car)

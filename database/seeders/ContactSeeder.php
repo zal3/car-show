@@ -17,10 +17,19 @@ class ContactSeeder extends Seeder
     {
         //
         Contact::create([
-            'name' => 'موظف',
-            'email' => 'user',
+            'name' => 'زينب',
+            'email' => 'zainab@gmail.com',
             'title' => 'title',
             'subject' => 'subject',
         ]);
+        Contact::create([
+            'name' => 'انوار',
+            'email' => 'anwar@gmail.com',
+            'title' => 'aa',
+            'subject' => 'sn',
+        ]);
+       
+         
+        
     }
 }
