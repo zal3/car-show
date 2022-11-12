@@ -152,7 +152,8 @@
     }
 
     .banner {
-        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/team/team2.jpg) no-repeat;
+        /* background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/team/team2.jpg) no-repeat; */
+        background: url(../img/team/team2.jpg) no-repeat; 
         background-size: cover;
         background-position: center;
         padding: 4rem 2rem;
