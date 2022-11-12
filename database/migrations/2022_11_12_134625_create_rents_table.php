@@ -19,8 +19,8 @@ return new class extends Migration
             $table->foreignId('car_id')->constrained('cars');
             $table->string('location');
             $table->string('license');
-            $table->date('start_time');
-            $table->date('end_time');
+            $table->date('rent_date');
+            $table->date('return_date');
             $table->integer('phone-num');
             $table->timestamps();
         });

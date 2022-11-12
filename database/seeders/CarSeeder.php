@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Car;
 
 class CarSeeder extends Seeder
 {
@@ -14,52 +15,20 @@ class CarSeeder extends Seeder
      */
     public function run()
     {
-         Car::create([
-            'user_id' => 1,
-            'type' => 'Sonata',
-            'category' => 'Hyundai',
-            'model' => '2011',
-            'sale_price' => 10000,
-            'number' => 'ABC123',
-            'chassis_number'=> 'ABC123',
-            'color' => 'yellow',
-            'note' => '',
-            'import_place' => 'الخليج',
-            'import_date' => '2010-01-01',
-            'import_price' => 8000,
-            'state' => false,
-        ]);
-
         Car::create([
             'user_id' => 1,
-            'type' => 'dodge',
-            'category' => 'Charger',
-            'model' => '2011',
-            'sale_price' => 10000,
-            'number' => 'ABC123',
-            'chassis_number'=> 'ABC123',
-            'color' => 'red',
-            'note' => '',
-            'import_place' => 'الخليج',
-            'import_date' => '2010-01-01',
-            'import_price' => 8000,
-            'state' => false,
-        ]);
-        
-        Car::create([
-            'user_id' => 1,
-            'type' => 'jeep',
-            'category' => 'Cherokee',
-            'model' => '2011',
-            'sale_price' => 10000,
-            'number' => 'ABC123',
-            'chassis_number'=> 'ABC123',
-            'color' => 'blue',
-            'note' => '',
-            'import_place' => 'الخليج',
-            'import_date' => '2010-01-01',
-            'import_price' => 8000,
-            'state' => false,
-        ]);
+            'type' => 'SUV',
+            'category' => 'Toyota',
+            'model' => 'Land Cruiser',
+            'sale_price' => '100000',
+            'number' => '123456',
+            'chassis_number' => '123456',
+            'color' => 'white',
+            'note' => 'good car',
+            'import_place' => 'Japan',
+            'import_date' => '2021-11-12',
+            'import_price' => '100000',
+            'state' => '1',
+    ]);
     }
 }
