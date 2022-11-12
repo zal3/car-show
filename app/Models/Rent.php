@@ -8,4 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Rent extends Model
 {
     use HasFactory;
+
+        ### Relationships ###
+    //user
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    
+    //car
+    public function car()
+    {
+        return $this->belongsTo(Cars::class);
+    }
+            ### End Relationships ###
+
 }
