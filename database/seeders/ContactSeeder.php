@@ -28,8 +28,6 @@ class ContactSeeder extends Seeder
             'title' => 'aa',
             'subject' => 'sn',
         ]);
-       
-         
-        
+          
     }
 }
