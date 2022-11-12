@@ -9,6 +9,8 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Car;
+use App\Models\Rent;
 
 class User extends Authenticatable
 {
@@ -58,4 +60,20 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    ### Relationships ###
+
+    //cars
+    public function cars()
+    {
+        return $this->hasMany(Car::class);
+    }
+    
+    //rent
+    public function rent()
+    {
+        return $this->hasMany(Rent::class);
+    }
+            ### End Relationships ###
+
 }

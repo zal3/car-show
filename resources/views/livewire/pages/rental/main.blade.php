@@ -1,58 +1,59 @@
-<div class="p-9">
-    <h2 class="text-xl text-black   flex justify-center mb-3">طريقة التأجير</h2>
-    <h1 class="text-3xl text-black font-bold px-4  flex justify-center">أجر سيارة بثلاث خطوات سهلة </h1>
-    <div class="flex  justify-between gap-4 items-center">
-        <div class="block p-6 max-w-4xl text-center hov">
-            <i class="fa-solid fa-location-dot text-6xl text-orange my-4  "></i>
-            <h1 class=" text-3xl text-black my-4 ">أختر الموقع </h1>
-            <h1>
-                اختر موقع رحلتك لحجز السيارة التي
-                <br> تود تجربتها في رحلتك مع
-                الانتباه في اختيار الموقع بشكل مضبوط لكي
-                تتابع معنا تكمله حجز سيارتك
-            </h1>
-        </div>
-        <div class="block p-6 max-w-4xl text-center hov">
-            <i class="fa-solid fa-calendar-check text-6xl my-4 text-orange "></i>
-            <h1 class="text-3xl text-black my-4"> أختر الموعد</h1>
-            <h1>
-                حدد وقت حجز السيارة مع وقت انتهاء التأجير والاهتمام بوقت استلام وتسليم السيارة في الوقت الذي تم
-                تحديده
-            </h1>
-        </div>
-        <div class="block p-6 max-w-4xl text-center hov">
-            <i class="fa-solid fa-car-side text-6xl my-4 text-orange "></i>
-            <h1 class="text-3xl text-black my-4">أجر سيارة </h1>
-            <h1>
-                اختر السيارة التي ترغب في تأجيرها لطفاً نرجو الاهتمام
-                بنظافه السيارة ونتمنى لكم وقت ممتع</h1>
+<div>
+    <div class="p-9">
+        <h2 class="text-xl text-black   flex justify-center mb-3">طريقة التأجير</h2>
+        <h1 class="text-3xl text-black font-bold px-4  flex justify-center">أجر سيارة بثلاث خطوات سهلة </h1>
+        <div class="flex  justify-between gap-4 items-center">
+            <div class="block p-6 max-w-4xl text-center hov">
+                <i class="fa-solid fa-location-dot text-6xl text-orange my-4  "></i>
+                <h1 class=" text-3xl text-black my-4 ">أختر الموقع </h1>
+                <h1>
+                    اختر موقع رحلتك لحجز السيارة التي
+                    <br> تود تجربتها في رحلتك مع
+                    الانتباه في اختيار الموقع بشكل مضبوط لكي
+                    تتابع معنا تكمله حجز سيارتك
+                </h1>
+            </div>
+            <div class="block p-6 max-w-4xl text-center hov">
+                <i class="fa-solid fa-calendar-check text-6xl my-4 text-orange "></i>
+                <h1 class="text-3xl text-black my-4"> أختر الموعد</h1>
+                <h1>
+                    حدد وقت حجز السيارة مع وقت انتهاء التأجير والاهتمام بوقت استلام وتسليم السيارة في الوقت الذي تم
+                    تحديده
+                </h1>
+            </div>
+            <div class="block p-6 max-w-4xl text-center hov">
+                <i class="fa-solid fa-car-side text-6xl my-4 text-orange "></i>
+                <h1 class="text-3xl text-black my-4">أجر سيارة </h1>
+                <h1>
+                    اختر السيارة التي ترغب في تأجيرها لطفاً نرجو الاهتمام
+                    بنظافه السيارة ونتمنى لكم وقت ممتع</h1>
+            </div>
         </div>
     </div>
-</div>
 {{-- form-container --}}
-<div class="form-container flex m-auto justify-center items-center  ">
-    <form class=" flex flex-wrap w-1/2  bg-white">
-        <div class="input-box">
-            <span>الموقع</span>
-            <input type="search" name="" id="" placeholder="ابحث عن مدينة">
-        </div>
-        <div class="input-box">
-            <span>اختر الوقت</span>
-            <input type="date" name="" id="">
-        </div>
-        <div class="input-box">
-            <span> وقت الاعادة</span>
-            <input type="date" name="" id="">
-        </div>
-        <button type="submit" id="" class="btn w-full"> تأجير</button>
-    </form>
-</div>
+    <div class="form-container flex m-auto justify-center items-center  ">
+        <form class=" flex flex-wrap w-1/2  bg-white">
+            <div class="input-box">
+                <span>الموقع</span>
+                <input type="search" name="" id="" placeholder="ابحث عن مدينة">
+            </div>
+            <div class="input-box">
+                <span>اختر الوقت</span>
+                <input type="date" name="" id="">
+            </div>
+            <div class="input-box">
+                <span> وقت الاعادة</span>
+                <input type="date" name="" id="">
+            </div>
+            <button type="submit" id="" class="btn w-full"> تأجير</button>
+        </form>
+    </div>
 </div>
 <style scoped>
     /* car rate */
     .rate {
         margin: 4rem 4rem;
-
+        
     }
 
 
