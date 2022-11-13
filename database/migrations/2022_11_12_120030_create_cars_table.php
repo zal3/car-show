@@ -18,15 +18,15 @@ return new class extends Migration
             $table->string('type');
             $table->string('category');
             $table->string('model');
-            $table->integer('sale_price')->nullable();
+            $table->integer('sale_price');
             $table->string('number')->nullable()->unique();
             $table->string('chassis_number')->nullable()->unique();
-            $table->string('color')->nullable();
+            $table->integer('color')->nullable();
             $table->text('note')->nullable();
             $table->string('import_place')->nullable();
             $table->date('import_date')->nullable();
             $table->integer('import_price')->nullable();
-            $table->boolean('state')->default(true); // false for not available, true for available
+            $table->boolean('state')->default(false); // false for not rent, true for rent
             $table->string('image_path')->nullable();
             $table->softDeletes();
             $table->timestamps();
