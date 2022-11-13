@@ -16,7 +16,7 @@
                     <div class="price flex justify-center pt-4 pb-4">{{ $car->sale_price }}$</div>
                     <a href="{{ route('car-page', ['car_id' => $car->id]) }}"
                         class="btn flex justify-center font-bold bg-orange hover:bg-orange-700   rounded-full ">
-                        check out
+                           معلومات السياره
                     </a>
                 </div>
             </article>
