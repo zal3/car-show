@@ -1,4 +1,4 @@
-<div>
+<div class="overflow-hidden ">
     <img src="{{ asset('img/car.png') }}" alt="hero" class="car">
     {{-- home --}}
     <div class="ho w-full relative grid items-center mx-4 px-4">
@@ -153,7 +153,7 @@
 
     .banner {
         /* background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/team/team2.jpg) no-repeat; */
-        background: url(../img/team/team2.jpg) no-repeat; 
+        background: url(../img/team/team2.jpg) no-repeat;
         background-size: cover;
         background-position: center;
         padding: 4rem 2rem;

@@ -1,12 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Livewire\Pages\{
     Home\Main as Home,
     About\Main as About,
-    Car\Main as Car,
+    Car\Main as CarMain,
     Contact\Main as Contact,
     Rental\Main as Rental,
+};
+use App\Http\Livewire\Pages\Car\{
+    Admin\Add as CarAdd,
+    // Admin\Edit as CarEdit,
+    // CarPage as CarPage,
+
 };
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +32,12 @@ Route::get('/', Home::class)->name('home');
 Route::get('/about', About::class)->name('about');
 
 //car
-Route::get('/car', Car::class)->name('car');
+Route::get('/car', CarMain::class)->name('car');
+// Route::get('/car-page', CarPage::class)->name('car-page');
+Route::get('/add-car', CarAdd::class)->name('add-car');
+
+
+
 
 //contact
 Route::get('/contact', Contact::class)->name('contact');
