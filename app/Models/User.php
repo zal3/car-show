@@ -63,12 +63,6 @@ class User extends Authenticatable
 
     ### Relationships ###
 
-    //cars
-    public function cars()
-    {
-        return $this->hasMany(Car::class);
-    }
-    
     //rent
     public function rent()
     {

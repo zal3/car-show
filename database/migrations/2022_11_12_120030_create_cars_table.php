@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->string('type');
             $table->string('category');
             $table->string('model');
@@ -28,6 +27,7 @@ return new class extends Migration
             $table->date('import_date')->nullable();
             $table->integer('import_price')->nullable();
             $table->boolean('state')->default(true); // false for not available, true for available
+            $table->string('image_path')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

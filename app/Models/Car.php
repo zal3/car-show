@@ -25,17 +25,12 @@ class Car extends Model
         'import_date',
         'import_price',
         'state',
+        'image_path',
     ];
 
         ###  Relationships ###
-    
-    //user 
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
-    
-    //  rent 
+
+    //  rent
     public function rent()
     {
         return $this->hasOne(Rent::class);

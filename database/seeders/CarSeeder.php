@@ -16,7 +16,6 @@ class CarSeeder extends Seeder
     public function run()
     {
         Car::create([
-            'user_id' => 1,
             'type' => 'SUV',
             'category' => 'Toyota',
             'model' => 'Land Cruiser',
@@ -29,23 +28,25 @@ class CarSeeder extends Seeder
             'import_date' => '2021-11-12',
             'import_price' => '100000',
             'state' => '1',
+            'image_path' => 'images\cars\car1.jpg',
+
         ]);
-        // Car::create([
-        //     'user_id' => 2,
-        //     'type' => 'SUV',
-        //     'category' => 'Toyota',
-        //     'model' => 'Land Cruiser',
-        //     'sale_price' => '100000',
-        //     'number' => '123456',
-        //     'chassis_number' => '123456',
-        //     'color' => 'white',
-        //     'note' => 'good car',
-        //     'import_place' => 'Japan',
-        //     'import_date' => '2021-11-12',
-        //     'import_price' => '100000',
-        //     'state' => '1',
-        // ]);
-        
-    
+        Car::create([
+            'type' => 'SUV',
+            'category' => 'Toyota',
+            'model' => 'Land Cruiser',
+            'sale_price' => '100000',
+            'number' => '123ff456',
+            'chassis_number' => '123dd456',
+            'color' => 'white',
+            'note' => 'good car',
+            'import_place' => 'Japan',
+            'import_date' => '2021-11-12',
+            'import_price' => '100000',
+            'state' => '1',
+            'image_path' => 'images\cars\car1.jpg',
+        ]);
+
+
     }
 }
