@@ -8,17 +8,17 @@
                             <div class=" block rounded-lg shadow-lg px-6 py-12  lg:-mr-14"
                                 style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
                                 <h2 class="text-3xl font-bold mb-4"> تواصل معنا </h2>
-                                <form action="" class="form contact-form" method="post">
-                                            <input type="text" class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " placeholder="الاسم"
+                                <form wire:submit.prevent="add" action="" class="form contact-form" method="post">
+                                            <input wire:model.lazy="name"  type="text" class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " placeholder="الاسم"
                                                 required name="name">
                                             <span class="bar"></span>
-                                            <input type="email" class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " placeholder="ايميل"
+                                            <input wire:model.lazy="email" type="email" class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " placeholder="ايميل"
                                                 required name="email">
                                             <span class="bar"></span>
-                                        <input type="text" class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " placeholder="العنوان"
+                                        <input wire:model.lazy="title" type="text" class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " placeholder="العنوان"
                                             required name="titsubject">
                                         <span class="bar"></span>
-                                        <textarea class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " cols="30" rows="8" placeholder="الموضوع" required name="subject"></textarea>
+                                        <textarea wire:model.lazy="subject" class="input border-r-0 border-l-0 border-t-0 w-full  bg-transparent border-b-black font-normal block pl-0 focus:ring-0 " cols="30" rows="8" placeholder="الموضوع" required name="subject"></textarea>
                                         <span class="bar"></span>
                                     <button type="submit"
                                         class="btn form-btn btn-purple border border-gray-900 items-center px-4 py-2 mt-2 hover:bg-orange-700 hover:text-white hover:border-white ">ارسال

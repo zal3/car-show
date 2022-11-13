@@ -130,6 +130,7 @@
         });
     </script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="{{ asset('vendor/livewire-alert/livewire-alert.js') }}"></script>
     {{-- <x-livewire-alert::scripts /> --}}
     {{-- <script src="//unpkg.com/alpinejs" defer></script> --}}
     <script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js" defer></script>
