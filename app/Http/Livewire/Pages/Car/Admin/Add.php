@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Pages\Car\Admin;
 
 use Livewire\Component;
+use App\Models\Car;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 
@@ -20,6 +21,7 @@ class Add extends Component
 
         public function add(Car $car)
         {
+            // dd('fff');
             $this->validate();
             $data = [
                 'type' => $this->type,
@@ -33,9 +35,9 @@ class Add extends Component
                 'import_place' => $this->import_place,
                 'import_date' => $this->import_date,
                 'import_price' => $this->import_price,
-                'state' => $this->state,
+                // 'state' => $this->state,
             ];
-            dd($data);
+
             $car = new Car();
             $car->create($data);
             $this->reset();

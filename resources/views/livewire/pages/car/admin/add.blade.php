@@ -5,7 +5,8 @@
             <div>
                 <h2 class="font-semibold text-xl text-gray-600 mb-3">اضافة سيارة </h2>
                 <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
-                    <form wire:submit.prevent="add" action="" class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+                    <form wire:submit.prevent="add" action=""
+                        class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
                         <div class="text-gray-600">
                             <p class="font-medium text-lg mb-6">معلومات السيارة </p>
                             <div
@@ -136,7 +137,7 @@
                                         id="" class="rounded bg-gray-50">
                                 </div>
                                 <br>
-                                <div class="md:col-span-1">
+                                {{-- <div class="md:col-span-1">
                                     <label for="state"> حالة السياره </label>
                                     <select id="state"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 pr-7 ">
@@ -144,7 +145,7 @@
                                         <option value="US">مؤجرة</option>
                                         <option value="CA">غير مؤجرة</option>
                                     </select>
-                                </div>
+                                </div> --}}
                                 <div class="md:col-span-1">
                                     <label for="sale_price"> سعر السيارة</label>
                                     <input wire:model.lazy="sale_price" type="text" name="sale_price"
@@ -161,9 +162,12 @@
                             </div>
                             <div class="md:col-span-5 text-right mt-8">
                                 <div class="inline-flex items-end">
-                                    <button type="submit"
-                                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">اضافه
-                                    </button>
+                                    <a href="{{ route('car') }}"
+                        class="w-auto bg-white ml-5 text-primary-600  border border-primary-600 rounded-lg shadow-md hover:shadow-xl hover:scale-105 font-medium  px-4 py-2">الرجوع</a>
+                                        <button type="submit"
+                        class="w-auto bg-blue-500 ml-5 text-white border border-primary-600 rounded-lg shadow-md hover:shadow-xl hover:scale-105 font-medium  px-4 py-2"> اضافة
+                                        </button>
+
                                 </div>
                             </div>
                         </div>
