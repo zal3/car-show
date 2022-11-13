@@ -121,7 +121,9 @@
     {{-- contact --}}
     <div class="bg-slate-900 p-12  ">
         <h1 class="flex  justify-center mb-8 text-5xl text-white  "> هل انت مهتم بخدماتنا ؟</h1>
-        <button class="flex  justify-center m-auto bg-white rounded-full px-6 py-2  "> اتصل بنا </button>
+        <a  href="{{ route('contact') }}" >
+        <button class="flex  font-bold justify-center m-auto bg-white rounded-full px-6 py-2  "> اتصل بنا </button>
+        </a>
     </div>
 
 </div>
