@@ -9,6 +9,7 @@
     <div class="grid grid-cols-4 gap-6 items-center justify-center p-9">
         @foreach ($cars as $car)
             <livewire:pages.car.card :car="$car" key="{{ now() }}" />
+
         @endforeach
     </div>
 
