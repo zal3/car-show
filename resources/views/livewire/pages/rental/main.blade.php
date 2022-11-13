@@ -38,7 +38,7 @@
                 <input type="search" name="" id="" placeholder="ابحث عن مدينة">
             </div>
             <div class="input-box">
-                <span>اختر الوقت</span>
+                <span>وقت التأجير</span>
                 <input type="date" name="" id="">
             </div>
             <div class="input-box">

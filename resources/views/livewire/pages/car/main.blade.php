@@ -22,7 +22,7 @@
                     <i class="fas fa-star-half-alt"></i>
                 </div>
                 <div class="price flex justify-center pt-4 pb-4">{{$car->sale_price}}$</div>
-                <a href="#" class="btn flex justify-center font-bold bg-orange hover:bg-orange-700   rounded-full ">check out</a>
+                <a href="#" class="btn flex justify-center font-bold bg-orange hover:bg-orange-700   rounded-full "> تفاصيل السيارة</a>
             </div>
         </article>
         @endforeach

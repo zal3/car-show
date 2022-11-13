@@ -20,14 +20,13 @@
                                         <div class="flex text-sm text-gray-600">
                                             <label for="file-upload"
                                                 class="relative cursor-pointer bg-white rounded-md font-medium ml-1 text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                                                <span class="">Upload a file</span>
+                                                <span class="">أضف صورة السيارة</span>
                                                 <input id="file-upload" name="file-upload" type="file"
                                                     class="sr-only">
                                             </label>
-                                            <p class="pl-1 text-black">or drag and drop</p>
                                         </div>
                                         <p class="text-xs text-black">
-                                            PNG, JPG, GIF up to 10MB
+                                            PNG, JPG, GIF 
                                         </p>
                                     </div>
                                 </div>
@@ -36,34 +35,34 @@
                         <div class="lg:col-span-2">
                             <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
                                 <div class="md:col-span-5">
-                                    <label for="full_name">Full Name</label>
+                                    <label for="full_name">أسم السيارة</label>
                                     <input type="text" name="full_name" id="full_name"
                                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" />
                                 </div>
 
                                 <div class="md:col-span-5">
-                                    <label for="email">Email Address</label>
+                                    <label for="email">نموذج السيارة </label>
                                     <input type="text" name="email" id="email"
                                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value=""
-                                        placeholder="email@domain.com" />
+                                        />
                                 </div>
 
                                 <div class="md:col-span-3">
-                                    <label for="address">Address / Street</label>
+                                    <label for="address"> فئة السيارة</label>
                                     <input type="text" name="address" id="address"
                                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value=""
                                         placeholder="" />
                                 </div>
 
                                 <div class="md:col-span-2">
-                                    <label for="city">City</label>
+                                    <label for="city">لون السيارة</label>
                                     <input type="text" name="city" id="city"
                                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value=""
                                         placeholder="" />
                                 </div>
 
                                 <div class="md:col-span-2">
-                                    <label for="country">Country / region</label>
+                                    <label for="country">سعر استيراد السيارة</label>
                                     <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
                                         <input name="country" id="country" placeholder="Country"
                                             class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
@@ -91,7 +90,7 @@
                                 </div>
 
                                 <div class="md:col-span-2">
-                                    <label for="state">State / province</label>
+                                    <label for="state">سعر بيع السيارة</label>
                                     <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
                                         <input name="state" id="state" placeholder="State"
                                             class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
@@ -119,12 +118,42 @@
                                 </div>
 
                                 <div class="md:col-span-1">
-                                    <label for="zipcode">Zipcode</label>
+                                    <label for="zipcode">رقم السيارة</label>
                                     <input type="text" name="zipcode" id="zipcode"
                                         class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                                         placeholder="" value="" />
                                 </div>
-
+                                <div class="md:col-span-1">
+                                    <label for="zipcode">رقم هيكل السيارة</label>
+                                    <input type="text" name="zipcode" id="zipcode"
+                                        class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                        placeholder="" value="" />
+                                </div>
+                                <div class="md:col-span-1">
+                                    <label for="zipcode">دولةاستيرادالسيارة </label>
+                                    <input type="text" name="zipcode" id="zipcode"
+                                        class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                        placeholder="" value="" />
+                                </div>
+                                <div class="input-box ">
+                                   <span>تاريخ الاستيراد</span>
+                                   <input type="date" name="" id="" class="rounded bg-gray-50">
+                                </div>
+                                <br>
+                                <div class="md:col-span-1">
+                                    <label for="zipcode">  حالة السياره </label>
+                                    <input type="text" name="zipcode" id="zipcode"
+                                        class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                        placeholder="" value="" />
+                                </div>
+                                <div class="md:col-span-1">
+                                    <label for="zipcode"> ملاحظه عن السيارة</label>
+                                    <input type="text" name="zipcode" id="zipcode"
+                                        class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                        placeholder="" value="" />
+                                </div>
+                                </div>
+                               
                                 <div class="md:col-span-5">
                                     <div class="inline-flex items-center">
                                         <input type="checkbox" name="billing_same" id="billing_same"
@@ -132,6 +161,7 @@
                                         <label for="billing_same" class="ml-2">My billing address is different than
                                             above.</label>
                                     </div>
+                                    
                                 </div>
 
                                 <div class="md:col-span-2">
@@ -165,7 +195,8 @@
                                 <div class="md:col-span-5 text-right">
                                     <div class="inline-flex items-end">
                                         <button
-                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">اضافه
+                                        </button>
                                     </div>
                                 </div>
 
