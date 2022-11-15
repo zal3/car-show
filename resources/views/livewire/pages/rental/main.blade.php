@@ -45,6 +45,27 @@
                 <span> وقت الاعادة</span>
                 <input type="date" name="" id="">
             </div>
+            <div class="input-box">
+                <span>رقم الهاتف</span>
+                <input type="search" name="" id="" placeholder="أكتب الرقم ">
+            </div>
+            <div class="input-box">
+                <span>رخصة القيادة</span>
+                <input type="search" name="" id="" placeholder=" أضف صورة الرخصة">
+            </div>
+            <div class="lable">
+                <label for="city">لون السيارة</label>
+                                    <select id="countries"
+                                        class=" bg-gray border border-black-200 text-gray-900 text-sm rounded-lg focus:ring-blue-700 focus:border-blue-700 block pl-14   w-full mt-2  ">
+                                        <option selected> أختر نوع السياره</option>
+                                        <option value="US">سايبه</option>
+                                        <option value="CA">سنتافي</option>
+                                        <option value="FR">تاكسي</option>
+                                        <option value="DE">سايبه</option>
+                                        
+                                    </select>
+            </div>
+           
             <button type="submit" id="" class="btn w-full"> تأجير</button>
         </form>
     </div>

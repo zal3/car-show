@@ -4,7 +4,7 @@
     <div class="ho w-full relative grid items-center mx-4 px-4">
         <div class="text">
             <h1 class="font-bold " data-aos="fade-up" data-aos-delay="150"><span class="text-orange">المعرض</span>
-                الدولي<br> للسيارات</h1>
+                البصرة<br> للسيارات</h1>
             <h5 class="px-5" data-aos="fade-up" data-aos-delay="300">للحصول على أفضل سيارة في المدينة
                 <br> بأفضل سعر وجودة
             </h5>
@@ -43,7 +43,7 @@
         </div>
         <div class="popular__container container swiper  "data-aos="fade-left">
             <div class="swiper-wrapper">
-                @for ($i = 0; $i < 9; $i++)
+                @for ($i = 0; $i < 6; $i++)
                     <div class="swiper-slide  ss">
                         <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-64 bg-gray">
                             <div class="shape shape__smaller"></div>
@@ -114,7 +114,7 @@
                 <div class="px-4 flex items-center justify-start mx-4 ggg "data-aos="fade-up" data-aos-delay="200">
                     <div class="text-white">
                         <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
-                        <h2 class="my-4"> حوراء محسن </h2>
+                        <h2 class="my-4"> حوراء محسن جاسم</h2>
                         <div class="flex justify-center  gg ">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
@@ -122,7 +122,7 @@
                     </div>
                     <div class="text-white ">
                         <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
-                        <h2 class="my-4"> حوراء محسن </h2>
+                        <h2 class="my-4"> حوراء محمد عبد الزهرة </h2>
                         <div class="flex justify-center  gg ">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
@@ -130,7 +130,7 @@
                     </div>
                     <div class="text-white ">
                         <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
-                        <h2 class="my-4"> حوراء محسن </h2>
+                        <h2 class="my-4">زينب فوزي حميد </h2>
                         <div class="flex justify-center  gg ">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
@@ -153,12 +153,13 @@
 
     .banner {
         /* background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/team/team2.jpg) no-repeat; */
-        background: url(../img/team/team2.jpg) no-repeat;
+        background: url(../img/team/team2.jpg) ;
         background-size: cover;
         background-position: center;
         padding: 4rem 2rem;
         background-attachment: fixed;
         text-align: center;
+        
     }
 
     .banner .content span {
