@@ -6,12 +6,12 @@
                 class=" mx-auto w-full h-96 object-cover opacity-60"></video></video>
         </div>
         <div>
-            <h1 class="flex justify-center  font-bold text-7xl mt-56  ">المعرض الدولي للسيارات </h1>
+            <h1 class="flex justify-center  font-bold text-7xl mt-56  ">معرض البصرة للسيارات </h1>
         </div>
     </div>
 
     {{-- brand --}}
-    <div class="flex gap-12 justify-center items-center mt-52 mb-10">
+    <div class="flex gap-12 justify-center items-center mt-60 mb-8">
         <img src="{{ asset('img/about/BMW.png') }}" alt="">
         <img src="{{ asset('img/about/Jeep.png') }}" alt="">
         <img src="{{ asset('img/about/Audi.png') }}" alt="">
