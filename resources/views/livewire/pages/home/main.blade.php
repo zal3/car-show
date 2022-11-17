@@ -8,10 +8,14 @@
             <h5 class="px-5" data-aos="fade-up" data-aos-delay="300">للحصول على أفضل سيارة في المدينة
                 <br> بأفضل سعر وجودة
             </h5>
-            <div class="bttn flex  " data-aos="fade-up" data-aos-delay="400">
-                <button class="btn w-48   cursor-pointer bg-orange  text-white"> ابدا رحلتك </button>
-                <button class="btn w-48   cursor-pointer bg-orange  text-white"> السيارات </button>
-            </div>
+            {{-- <div class="bttn flex  " data-aos="fade-up" data-aos-delay="400">
+                <a href="{{ route('car') }}">
+                    <button class="btn w-48   cursor-pointer bg-orange  text-white"> السيارات</button>
+                </a>
+                <a href="{{ route('rental') }}">
+                    <button class="btn w-48   cursor-pointer bg-orange  text-white"> اجر سيارة </button>
+                </a>
+            </div> --}}
         </div>
 
     </div>
@@ -31,7 +35,7 @@
                 الإنتاج
                 لتجارة السيارات الحديثة كل ما هو جديد في عالم السيارات , <br>اسعار تنافسية
             </p>
-            <a href="#" class="pt-6 text-blue-900 font-bold">اعرف المزيد</a>
+            <a href="{{ route('about') }}" class="pt-6 text-blue-900 font-bold">اعرف المزيد</a>
         </div>
     </div>
 
@@ -39,37 +43,40 @@
     <div class="popular section " id="popular">
         <div class="flex justify-between items-center ">
             <h2 class=" text-5xl text-black font-bold px-4 mx-4">احدث السيارات</h2>
+            <a href="{{ route('car') }}">
             <button class="text-blue  text-xl mt-4"> لرؤية المزيد </button>
+            </a>
         </div>
         <div class="popular__container container swiper  "data-aos="fade-left">
             <div class="swiper-wrapper">
-                @for ($i = 0; $i < 6; $i++)
+                @foreach ($cars as $car)
+
                     <div class="swiper-slide  ss">
+                        <a href="{{ route('car-page', ['car_id' => $car->id]) }}">
                         <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-64 bg-gray">
                             <div class="shape shape__smaller"></div>
-                            <h1 class="popular__title text-orange ">بورش </h1>
-                            <h3 class="popular__subtitle">توربو </h3>
+                            <h1 class="popular__title text-orange ">{{ $car->type }}</h1>
+                            <h3 class="popular__subtitle">{{ $car->category }} </h3>
                             <img src="{{ asset('img/cars/popular1.png') }}" alt="" class="popular__img">
-                            <div class="popular___data text-black text-md grid grid-cols-2  mb-6">
+                            {{-- <div class="popular___data text-black text-md grid grid-cols-2  mb-6">
                                 <div class="popular___data-group ">
-                                    <i class="fa-solid fa-gauge-high"></i> 3.7 Sec
+                                    <i class="fa-solid fa-gauge-high"></i> {{ $car->model }}
                                 </div>
                                 <div class="popular___data-group ">
-                                    <i class="fa-solid fa-bolt"></i> 356 Km/h
+                                    <i class="fa-solid fa-bolt"></i> {{ $car->color }}
                                 </div>
-                                <div class="popular___data-group">
-                                    <i class="fa-solid fa-charging-station"></i> Electric
-                                </div>
-                            </div>
+
+                            </div> --}}
                             <div class="grid grid-cols-2 justify-between">
-                                <div class=" text-black left-2 bottom-2 absolute"> $ 1,000,000</div>
+                                <div class=" text-black left-2 bottom-2 absolute">$ {{ $car->sale_price }} </div>
                                 <button class="button popular__button bg-orange ">
                                     <i class="fa-solid fa-bag-shopping"></i>
                                 </button>
                             </div>
                         </article>
+                        </a>
                     </div>
-                @endfor
+                @endforeach
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -100,9 +107,9 @@
         </div>
         {{-- form-container --}}
 
-        <div class=" flex justify-center bg-blue  items-center " action="" >
+        <a href="{{ route('rental') }}"  class=" flex justify-center bg-blue  items-center ">
             <button type="submit" id="" class="btnn"> تأجير</button>
-        </div>
+            </a>
     </div>
 
     {{-- team --}}
@@ -153,13 +160,13 @@
 
     .banner {
         /* background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/team/team2.jpg) no-repeat; */
-        background: url(../img/team/team2.jpg) ;
+        background: url(../img/team/team2.jpg);
         background-size: cover;
         background-position: center;
         padding: 4rem 2rem;
         background-attachment: fixed;
         text-align: center;
-        
+
     }
 
     .banner .content span {
