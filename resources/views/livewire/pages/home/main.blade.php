@@ -118,16 +118,18 @@
 
         <div class="banner">
             <div class="content">
-                <div class="px-4 flex items-center justify-start mx-4 ggg "data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-white">
+                <div class="px-4 flex items-center justify-start mx-4 ggg "
+                {{-- data-aos="fade-up" data-aos-delay="200" --}}
+                >
+                    <div class="text-white ">
                         <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
-                        <h2 class="my-4"> حوراء محسن جاسم</h2>
+                        <h2 class="my-4 items-center"> حوراء محسن جاسم</h2>
                         <div class="flex justify-center  gg ">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
-                    <div class="text-white ">
+                    <div class="text-white  ">
                         <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محمد عبد الزهرة </h2>
                         <div class="flex justify-center  gg ">
