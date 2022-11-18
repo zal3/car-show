@@ -32,7 +32,7 @@ return new class extends Migration
             $table->string('import_place')->nullable();
             $table->date('import_date')->nullable();
             $table->integer('import_price')->nullable();
-            $table->boolean('state')->default(false); // false for not rent, true for rent
+            $table->boolean('state')->default(false); // false 0 for not rent, true 1 for rent
             $table->string('image_path')->nullable();
             $table->softDeletes();
             $table->timestamps();

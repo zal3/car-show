@@ -47,7 +47,6 @@ class Add extends Component
             if ($this->image_path){
 
                 $car->add_image($this->image_path);}
-                dd($this->image_path);
             $this->reset();
 
             $this->alert('success', 'تم اضافة السيارة بنجاح  ', [

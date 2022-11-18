@@ -27,33 +27,31 @@
                                     <p class="text-xs text-black">
                                         PNG, JPG, GIF
                                     </p> --}}
-                                        <label
-                                            class="w-full flex flex-col items-center px-2 py-6  @if ($image_path) bg-primary-700 text-black @else bg-white text-primary-700 @endif rounded-lg tracking-wide   cursor-pointer hover:bg-primary-700 hover:text-black">
-                                            <div wire:target="image_path">
-
-                                            </div>
-                                            <div wire.remove wire:target="image_path">
-                                                @if ($image_path)
-                                                    <i class="fa-solid fa-check text-2xl"></i>
-                                                @else
-                                                    <i class="fa-solid fa-upload text-2xl"></i>
-                                                @endif
-                                            </div>
-                                            <span class="mt-2 text-base leading-normal">
-                                                @if ($image_path)
-                                                    تم اختيار الصورة
-                                                @else
-                                                    إختر صورة
-                                                @endif
-                                            </span>
-                                            <input wire:model.lazy="image_path" type="file" class="hidden" />
-                                        </label>
-                                        @error('image_path')
-                                            <span
-                                                class="error text-primary-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">لم
-                                                يتم تحميل
-                                                الصورة</span>
-                                        @enderror
+                                    <label
+                                        class="w-full flex flex-col items-center px-2 py-6  @if ($image_path) bg-primary-700 text-black @else bg-white text-primary-700 @endif rounded-lg tracking-wide   cursor-pointer hover:bg-primary-700 hover:text-black">
+                                        <div wire:target="image_path">
+                                        </div>
+                                        <div wire.remove wire:target="image_path">
+                                            @if ($image_path)
+                                                <i class="fa-solid fa-check text-2xl"></i>
+                                            @else
+                                                <i class="fa-solid fa-upload text-2xl"></i>
+                                            @endif
+                                        </div>
+                                        <span class="mt-2 text-base leading-normal">
+                                            @if ($image_path)
+                                                تم اختيار الصورة
+                                            @else
+                                                إختر صورة
+                                            @endif
+                                        </span>
+                                        <input wire:model.lazy="image_path" type="file" class="hidden" />
+                                    </label>
+                                    @error('image_path')
+                                        <span class="error text-primary-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">لم
+                                            يتم تحميل
+                                            الصورة</span>
+                                    @enderror
                                 </div>
                             </div>
                         </div>
