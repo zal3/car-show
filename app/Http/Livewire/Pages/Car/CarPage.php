@@ -15,7 +15,7 @@ public $car_id ,$type ,$car , $category ,$model, $sale_price , $number ,$chassis
     public function mount($car_id)
     {
         $this->car_id = $car_id;
-        $this->car = Car::find($car_id);
+        $this->car = Car::findOrFail($car_id);
         $this->type = $this->car->type;
         $this->category = $this->car->category;
         $this->model = $this->car->model;

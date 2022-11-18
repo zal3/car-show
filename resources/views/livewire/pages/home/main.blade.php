@@ -58,7 +58,7 @@
                             <h1 class="popular__title text-orange ">{{ $car->type }}</h1>
                             <h3 class="popular__subtitle">{{ $car->category }} </h3>
                             {{-- <img src="{{ asset('img/cars/popular1.png') }}" alt="" class="popular__img"> --}}
-                             <img src="{{asset($car->image_path ?? 'img/cars/popular1.png') }}" alt="" class="popular__img">
+                            <img src="{{asset($car->image_path ?? 'img/cars/popular1.png') }}" alt="" class="popular__img">
                             {{-- <div class="popular___data text-black text-md grid grid-cols-2  mb-6">
                                 <div class="popular___data-group ">
                                     <i class="fa-solid fa-gauge-high"></i> {{ $car->model }}

@@ -11,7 +11,7 @@ use App\Http\Livewire\Pages\{
 };
 use App\Http\Livewire\Pages\Car\{
     Admin\Add as CarAdd,
-    // Admin\Edit as CarEdit,
+    Admin\Edit as CarEdit,
     CarPage as CarPage,
 
 };
@@ -35,6 +35,7 @@ Route::get('/about', About::class)->name('about');
 Route::get('/car', CarMain::class)->name('car');
 Route::get('/car-page/{car_id}', CarPage::class)->name('car-page');
 Route::get('/add-car', CarAdd::class)->name('add-car');
+Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
 
 
 

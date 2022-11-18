@@ -78,9 +78,9 @@
     </div>
     <div class="flex justify-center items-center m-auto gap-6 mb-8 opacity-70">
         <button wire:click="confirm({{ $car->id }})"><i class="fa-solid fa-trash text-gray-600 h-10 w-10 hover:text-red-700 "></i></button>
-<button >
+<a href="{{ route('edit-car' , ['car_id' => $car->id]) }}">
         <i class="fa-solid fa-pen-to-square text-gray-600 h-10 w-10  hover:text-blue-700"></i>
-</button>
+</a>
     </div>
 
 </div>

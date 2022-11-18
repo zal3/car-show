@@ -2,9 +2,9 @@
     <div class="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
         <div class="container max-w-screen-lg mx-auto">
             <div>
-                <h2 class="font-semibold text-xl text-gray-600 mb-3">اضافة سيارة </h2>
+                <h2 class="font-semibold text-xl text-gray-600 mb-3">تعديل  سيارة </h2>
                 <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
-                    <form wire:submit.prevent="add" action=""
+                    <form wire:submit.prevent="edit" action=""
                         class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
                         <div class="text-gray-600">
                             <p class="font-medium text-lg mb-6">معلومات السيارة </p>
@@ -25,11 +25,12 @@
                                         <span class="mt-2 text-base leading-normal">
                                             @if ($image_path)
                                                 تم اختيار الصورة
+                                                غيرها
                                             @else
                                                 إختر صورة
                                             @endif
                                         </span>
-                                        <input wire:model.lazy="image_path" type="file" class="hidden" />
+                                        <input wire:model.lazy="new_image" type="file" class="hidden" />
                                     </label>
                                     @error('image_path')
                                         <span class="error text-primary-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">لم
@@ -160,7 +161,7 @@
                                         class="w-auto bg-white ml-5 text-primary-600  border border-primary-600 rounded-lg shadow-md hover:shadow-xl hover:scale-105 font-medium  px-4 py-2">الرجوع</a>
                                     <button type="submit"
                                         class="w-auto bg-blue-500 ml-5 text-white border border-primary-600 rounded-lg shadow-md hover:shadow-xl hover:scale-105 font-medium  px-4 py-2">
-                                        اضافة
+                                        تعديل 
                                     </button>
                                 </div>
                             </div>
