@@ -1,7 +1,8 @@
 <div>
-    <article class="hov bg-gray mr-5   w-65  bg-gray-100">
+    <article class="hov bg-gray mr-5 pb-2  w-65  bg-gray-100  ">
+        <div class="relative z-10 w-16 bg-red-500 p-2  rounded-b-full rounded-l-full ">مؤجرة</div>
         <img src="{{ asset($car->image_path ?? 'img/cars/popular1.png') }}"
-            class="popular__img p-3   hover:translate-y-1 ">
+            class="relative z-9 p-3   hover:translate-y-1 ">
         {{-- <img src="{{ asset('img/cars/car1.jpg') }}" class=""> --}}
         <div class="p-4">
             <h3 class="flex justify-center mb-4 font-bold text-xl">{{ $car->type }}</h3>
@@ -54,7 +55,7 @@
 
             </div>
         </div>
-        <div class="box mb-4">
+        <div class="box ">
             <a href="{{ route('car-page', ['car_id' => $car->id]) }}"
                 class=" flex justify-between  p-3 bg-black text-white car  ">
 
@@ -64,6 +65,9 @@
     </article>
 </div>
 <style scoped>
+    .hov:hover{
+        animation: pulse  5s linear infinite;
+    }
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
     .box {
@@ -74,7 +78,6 @@
         margin-right: 1.8rem;
         place-items: center;
         overflow: hidden;
-        border-radius: 15px;
 
 
     }
@@ -84,7 +87,6 @@
         width: 190px;
         height: 90%;
         background: #ffffff;
-        border-radius: 20px;
         z-index: 5;
         display: flex;
         justify-content: center;
@@ -96,6 +98,10 @@
         padding: 20px;
         cursor: pointer;
 
+    }
+    .car:hover{
+        background-color: #000000;
+        color: #ffffff;
     }
 
 
@@ -111,6 +117,12 @@
         transform-origin: center;
         animation: glowing 5s linear infinite;
     }
+    .hov:hover{
+        transform: scale(1.1);
+        transition: all 1s;
+        /* shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset; */
+    }
 
     @keyframes glowing {
         0% {
@@ -121,4 +133,5 @@
             transform: rotate(360deg);
         }
     }
+    
 </style>
