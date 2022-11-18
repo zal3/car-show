@@ -96,7 +96,7 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".popular__container", {
-            //  loop: true,
+             loop: true,
             spaceBetween: 24,
             slidesPerView: 'auto',
             grabCursor: true,

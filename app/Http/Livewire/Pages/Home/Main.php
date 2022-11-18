@@ -11,8 +11,8 @@ class Main extends Component
     public function render()
     {
         // get last 6 car
-        $cars = Car::orderBy('id')->take(6)->get();
+        $this->cars = Car::orderByDesc('id')->take(4)->get();
 
-        return view('livewire.pages.home.main', compact('cars'));
+        return view('livewire.pages.home.main');
     }
 }

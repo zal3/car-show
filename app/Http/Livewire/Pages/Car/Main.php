@@ -10,7 +10,7 @@ class Main extends Component
 
     public function render()
     {
-        $this->cars = Car::all();
+        $this->cars = Car::orderByDesc('id')->get();
         return view('livewire.pages.car.main');
     }
 }
