@@ -18,7 +18,7 @@ class RentSeeder extends Seeder
         //
         Rent::create([
             'user_id' => 1,
-            'car_id' => 1,
+            // 'car_id' => 1,
             'location' => 'الرياض',
             'license' => '123456',
             'rent_date' => '2021-11-12',
@@ -27,7 +27,7 @@ class RentSeeder extends Seeder
         ]);
         Rent::create([
             'user_id' => 1,
-            'car_id' => 1,
+            // 'car_id' => 1,
             'location' => 'العراق',
             'license' => '78910',
             'rent_date' => '2022-11-12',

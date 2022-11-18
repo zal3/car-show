@@ -3,7 +3,7 @@
         <div class="">
             {{-- <img class="" src=" {{ asset('img/cars/car6.jpg') }}"> --}}
             <div class="container">
-                <img src="{{ asset('img/cars/car6.jpg') }}" alt="" />
+                <img src="{{ asset($car->image_path ?? 'img/cars/car1.jpg') }}" alt=" " class="h-full" />
                 <p class="title">{{ $car->type }}</p>
                 <div class="overlay"></div>
                 <div class="button"><a href="#"> {{ $car->sale_price }}$ </a></div>
@@ -36,11 +36,23 @@
             </div>
             <div>
                 <span>لون السيارة :</span>
-                <span>{{ $car->color }}</span>
+                <span>@if ($car->color == 1)
+                                احمر
+                            @elseif($car->color == 2)
+                                ابيض
+                            @elseif($car->color == 3)
+                                اسود
+                            @elseif($car->color == 4)
+                                اصفر
+                            @elseif($car->color == 5)
+                                اخضر
+                            @elseif($car->color == 6)
+                                ازرق
+                            @endif</span>
             </div>
             <div>
                 <span>سعر الاستيراد :</span>
-                <span>{{ $car->import_price }}</span>
+                <span>{{ $car->import_price }}$</span>
             </div>
             <div>
                 <span>دولة الاستيراد :</span>
@@ -65,8 +77,10 @@
 
     </div>
     <div class="flex justify-center items-center m-auto gap-6 mb-8 opacity-70">
-        <i class="fa-solid fa-trash text-gray-600 h-10 w-10 hover:text-red-700 "></i>
+        <button wire:click="confirm({{ $car->id }})"><i class="fa-solid fa-trash text-gray-600 h-10 w-10 hover:text-red-700 "></i></button>
+<button >
         <i class="fa-solid fa-pen-to-square text-gray-600 h-10 w-10  hover:text-blue-700"></i>
+</button>
     </div>
 
 </div>
@@ -96,7 +110,7 @@
     img {
         position: absolute;
         width: 500px;
-        height: 300px;
+        height: 250px;
         left: 0;
     }
 

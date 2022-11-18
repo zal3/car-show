@@ -1,10 +1,10 @@
 <div>
-    <article class="hov bg-gray mr-5 pb-2  w-65  bg-gray-300  ">
+    <article class="hov bg-gray mr-5 pb-2  w-65  bg-gray-300 relative ">
         @if($car->state == 1)
-        <button href="{{ route('car')}}" class="relative w-16 bg-red-500 p-2  rounded-b-full rounded-l-full ">تاجير</button>
+        <a href="{{ route('rental')}}" class="absolute pr-4 z-1 w-16 bg-red-500 p-2  rounded-b-full rounded-l-full ">تاجير</a>
         @endif
-        <img src="{{ asset($car->image_path ?? 'img/cars/popular1.png') }}"
-            class="relative  p-3 w-60 h-32   hover:translate-y-1 ">
+        <img src="{{ asset($car->image_path ?? 'img/cars/car1.jpg') }}"
+            class="   w-60 h-36    ">
         {{-- <img src="{{ asset('img/cars/car1.jpg') }}" class=""> --}}
         <div class="p-4">
             <h3 class="flex justify-center mb-4 font-bold text-xl">{{ $car->type }}</h3>

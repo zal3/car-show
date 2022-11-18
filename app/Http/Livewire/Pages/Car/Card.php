@@ -7,6 +7,7 @@ use Livewire\Component;
 class Card extends Component
 {
     public $car ,  $car_id;
+    protected $listeners = ['$refresh'];
     public function render()
     {
 

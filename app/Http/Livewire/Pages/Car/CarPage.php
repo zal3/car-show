@@ -11,7 +11,7 @@ class CarPage extends Component
 {
         use LivewireAlert;
 public $car_id ,$type ,$car , $category ,$model, $sale_price , $number ,$chassis_number , $color , $note , $import_place , $import_date , $import_price , $state , $image_path;
-    protected $listeners = [ '$refresh'];
+    protected $listeners = [ '$refresh','delete'];
     public function mount($car_id)
     {
         $this->car_id = $car_id;
@@ -31,30 +31,34 @@ public $car_id ,$type ,$car , $category ,$model, $sale_price , $number ,$chassis
         $this->image_path = $this->car->image_path;
     }
 
-    // public function delete()
-    // {
-    //     Car::findOrFail($this->car_id)->delete();
-    //     $this->alert('success', 'تم حذف السيارة', [
-    //         'position' => 'center',
-    //         'timer' => 3000,
-    //         'toast' => true,
-    //     ]);
-    //     $this->emitUp('$refresh');
-    // }
+    public function delete()
+    {
+        Car::findOrFail($this->car_id)->delete();
+        $this->alert('success', 'تم حذف السيارة', [
+            'position' => 'center',
+            'timer' => 3000,
+            'toast' => true,
+        ]);
+        $this->emitUp('$refresh');
+        $this->emitTo('pages.cars.main', '$refresh');
+        redirect()->route('car');
 
-    // public function confirm($id)
-    // {
-    //     $this->car_id = $id;
-    //     $this->alert('warning', 'هل انت متأكد من حذف السيارة؟', [
-    //         'position' => 'center',
-    //         'timer' => 3000,
-    //         'toast' => true,
-    //         'showConfirmButton' => true,
-    //         'onConfirmed' => 'delete',
-    //         'showCancelButton' => true,
-    //         'onDismissed' => '',
-    //     ]);
-    // }
+
+    }
+
+    public function confirm($id)
+    {
+        $this->car_id = $id;
+        $this->alert('warning', 'هل انت متأكد من حذف السيارة؟', [
+            'position' => 'center',
+            'timer' => 3000,
+            'toast' => true,
+            'showConfirmButton' => true,
+            'onConfirmed' => 'delete',
+            'showCancelButton' => true,
+            'onDismissed' => '',
+        ]);
+    }
 
 public function render()
     {

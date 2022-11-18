@@ -12,9 +12,9 @@
             <livewire:pages.car.card :car="$car" key="{{ now() }}" />
 
         @empty
-        <div class="px-2 py-4  mb-4 text-sm text-gray-700 bg-primary-100 rounded-lg" role="alert">
-            <span class="font-medium">ملاحظة:</span>لم يتم اضافة حالات للموقع ليتم عرضها
-          </div>
+        <div class="px-2 py-4  mb-4 text-2xl text-gray-700 bg-primary-100 rounded-lg" role="alert">
+            لم يتم اضافة سيارات  ليتم عرضها
+            </div>
         @endforelse
     </div>
 
