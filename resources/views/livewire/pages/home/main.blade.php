@@ -53,7 +53,7 @@
 
                     <div class="swiper-slide  ss">
                         <a href="{{ route('car-page', ['car_id' => $car->id]) }}">
-                        <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-64 bg-gray">
+                        <article class=" popular__card bg-gray px-6 py-6   overflow-hidden relative w-56 bg-gray">
                             <div class="shape shape__smaller"></div>
                             <h1 class="popular__title text-orange ">{{ $car->type }}</h1>
                             <h3 class="popular__subtitle">{{ $car->category }} </h3>
@@ -123,17 +123,17 @@
                 {{-- data-aos="fade-up" data-aos-delay="200" --}}
                 >
                     <div class="text-white ">
-                        <img src="{{ asset('img/team/girl1.jpg') }}" alt="" class="w-20 h-20 rounded-full">
+                        <img src="{{ asset('img/team/girl1 1.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4 items-center"> حوراء محسن جاسم</h2>
                         <div class="flex justify-center  gg ">
-                            <i class="fa-solid fa-envelope hover:text-orange-700 "> 
-                                
+                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
+
                             </i>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
                     <div class="text-white  ">
-                        <img src="{{ asset('img/girl2.jpg') }}" alt="" class="w-20 h-20 rounded-full">
+                        <img src="{{ asset('img/team/girl2 1.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محمد عبد الزهرة </h2>
                         <div class="flex justify-center  gg ">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                     <div class="text-white ">
-                        <img src="{{ asset('img/team/girl3.jpg') }}" alt="" class="w-20 h-20 rounded-full">
+                        <img src="{{ asset('img/team/girl3 1.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4">زينب فوزي حميد </h2>
                         <div class="flex justify-center  gg ">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
@@ -321,11 +321,13 @@
 
     /* popular */
     .popular__container {
-        padding: 2rem 2rem 2rem 2rem;
+        padding: 2rem ;
     }
 
     .popular__card {
         border-radius: 1rem;
+        padding: 1rem 0 0 0 ;
+        margin-bottom: 0;
     }
 
     .popular__card .shape__smaller {
@@ -346,18 +348,20 @@
 
     .popular__title {
         font-size: 1.5rem;
-        margin-bottom: .25rem;
+        margin: .25rem 1.5rem .2rem 0;
     }
 
     .popular__subtitle {
         font-size: var(--normal-font-size);
         color: #b8b6b6;
         font-weight: 400;
+        margin: .25rem 1.5rem .2rem 0;
     }
 
     .popular__img {
-        width: 160px;
-        margin: .75rem 0 1.25rem 1.5rem;
+        width: 250px;
+        height: 160px;
+        margin: .75rem 0 0 0;
         transition: .3s;
     }
 
