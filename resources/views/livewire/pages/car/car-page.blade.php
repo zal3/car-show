@@ -55,13 +55,13 @@
                 <span>{{ $car->note }}</span>
             </div>
         </div>
-        {{-- next  --}}
-        <div href="{{ route('car-page', ['car_id' => $car->id + 1]) }}">
+        {{-- route sent to next cardpage  --}}
+        <a href="{{ route('car-page', ['car_id' => $car->id +1]) }}">
             <div class="swiper-button-next"></div>
-        </div>
-        <div href="{{ route('car-page', ['car_id' => $car->id - 1]) }}">
+        </a>
+        <a href="{{ route('car-page', ['car_id' => $car->id - 1]) }}">
             <div class="swiper-button-prev"></div>
-        </div>
+        </a>
 
     </div>
     <div class="flex justify-center items-center m-auto gap-6 mb-8 opacity-70">
