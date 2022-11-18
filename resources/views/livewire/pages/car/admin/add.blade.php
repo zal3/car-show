@@ -1,5 +1,4 @@
 <div>
-    <!-- component -->
     <div class="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
         <div class="container max-w-screen-lg mx-auto">
             <div>
@@ -12,7 +11,7 @@
                             <div
                                 class=" ml-4 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-900 border-dashed rounded-md">
                                 <div class="space-y-1 text-center">
-                                    <svg class="mx-auto h-12 w-12 text-black" stroke="currentColor" fill="none"
+                                    {{-- <svg class="mx-auto h-12 w-12 text-black" stroke="currentColor" fill="none"
                                         viewBox="0 0 48 48" aria-hidden="true">
                                         <path
                                             d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
@@ -27,11 +26,37 @@
                                     </div>
                                     <p class="text-xs text-black">
                                         PNG, JPG, GIF
-                                    </p>
+                                    </p> --}}
+                                        <label
+                                            class="w-full flex flex-col items-center px-2 py-6  @if ($image_path) bg-primary-700 text-black @else bg-white text-primary-700 @endif rounded-lg tracking-wide   cursor-pointer hover:bg-primary-700 hover:text-black">
+                                            <div wire:target="image_path">
+
+                                            </div>
+                                            <div wire.remove wire:target="image_path">
+                                                @if ($image_path)
+                                                    <i class="fa-solid fa-check text-2xl"></i>
+                                                @else
+                                                    <i class="fa-solid fa-upload text-2xl"></i>
+                                                @endif
+                                            </div>
+                                            <span class="mt-2 text-base leading-normal">
+                                                @if ($image_path)
+                                                    تم اختيار الصورة
+                                                @else
+                                                    إختر صورة
+                                                @endif
+                                            </span>
+                                            <input wire:model.lazy="image_path" type="file" class="hidden" />
+                                        </label>
+                                        @error('image_path')
+                                            <span
+                                                class="error text-primary-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">لم
+                                                يتم تحميل
+                                                الصورة</span>
+                                        @enderror
                                 </div>
                             </div>
                         </div>
-
                         <div class="lg:col-span-2">
                             <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
                                 <div class="md:col-span-5">
@@ -53,16 +78,12 @@
                                         value="" placeholder="" />
                                 </div>
                                 <div class="md:col-span-2">
-                                    <label for="city">لون السيارة</label>
-                                    <select id="countries"
+                                    <label for="city">حالة السيارة </label>
+                                    <select name="" wire:model.lazy="state" id="rent"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 pr-7 ">
-                                        <option selected>اختر لون</option>
-                                        <option value="US">احمر</option>
-                                        <option value="CA">ابيض</option>
-                                        <option value="FR">اسود</option>
-                                        <option value="DE">اصفر</option>
-                                        <option value="DE">اخضر</option>
-                                        <option value="DE">ازرق</option>
+                                        <option selected> </option>
+                                        <option value="1">مؤجرة</option>
+                                        <option value="0">غير مؤجرة</option>
                                     </select>
                                 </div>
                                 <div class="md:col-span-2">
@@ -106,15 +127,15 @@
                                 </div>
                                 <div class="md:col-span-1">
                                     <label for="color">لون السيارة</label>
-                                    <select id="color"
+                                    <select id="color" wire:model.lazy="color"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 pr-7 ">
                                         <option selected>اختر لون</option>
-                                        <option value="US">احمر</option>
-                                        <option value="CA">ابيض</option>
-                                        <option value="FR">اسود</option>
-                                        <option value="DE">اصفر</option>
-                                        <option value="DE">اخضر</option>
-                                        <option value="DE">ازرق</option>
+                                        <option value="1">احمر</option>
+                                        <option value="2">ابيض</option>
+                                        <option value="3">اسود</option>
+                                        <option value="4">اصفر</option>
+                                        <option value="5">اخضر</option>
+                                        <option value="6">ازرق</option>
                                     </select>
                                 </div>
                                 <div class="md:col-span-1">
@@ -137,15 +158,6 @@
                                         id="" class="rounded bg-gray-50">
                                 </div>
                                 <br>
-                                {{-- <div class="md:col-span-1">
-                                    <label for="state"> حالة السياره </label>
-                                    <select id="state"
-                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 pr-7 ">
-                                        <option selected> </option>
-                                        <option value="US">مؤجرة</option>
-                                        <option value="CA">غير مؤجرة</option>
-                                    </select>
-                                </div> --}}
                                 <div class="md:col-span-1">
                                     <label for="sale_price"> سعر السيارة</label>
                                     <input wire:model.lazy="sale_price" type="text" name="sale_price"
@@ -163,11 +175,11 @@
                             <div class="md:col-span-5 text-right mt-8">
                                 <div class="inline-flex items-end">
                                     <a href="{{ route('car') }}"
-                        class="w-auto bg-white ml-5 text-primary-600  border border-primary-600 rounded-lg shadow-md hover:shadow-xl hover:scale-105 font-medium  px-4 py-2">الرجوع</a>
-                                        <button type="submit"
-                        class="w-auto bg-blue-500 ml-5 text-white border border-primary-600 rounded-lg shadow-md hover:shadow-xl hover:scale-105 font-medium  px-4 py-2"> اضافة
-                                        </button>
-
+                                        class="w-auto bg-white ml-5 text-primary-600  border border-primary-600 rounded-lg shadow-md hover:shadow-xl hover:scale-105 font-medium  px-4 py-2">الرجوع</a>
+                                    <button type="submit"
+                                        class="w-auto bg-blue-500 ml-5 text-white border border-primary-600 rounded-lg shadow-md hover:shadow-xl hover:scale-105 font-medium  px-4 py-2">
+                                        اضافة
+                                    </button>
                                 </div>
                             </div>
                         </div>

@@ -36,4 +36,47 @@ class Car extends Model
         return $this->hasOne(Rent::class);
     }
             ### End Relationships ###
+
+            ######### FUNCTIONS ##########
+
+    ### add ###
+    public function add($data)
+    {
+        $this->fill($data);
+        $this->save();
+    }
+    ### End add ###
+
+    ### edit ###
+    public function edit($data)
+    {
+        $this->update($data);
+    }
+    ### End edit ###
+
+
+
+            ### image ###
+
+    //add_image
+    public function add_image($image)
+    {
+        $ext = $image->extension();
+        $name =  \Str::random(10) . '.' . $ext;
+        $image = $image->storeAs('public/cars/' . $this->id . '/images/', $name);
+        $this->image_path = 'storage/cars/' . $this->id . '/images/' . $name;
+        $this->save();
+    }
+
+    //update_image
+    public function update_image($image)
+    {
+        $ext = $image->extension();
+        $name =  \Str::random(10) . '.' . $ext;
+        $image = $image->storeAs('public/cars/' . $this->id . '/images/', $name);
+        $this->image_path = 'storage/cars/' . $this->id . '/images/' . $name;
+        $this->save();
+    }
+
+    ### End image ###
 }
