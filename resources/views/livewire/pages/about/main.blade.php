@@ -310,7 +310,7 @@
             </div>
         </div>
         <div class="basis-1/2 ml-16">
-            <img src="{{ asset('img/car-shoow.jpg') }}" alt="hero" class="h-1/2 ">
+            <img src="{{ asset('img/about/car-shoow.jpg') }}" alt="hero" class="h-1/2 ">
         </div>
     </div>
 
@@ -328,7 +328,7 @@
     .aa{
         animation: pulse 5s infinite;
     }
-    
+
 @keyframes pulse {
   0% {
     color: #001F3F;
