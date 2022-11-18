@@ -123,15 +123,17 @@
                 {{-- data-aos="fade-up" data-aos-delay="200" --}}
                 >
                     <div class="text-white ">
-                        <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
+                        <img src="{{ asset('img/team/girl1.jpg') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4 items-center"> حوراء محسن جاسم</h2>
                         <div class="flex justify-center  gg ">
-                            <i class="fa-solid fa-envelope hover:text-orange-700"></i>
+                            <i class="fa-solid fa-envelope hover:text-orange-700 "> 
+                                
+                            </i>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
                     <div class="text-white  ">
-                        <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
+                        <img src="{{ asset('img/girl2.jpg') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محمد عبد الزهرة </h2>
                         <div class="flex justify-center  gg ">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
@@ -139,7 +141,7 @@
                         </div>
                     </div>
                     <div class="text-white ">
-                        <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
+                        <img src="{{ asset('img/team/girl3.jpg') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4">زينب فوزي حميد </h2>
                         <div class="flex justify-center  gg ">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
