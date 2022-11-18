@@ -8,10 +8,14 @@
         </a>
     </div>
     <div class="grid grid-cols-4 gap-6 items-center justify-center px-24 py-16">
-        @foreach ($cars as $car)
+        @forelse ($cars as $car)
             <livewire:pages.car.card :car="$car" key="{{ now() }}" />
 
-        @endforeach
+        @empty
+        <div class="px-2 py-4  mb-4 text-sm text-gray-700 bg-primary-100 rounded-lg" role="alert">
+            <span class="font-medium">ملاحظة:</span>لم يتم اضافة حالات للموقع ليتم عرضها
+          </div>
+        @endforelse
     </div>
 
 </div>

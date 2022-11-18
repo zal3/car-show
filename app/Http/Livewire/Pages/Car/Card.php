@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class Card extends Component
 {
-    public $car;
+    public $car ,  $car_id;
     public function render()
     {
 

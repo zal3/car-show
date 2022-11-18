@@ -1,7 +1,7 @@
 <div>
     <article class="hov bg-gray mr-5 pb-2  w-65  bg-gray-300  ">
         @if($car->state == 1)
-        <div class="relative w-16 bg-red-500 p-2  rounded-b-full rounded-l-full ">مؤجرة</div>
+        <button href="{{ route('car')}}" class="relative w-16 bg-red-500 p-2  rounded-b-full rounded-l-full ">تاجير</button>
         @endif
         <img src="{{ asset($car->image_path ?? 'img/cars/popular1.png') }}"
             class="relative  p-3 w-60 h-32   hover:translate-y-1 ">

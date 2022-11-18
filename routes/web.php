@@ -33,7 +33,7 @@ Route::get('/about', About::class)->name('about');
 
 //car
 Route::get('/car', CarMain::class)->name('car');
-Route::get('/car-page', CarPage::class)->name('car-page');
+Route::get('/car-page/{car_id}', CarPage::class)->name('car-page');
 Route::get('/add-car', CarAdd::class)->name('add-car');
 
 
