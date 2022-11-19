@@ -116,13 +116,13 @@
     {{-- team --}}
     <div>
         <!-- banner section starts  -->
-
-        <div class="banner">
+        <div class="banner ">
             <div class="content">
-                <div class="px-4 flex items-center justify-start mx-4 ggg "
+                <div class="px-4 flex items-center justify-start mx-4 ggg   "
                 >
-                    <div class="text-white ">
-                        <img src="{{ asset('img/team/girl1 1.png') }}" alt="" class="w-20 h-20 rounded-full">
+                <div class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-bl-lg bg-gray ">
+                    <div class="text-black ">
+                        <img src="{{ asset('img/team/girl1 1.png') }}" alt="" class=" w-20 h-20 rounded-full">
                         <h2 class="my-4 items-center"> حوراء محسن جاسم</h2>
                         <div class="flex justify-center  gg ">
                         <a href="mailto:hawraaaltamimi49@gmail.com">
@@ -132,7 +132,9 @@
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
-                    <div class="text-white  ">
+                            </div>
+                <div class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-bl-lg bg-gray">
+                    <div class="text-black  ">
                         <img src="{{ asset('img/team/girl2 1.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محمد عبد الزهرة </h2>
                         <div class="flex justify-center  gg ">
@@ -142,7 +144,9 @@
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
-                    <div class="text-white ">
+             </div>
+        <div class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-bl-lg bg-gray">
+             <div class="text-black ">
                         <img src="{{ asset('img/team/girl3 1.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4">زينب فوزي حميد </h2>
                         <div class="flex justify-center  gg ">
@@ -153,9 +157,11 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
     </div>
+    
 </div>
 <style scoped>
     .gg {
@@ -167,16 +173,7 @@
         margin: 2rem 4rem;
     }
 
-    .banner {
-        /* background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/team/team2.jpg) no-repeat; */
-        background: url(../img/team/team2.jpg);
-        background-size: cover;
-        background-position: center;
-        padding: 4rem 2rem;
-        background-attachment: fixed;
-        text-align: center;
-
-    }
+   
 
     .banner .content span {
         font-size: 1.5rem;
