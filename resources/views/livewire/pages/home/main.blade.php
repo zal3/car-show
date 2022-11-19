@@ -125,7 +125,7 @@
                         <img src="{{ asset('img/team/girl1 1.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4 items-center"> حوراء محسن جاسم</h2>
                         <div class="flex justify-center  gg ">
-                        <a href="{{('hawraaaltamimi49@gmail.com')}}">
+                        <a href="mailto:hawraaaltamimi49@gmail.com">
                             <i class="fa-solid fa-envelope hover:text-orange-700 ">
                             </i>
                             </a>
@@ -136,7 +136,7 @@
                         <img src="{{ asset('img/team/girl2 1.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محمد عبد الزهرة </h2>
                         <div class="flex justify-center  gg ">
-                        <a href="{{ 'huraama2000@gmail.com'}}">
+                        <a href="mailto:huraama2000@gmail.com">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
                             </a>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
@@ -146,7 +146,7 @@
                         <img src="{{ asset('img/team/girl3 1.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4">زينب فوزي حميد </h2>
                         <div class="flex justify-center  gg ">
-                        <a href="{{ 'zainab.fawzy001@gmail.com '}}">
+                        <a href="mailto:zainab.fawzy001@gmail.com">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
                             </a>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>

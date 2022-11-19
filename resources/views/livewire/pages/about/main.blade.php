@@ -2,8 +2,8 @@
     {{-- video --}}
     <div>
         <div class="absolute inset-0 flex items-center justify-center ">
-            <video src="{{ asset('img/car.mp4') }}" muted autoplay loop
-                class=" mx-auto w-full h-96 object-cover opacity-60"></video></video>
+            <img src="{{ asset('img/back.jpg') }}" muted autoplay loop
+                class=" mx-auto w-full h-96 object-cover opacity-60"></img></img>
         </div>
         <div>
             <h1 class="aa flex justify-center  font-bold text-7xl mt-56  ">معرض البصرة للسيارات </h1>
