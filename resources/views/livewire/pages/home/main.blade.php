@@ -120,15 +120,15 @@
         <div class="banner">
             <div class="content">
                 <div class="px-4 flex items-center justify-start mx-4 ggg "
-                {{-- data-aos="fade-up" data-aos-delay="200" --}}
                 >
                     <div class="text-white ">
                         <img src="{{ asset('img/team/girl1 1.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4 items-center"> حوراء محسن جاسم</h2>
                         <div class="flex justify-center  gg ">
+                        <a href="{{('hawraaaltamimi49@gmail.com')}}">
                             <i class="fa-solid fa-envelope hover:text-orange-700 ">
-
                             </i>
+                            </a>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
@@ -136,7 +136,9 @@
                         <img src="{{ asset('img/team/girl2 1.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4"> حوراء محمد عبد الزهرة </h2>
                         <div class="flex justify-center  gg ">
+                        <a href="{{ 'huraama2000@gmail.com'}}">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
+                            </a>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
@@ -144,7 +146,9 @@
                         <img src="{{ asset('img/team/girl3 1.png') }}" alt="" class="w-20 h-20 rounded-full">
                         <h2 class="my-4">زينب فوزي حميد </h2>
                         <div class="flex justify-center  gg ">
+                        <a href="{{ 'zainab.fawzy001@gmail.com '}}">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
+                            </a>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
