@@ -116,7 +116,7 @@
     {{-- team --}}
     <div>
         <!-- banner section starts  -->
-        <div class="banner ">
+       <!-- <div class="banner ">
             <div class="content">
                 <div class="px-4 flex items-center justify-start mx-4 ggg   "
                 >
@@ -161,7 +161,66 @@
             </div>
         </div>
     </div>
-    
+                            -->
+    <div class="px-40 flex items-center justify-start mx-40 ggg   "
+                >
+    <div class=" max-w-full mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12 ">
+         <div class="relative flex flex-col min-w-0 break-words rounded-bl-lg bg-gray border-0 shadow-soft-xl  bg-clip-border">
+             <div class="relative"> 
+               <a class="block shadow-xl rounded-2xl"> 
+                <img src="{{ asset('img/team/girl1 1.png') }} "> 
+                <h2 class="my-4 flex justify-center  gg "> حوراء محسن جاسم</h2>
+                        <div class="flex justify-center  gg ">
+                        <a href="mailto:hawraaaltamimi49@gmail.com">
+                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
+                            </i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+            </a>
+                            </div> 
+         </div> 
+                                    </div> 
+                                </div> 
+
+                                <div class="w-full max-w-full mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12">
+         <div class="relative flex flex-col min-w-0 break-words rounded-bl-lg bg-gray border-0 shadow-soft-xl  bg-clip-border">
+             <div class="relative"> 
+               <a class="block shadow-xl rounded-2xl"> 
+                <img src="{{ asset('img/team/girl2 1.png') }}"> 
+                <h2 class="my-4 flex justify-center  gg">  حوراء محمد عبد الزهرة </h2>
+                        <div class="flex justify-center  gg ">
+                        <a href="mailto:huraama2000@gmail.com">
+                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
+                            </i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+            </a>
+                            </div> 
+         </div> 
+                                    </div> 
+                                </div> 
+
+
+                                <div class="w-full max-w-full mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12">
+         <div class="relative flex flex-col min-w-0 break-words rounded-bl-lg bg-gray border-0 shadow-soft-xl  bg-clip-border">
+             <div class="relative"> 
+               <a class="block shadow-xl rounded-2xl"> 
+                <img src="{{ asset('img/team/girl3 1.png') }}" > 
+                <h2 class="my-4 flex justify-center  gg">زينب فوزي حميد</h2>
+                        <div class="flex justify-center  gg ">
+                        <a href="mailto:zainab.fawzy001@gmail.com">
+                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
+                            </i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+            </a>
+                            </div> 
+         </div> 
+                                    </div> 
+                            </div>
+                                </div> 
+
+
 </div>
 <style scoped>
     .gg {
