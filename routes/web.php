@@ -8,12 +8,16 @@ use App\Http\Livewire\Pages\{
     Car\Main as CarMain,
     Contact\Main as Contact,
     Rental\Main as Rental,
+     Profile\Main as Profile,
 };
 use App\Http\Livewire\Pages\Car\{
     Admin\Add as CarAdd,
     Admin\Edit as CarEdit,
     CarPage as CarPage,
 
+};
+use App\Http\Livewire\Pages\Admins\{
+    main as Admins
 };
 /*
 |--------------------------------------------------------------------------
@@ -34,24 +38,34 @@ Route::get('/about', About::class)->name('about');
 //car
 Route::get('/car', CarMain::class)->name('car');
 Route::get('/car-page/{car_id}', CarPage::class)->name('car-page');
-Route::get('/add-car', CarAdd::class)->name('add-car');
-Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
-
-
-
 
 //contact
 Route::get('/contact', Contact::class)->name('contact');
 
 //rental
 Route::get('/rental', Rental::class)->name('rental');
+Route::middleware(['auth:sanctum'])->group(function () {
+    Route::middleware(['admin'])->group(function () {
 
-// Route::middleware([
-//     'auth:sanctum',
-//     config('jetstream.auth_session'),
-//     'verified'
-// ])->group(function () {
-//     Route::get('/dashboard', function () {
-//         return view('dashboard');
-//     });
-// });
+        // cases
+        Route::middleware(['superAdmin'])->group(function () {
+            Route::get('/add-car', CarAdd::class)->name('add-car');
+Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
+        });
+        // end cases
+
+        // admins
+        Route::get('/admins', Admins::class)->name('admins');
+        // end admins
+
+
+    });
+    //Profile
+
+    Route::get('/profile', Profile::class)->name('profile');
+
+    // donate
+    // Route::get('/donate', Donate::class)->name('donate');
+
+
+});
