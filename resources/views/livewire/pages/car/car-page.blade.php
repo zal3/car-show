@@ -30,30 +30,36 @@
                 <span>رقم السيارة :</span>
                 <span>{{ $car->number }}</span>
             </div>
+            @admin
             <div>
                 <span>رقم الهيكل :</span>
                 <span>{{ $car->chassis_number }}</span>
             </div>
+            @endadmin
             <div>
                 <span>لون السيارة :</span>
-                <span>@if ($car->color == 1)
-                                احمر
-                            @elseif($car->color == 2)
-                                ابيض
-                            @elseif($car->color == 3)
-                                اسود
-                            @elseif($car->color == 4)
-                                اصفر
-                            @elseif($car->color == 5)
-                                اخضر
-                            @elseif($car->color == 6)
-                                ازرق
-                            @endif</span>
+                <span>
+                    @if ($car->color == 1)
+                        احمر
+                    @elseif($car->color == 2)
+                        ابيض
+                    @elseif($car->color == 3)
+                        اسود
+                    @elseif($car->color == 4)
+                        اصفر
+                    @elseif($car->color == 5)
+                        اخضر
+                    @elseif($car->color == 6)
+                        ازرق
+                    @endif
+                </span>
             </div>
+            @admin
             <div>
                 <span>سعر الاستيراد :</span>
                 <span>{{ $car->import_price }}$</span>
             </div>
+            @endadmin
             <div>
                 <span>دولة الاستيراد :</span>
                 <span>{{ $car->import_place }}</span>
@@ -62,13 +68,15 @@
                 <span>تاريخ الاستيراد :</span>
                 <span>{{ $car->import_date }}</span>
             </div>
+            @admin
             <div>
                 <span>الوصف :</span>
                 <span>{{ $car->note }}</span>
             </div>
+            @endadmin
         </div>
         {{-- route sent to next cardpage  --}}
-        <a href="{{ route('car-page', ['car_id' => $car->id +1]) }}">
+        <a href="{{ route('car-page', ['car_id' => $car->id + 1]) }}">
             <div class="swiper-button-next"></div>
         </a>
         <a href="{{ route('car-page', ['car_id' => $car->id - 1]) }}">
@@ -76,12 +84,15 @@
         </a>
 
     </div>
+    @admin
     <div class="flex justify-center items-center m-auto gap-6 mb-8 opacity-70">
-        <button wire:click="confirm({{ $car->id }})"><i class="fa-solid fa-trash text-gray-600 h-10 w-10 hover:text-red-700 "></i></button>
-<a href="{{ route('edit-car' , ['car_id' => $car->id]) }}">
-        <i class="fa-solid fa-pen-to-square text-gray-600 h-10 w-10  hover:text-blue-700"></i>
-</a>
+        <button wire:click="confirm({{ $car->id }})"><i
+                class="fa-solid fa-trash text-gray-600 h-10 w-10 hover:text-red-700 "></i></button>
+        <a href="{{ route('edit-car', ['car_id' => $car->id]) }}">
+            <i class="fa-solid fa-pen-to-square text-gray-600 h-10 w-10  hover:text-blue-700"></i>
+        </a>
     </div>
+    @endadmin
 
 </div>
 <style scoped>

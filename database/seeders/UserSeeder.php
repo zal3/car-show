@@ -27,7 +27,8 @@ class UserSeeder extends Seeder
         //id:2 is the employee user
         User::create([
             'name' => 'employee1',
-            'email' => 'user1@gmail.com',
+            'email' => 'employee1@gmail.com',
+            'is_admin' => true,
             'password' =>bcrypt(123456), // password
             'profile_photo_path' => 'https://i.pravatar.cc/150?img=1',
             //employer default
@@ -36,7 +37,8 @@ class UserSeeder extends Seeder
         //id:3 is the employee user
         User::create([
             'name' => 'employee2',
-            'email' => 'user2@gmail.com',
+            'email' => 'employee2@gmail.com',
+            'is_admin' => true,
             'password' =>bcrypt(123456), // password
             'profile_photo_path' => 'https://i.imgur.com/9YQ9Z0C.jpg',
             //employer default
@@ -44,11 +46,21 @@ class UserSeeder extends Seeder
 
         //id:4 is the employee user
         User::create([
-            'name' => 'employee3',
-            'email' => 'user3@gmail.com',
+            'name' => 'user1',
+            'email' => 'user1@gmail.com',
             'password' =>bcrypt(123456), // password
-            'profile_photo_path' => 'https://i.imgur.com/9YQ9Z0C.jpg',
+            'profile_photo_path' => 'https://i.pravatar.cc/150?img=1',
             //employer default
         ]);
+
+        //id:5 is the employee user
+        User::create([
+            'name' => 'user2',
+            'email' => 'user2@gmail.com',
+            'password' =>bcrypt(123456), // password
+            'profile_photo_path' => 'https://i.pravatar.cc/150?img=1',
+            //employer default
+        ]);
+
     }
 }

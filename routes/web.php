@@ -42,18 +42,16 @@ Route::get('/car-page/{car_id}', CarPage::class)->name('car-page');
 //contact
 Route::get('/contact', Contact::class)->name('contact');
 
-//rental
-Route::get('/rental', Rental::class)->name('rental');
+
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::middleware(['admin'])->group(function () {
 
-        // cases
+        // cars
         Route::middleware(['superAdmin'])->group(function () {
             Route::get('/add-car', CarAdd::class)->name('add-car');
 Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
         });
-        // end cases
-
+        // end cars
         // admins
         Route::get('/admins', Admins::class)->name('admins');
         // end admins
@@ -63,6 +61,7 @@ Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
     //Profile
 
     Route::get('/profile', Profile::class)->name('profile');
+Route::get('/rental', Rental::class)->name('rental');
 
     // donate
     // Route::get('/donate', Donate::class)->name('donate');
