@@ -63,13 +63,11 @@ class Navbar extends Component
             [
                 'name' => 'انضمام',
                 'route' => 'register',
-                'icon' => 'user-plus',
                 'permissions' => 1,
             ],
             [
-                'name' => ' الدخول',
+                'name' => ' تسجيل الدخول',
                 'route' => 'login',
-                'icon' => 'people-pulling',
                 'permissions' => 1,
             ],
 
@@ -125,7 +123,6 @@ class MenuItem
     {
         $this->name = $data['name'];
         $this->route = $data['route'];
-        $this->icon = $data['icon'];
         $this->permissions = $data['permissions'] ?? 0;
 
 

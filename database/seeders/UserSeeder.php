@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
             'email' => 'admin@gmail.com',
             'password' =>bcrypt(123456), // password
             'is_admin' => true,
-            'profile_photo_path' => 'https://i.pravatar.cc/150?img=1',
+            'profile_photo_path' => '/img/team/girl.png',
             // 'type' => true, // true for admin, false for employer
         ]);
 
@@ -30,7 +30,7 @@ class UserSeeder extends Seeder
             'email' => 'employee1@gmail.com',
             'is_admin' => true,
             'password' =>bcrypt(123456), // password
-            'profile_photo_path' => 'https://i.pravatar.cc/150?img=1',
+            'profile_photo_path' => '/img/team/girl.png',
             //employer default
         ]);
 
@@ -40,7 +40,7 @@ class UserSeeder extends Seeder
             'email' => 'employee2@gmail.com',
             'is_admin' => true,
             'password' =>bcrypt(123456), // password
-            'profile_photo_path' => 'https://i.imgur.com/9YQ9Z0C.jpg',
+            'profile_photo_path' => '/img/team/girl.png',
             //employer default
         ]);
 
@@ -49,7 +49,7 @@ class UserSeeder extends Seeder
             'name' => 'user1',
             'email' => 'user1@gmail.com',
             'password' =>bcrypt(123456), // password
-            'profile_photo_path' => 'https://i.pravatar.cc/150?img=1',
+            'profile_photo_path' => '/img/team/girl.png',
             //employer default
         ]);
 
@@ -58,7 +58,7 @@ class UserSeeder extends Seeder
             'name' => 'user2',
             'email' => 'user2@gmail.com',
             'password' =>bcrypt(123456), // password
-            'profile_photo_path' => 'https://i.pravatar.cc/150?img=1',
+            'profile_photo_path' => '/img/team/girl.png',
             //employer default
         ]);
 
