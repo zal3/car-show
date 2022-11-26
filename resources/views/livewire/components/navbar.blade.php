@@ -19,9 +19,9 @@
                 </button>
             </div>
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between ml-24">
-                <div class="flex-shrink-0 flex items-center ">
-                    <a href="/" class="flex items-center text-xl">
-                        <img src="{{ asset('/img/lg.png') }}" class="h-12 mx-4 ">
+                <div class="flex items-center  ">
+                    <a href="/" >
+                        <img src="{{ asset('/img/lg.png') }}" class="h-12 w-40 mx-4 ">
                     </a>
                 </div>
                 <div class="hidden md:block sm:ml-6">
@@ -56,23 +56,20 @@
                         {{-- content --}}
                         <div id="dropdown" data-popper-reference-hidden="" data-popper-escaped=""
                             data-popper-placement="top"
-                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
-                            <div class="px-4 py-3 text-sm text-gray-900 ">
-                                <div>{{ auth()->user()->name }}</div>
-
-                            </div>
-                            <ul class=" text-sm text-gray-700" aria-labelledby="dropdownInformationButton">
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow items-center w-24 ">
+    
+                            <ul class=" text-center text-sm text-gray-700" aria-labelledby="dropdownInformationButton">
                                 <li>
-                                    <a href="{{ route('profile') }}" class="block px-4 py-2  hover:bg-gray-100 ">
+                                    <a href="{{ route('profile') }}" class="block px-4 py-2  hover:bg-orange-500 hover:text-white ">
                                         <i class="fa-solid fa-user text-primary-500"></i>
-                                        حسابك </a>
+                                         {{ auth()->user()->name }}</a>
                                 </li>
                                 <li>
                                     <form method="POST" action="{{ route('logout') }}" class="" x-data>
                                         @csrf
-                                        <button type="submit" class="block px-4 py-2 w-full text-right hover:bg-gray-100 ">
-                                            <i class="fa-solid fa-person-walking-arrow-right text-red-500"></i>
-                                            الخروج </button>
+                                        <button type="submit" class="block px-4 py-2 w-full text-right text-red-500 hover:bg-orange-500 hover:text-white ">
+                                            <i class="fa-solid fa-person-walking-arrow-right   "></i>
+                                            </button>
                                     </form>
                                 </li>
                             </ul>
@@ -84,7 +81,7 @@
                             <a href="{{ route($item->route) }}"
                                 class="bt text-xs md:text-sm py-1 pl-3 pr-4 lg:mx-2 text-primary-700 @if ($item->route == 'login') border border-primary-500 @else  lg:inline @endif rounded-lg">
                                 {{ $item->name }}
-                                <i class="fa-solid fa-{{ $item->icon }}"></i>
+                                {{-- <i class="fa-solid fa-{{ $item->icon }}"></i> --}}
 
                             </a>
                         @endforeach

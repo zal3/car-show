@@ -45,33 +45,11 @@
                 @endif
                 ">
                 <h1 class="text-xl">{{ $user->name }}</h1>
-                <p class="text-gray-500">{{ $user->telegram_username }}ssss</p>
+                    <h4 class="text-sm mt-2  text-black">انضم منذ {{ date('Y', strtotime($user->created_at)) }}
             </div>
         </div>
-        <div class="basis-2/3 ">
-            <div class="bg-white rounded-md p-6  ">
-                <div class="flex mb-3   items-center">
-                    <h6 class=" basis-1/5  font-bold">الاسم الكامل :</h6>
-                    <input type="text" class=" basis-3/5  " value="John Doe">
-                </div>
-                <div class="flex mb-3  items-center">
-                    <h6 class=" basis-1/5 font-bold">الايميل :</h6>
-                    <input type="text" class="basis-3/5 " value="john@example.com">
-                </div>
-                <div class="flex mb-3  items-center">
-                    <h6 class=" basis-1/5 font-bold">رقم الهاتف :</h6>
-                    <input type="text" class="basis-3/5 " value="(239) 816-9029">
-                </div>
-                <div class="flex mb-3  items-center">
-                    <h6 class="basis-1/5 font-bold">معرف التليكرام: </h6>
-                    <input type="text" class="basis-3/5 " value="(320) 380-4539">
-                </div>
-                <div class="flex mb-3  items-center">
-                    <h6 class="basis-1/5 font-bold">العنوان:</h6>
-                    <input type="text" class="basis-3/5 " value="Bay Area, San Francisco, CA">
-                </div>
-            </div>
-        </div>
+        @livewire('pages.profile.basic', ['user' => $user])
+
     </div>
 </div>
 

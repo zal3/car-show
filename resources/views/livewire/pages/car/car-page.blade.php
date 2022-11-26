@@ -1,5 +1,5 @@
 <div>
-    <div class=" flex   justify-center gap-4 items-center px-8 pb-8  mx-16 ">
+    <div class=" flex justify-center  items-center px-8 pb-8  mx-16 ">
         <div class="">
             {{-- <img class="" src=" {{ asset('img/cars/car6.jpg') }}"> --}}
             <div class="container">
@@ -31,10 +31,10 @@
                 <span>{{ $car->number }}</span>
             </div>
             @admin
-            <div>
-                <span>رقم الهيكل :</span>
-                <span>{{ $car->chassis_number }}</span>
-            </div>
+                <div>
+                    <span>رقم الهيكل :</span>
+                    <span>{{ $car->chassis_number }}</span>
+                </div>
             @endadmin
             <div>
                 <span>لون السيارة :</span>
@@ -55,10 +55,10 @@
                 </span>
             </div>
             @admin
-            <div>
-                <span>سعر الاستيراد :</span>
-                <span>{{ $car->import_price }}$</span>
-            </div>
+                <div>
+                    <span>سعر الاستيراد :</span>
+                    <span>{{ $car->import_price }}$</span>
+                </div>
             @endadmin
             <div>
                 <span>دولة الاستيراد :</span>
@@ -69,10 +69,10 @@
                 <span>{{ $car->import_date }}</span>
             </div>
             @admin
-            <div>
-                <span>الوصف :</span>
-                <span>{{ $car->note }}</span>
-            </div>
+                <div>
+                    <span>الوصف :</span>
+                    <span>{{ $car->note }}</span>
+                </div>
             @endadmin
         </div>
         {{-- route sent to next cardpage  --}}
@@ -82,18 +82,16 @@
         <a href="{{ route('car-page', ['car_id' => $car->id - 1]) }}">
             <div class="swiper-button-prev"></div>
         </a>
-
     </div>
     @admin
-    <div class="flex justify-center items-center m-auto gap-6 mb-8 opacity-70">
-        <button wire:click="confirm({{ $car->id }})"><i
-                class="fa-solid fa-trash text-gray-600 h-10 w-10 hover:text-red-700 "></i></button>
-        <a href="{{ route('edit-car', ['car_id' => $car->id]) }}">
-            <i class="fa-solid fa-pen-to-square text-gray-600 h-10 w-10  hover:text-blue-700"></i>
-        </a>
-    </div>
+        <div class="flex justify-center items-center m-auto gap-6 mb-8 opacity-70">
+            <button wire:click="confirm({{ $car->id }})"><i
+                    class="fa-solid fa-trash text-gray-600 h-10 w-10 hover:text-red-700 "></i></button>
+            <a href="{{ route('edit-car', ['car_id' => $car->id]) }}">
+                <i class="fa-solid fa-pen-to-square text-gray-600 h-10 w-10  hover:text-blue-700"></i>
+            </a>
+        </div>
     @endadmin
-
 </div>
 <style scoped>
     .container {

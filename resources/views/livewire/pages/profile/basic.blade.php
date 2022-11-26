@@ -1,4 +1,4 @@
-<div>
+{{-- <div>
     <div class="px-4 pt-4 ">
         <form action="#" class="space-y-5" wire:submit.prevent="edit">
 
@@ -51,10 +51,10 @@
                     </div>
                 </div>
                 @endadmin
-            </div>
+            </div> --}}
 
-            {{-- profile image--}}
-            <div class="justify-center">
+{{-- profile image --}}
+{{-- <div class="justify-center">
                 <label
                     class="w-full pt-5 h-28  md:w-3/5 flex flex-col items-center px-2 py-6  @if ($profile_photo) bg-primary-700 text-white @else bg-white text-primary-700 @endif rounded-lg tracking-wide border-4 border-dashed border-primary-700 cursor-pointer hover:bg-primary-700 hover:text-white">
                     <div wire:loading wire:target="profile_photo">
@@ -87,5 +87,74 @@
                 حفظ</button>
         </form>
     </div>
+
+</div> --}}
+<div class="basis-2/3 ">
+    <form class="bg-white rounded-md p-6  " wire:submit.prevent="edit">
+        
+        <div class="flex mb-3   items-center">
+            <h6 class=" basis-1/5  font-bold">الاسم الكامل :</h6>
+            <input wire:model="name" type="text" value="{{ $name }}" type="text" class=" basis-3/5  "
+                value="John Doe">
+            @error('name')
+                <span class="text-red-500 error">{{ $message }}</span>
+            @enderror
+        </div>
+        <div class="flex mb-3  items-center">
+            <h6 class=" basis-1/5 font-bold">الايميل :</h6>
+            <input wire:model="email" id="email" type="text" class="basis-3/5 disabled block">
+            @error('email')
+                <span class="text-red-500 error">{{ $message }}</span>
+            @enderror
+        </div>
+        <div class="flex mb-3  items-center">
+            <h6 class=" basis-1/5 font-bold">رقم الهاتف :</h6>
+            <input wire:model="phone_number" type="text" class="basis-3/5 " >
+            @error('phone_number')
+                <span class="text-red-500 error">{{ $message }}</span>
+            @enderror
+        </div>
+        <div class="flex mb-3  items-center">
+            <h6 class="basis-1/5 font-bold">معرف التليكرام: </h6>
+            <input wire:model="telegram_username" type="text" class="basis-3/5 " >
+
+            @error('telegram_username')
+                <span class="text-red-500 error">{{ $message }}</span>
+            @enderror
+        </div>
+        <div class="justify-center flex m-auto  mr-6">
+                <label class="w-96 pt-5 h-30   flex flex-col items-center px-2 py-6  @if ($profile_photo) bg-primary-700 text-black @else bg-white text-primary-700 @endif rounded-lg tracking-wide cursor-pointer hover:bg-primary-700 hover:text-black">
+                    <div wire:loading wire:target="profile_photo">
+                    </div>
+                    <div wire:loading.remove wire:target="profile_photo">
+                        @if ($profile_photo)
+                        <i class="fa-solid fa-check text-base md:text-2xl"></i>
+                        @else
+                        <i class="fa-solid fa-upload text-base md:text-2xl"></i>
+                        @endif
+                    </div>
+                    <span class="mt-2 text-base leading-normal">
+                        @if ($profile_photo)
+                        تم اختيار الصورة
+                        @else
+                        إختر صورة
+                        @endif
+                    </span>
+                    <input type='file' class="hidden" wire:model="profile_photo" />
+                </label>
+                @error('profile_photo')
+                <span class="error text-primary-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">لم يتم تحميل
+                    الصورة</span>
+                @enderror
+            </div>
+        {{-- <div class="flex mb-3  items-center">
+            <h6 class="basis-1/5 font-bold">العنوان:</h6>
+            <input type="text" class="basis-3/5 " value="Bay Area, San Francisco, CA">
+        </div> --}}
+        <button type="submit"
+            class=" flex m-auto justify-center mt-4 text-black bg-primary-600  hover:scale-105 duration-200 hover:bg-primary-800 focus:ring-2 focus:outline-none focus:ring-primary-600 font-medium text-sm w-full md:w-56 px-5 py-2.5 text-center border border-gray-600 rounded-md">
+            حفظ</button>
+            
+    </form>
 
 </div>
