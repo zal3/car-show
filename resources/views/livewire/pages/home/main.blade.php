@@ -107,7 +107,7 @@
             <button type="submit" id="" class="btnn"> تأجير</button>
         </a>
     </div>
-    
+
 </div>
 
 <style scoped>
@@ -115,7 +115,7 @@
         gap: 1rem;
     }
 
-    
+
 
 
 
@@ -190,6 +190,7 @@
         gap: 1rem;
         bottom: 8rem;
         left: 400px;
+        
         padding: 20px;
         border-radius: 0.5rem;
     }
