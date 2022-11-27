@@ -9,6 +9,7 @@
                 <div class="button"><a href="#"> {{ $car->sale_price }}$ </a></div>
             </div>
         </div>
+        
         <div class="text-lg p-6 grid grid-cols-1 mt-9">
             <div>
                 <span>نوع السيارة :</span>
@@ -82,6 +83,7 @@
         <i class="fa-solid fa-pen-to-square text-gray-600 h-10 w-10  hover:text-blue-700"></i>
 </a>
     </div>
+    
 
 </div>
 <style scoped>
