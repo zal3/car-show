@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Pages\Profile;
 
 use Livewire\Component;
+use App\Models\User;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\WithFileUploads;
 
@@ -25,7 +26,9 @@ class Basic extends Component
             'phone_number' => $this->phone_number,
             'telegram_username' => $this->telegram_username,
         ]);
-
+        
+        
+    
         if($this->profile_photo)
             $this->user->addProfile($this->profile_photo);
 

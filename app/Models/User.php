@@ -30,6 +30,8 @@ class User extends Authenticatable
         'email',
         'password',
         'is_admin',
+        'phone_number',
+        'telegram_username',
     ];
 
     /**
@@ -81,9 +83,14 @@ class User extends Authenticatable
     }
             ### End Relationships ###
 
-            public function addProfile($file , $type = null){
+        public function edit($data)    {
+        $this->fill($data);
+        $this->save();
+    }
 
-        $type = $type ?? 'student';
+    public function addProfile($file , $type = null){
+
+        // $type = $type ?? 'student';
         $ext = $file->extension();
         $name=\Str::random(10).'.'.$ext;
         $file->storeAs('public/'. $type . '/profile/'. $this->id .'/' ,$name);

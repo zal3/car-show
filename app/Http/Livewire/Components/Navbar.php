@@ -36,13 +36,12 @@ class Navbar extends Component
                 'name' => 'تأجير السيارات',
                 'route' => 'rental',
                 'icon' => 'circle-info',
-                // 'permissions' => 4,
+                'permissions' => 2,
             ],
             [
                 'name' => 'المعرض',
                 'route' => 'about',
                 'icon' => 'circle-info',
-                // 'permissions' => 2,
 
             ],
             [
@@ -50,6 +49,13 @@ class Navbar extends Component
                 'route' => 'contact',
                 'icon' => 'circle-info',
             ],
+            [
+                'name' => 'الاداريين',
+                'route' => 'admins',
+                'icon' => 'circle-info',
+                'permissions' => 4,
+            ],
+
 
         ]);
 
@@ -57,15 +63,14 @@ class Navbar extends Component
             [
                 'name' => 'انضمام',
                 'route' => 'register',
-                'icon' => 'user-plus',
                 'permissions' => 1,
             ],
             [
-                'name' => ' الدخول',
+                'name' => ' تسجيل الدخول',
                 'route' => 'login',
-                'icon' => 'people-pulling',
                 'permissions' => 1,
             ],
+
 
         ]);
 
@@ -118,7 +123,6 @@ class MenuItem
     {
         $this->name = $data['name'];
         $this->route = $data['route'];
-        $this->icon = $data['icon'];
         $this->permissions = $data['permissions'] ?? 0;
 
 

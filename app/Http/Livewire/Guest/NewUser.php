@@ -33,7 +33,7 @@ class NewUser extends Component
         $user = new User;
         $user->add($data);
         if ($this->type == 1) {
-            $user->student()->create([
+            $user->create([
                 'department' => $this->department,
                 'study_type' => $this->study_type,
                 'stage' => $this->stage,
