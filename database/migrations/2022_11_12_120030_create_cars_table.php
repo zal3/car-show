@@ -22,13 +22,19 @@ return new class extends Migration
             $table->string('number')->nullable()->unique();
             $table->string('chassis_number')->nullable()->unique();
             $table->integer('color')->nullable();
+            // <option value="1">احمر</option>
+            //                             <option value="2">ابيض</option>
+            //                             <option value="3">اسود</option>
+            //                             <option value="4">اصفر</option>
+            //                             <option value="5">اخضر</option>
+            //                             <option value="6">ازرق</option>
             $table->text('note')->nullable();
             $table->string('import_place')->nullable();
             $table->date('import_date')->nullable();
             $table->integer('import_price')->nullable();
-            $table->boolean('state')->default(false); // false for not rent, true for rent
+            $table->boolean('state')->default(false); // false 0 for not rent, true 1 for rent
             $table->string('image_path')->nullable();
-            $table->softDeletes();
+            // $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -29,6 +29,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'is_admin',
     ];
 
     /**
@@ -61,6 +62,11 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
+    // SCOPES
+    public function scopeAdmins($query){
+        return $query->where('is_admin', true);
+    }
+
     ### Relationships ###
 
     //rent
@@ -68,6 +74,28 @@ class User extends Authenticatable
     {
         return $this->hasMany(Rent::class);
     }
+
+    public function admin()
+    {
+        return $this->hasOne(Admin::class);
+    }
             ### End Relationships ###
 
+            public function addProfile($file , $type = null){
+
+        $type = $type ?? 'student';
+        $ext = $file->extension();
+        $name=\Str::random(10).'.'.$ext;
+        $file->storeAs('public/'. $type . '/profile/'. $this->id .'/' ,$name);
+        $this->profile_photo_path = 'storage/' . $type . '/profile/'.$this->id.'/'.$name;
+        $this->save();
+    }
+    public function add($data){
+        $this->fill($data);
+        $this->save();
+    }
+    public function getProfilePhotoUrlAttribute()
+    {
+        return $this->profile_photo_path ?? 'https://www.gravatar.com/avatar/'.md5($this->email).'?s=200&d=mm';
+    }
 }

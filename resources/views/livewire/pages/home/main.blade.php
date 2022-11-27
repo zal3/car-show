@@ -3,15 +3,19 @@
     {{-- home --}}
     <div class="ho w-full relative grid items-center mx-4 px-4">
         <div class="text">
-            <h1 class="font-bold " data-aos="fade-up" data-aos-delay="150"><span class="text-orange">المعرض</span>
-                الدولي<br> للسيارات</h1>
+            <h1 class="font-bold " data-aos="fade-up" data-aos-delay="150"><span class="text-orange">معرض</span>
+                البصرة<br> للسيارات</h1>
             <h5 class="px-5" data-aos="fade-up" data-aos-delay="300">للحصول على أفضل سيارة في المدينة
                 <br> بأفضل سعر وجودة
             </h5>
-            <div class="bttn flex  " data-aos="fade-up" data-aos-delay="400">
-                <button class="btn w-48   cursor-pointer bg-orange  text-white"> ابدا رحلتك </button>
-                <button class="btn w-48   cursor-pointer bg-orange  text-white"> السيارات </button>
-            </div>
+            {{-- <div class="bttn flex  " data-aos="fade-up" data-aos-delay="400">
+                <a href="{{ route('car') }}">
+                    <button class="btn w-48   cursor-pointer bg-orange  text-white"> السيارات</button>
+                </a>
+                <a href="{{ route('rental') }}">
+                    <button class="btn w-48   cursor-pointer bg-orange  text-white"> اجر سيارة </button>
+                </a>
+            </div> --}}
         </div>
 
     </div>
@@ -31,7 +35,7 @@
                 الإنتاج
                 لتجارة السيارات الحديثة كل ما هو جديد في عالم السيارات , <br>اسعار تنافسية
             </p>
-            <a href="#" class="pt-6 text-blue-900 font-bold">اعرف المزيد</a>
+            <a href="{{ route('about') }}" class="pt-6 text-blue-900 font-bold">اعرف المزيد</a>
         </div>
     </div>
 
@@ -39,37 +43,41 @@
     <div class="popular section " id="popular">
         <div class="flex justify-between items-center ">
             <h2 class=" text-5xl text-black font-bold px-4 mx-4">احدث السيارات</h2>
+            <a href="{{ route('car') }}">
             <button class="text-blue  text-xl mt-4"> لرؤية المزيد </button>
+            </a>
         </div>
         <div class="popular__container container swiper  "data-aos="fade-left">
             <div class="swiper-wrapper">
-                @for ($i = 0; $i < 9; $i++)
+                @foreach ($cars as $car)
+
                     <div class="swiper-slide  ss">
-                        <article class=" popular__card bg-gray px-6 py-6  overflow-hidden relative w-64 bg-gray">
+                        <a href="{{ route('car-page', ['car_id' => $car->id]) }}">
+                        <article class=" popular__card bg-gray px-6 py-6   overflow-hidden relative w-56 bg-gray">
                             <div class="shape shape__smaller"></div>
-                            <h1 class="popular__title text-orange ">بورش </h1>
-                            <h3 class="popular__subtitle">توربو </h3>
-                            <img src="{{ asset('img/cars/popular1.png') }}" alt="" class="popular__img">
-                            <div class="popular___data text-black text-md grid grid-cols-2  mb-6">
+                            <h1 class="popular__title text-orange ">{{ $car->type }}</h1>
+                            <h3 class="popular__subtitle">{{ $car->category }} </h3>
+                            {{-- <img src="{{ asset('img/cars/popular1.png') }}" alt="" class="popular__img"> --}}
+                            <img src="{{asset($car->image_path ?? 'img/cars/car1.jpg') }}" alt="" class="popular__img">
+                            {{-- <div class="popular___data text-black text-md grid grid-cols-2  mb-6">
                                 <div class="popular___data-group ">
-                                    <i class="fa-solid fa-gauge-high"></i> 3.7 Sec
+                                    <i class="fa-solid fa-gauge-high"></i> {{ $car->model }}
                                 </div>
                                 <div class="popular___data-group ">
-                                    <i class="fa-solid fa-bolt"></i> 356 Km/h
+                                    <i class="fa-solid fa-bolt"></i> {{ $car->color }}
                                 </div>
-                                <div class="popular___data-group">
-                                    <i class="fa-solid fa-charging-station"></i> Electric
-                                </div>
-                            </div>
+
+                            </div> --}}
                             <div class="grid grid-cols-2 justify-between">
-                                <div class=" text-black left-2 bottom-2 absolute"> $ 1,000,000</div>
+                                <div class=" text-black left-2 bottom-2 absolute">$ {{ $car->sale_price }} </div>
                                 <button class="button popular__button bg-orange ">
                                     <i class="fa-solid fa-bag-shopping"></i>
                                 </button>
                             </div>
                         </article>
+                        </a>
                     </div>
-                @endfor
+                @endforeach
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -100,46 +108,163 @@
         </div>
         {{-- form-container --}}
 
-        <div class=" flex justify-center bg-blue  items-center " action="" >
+        <a href="{{ route('rental') }}"  class=" flex justify-center bg-blue  items-center ">
             <button type="submit" id="" class="btnn"> تأجير</button>
-        </div>
+            </a>
     </div>
 
     {{-- team --}}
-    <div>
         <!-- banner section starts  -->
-
-        <div class="banner">
+       <!-- <div class="banner ">
             <div class="content">
-                <div class="px-4 flex items-center justify-start mx-4 ggg "data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-white">
-                        <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
-                        <h2 class="my-4"> حوراء محسن </h2>
+                <div class="px-4 flex items-center justify-start mx-4 ggg   "
+                >
+                <div class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-bl-lg bg-gray ">
+                    <div class="text-black ">
+                        <img src="{{ asset('img/team/girl1 1.png') }}" alt="" class=" w-20 h-20 rounded-full">
+                        <h2 class="my-4 items-center"> حوراء محسن جاسم</h2>
                         <div class="flex justify-center  gg ">
-                            <i class="fa-solid fa-envelope hover:text-orange-700"></i>
+                        <a href="mailto:hawraaaltamimi49@gmail.com">
+                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
+                            </i>
+                            </a>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
-                    <div class="text-white ">
-                        <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
-                        <h2 class="my-4"> حوراء محسن </h2>
+                            </div>
+                <div class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-bl-lg bg-gray">
+                    <div class="text-black  ">
+                        <img src="{{ asset('img/team/girl2 1.png') }}" alt="" class="w-20 h-20 rounded-full">
+                        <h2 class="my-4"> حوراء محمد عبد الزهرة </h2>
                         <div class="flex justify-center  gg ">
+                        <a href="mailto:huraama2000@gmail.com">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
+                            </a>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
-                    <div class="text-white ">
-                        <img src="{{ asset('img/team/girl.png') }}" alt="" class="w-20 h-20 rounded-full">
-                        <h2 class="my-4"> حوراء محسن </h2>
+             </div>
+        <div class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-bl-lg bg-gray">
+             <div class="text-black ">
+                        <img src="{{ asset('img/team/girl3 1.png') }}" alt="" class="w-20 h-20 rounded-full">
+                        <h2 class="my-4">زينب فوزي حميد </h2>
                         <div class="flex justify-center  gg ">
+                        <a href="mailto:zainab.fawzy001@gmail.com">
                             <i class="fa-solid fa-envelope hover:text-orange-700"></i>
+                            </a>
                             <i class="fa-brands fa-github hover:text-orange-700"></i>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
     </div>
+                            -->
+   <!-- <div class="px-40 flex items-center justify-center  mx-40 ggg   "
+                >
+    <div class=" max-w-full mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12 ">
+         <div class="relative flex flex-col min-w-0 break-words rounded-bl-lg bg-gray border-0 shadow-soft-xl  bg-clip-border">
+             <div class="relative"> 
+               <a class="block shadow-xl rounded-2xl"> 
+                <img src="{{ asset('img/team/girl1 1.png') }} "> 
+                <h2 class="my-4 flex justify-center  gg "> حوراء محسن جاسم</h2>
+                        <div class="flex justify-center  gg ">
+                        <a href="mailto:hawraaaltamimi49@gmail.com">
+                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
+                            </i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+            </a>
+                            </div> 
+         </div> 
+                                    </div> 
+                                </div> 
+
+                                <div class="w-full max-w-full mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12">
+         <div class="relative flex flex-col min-w-0 break-words rounded-bl-lg bg-gray border-0 shadow-soft-xl  bg-clip-border">
+             <div class="relative"> 
+               <a class="block shadow-xl rounded-2xl"> 
+                <img src="{{ asset('img/team/girl2 1.png') }}"> 
+                <h2 class="my-4 flex justify-center  gg">  حوراء محمد عبد الزهرة </h2>
+                        <div class="flex justify-center  gg ">
+                        <a href="mailto:huraama2000@gmail.com">
+                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
+                            </i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+            </a>
+                            </div> 
+         </div> 
+                                    </div> 
+                                </div> 
+
+
+                                <div class="w-full max-w-full mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12">
+         <div class="relative flex flex-col min-w-0 break-words rounded-bl-lg bg-gray border-0 shadow-soft-xl  bg-clip-border">
+             <div class="relative"> 
+               <a class="block shadow-xl rounded-2xl"> 
+                <img src="{{ asset('img/team/girl3 1.png') }}" > 
+                <h2 class="my-4 flex justify-center  gg">زينب فوزي حميد</h2>
+                        <div class="flex justify-center  gg ">
+                        <a href="mailto:zainab.fawzy001@gmail.com">
+                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
+                            </i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+            </a>
+                            </div> 
+         </div> 
+                                    </div> 
+                            </div>
+                                </div> 
+
+                            -->
+ <h6 class=" font-bold px-4 mx-4 text-3xl "data-aos="fade-up" data-aos-delay="150">فريق التنفيذ</h6> 
+ <div class="px-40 flex justify-center   mx-40 ggg"data-aos="fade-up" data-aos-delay="150">                       
+ <div class="w-full max-w-sm bg-gray  shadow-xl border border-gray-400  rounded-br-lg rounded-tl-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center pb-10">
+        <img class="w-24 h-24 mb-3 mt-3  rounded-full shadow-lg" src="{{ asset('img/team/girl1 1.png') }}" alt="Bonnie image"/>
+        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">حوراء محسن جاسم</h5>
+        <div class="flex justify-center  gg ">
+                        <a href="mailto:hawraaaltamimi49@gmail.com">
+                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
+                            </i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+            
+        </div>
+    </div>
+</div>
+
+<div class="w-full max-w-sm bg-gray  shadow-xl border border-gray-400 rounded-br-lg rounded-tl-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center pb-10">
+        <img class="w-24 h-24 mb-3 mt-3 rounded-full shadow-lg" src="{{ asset('img/team/girl2 1.png') }}" alt="Bonnie image"/>
+        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">حوراء محمد عبد الزهرة</h5>
+        <div class="flex justify-center  gg ">
+                        <a href="mailto:huraama2000@gmail.com.com">
+                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
+                            </i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+            
+        </div>
+    </div>
+</div>
+
+<div class="w-full max-w-sm bg-gray   shadow-xl border border-gray-400 rounded-br-lg rounded-tl-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center pb-10">
+        <img class="w-24 h-24 mb-3 mt-3 rounded-full shadow-lg" src="{{ asset('img/team/girl3 1.png') }}" alt="Bonnie image"/>
+        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">زينب فوزي حميد</h5>
+        <div class="flex justify-center  gg ">
+                        <a href="mailto:zainab.fawzy001@gmail.com">
+                            <i class="fa-solid fa-envelope hover:text-orange-700 "></i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+            
+        </div>
+    </div>
+</div>
 </div>
 <style scoped>
     .gg {
@@ -151,15 +276,7 @@
         margin: 2rem 4rem;
     }
 
-    .banner {
-        /* background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/team/team2.jpg) no-repeat; */
-        background: url(../img/team/team2.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding: 4rem 2rem;
-        background-attachment: fixed;
-        text-align: center;
-    }
+   
 
     .banner .content span {
         font-size: 1.5rem;
@@ -308,11 +425,13 @@
 
     /* popular */
     .popular__container {
-        padding: 2rem 2rem 2rem 2rem;
+        padding: 2rem ;
     }
 
     .popular__card {
         border-radius: 1rem;
+        padding: 1rem 0 0 0 ;
+        margin-bottom: 0;
     }
 
     .popular__card .shape__smaller {
@@ -333,18 +452,20 @@
 
     .popular__title {
         font-size: 1.5rem;
-        margin-bottom: .25rem;
+        margin: .25rem 1.5rem .2rem 0;
     }
 
     .popular__subtitle {
         font-size: var(--normal-font-size);
         color: #b8b6b6;
         font-weight: 400;
+        margin: .25rem 1.5rem .2rem 0;
     }
 
     .popular__img {
-        width: 160px;
-        margin: .75rem 0 1.25rem 1.5rem;
+        width: 250px;
+        height: 160px;
+        margin: .75rem 0 0 0;
         transition: .3s;
     }
 

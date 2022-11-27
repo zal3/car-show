@@ -1,23 +1,156 @@
 <div>
-    <div class="sm:mb-10 lg:grid lg:grid-cols-5 md:grid-cols-none md:bg-gray-300 bg-gray-300 lg:bg-white lg:h-full">
-        <div
-            class=" px-10 py-10 max-w-md m-auto lg:col-span-2 mt-20 mb-20 shadow-xl rounded-xl lg:mt-10 md:shadow-xl md:rounded-xl lg:shadow-none lg:rounded-none lg:w-full lg:mb-10 lg:px-5 lg:pt-5 lg:pb-5 lg:max-w-lg bg-white">
-          
-            <h1 class="mt-5 font-bold text-lg lg:mt-7"> </h1>
-            <h1 class="font-bold text-lg text-gray-600">Get started today!</h1>
-            <h1 class="text-lg text-gray-600 text-justify pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo  .</h1>
-                
-             <a href="{{ route('car') }}" class="hover:shadow-xl hover:scale-105  mt-5   bg-gray-600 p-3 shadow-2xl rounded-xl text-white font-bold hover:bg-gray-800">الرجوع 
-             </a>
+    <div class=" flex   justify-center gap-4 items-center px-8 pb-8  mx-16 ">
+        <div class="">
+            {{-- <img class="" src=" {{ asset('img/cars/car6.jpg') }}"> --}}
+            <div class="container">
+                <img src="{{ asset($car->image_path ?? 'img/cars/car1.jpg') }}" alt=" " class="h-full" />
+                <p class="title">{{ $car->type }}</p>
+                <div class="overlay"></div>
+                <div class="button"><a href="#"> {{ $car->sale_price }}$ </a></div>
+            </div>
         </div>
-
-        <div class="hidden relative lg:block  lg:col-span-3">
-            <img class="absolute inset-0 w-full h-full pl-5 object-cover object-center rounded-3xl  hover:translate-y-1 "
-                src=" {{ asset('img/cars/car6.jpg') }}" alt="Ad- woman on a beach ">
-
-                
+        <div class="text-lg p-6 grid grid-cols-1 mt-9">
+            <div>
+                <span>نوع السيارة :</span>
+                <span>{{ $car->type }}</span>
+            </div>
+            <div>
+                <span>الموديل :</span>
+                <span>{{ $car->model }}</span>
+            </div>
+            <div>
+                <span>الشركة المصنعة :</span>
+                <span>{{ $car->category }}</span>
+            </div>
+            <div>
+                <span>السعر :</span>
+                <span>{{ $car->sale_price }}</span>
+            </div>
+            <div>
+                <span>رقم السيارة :</span>
+                <span>{{ $car->number }}</span>
+            </div>
+            <div>
+                <span>رقم الهيكل :</span>
+                <span>{{ $car->chassis_number }}</span>
+            </div>
+            <div>
+                <span>لون السيارة :</span>
+                <span>@if ($car->color == 1)
+                                احمر
+                            @elseif($car->color == 2)
+                                ابيض
+                            @elseif($car->color == 3)
+                                اسود
+                            @elseif($car->color == 4)
+                                اصفر
+                            @elseif($car->color == 5)
+                                اخضر
+                            @elseif($car->color == 6)
+                                ازرق
+                            @endif</span>
+            </div>
+            <div>
+                <span>سعر الاستيراد :</span>
+                <span>{{ $car->import_price }}$</span>
+            </div>
+            <div>
+                <span>دولة الاستيراد :</span>
+                <span>{{ $car->import_place }}</span>
+            </div>
+            <div>
+                <span>تاريخ الاستيراد :</span>
+                <span>{{ $car->import_date }}</span>
+            </div>
+            <div>
+                <span>الوصف :</span>
+                <span>{{ $car->note }}</span>
+            </div>
         </div>
+        {{-- route sent to next cardpage  --}}
+        <a href="{{ route('car-page', ['car_id' => $car->id +1]) }}">
+            <div class="swiper-button-next"></div>
+        </a>
+        <a href="{{ route('car-page', ['car_id' => $car->id - 1]) }}">
+            <div class="swiper-button-prev"></div>
+        </a>
+
     </div>
+    <div class="flex justify-center items-center m-auto gap-6 mb-8 opacity-70">
+        <button wire:click="confirm({{ $car->id }})"><i class="fa-solid fa-trash text-gray-600 h-10 w-10 hover:text-red-700 "></i></button>
+<a href="{{ route('edit-car' , ['car_id' => $car->id]) }}">
+        <i class="fa-solid fa-pen-to-square text-gray-600 h-10 w-10  hover:text-blue-700"></i>
+</a>
+    </div>
+
 </div>
+<style scoped>
+    .container {
+        position: relative;
+        margin-top: 50px;
+        width: 500px;
+        height: 300px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0);
+        transition: background 0.5s ease;
+    }
+
+    .container:hover .overlay {
+        display: block;
+        background: rgba(0, 0, 0, .3);
+    }
+
+    img {
+        position: absolute;
+        width: 500px;
+        height: 250px;
+        left: 0;
+    }
+
+    .title {
+        position: absolute;
+        width: 500px;
+        left: 0;
+        top: 120px;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        z-index: 1;
+        transition: top .5s ease;
+    }
+
+    .container:hover .title {
+        top: 90px;
+    }
+
+    .button {
+        position: absolute;
+        width: 500px;
+        left: 0;
+        top: 180px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity .35s ease;
+    }
+
+    .button a {
+        width: 200px;
+        padding: 12px 48px;
+        text-align: center;
+        color: white;
+        z-index: 1;
+    }
+
+    .container:hover .button {
+        opacity: 1;
+    }
+</style>
