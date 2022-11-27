@@ -9,6 +9,7 @@
                 <div class="button"><a href="#"> {{ $car->sale_price }}$ </a></div>
             </div>
         </div>
+
         <div class="text-lg p-6 grid grid-cols-1 mt-9">
             <div>
                 <span>نوع السيارة :</span>
