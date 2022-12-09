@@ -39,7 +39,7 @@ class Main extends Component
                     'toast' => true,
                 ]);
         $this->reset();
-        return redirect()->to('/rental');
+        
     }
 
     public function render()

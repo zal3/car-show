@@ -18,8 +18,8 @@
                     </svg>
                 </button>
             </div>
-            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between ml-24">
-                <div class="flex items-center  ">
+            <div class=" flex-1 flex items-center justify-center sm:items-stretch sm:justify-between ml-24">
+                <div class="">
                     <a href="/" >
                         <img src="{{ asset('/img/lg.png') }}" class="h-12 w-40 mx-4 ">
                     </a>
@@ -50,7 +50,7 @@
                                 id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
                                 <span class="sr-only">Open user menu</span>
                                 <img class="h-10 w-10 rounded-full"
-                                    src="@if (auth()->user()->profile_photo_path) {{ asset(auth()->user()->profile_photo_path) }}@elseif(auth()->user()->gender == 1) {{ asset('/img/profile_woman.png') }} @elseif(auth()->user()->gender != 1) {{ asset('/img/profile_man.png') }} @endif">
+                                    src="@if (auth()->user()->profile_photo_path) {{ asset(auth()->user()->profile_photo_path) }} @else {{ asset('/img/man.jpg') }} @endif">
                             </button>
                         </div>
                         {{-- content --}}
