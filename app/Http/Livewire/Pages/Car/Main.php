@@ -6,11 +6,17 @@ use Livewire\Component;
 
 class Main extends Component
 {
-    protected $listeners = ['$refresh'];
+    protected $listeners = ['$refresh', 'search'];
+    public $search;
+    public function search($search)
+    {
+        $this->search = $search;
+    }
 
     public function render()
     {
-        $this->cars = Car::orderByDesc('id')->get();
+        $search = '%' . $this->search . '%';
+        $this->cars = Car::where('type', 'like', $search)->get();
         return view('livewire.pages.car.main');
     }
 }
