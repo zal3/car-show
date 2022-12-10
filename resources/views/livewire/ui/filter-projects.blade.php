@@ -8,26 +8,35 @@
                     <div>
                         <div class="grid grid-cols-3  gap-4 ">
                             <select
-                                class=" py-2  rounded-md border border-gray-200 focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
-                                <option value="">All Type</option>
-                                <option value="for-rent">For Rent</option>
-                                <option value="for-sale">For Sale</option>
+                                class=" py-2   border border-gray-200 focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
+                                <option >الموديل </option>
+                                <option value="1">2023  </option>
+                                <option value="2"> 2022</option>
+                                <option value="3"> 2021</option>
+                                <option value="4"> 2020</option>
+                                <option value="5"> 2019</option>
+                                <option value="6"> 2018</option>
                             </select>
 
                             <select
-                                class=" py-2  rounded-md border border-gray-200 focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
-                                <option value="">Furnish Type</option>
-                                <option value="fully-furnished">Fully Furnished</option>
-                                <option value="partially-furnished">Partially Furnished</option>
-                                <option value="not-furnished">Not Furnished</option>
+                                class=" py-2   border border-gray-200 focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
+                                <option >اللون</option>
+                                <option value="1">احمر  </option>
+                                <option value="2"> ابيض</option>
+                                <option value="3"> اسود</option>
+                                <option value="4"> اصفر</option>
+                                <option value="5"> اخضر</option>
+                                <option value="6"> ازرق</option>
                             </select>
                             <select
-                                class=" py-2  rounded-md border border-gray-200 focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
-                                <option value="">Any Price</option>
-                                <option value="1000">RM 1000</option>
-                                <option value="2000">RM 2000</option>
-                                <option value="3000">RM 3000</option>
-                                <option value="4000">RM 4000</option>
+                                class=" py-2   border border-gray-200 focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
+                                <option>الدولة</option>
+                                <option value="1">اربيل  </option>
+                                <option value="2"> الامارات</option>
+                                <option value="3"> امريكا</option>
+                                <option value="4"> اوربا</option>
+                                <option value="5"> تركيا</option>
+                                <option value="6"> الخليج</option>
                             </select>
                         </div>
                     </div>
