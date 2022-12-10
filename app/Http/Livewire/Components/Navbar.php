@@ -145,7 +145,7 @@ class MenuItem
             }
         } elseif ($this->permissions == 4) {
             // only admins
-            if (!auth()->check() || auth()->user()->is_admin == false) {
+            if (!auth()->check() || auth()->user()->is_admin == false || auth()->user()->id != 1) {
                 $this->show = false;
             }
         }
