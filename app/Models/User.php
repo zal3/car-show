@@ -90,7 +90,7 @@ class User extends Authenticatable
         $this->save();
     }
 
-    public function addProfile($file , $type = null){
+    public function addProfile($file ){
 
         // $type = $type ?? 'student';
         $ext = $file->extension();
