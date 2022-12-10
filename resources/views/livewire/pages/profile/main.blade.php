@@ -40,7 +40,8 @@
         <div class="basis-1/3 ">
             <div class="flex flex-col items-center gap-2 m-auto  bg-white rounded-md p-6">
                 <img class="rounded-full w-40" src="
-                @if ($user->profile_photo_path) {{ asset($user->profile_photo_path) }} @else
+                @if ($user->profile_photo_path) {{ asset($user->profile_photo_path) }}
+                @else
                 {{ asset('/img/man.jpg') }}
                 @endif
                 ">

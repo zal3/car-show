@@ -32,6 +32,8 @@ class User extends Authenticatable
         'is_admin',
         'phone_number',
         'telegram_username',
+        'profile_photo_path'
+
     ];
 
     /**
@@ -93,8 +95,8 @@ class User extends Authenticatable
         // $type = $type ?? 'student';
         $ext = $file->extension();
         $name=\Str::random(10).'.'.$ext;
-        $file->storeAs('public/'. $type . '/profile/'. $this->id .'/' ,$name);
-        $this->profile_photo_path = 'storage/' . $type . '/profile/'.$this->id.'/'.$name;
+        $file->storeAs('public/' . '/profile/'. $this->id .'/' ,$name);
+        $this->profile_photo_path = 'storage/' . '/profile/'.$this->id.'/'.$name;
         $this->save();
     }
     public function add($data){
