@@ -56,6 +56,7 @@ class Add extends Component
                 ]);
                 redirect()->route('car');
         }
+
     public function render()
     {
         return view('livewire.pages.car.admin.add');
