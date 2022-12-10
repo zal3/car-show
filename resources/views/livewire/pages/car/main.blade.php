@@ -1,6 +1,6 @@
 <div class="mt-4 ">
-    <div class="flex  justify-between  items-center   mt-12 p-6  ">
-        <div class=" text-3xl  text-black font-bold  mr-20 ">انواع السيارات</div>
+    <div class="flex  justify-between  items-center   m-8 mb-0 p-6 pb-0  ">
+        <div class=" text-3xl  text-black font-bold  mr-12 ">انواع السيارات</div>
         <div class="flex  justify-between items-center gap-3">
             <!-- filter -->
             

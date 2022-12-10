@@ -146,7 +146,7 @@
     }
 
     .ho {
-        min-height: 90vh;
+        min-height: 100vh;
     }
 
     .car {
