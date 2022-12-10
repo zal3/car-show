@@ -13,10 +13,11 @@ class Main extends Component
         $this->search = $search;
     }
 
+
     public function render()
     {
         $search = '%' . $this->search . '%';
-        $this->cars = Car::where('type', 'like', $search)->get();
-        return view('livewire.pages.car.main');
+        $cars = Car::where('type', 'LIKE', $search)->get();
+        return view('livewire.pages.car.main' , compact('cars'));
     }
 }

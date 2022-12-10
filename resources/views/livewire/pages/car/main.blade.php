@@ -1,16 +1,22 @@
-<div class="popular section  ">
-    <div class="flex justify-between  items-center  ">
-        <h2 class=" text-3xl  text-black font-bold pt-8 mr-10 pb-2">انواع السيارات</h2>
-        <div class="flex flex-col-2 justify-between items-center space-y-4">
-
-            <div class="relative mt-3 ml-9  ">
-            <div class=" col-span-8   col-span-8 md:col-span-5 lg:col-span-6 p-1">@livewire('ui.search', 'title')</div>
-
+<div class="mt-4 ">
+    <div class="flex  justify-between  items-center   mt-12 p-6  ">
+        <div class=" text-3xl  text-black font-bold  mr-20 ">انواع السيارات</div>
+        <div class="flex  justify-between items-center gap-3">
+            <!-- filter -->
+            
+            <div>
+                @livewire('ui.filter-projects')
+            </div>
+            
+            <!--  ff-->
+            <div class="relative  ml-9  ">
+                
+                <livewire:ui.search />
             </div>
 
             @admin
             <a href="{{ route('add-car') }}"
-                class="text-black text-md xl:text-2xl duration-200 bg-primary-500 hover:bg-white border border-transparent hover:border-gray-500 hover:text-primary-500 focus:ring-4 focus:ring-primary-300 ml-7  rounded-lg px-3 py-2 md:px-5 md:py-2.5">
+                class="text-black text-md xl:text-xl duration-200 bg-primary-500 hover:bg-white border border-transparent hover:border-gray-500 hover:text-primary-500 focus:ring-4 focus:ring-primary-300 ml-7  rounded-lg px-3 py-2 md:px-5 md:py-2.5">
                 <i class="fa-solid fa-plus"></i>
                 إضافة سيارة
 
@@ -18,7 +24,7 @@
             @endadmin
         </div>
     </div>
-    <div class="grid grid-cols-4 gap-6 items-center justify-center px-24 py-16">
+    <div class="grid grid-cols-4 gap-6 items-center justify-center px-24 py-12">
         @forelse ($cars as $car)
         <livewire:pages.car.card :car="$car" key="{{ now() }}" />
 
