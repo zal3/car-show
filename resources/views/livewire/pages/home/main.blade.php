@@ -4,7 +4,7 @@
     <div class="ho w-full relative grid items-center mx-4 px-4">
         <div class="text">
             <h1 class="font-bold " data-aos="fade-up" data-aos-delay="150"><span class="text-orange">معرض</span>
-                البصرة<br> للسيارات</h1>
+            الريــــــان  <br> للسيارات</h1>
             <h5 class="px-5" data-aos="fade-up" data-aos-delay="300">للحصول على أفضل سيارة في المدينة
                 <br> بأفضل سعر وجودة
             </h5>

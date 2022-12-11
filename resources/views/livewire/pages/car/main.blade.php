@@ -9,14 +9,14 @@
             </div>
             
             <!--  ff-->
-            <div class="relative  ml-9  ">
+            <div class="relative  ">
                 
                 <livewire:ui.search />
             </div>
 
             @admin
             <a href="{{ route('add-car') }}"
-                class="text-black text-md xl:text-xl duration-200 bg-primary-500 hover:bg-white border border-transparent hover:border-gray-500 hover:text-primary-500 focus:ring-4 focus:ring-primary-300 ml-7  rounded-lg px-3 py-2 md:px-5 md:py-2.5">
+                class="text-black  text-md xl:text-xl duration-200 bg-primary-500 hover:bg-white border border-transparent hover:border-gray-500 hover:text-primary-500 focus:ring-2 focus:ring-gray-900 ml-7  rounded-lg px-3 py-1 md:px-4 md:py-1">
                 <i class="fa-solid fa-plus"></i>
                 إضافة سيارة
 
