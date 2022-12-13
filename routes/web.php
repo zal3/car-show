@@ -16,6 +16,11 @@ use App\Http\Livewire\Pages\Car\{
     CarPage as CarPage,
 
 };
+use App\Http\Livewire\Pages\Rental\{
+    Vailable as AvailableRental,
+    Unvailable as UnvailableRental,
+
+};
 use App\Http\Livewire\Pages\Admins\{
     main as Admins
 };
@@ -61,7 +66,9 @@ Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
     //Profile
 
     Route::get('/profile', Profile::class)->name('profile');
-Route::get('/rental', Rental::class)->name('rental');
+    Route::get('/rental', Rental::class)->name('rental');
+    Route::get('/available', AvailableRental::class)->name('available-rental');
+Route::get('/unavailable', UnvailableRental::class)->name('unavailable-rental');
 
     // donate
     // Route::get('/donate', Donate::class)->name('donate');

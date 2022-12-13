@@ -22,34 +22,40 @@ class Navbar extends Component
 
         $menu = new Menu([
             [
+                'id' => 1,
                 'name' => 'الرئيسية',
                 'route' => 'home',
                 'icon' => 'home',
+                
 
             ],
-            [
+            [   'id' => 1,
                 'name' => 'السيارات',
                 'route' => 'car',
                 'icon' => 'hand-holding-heart',
+                
             ],
-            [
+            [   'id' => 2,
                 'name' => 'تأجير السيارات',
                 'route' => 'rental',
                 'icon' => 'circle-info',
                 'permissions' => 2,
             ],
             [
+                'id' => 3,
                 'name' => 'المعرض',
                 'route' => 'about',
                 'icon' => 'circle-info',
+                
 
             ],
             [
+                'id' => 3,
                 'name' => 'تواصل معنا ',
                 'route' => 'contact',
                 'icon' => 'circle-info',
             ],
-            [
+            [   'id' => 4,
                 'name' => 'الاداريين',
                 'route' => 'admins',
                 'icon' => 'circle-info',
@@ -105,6 +111,7 @@ class Menu
 
 class MenuItem
 {
+    public $id;
     public $name;
     public $submenu;
     public $route;
@@ -121,6 +128,7 @@ class MenuItem
 
     public function __construct($data)
     {
+        $this->id = $data['id'] ?? null;
         $this->name = $data['name'];
         $this->route = $data['route'];
         $this->permissions = $data['permissions'] ?? 0;
