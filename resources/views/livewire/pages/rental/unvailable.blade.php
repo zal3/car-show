@@ -10,7 +10,7 @@
         </div>
         <div class="  text-center ">
             <div class="flex gap-4 items-center ">
-                <h>{{ $car->type }}</h>
+                <h>{{ $car->type}}</h>
                 <h1>{{ $car->model }}</h1>
                 <div
                     class=" @if ($car->color == 1) text-red-500 @endif @if ($car->color == 2) text-white @endif @if ($car->color == 3) text-black @endif @if ($car->color == 4) text-yellow-500 @endif @if ($car->color == 5) text-green-500 @endif @if ($car->color == 6) text-blue-500 @endif @if ($car->color == 7) @endif ">
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div>
-            {{ $car->return_date }}
+            
             
         </div>
     </div>

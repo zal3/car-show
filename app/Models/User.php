@@ -74,7 +74,7 @@ class User extends Authenticatable
     ### Relationships ###
 
     //rent
-    public function rent()
+    public function rents()
     {
         return $this->hasMany(Rent::class);
     }
