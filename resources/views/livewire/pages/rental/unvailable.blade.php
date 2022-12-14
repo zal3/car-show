@@ -33,10 +33,10 @@
             </div>
         </div>
         <div>
-           
+            <!-- car return date -->
+           {{ $car->rent->return_date }}
             
         </div>
     </div>
     @endforeach
-    {{$cars->rent}}
 </div>
