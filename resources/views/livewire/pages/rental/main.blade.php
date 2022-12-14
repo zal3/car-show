@@ -32,77 +32,85 @@
     </div>
     {{-- form-container --}}
     <div class="form-container flex m-auto justify-center items-center  ">
-        <form wire:submit.prevent="save" class=" flex flex-wrap w-1/2  bg-white">
-            <div class="input-box">
-                <span>الموقع</span>
-                <input wire:model.lazy="location" type="text" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                    value="" placeholder="ابحث عن مدينة" />
-            </div>
-            @error('location')
-                            <span class="error text-red-700 rounded-lg mt-3">يجب ملئ هذا الحقل</span>
-                            @enderror
-            <div class="input-box ">
-                <span>رقم الهاتف</span>
-                <input wire:model.lazy="phone_num" type="text" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                    value="" placeholder=" " />
-            </div>
-            @error('phone_num')
-                            <span class="error text-red-700 rounded-lg mt-3">يجب ملئ هذا الحقل</span>
-                            @enderror
-            <div class="input-box">
-                <span>وقت التأجير</span>
-                <input wire:model.lazy="rent_date" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value=""
-                    type="date" />
-            </div>
-            @error('rent_date')
-                            <span class="error text-red-700 rounded-lg mt-3">يجب ملئ هذا الحقل</span>
-                            @enderror
-            <div class="input-box">
-                <span> وقت الاعادة</span>
-                <input wire:model.lazy="return_date" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value=""
-                    type="date" />
-            </div>
-           
-            
-            <div class="lable">
-                <label for="city">نوع السيارة</label>
-                <select wire:model="car_id" id="{{ $car_id }}" name="car_id"
-                    class=" bg-gray border border-black-200 text-gray-900 text-sm rounded-lg focus:ring-blue-700 focus:border-blue-700 block pl-14    w-full mt-2  ">
-                    <option selected> أختر نوع السياره</option>
-                    @foreach ($cars as $car)
-                    <option value="{{$car->id}}"
-                    class="text-black">{{$car->type}} </option>
-                    @endforeach
-                </select>
-            </div>
-            <div class="input-box flex flex-col-2 mt-10">
-                <span>رخصة القيادة</span>
-                <div class="">
-                    <label
-                        class="    @if ($image_path) bg-primary-700 text-black @else bg-white text-primary-700 @endif rounded-lg tracking-wide   cursor-pointer hover:bg-primary-700 hover:text-black">
-                        <div wire:target="image_path">
-                        </div>
-                        <div wire.remove wire:target="image_path">
-                            @if ($image_path)
-                            <i class="fa-solid fa-check text-xl"></i>
-                            @else
-                            <i class="fa-solid fa-upload text-xl"></i>
-                            @endif
-                        </div>
-                        <input wire:model.lazy="image_path" type="file" class="hidden" />
-                    </label>
-                    @error('image_path')
-                    <span class="error text-primary-600 bg-primary-100 rounded-lg  text-xs">لم
-                        يتم تحميل
-                        الصورة</span>
+        <form wire:submit.prevent="save" class=" flex-col w-1/2  bg-white">
+            <div class="grid grid-cols-2 gap-y-3 ">
+                <div class=" ">
+                    <div>الموقع</div>
+                    <input wire:model.lazy="location" type="text"
+                        class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value=""
+                        placeholder="ابحث عن مدينة" />
+                    @error('location')
+                    <div class=" text-sm text-red-700 ">يجب ملئ هذا الحقل</div>
                     @enderror
                 </div>
-                @error('image_path')
-                            <span class="error text-red-700 rounded-lg mt-3">يجب ملئ هذا الحقل</span>
-                            @enderror
+
+                <div class=" ">
+                    <div>رقم الهاتف</div>
+                    <input wire:model.lazy="phone_num" type="text"
+                        class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value="" placeholder=" " />
+                    @error('phone_num')
+                    <div class=" text-sm text-red-700 ">يجب ملئ هذا الحقل</div>
+                    @enderror
+                </div>
+
+                <div class="flex-col">
+                    <div>وقت التأجير</div>
+                    <input wire:model.lazy="rent_date" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value=""
+                        type="date" />
+                    @error('rent_date')
+                    <div class=" text-sm text-red-700 ">يجب تحديد تاريخ</div>
+                    @enderror
+                </div>
+
+                <div class="flex-col">
+                    <div> وقت الاعادة</div>
+                    <input wire:model.lazy="return_date" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50"
+                        value="" type="date" />
+                    @error('return_date')
+                    <div class=" text-sm text-red-700 ">يجب تحديد تاريخ</div>
+                    @enderror
+                </div>
+
+
+                <div class="lable">
+                    <label for="city">نوع السيارة</label>
+                    <select wire:model="car_id" id="{{ $car_id }}" name="car_id"
+                        class=" w-60 bg-gray-50 border border-black-200 text-gray-900 text-sm rounded-lg focus:ring-blue-700 focus:border-blue-700 block pl-14     mt-2  ">
+                        <option selected> أختر نوع السياره</option>
+                        @foreach ($cars as $car)
+                        <option value="{{$car->id}}" class="text-black">{{$car->type}} </option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div class=" flex flex-col-2 mt-10">
+                    <div>رخصة القيادة</div>
+                    <div class="">
+                        <label
+                            class="    @if ($image_path) bg-primary-700 text-black @else bg-white text-primary-700 @endif rounded-lg tracking-wide   cursor-pointer hover:bg-primary-700 hover:text-black">
+                            <div wire:target="image_path">
+                            </div>
+                            <div wire.remove wire:target="image_path">
+                                @if ($image_path)
+                                <i class="fa-solid fa-check text-xl"></i>
+                                @else
+                                <i class="fa-solid fa-upload text-xl"></i>
+                                @endif
+                            </div>
+                            <input wire:model.lazy="image_path" type="file" class="hidden" />
+                        </label>
+                        @error('image_path')
+                        <div class="error text-sm text-primary-600 bg-primary-100 rounded-lg  text-xs">لم
+                            يتم تحميل
+                            الصورة</div>
+                        @enderror
+                    </div>
+
+                </div>
+
             </div>
 
-            <button type="submit" id="" class="btn w-full"> تأجير</button>
+            <button type="submit" id="" class="btn w-full "> تأجير</button>
         </form>
     </div>
 
@@ -123,26 +131,22 @@
     border-radius: 0.9rem;
     margin-bottom: 2rem;
     margin-top: 40px;
+    display: flex;
 }
 
-.input-box {
-    
-    
+/* . {
     gap: .5rem;
 }
 
-.input-box span {
-    font-weight: 500;
-}
 
-.input-box input {
+. input {
     padding: 7px;
     outline: none;
     background: #eeeff1;
     border-radius: 0.5rem;
     outline: none;
     font-size: 1rem;
-}
+} */
 
 .btn {
     padding: 10px 36px;
