@@ -75,7 +75,7 @@
                                             id="chassis_number"
                                             class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
                                             value="" />
-                                        <button tabindex="-1"
+                                        <!-- <button tabindex="-1" @click="empty('chassis_number')"
                                             class="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600">
                                             <svg class="w-4 h-4 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
@@ -85,7 +85,7 @@
                                                 <line x1="6" y1="6" x2="18" y2="18">
                                                 </line>
                                             </svg>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                                 <div class="md:col-span-2">
@@ -94,7 +94,7 @@
                                         <input wire:model.lazy="number" name="number" id="number"
                                             class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
                                             value="" />
-                                        <button tabindex="-1"
+                                        <!-- <button tabindex="-1"
                                             class="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600">
                                             <svg class="w-4 h-4 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
@@ -104,7 +104,7 @@
                                                 <line x1="6" y1="6" x2="18" y2="18">
                                                 </line>
                                             </svg>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                                 <div class="md:col-span-1">

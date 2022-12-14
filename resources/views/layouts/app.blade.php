@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>  المعرض الدولي للسيارات</title>
+    <title> معرض  الريان  للسيارات</title>
     <style>
+        .footer {
+            clear: both;
+    position: relative;
+    
+    margin-top: 0px;}
         .home {
             font-family: 'Changa', sans-serif;
         }
@@ -83,7 +88,7 @@
             </div>
         </main>
 
-        <div class="">@livewire('components.footer')</div>
+        <div class="bottom-0 left-0 fixed z-10">@livewire('components.footer')</div>
     </div>
 
 

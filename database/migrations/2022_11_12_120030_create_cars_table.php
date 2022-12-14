@@ -17,7 +17,13 @@ return new class extends Migration
             $table->id();
             $table->string('type');
             $table->string('category');
-            $table->string('model');
+            $table->integer('model');
+            // <option value="1">2023</option>
+            //                             <option value="2">2022</option>
+            //                             <option value="3">2021</option>
+            //                             <option value="4">2020</option>
+            //                             <option value="5">2019</option>
+            //                             <option value="6">2018</option>
             $table->integer('sale_price');
             $table->string('number')->nullable()->unique();
             $table->string('chassis_number')->nullable()->unique();

@@ -18,21 +18,22 @@ class RentSeeder extends Seeder
         //
         Rent::create([
             'user_id' => 1,
-            // 'car_id' => 1,
-            'location' => 'الرياض',
-            'license' => '123456',
+            'car_id' => 4,
+            'location' => 'Budapest',
             'rent_date' => '2021-11-12',
-            'return_date' => '2021-11-12',
-            'phone-num' => '123456',
+            'return_date' => '2021-11-17',
+            'phone_num' => '123456789',
+            'state' => 0,
         ]);
+
         Rent::create([
-            'user_id' => 1,
-            // 'car_id' => 1,
-            'location' => 'العراق',
-            'license' => '78910',
-            'rent_date' => '2022-11-12',
-            'return_date' => '2023-11-12',
-            'phone-num' => '789109',
+            'user_id' => 2,
+            'car_id' => 5,
+            'location' => 'Budapest',
+            'rent_date' => '2021-11-12',
+            'return_date' => '2021-11-15',
+            'phone_num' => '123456789',
+            'state' => 0,
         ]);
     }
 }

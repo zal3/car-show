@@ -60,23 +60,23 @@
                     <div wire:loading wire:target="profile_photo">
 
                     </div>
-                    <div wire:loading.remove wire:target="profile_photo">
-                        @if ($profile_photo)
+                    <div wire:loading.remove wire:target="profile_photo_path">
+                        @if ($profile_photo_path)
                         <i class="fa-solid fa-check text-base md:text-2xl"></i>
                         @else
                         <i class="fa-solid fa-upload text-base md:text-2xl"></i>
                         @endif
                     </div>
                     <span class="mt-2 text-base leading-normal">
-                        @if ($profile_photo)
+                        @if ($profile_photo_path)
                         تم اختيار الصورة
                         @else
                         إختر صورة
                         @endif
                     </span>
-                    <input type='file' class="hidden" wire:model="profile_photo" />
+                    <input type='file' class="hidden" wire:model="profile_photo_path" />
                 </label>
-                @error('profile_photo')
+                @error('profile_photo_path')
                 <span class="error text-primary-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">لم يتم تحميل
                     الصورة</span>
                 @enderror

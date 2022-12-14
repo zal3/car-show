@@ -4,7 +4,7 @@
     <div class="ho w-full relative grid items-center mx-4 px-4">
         <div class="text">
             <h1 class="font-bold " data-aos="fade-up" data-aos-delay="150"><span class="text-orange">معرض</span>
-                البصرة<br> للسيارات</h1>
+            الريــــــان  <br> للسيارات</h1>
             <h5 class="px-5" data-aos="fade-up" data-aos-delay="300">للحصول على أفضل سيارة في المدينة
                 <br> بأفضل سعر وجودة
             </h5>
@@ -48,14 +48,17 @@
                 @foreach ($cars as $car)
                     <div class="swiper-slide  ss">
                         <a href="{{ route('car-page', ['car_id' => $car->id]) }}">
-                            <article class=" popular__card bg-gray px-6 py-6   overflow-hidden relative w-56 bg-gray">
-                                <div class="shape shape__smaller"></div>
-                                <h1 class="popular__title text-orange ">{{ $car->type }}</h1>
-                                <h3 class="popular__subtitle">{{ $car->category }} </h3>
-                                {{-- <img src="{{ asset('img/cars/popular1.png') }}" alt="" class="popular__img"> --}}
+                            <article class=" popular__card  px-6 py-6   overflow-hidden relative w-56 ">
+                                
+                                <!-- {{-- <img src="{{ asset('img/cars/popular1.png') }}" alt="" class="popular__img"> --}} -->
                                 <img src="{{ asset($car->image_path ?? 'img/cars/car1.jpg') }}" alt=""
                                     class="popular__img">
-                                {{-- <div class="popular___data text-black text-md grid grid-cols-2  mb-6">
+                                    <div class="shape shape__smaller">dd</div>
+                                <h1 class="popular__title text-orange  ">{{ $car->type }}</h1>
+                                <h3 class="popular__subtitle">$ {{ $car->sale_price }} </h3>
+                                <div class=" text-black left-2 bottom-2 absolute"> </div>
+
+                                <!-- {{-- <div class="popular___data text-black text-md grid grid-cols-2  mb-6">
                                 <div class="popular___data-group ">
                                     <i class="fa-solid fa-gauge-high"></i> {{ $car->model }}
                                 </div>
@@ -63,9 +66,8 @@
                                     <i class="fa-solid fa-bolt"></i> {{ $car->color }}
                                 </div>
 
-                            </div> --}}
+                            </div> --}} -->
                                 <div class="grid grid-cols-2 justify-between">
-                                    <div class=" text-black left-2 bottom-2 absolute">$ {{ $car->sale_price }} </div>
                                     <button class="button popular__button bg-orange ">
                                         <i class="fa-solid fa-bag-shopping"></i>
                                     </button>
@@ -107,7 +109,7 @@
             <button type="submit" id="" class="btnn"> تأجير</button>
         </a>
     </div>
-    
+
 </div>
 
 <style scoped>
@@ -115,7 +117,7 @@
         gap: 1rem;
     }
 
-    
+
 
 
 
@@ -144,7 +146,7 @@
     }
 
     .ho {
-        min-height: 90vh;
+        min-height: 100vh;
     }
 
     .car {
@@ -190,6 +192,7 @@
         gap: 1rem;
         bottom: 8rem;
         left: 400px;
+        
         padding: 20px;
         border-radius: 0.5rem;
     }
@@ -271,13 +274,12 @@
 
     .popular__card {
         border-radius: 1rem;
-        padding: 1rem 0 0 0;
+        padding:  0 ;
         margin-bottom: 0;
     }
 
     .popular__card .shape__smaller {
         position: absolute;
-        top: -2.5rem;
         left: -2.5rem;
     }
 
@@ -285,6 +287,7 @@
     .popular__subtitle,
     .popular__img {
         position: relative;
+        
     }
 
     .popular {
@@ -293,20 +296,20 @@
 
     .popular__title {
         font-size: 1.5rem;
-        margin: .25rem 1.5rem .2rem 0;
+        margin: .25rem 5rem .2rem 0;
     }
 
     .popular__subtitle {
         font-size: var(--normal-font-size);
         color: #b8b6b6;
         font-weight: 400;
-        margin: .25rem 1.5rem .2rem 0;
+        margin: .25rem 5rem .2rem 0;
     }
 
     .popular__img {
         width: 250px;
         height: 160px;
-        margin: .75rem 0 0 0;
+        margin: 0 0 0 0;
         transition: .3s;
     }
 

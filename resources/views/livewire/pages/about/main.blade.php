@@ -1,32 +1,18 @@
 <div class="overflow-y-hidden ">
     {{-- video --}}
     <div>
-        <div class="absolute inset-0 flex items-center justify-center ">
+        <!-- <div class="absolute inset-0 flex items-center justify-center ">
             <img src="{{ asset('img/back.jpg') }}" muted autoplay loop
                 class=" mx-auto w-full h-96 object-cover opacity-60"></img></img>
-        </div>
-        <div>
-            <h1 class="aa flex justify-center  font-bold text-7xl mt-56  ">معرض البصرة للسيارات </h1>
-        </div>
+        </div> -->
+        
     </div>
-
-    {{-- brand --}}
-    <div class="flex gap-12 justify-center items-center mt-60 mb-8">
-        <img src="{{ asset('img/about/BMW.png') }}" alt="">
-        <img src="{{ asset('img/about/Jeep.png') }}" alt="">
-        <img src="{{ asset('img/about/Audi.png') }}" alt="">
-        <img src="{{ asset('img/about/Kia-1.png') }}" alt="">
-        <img src="{{ asset('img/about/Hyundai.png') }}" alt="">
-        <img src="{{ asset('img/about/Ford.png') }}" alt="">
-        <img src="{{ asset('img/about/Jaguar.png') }}" alt="">
-
-    </div>
-
     {{-- /* serves */ --}}
-    <div class="p-16 bg-slate-900">
+    <div class="p-12 bg-slate-900">
         <div class=" m-auto px-12 overflow-hidden ">
-            <h1 class="text-center p-4 text-white mb-4 mx-auto flex justify-center text-3xl w-fit  border-b-2  ">الخدمات
-            </h1>
+        <div>
+            <h1 class="aa flex justify-center  font-bold text-7xl   ">معرض البصرة للسيارات </h1>
+        </div>
             {{-- <div class="help-container">
                 <div class="help-box">
                     <div class="help-icon text-5xl  ">
@@ -80,6 +66,19 @@
             </div> --}}
         </div>
     </div>
+    {{-- brand --}}
+    <div class="flex gap-12 justify-center items-center mt-40 mb-8">
+        <img src="{{ asset('img/about/BMW.png') }}" alt="">
+        <img src="{{ asset('img/about/Jeep.png') }}" alt="">
+        <img src="{{ asset('img/about/Audi.png') }}" alt="">
+        <img src="{{ asset('img/about/Kia-1.png') }}" alt="">
+        <img src="{{ asset('img/about/Hyundai.png') }}" alt="">
+        <img src="{{ asset('img/about/Ford.png') }}" alt="">
+        <img src="{{ asset('img/about/Jaguar.png') }}" alt="">
+
+    </div>
+
+    
     {{-- /* serves */ --}}
     <main class="main">
 
@@ -188,8 +187,8 @@
                         <div class="flip-card__container">
                             <div class="card-front">
                                 <div class="card-front__tp card-front__tp--beach">
-                                    <svg style="color: white" width="48" height="48"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <svg style="color: white" width="48" height="48" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
                                         <path
                                             d="M14.47986,18.70978a3.99559,3.99559,0,0,1-5.163-5.27155L11.93561,16.057l2.12127-2.12134L11.43823,11.317a3.98842,3.98842,0,0,1,5.19989,5.30847l1.9328,1.9328A7.95941,7.95941,0,0,0,20,14,17.11481,17.11481,0,0,0,13.5.67a21.49375,21.49375,0,0,1,.74,4.8A3.47026,3.47026,0,0,1,10.83,9.2,3.63978,3.63978,0,0,1,7.2,5.47l.03-.36A13.76839,13.76839,0,0,0,4,14a7.99909,7.99909,0,0,0,12.43042,6.6604Z"
                                             fill="white"></path>
@@ -324,15 +323,14 @@
 
     {{-- team --}}
     <div class="my-9">
-        <h6 class=" font-bold px-4 mx-4 text-3xl my-9 ">فريق التنفيذ</h6>
-        <div class="px-40 flex justify-center   mx-40 ggg">
-            <div
-                class="w-full max-w-sm    border border-gray-400  rounded-br-3xl rounded-tl-3xl shadow-2xl ">
+        <h6 class=" font-bold px-4 mx-4 text-3xl ">فريق التنفيذ</h6>
+        <div class="px-40 flex justify-center   mx-40 ">
+            <div class="w-full max-w-sm     rounded-br-3xl rounded-tl-3xl  ">
                 <div class="flex flex-col items-center pb-10">
-                    <img class="w-24 h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg" src="{{ asset('img/team/girl1 1.png') }}"
-                        alt="Bonnie image" />
+                    <img class="w-24 h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg"
+                        src="{{ asset('img/team/girl1 1.png') }}" alt="Bonnie image" />
                     <h5 class="mb-1 text-xl font-medium text-gray-900 ">حوراء محسن جاسم</h5>
-                    <div class="flex justify-center  gg ">
+                    <div class="flex justify-center  ggg ">
                         <a href="mailto:hawraaaltamimi49@gmail.com">
                             <i class="fa-solid fa-envelope hover:text-orange-700 ">
                             </i>
@@ -343,13 +341,12 @@
                 </div>
             </div>
 
-            <div
-                class="w-full max-w-sm    border border-gray-400 rounded-br-3xl rounded-tl-3xl shadow-2xl ">
+            <div class="w-full max-w-sm     ">
                 <div class="flex flex-col items-center pb-10">
-                    <img class="w-24 h-24 mb-3 mt-3 rounded-full border border-gray-600 shadow-lg" src="{{ asset('img/team/girl2 1.png') }}"
-                        alt="Bonnie image" />
+                    <img class="w-24 h-24 mb-3 mt-3 rounded-full border border-gray-600 shadow-lg"
+                        src="{{ asset('img/team/girl2 1.png') }}" alt="Bonnie image" />
                     <h5 class="mb-1 text-xl font-medium text-gray-900 ">حوراء محمد عبد الزهرة</h5>
-                    <div class="flex justify-center  gg ">
+                    <div class="flex justify-center  ggg ">
                         <a href="mailto:huraama2000@gmail.com.com">
                             <i class="fa-solid fa-envelope hover:text-orange-700 ">
                             </i>
@@ -360,13 +357,12 @@
                 </div>
             </div>
 
-            <div
-                class="w-full max-w-sm   border border-gray-400 rounded-br-3xl rounded-tl-3xl shadow-2xl  ">
+            <div class="w-full max-w-sm     ">
                 <div class="flex flex-col items-center pb-10">
-                    <img class="w-24 h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg" src="{{ asset('img/team/girl3 1.png') }}"
-                        alt="Bonnie image" />
+                    <img class="w-24 h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg"
+                        src="{{ asset('img/team/girl3 1.png') }}" alt="Bonnie image" />
                     <h5 class="mb-1 text-xl font-medium text-gray-900 ">زينب فوزي حميد</h5>
-                    <div class="flex justify-center  gg ">
+                    <div class="flex justify-center  ggg ">
                         <a href="mailto:zainab.fawzy001@gmail.com">
                             <i class="fa-solid fa-envelope hover:text-orange-700 "></i>
                         </a>
@@ -381,365 +377,369 @@
 </div>
 
 <style scoped>
-    .aa{
-        animation: pulse 5s infinite;
-    }
-    .ggg {
-        gap: 2rem;
-        margin: 2rem 4rem;
-    }
+.aa {
+    animation: pulse 6s infinite;
+}
+
+.ggg {
+    gap: 1rem;
+    align-items: center;
+    margin: .5rem;
+}
 
 @keyframes pulse {
-  0% {
-    color: #001F3F;
-  }
-  100% {
-    color: #FF4136;
-  }
+    0% {
+        color: #001F3F;
+    }
+
+    100% {
+        color: #FF4136;
+    }
 }
-    /* serves */
-    .help-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
+/* serves */
+.help-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.help-box {
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.help-icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #ffffff;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+
+.help-icon svg {
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .25rem;
+}
+
+.help-box:hover .help-icon {
+    background: #ffffff;
+    color: #000000;
+}
+
+.help-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.help-desc {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+@media screen and (max-width:960px) {
     .help-box {
-        max-width: 33.33%;
-        padding: 10px;
-        text-align: center;
-        color: #ddd;
-        cursor: pointer;
+        max-width: 45%;
     }
+}
 
-    .help-icon {
-        display: inline-block;
-        width: 70px;
-        height: 70px;
-        border: 3px solid #ffffff;
-        transform: rotate(45deg);
-        margin-bottom: 30px;
-        margin-top: 16px;
-        transition: 0.3s linear;
+@media screen and (max-width:768px) {
+    .help-box {
+        max-width: 50%;
     }
+}
 
-    .help-icon svg {
-        width: 50px;
-        height: 40px;
-        line-height: 40px;
-        transform: rotate(-45deg);
-        font-size: 26px;
-        margin-right: .5rem;
-        margin-top: .5rem;
-        margin-bottom: .25rem;
+@media screen and (max-width:400px) {
+    .help-box {
+        max-width: 100%;
     }
+}
 
-    .help-box:hover .help-icon {
-        background: #ffffff;
-        color: #000000;
-    }
+/* ////////////////////////////////////////// */
 
-    .help-title {
-        font-size: 18px;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-        color: #ffffff;
-    }
+/* Typography =======================*/
 
-    .help-desc {
-        font-size: 14px;
-        color: #ffffff;
-    }
+/* Headings */
 
-    @media screen and (max-width:960px) {
-        .help-box {
-            max-width: 45%;
-        }
-    }
+/* Main heading for card's front cover */
+.card-front__heading {
+    font-size: 1.5rem;
+    margin-top: .25rem;
+}
 
-    @media screen and (max-width:768px) {
-        .help-box {
-            max-width: 50%;
-        }
-    }
+/* Main heading for inside page */
+.inside-page__heading {
+    padding-bottom: 1rem;
+    width: 100%;
+}
 
-    @media screen and (max-width:400px) {
-        .help-box {
-            max-width: 100%;
-        }
-    }
+/* Mixed */
 
-    /* ////////////////////////////////////////// */
+/* For both inside page's main heading and 'view me' text on card front cover */
+.inside-page__heading,
+.card-front__text-view {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: .2rem;
+}
 
-    /* Typography =======================*/
+.inside-page__heading--city,
+.card-front__text-view--city {
+    color: #ff62b2;
+}
 
-    /* Headings */
+.inside-page__heading--ski,
+.card-front__text-view--ski {
+    color: #2aaac1;
+}
 
-    /* Main heading for card's front cover */
-    .card-front__heading {
-        font-size: 1.5rem;
-        margin-top: .25rem;
-    }
+.inside-page__heading--beach,
+.card-front__text-view--beach {
+    color: #fa7f67;
+}
 
-    /* Main heading for inside page */
-    .inside-page__heading {
-        padding-bottom: 1rem;
-        width: 100%;
-    }
+.inside-page__heading--camping,
+.card-front__text-view--camping {
+    color: #00b97c;
+}
 
-    /* Mixed */
+/* Front cover */
 
-    /* For both inside page's main heading and 'view me' text on card front cover */
-    .inside-page__heading,
-    .card-front__text-view {
-        font-size: 1.3rem;
-        font-weight: 800;
-        margin-top: .2rem;
-    }
+.card-front__tp {
+    color: #fafbfa;
+}
 
-    .inside-page__heading--city,
-    .card-front__text-view--city {
-        color: #ff62b2;
-    }
+/* For pricing text on card front cover */
+.card-front__text-price {
+    font-size: 1.2rem;
+    margin-top: -.2rem;
+}
 
-    .inside-page__heading--ski,
-    .card-front__text-view--ski {
-        color: #2aaac1;
-    }
+/* Back cover */
 
-    .inside-page__heading--beach,
-    .card-front__text-view--beach {
-        color: #fa7f67;
-    }
+/* For inside page's body text */
+.inside-page__text {
+    color: #333;
+}
 
-    .inside-page__heading--camping,
-    .card-front__text-view--camping {
-        color: #00b97c;
-    }
+/* Icons ===========================================*/
 
-    /* Front cover */
+.card-front__icon {
+    fill: #fafbfa;
+    font-size: 3vw;
+    height: 3.25rem;
+    margin-top: -.5rem;
+    width: 3.25rem;
+}
 
-    .card-front__tp {
-        color: #fafbfa;
-    }
-
-    /* For pricing text on card front cover */
-    .card-front__text-price {
-        font-size: 1.2rem;
-        margin-top: -.2rem;
-    }
-
-    /* Back cover */
-
-    /* For inside page's body text */
-    .inside-page__text {
-        color: #333;
-    }
-
-    /* Icons ===========================================*/
-
-    .card-front__icon {
-        fill: #fafbfa;
-        font-size: 3vw;
-        height: 3.25rem;
-        margin-top: -.5rem;
-        width: 3.25rem;
-    }
-
-    /* Buttons =================================================*/
+/* Buttons =================================================*/
 
 
 
 
 
-    /* Layout Structure=========================================*/
+/* Layout Structure=========================================*/
 
-    .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 80vh;
-        width: 100%;
-    }
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+}
 
-    /* Container to hold all cards in one place */
-    .card-area {
-        align-items: center;
-        display: flex;
-        flex-wrap: nowrap;
-        height: 100%;
-        justify-content: space-evenly;
-        padding: 1rem;
-    }
+/* Container to hold all cards in one place */
+.card-area {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
 
-    /* Card ============================================*/
+/* Card ============================================*/
 
-    /* Area to hold an individual card */
-    .card-section {
-        align-items: center;
-        display: flex;
-        height: 100%;
-        justify-content: center;
-        width: 100%;
-    }
+/* Area to hold an individual card */
+.card-section {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
 
-    /* A container to hold the flip card and the inside page */
-    .card {
-        background-color: rgba(0, 0, 0, .05);
-        height: 15rem;
-        position: relative;
-        transition: all 1s ease;
-        width: 15rem;
-    }
+/* A container to hold the flip card and the inside page */
+.card {
+    background-color: rgba(0, 0, 0, .05);
+    height: 15rem;
+    position: relative;
+    transition: all 1s ease;
+    width: 15rem;
+}
 
-    /* Flip card - covering both the front and inside front page */
+/* Flip card - covering both the front and inside front page */
 
-    /* An outer container to hold the flip card. This excludes the inside page */
-    .flip-card {
-        height: 15rem;
-        perspective: 100rem;
-        position: absolute;
-        right: 0;
-        transition: all 1s ease;
-        visibility: hidden;
-        width: 15rem;
-        z-index: 100;
-    }
+/* An outer container to hold the flip card. This excludes the inside page */
+.flip-card {
+    height: 15rem;
+    perspective: 100rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    visibility: hidden;
+    width: 15rem;
+    z-index: 9;
+}
 
-    /* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
-    /* This is done so content in the inside page can be selected */
-    .flip-card>* {
-        visibility: visible;
-    }
+/* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+/* This is done so content in the inside page can be selected */
+.flip-card>* {
+    visibility: visible;
+}
 
-    /* An inner container to hold the flip card. This excludes the inside page */
-    .flip-card__container {
-        height: 100%;
-        position: absolute;
-        right: 0;
-        transform-origin: left;
-        transform-style: preserve-3d;
-        transition: all 1s ease;
-        width: 100%;
-    }
+/* An inner container to hold the flip card. This excludes the inside page */
+.flip-card__container {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    width: 100%;
+}
 
-    .card-front,
-    .card-back {
-        backface-visibility: hidden;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
-    /* Styling for the front side of the flip card */
+/* Styling for the front side of the flip card */
 
-    /* container for the front side */
-    .card-front {
-        background-color: #fafbfa;
-        height: 15rem;
-        width: 15rem;
-    }
+/* container for the front side */
+.card-front {
+    background-color: #fafbfa;
+    height: 15rem;
+    width: 15rem;
+}
 
-    /* Front side's top section */
-    .card-front__tp {
-        align-items: center;
-        clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
-        display: flex;
-        flex-direction: column;
-        height: 12rem;
-        justify-content: center;
-        padding: .75rem;
-    }
+/* Front side's top section */
+.card-front__tp {
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    justify-content: center;
+    padding: .75rem;
+}
 
-    .card-front__tp--city {
-        background: linear-gradient(to bottom,
-                #ff73b9,
-                #ff40a1);
-    }
+.card-front__tp--city {
+    background: linear-gradient(to bottom,
+            #ff73b9,
+            #ff40a1);
+}
 
-    .card-front__tp--ski {
-        background: linear-gradient(to bottom,
-                #47c2d7,
-                #279eb2);
-    }
+.card-front__tp--ski {
+    background: linear-gradient(to bottom,
+            #47c2d7,
+            #279eb2);
+}
 
-    .card-front__tp--beach {
-        background: linear-gradient(to bottom,
-                #fb9b88,
-                #f86647);
-    }
+.card-front__tp--beach {
+    background: linear-gradient(to bottom,
+            #fb9b88,
+            #f86647);
+}
 
-    .card-front__tp--camping {
-        background: linear-gradient(to bottom,
-                #00db93,
-                #00b97d);
-    }
+.card-front__tp--camping {
+    background: linear-gradient(to bottom,
+            #00db93,
+            #00b97d);
+}
 
-    /* Front card's bottom section */
-    .card-front__bt {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
+/* Front card's bottom section */
+.card-front__bt {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
-    /* Styling for the back side of the flip card */
+/* Styling for the back side of the flip card */
 
-    .card-back {
-        background-color: #fafbfa;
-        transform: rotateY(180deg);
-    }
+.card-back {
+    background-color: #fafbfa;
+    transform: rotateY(180deg);
+}
 
-    /* Specifically targeting the <video> element */
-    .video__container {
-        clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
-        height: auto;
-        min-height: 100%;
-        object-fit: cover;
-        width: 100%;
-    }
+/* Specifically targeting the <video> element */
+.video__container {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
 
-    /* Inside page */
+/* Inside page */
 
-    .inside-page {
-        background-color: #fafbfa;
-        box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.25);
-        height: 100%;
-        padding: 1rem;
-        position: absolute;
-        right: 0;
-        transition: all 1s ease;
-        width: 15rem;
-        z-index: 1;
-    }
+.inside-page {
+    background-color: #fafbfa;
+    box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.25);
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    width: 15rem;
+    z-index: 1;
+}
 
-    .inside-page__container {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        text-align: center;
-        width: 100%;
-    }
+.inside-page__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
 
-    /* Functionality ====================================*/
+/* Functionality ====================================*/
 
-    /* This is to keep the card centered (within its container) when opened */
-    .card:hover {
-        box-shadow:
-            -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
-        width: 30rem;
-    }
+/* This is to keep the card centered (within its container) when opened */
+.card:hover {
+    box-shadow:
+        -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
+    width: 30rem;
+}
 
-    /* When the card is hovered, the flip card container will rotate */
-    .card:hover .flip-card__container {
-        transform: rotateY(-180deg);
-    }
+/* When the card is hovered, the flip card container will rotate */
+.card:hover .flip-card__container {
+    transform: rotateY(-180deg);
+}
 
-    /* When the card is hovered, the shadow on the inside page will shrink to the left */
-    .card:hover .inside-page {
-        box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
-    }
+/* When the card is hovered, the shadow on the inside page will shrink to the left */
+.card:hover .inside-page {
+    box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
+}
 </style>
 <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
