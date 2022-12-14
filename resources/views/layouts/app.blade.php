@@ -8,6 +8,11 @@
 
     <title> معرض  الريان  للسيارات</title>
     <style>
+        .footer {
+            clear: both;
+    position: relative;
+    
+    margin-top: 0px;}
         .home {
             font-family: 'Changa', sans-serif;
         }
@@ -83,7 +88,7 @@
             </div>
         </main>
 
-        <div class="">@livewire('components.footer')</div>
+        <div class="bottom-0 left-0 fixed z-10">@livewire('components.footer')</div>
     </div>
 
 

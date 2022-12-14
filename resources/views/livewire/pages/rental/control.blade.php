@@ -1,4 +1,4 @@
-<div class="p-12">
+<div class="p-12 ">
     <div class="mb-4 border-b border-gray-200 ">
         <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent"
             role="tablist">
@@ -157,7 +157,7 @@
                                 <!-- {{ $rent->image_path }} -->
                             </td>
                             <td class="py-4 px-6 flex text-white">
-                                <button wire:click="rejected({{ $rent->id }})"  class="border p-3 bg-red-600">
+                                <button wire:click="rejected({{ $rent->id }})" class="border p-3 bg-red-600">
                                     رفض
                                 </button>
                             </td>
@@ -168,7 +168,7 @@
             </div>
         </div>
         <div class="hidden px-4 " id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-        <div class="      mt-9  flex justify-center  items-center ">
+            <div class="      mt-9  flex justify-center  items-center ">
                 <table class="  text-sm text-center text-left text-gray-500 p-4  ">
                     <thead class="text-xs text-gray-100 uppercase bg-black ">
                         <tr>
@@ -233,6 +233,7 @@
                     </tbody>
                     @endforeach
                 </table>
-            </div>        </div>
+            </div>
+        </div>
     </div>
 </div>

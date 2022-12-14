@@ -4,10 +4,14 @@ namespace App\Http\Livewire\Pages\Rental;
 
 use Livewire\Component;
 use App\Models\Rent;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
+
 
 
 class Control extends Component
 {
+    use LivewireAlert;
+
     protected $listeners = ['$refresh'];
     public  $location ,$rent_date ,$return_date ,$phone_num ,$image_path,$state;
     public function no($id)
@@ -16,7 +20,11 @@ class Control extends Component
         $rent->update([
             'state' => 0
         ]);
-        
+        $this->alert('success', 'تم استرجاع السيارة ', [
+            'position' => 'center',
+            'timer' => 3000,
+            'toast' => true,
+        ]);
         redirect()->route('control');
 
     }
@@ -26,7 +34,11 @@ class Control extends Component
         $rent->update([
             'state' => 1
         ]);
-        
+        $this->alert('success', 'تم تاجير السيارة ', [
+            'position' => 'center',
+            'timer' => 3000,
+            'toast' => true,
+        ]);
         redirect()->route('control');
     }
     public function rejected($id)
@@ -35,7 +47,11 @@ class Control extends Component
         $rent->update([
             'state' => 2
         ]);
-        
+        $this->alert('success', 'تم  الرفض ', [
+            'position' => 'center',
+            'timer' => 3000,
+            'toast' => true,
+        ]);
         redirect()->route('control');
     }
 
