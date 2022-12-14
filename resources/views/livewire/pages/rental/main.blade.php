@@ -38,7 +38,7 @@
                     <div>الموقع</div>
                     <input wire:model.lazy="location" type="text"
                         class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value=""
-                        placeholder="ابحث عن مدينة" />
+                        placeholder=" اختر المكان" />
                     @error('location')
                     <div class=" text-sm text-red-700 ">يجب ملئ هذا الحقل</div>
                     @enderror

@@ -11,8 +11,8 @@
         </div>
 
         <div
-            class="overflow-x-auto w-fit relative shadow-md sm:rounded-lg mt-9  flex justify-center  items-center m-auto">
-            <table class="w-6/7 text-sm text-center text-left text-gray-500 dark:text-gray-400 ">
+            class="overflow-x-auto  relative  mt-9  flex justify-center  items-center m-auto">
+            <table class="w-5/7 mx-6 text-sm text-center text-left text-gray-500 dark:text-gray-400 ">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
                         <th scope="col" class="py-3 px-6">

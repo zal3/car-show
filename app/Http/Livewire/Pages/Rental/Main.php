@@ -46,7 +46,9 @@ class Main extends Component
     public function render()
     {
         //get car state is false
-        $this->cars = Car::where('state', true)->get();
+        $this->cars = Car::where('state', 1)->whereHas('rent' , function($q){
+            $q->where('state', 0 & 2);})
+            ->get();
         return view('livewire.pages.rental.main');
     }
 }
