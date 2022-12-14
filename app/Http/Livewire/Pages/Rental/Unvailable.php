@@ -17,7 +17,9 @@ class Unvailable extends Component
     }
     public function render()
     {$search = '%' . $this->search . '%';
-        $cars = Car::whereHas('rent' )->where('type', 'LIKE', $search)->where('state',false)->get();
+        $cars = Car::whereHas('rent' , function($q){
+            $q->where('state',1);}
+         )->where('type', 'LIKE', $search)->get();
         // ->where('state',false)->where('type', 'LIKE', $search)->get();
         return view('livewire.pages.rental.unvailable', compact('cars'));
     }

@@ -8,21 +8,44 @@ use App\Models\Rent;
 
 class Control extends Component
 {
-    public  $location ,$rent_date ,$return_date ,$phone_num ,$image_path;
-    // protected $listeners = ['updatedSelectedTab'];
-    // public function updatedSelectedTab($value)
-    // {
-    //     $this->selectedTab = $value;
-    // }
-
-    public function mount()
+    protected $listeners = ['$refresh'];
+    public  $location ,$rent_date ,$return_date ,$phone_num ,$image_path,$state;
+    public function no($id)
     {
-        $this->tabs = ['طلبات التاجير ','المقبول' ,'المرفوض'];
-        $this->selectedTab = 0;
+        $rent = Rent::find($id);
+        $rent->update([
+            'state' => 0
+        ]);
+        
+        redirect()->route('control');
+
     }
+    public function accebted($id)
+    {
+        $rent = Rent::find($id);
+        $rent->update([
+            'state' => 1
+        ]);
+        
+        redirect()->route('control');
+    }
+    public function rejected($id)
+    {
+        $rent = Rent::find($id);
+        $rent->update([
+            'state' => 2
+        ]);
+        
+        redirect()->route('control');
+    }
+
+        
     public function render()
     {
-        $rents = Rent::with('car','user')->get();
-        return view('livewire.pages.rental.control',compact('rents'));
+        
+        $this->rents = Rent::with('car','user')->where('state',0)->get();
+        $this->rents1 = Rent::with('car','user')->where('state',1)->get();
+        $this->rents2 = Rent::with('car','user')->where('state',2)->get();
+        return view('livewire.pages.rental.control');
     }
 }

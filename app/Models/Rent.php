@@ -15,6 +15,7 @@ class Rent extends Model
         'rent_date',
         'return_date',
         'phone_num',
+        'state',
         'image_path',
     ];
 

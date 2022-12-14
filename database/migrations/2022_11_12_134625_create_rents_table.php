@@ -21,6 +21,7 @@ return new class extends Migration
             $table->date('rent_date');
             $table->date('return_date');
             $table->integer('phone_num');
+            $table->integer('state')->default(0);
             $table->string('image_path')->nullable();
             $table->timestamps();
         });
