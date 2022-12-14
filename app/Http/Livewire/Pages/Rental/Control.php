@@ -3,9 +3,12 @@
 namespace App\Http\Livewire\Pages\Rental;
 
 use Livewire\Component;
+use App\Models\Rent;
+use App\Models\Car;
 
 class Control extends Component
 {
+    public $car , $location ,$rent_date ,$return_date ,$phone_num ,$image_path;
     // protected $listeners = ['updatedSelectedTab'];
     // public function updatedSelectedTab($value)
     // {
@@ -19,6 +22,7 @@ class Control extends Component
     }
     public function render()
     {
-        return view('livewire.pages.rental.control');
+        $rents = Rent::with('car')->get();
+        return view('livewire.pages.rental.control',compact('rents'));
     }
 }

@@ -28,7 +28,7 @@ class Rent extends Model
     // car
     public function car()
     {
-        return $this->belongsTo(Cars::class);
+        return $this->belongsTo(Car::class);
     }
             ### End Relationships ###
             public function add($location, $rent_date, $return_date, $phone_num, $car_id)

@@ -33,9 +33,10 @@
             </div>
         </div>
         <div>
-            
+           
             
         </div>
     </div>
     @endforeach
+    {{$cars->rent}}
 </div>
