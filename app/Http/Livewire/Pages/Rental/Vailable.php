@@ -5,12 +5,17 @@ use App\Models\Car;
 
 use Livewire\Component;
 
-class Vailable extends Component
+class Vailable extends Component    
 {
-    
-    public function render()
+    public $search;
+    protected $listeners = ['$refresh', 'search'];
+    public function search($search)
     {
-        $cars = Car::where('state',true)->get();
+        $this->search = $search;
+    }
+    public function render()
+    {$search = '%' . $this->search . '%';
+        $cars = Car::where('state',true)->where('type', 'LIKE', $search)->get();
         return view('livewire.pages.rental.vailable',compact('cars'));
     }
 }

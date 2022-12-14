@@ -8,10 +8,15 @@ use App\Models\Car;
 
 class Unvailable extends Component
 {
-    // public $rents;
-    public function render()
+    public $search;
+    protected $listeners = ['$refresh', 'search'];
+    public function search($search)
     {
-        $cars = Car::where('state',false)->get();
+        $this->search = $search;
+    }
+    public function render()
+    {$search = '%' . $this->search . '%';
+        $cars = Car::where('state',false)->where('type', 'LIKE', $search)->get();
         // $rents = new Rent();
         // $rents =  Rent::with('car')->where('return_date', '>=', now())->get();
         return view('livewire.pages.rental.unvailable', compact('cars'));

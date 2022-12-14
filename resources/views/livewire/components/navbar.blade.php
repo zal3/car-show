@@ -64,19 +64,26 @@
                                 <ul class="py-1" aria-labelledby="dropdownLargeButton">
                                     <li>
                                         <a href="{{ route($item->route) }}"
-                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">تاجير سيارة
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">تأجير سيارة
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{ route('available-rental') }}"
                                             class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">السيارات
-                                            المتاحة للتاجير</a>
+                                            المتاحة للتأجير</a>
                                     </li>
                                     <li>
                                         <a href="{{ route('unavailable-rental') }}"
                                             class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">السيارات
                                             المؤجرة </a>
                                     </li>
+                                    @admin
+                                    <li>
+                                        <a href="{{ route('control') }}"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">
+                                            أدارة التأجير</a>
+                                    </li>
+                                    @endadmin
                                 </ul>
                             </div>
                         </div>

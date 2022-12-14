@@ -7,7 +7,7 @@
             الريــــــان  <br> للسيارات</h1>
             <h5 class="px-5" data-aos="fade-up" data-aos-delay="300">للحصول على أفضل سيارة في المدينة
                 <br> بأفضل سعر وجودة
-            </h5>z
+            </h5>
             {{-- <div class="bttn flex  " data-aos="fade-up" data-aos-delay="400">
                 <a href="{{ route('car') }}">
                     <button class="btn w-48   cursor-pointer bg-orange  text-white"> السيارات</button>

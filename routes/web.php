@@ -19,6 +19,7 @@ use App\Http\Livewire\Pages\Car\{
 use App\Http\Livewire\Pages\Rental\{
     Vailable as AvailableRental,
     Unvailable as UnvailableRental,
+    Control as ControlRental,
 
 };
 use App\Http\Livewire\Pages\Admins\{
@@ -55,6 +56,9 @@ Route::middleware(['auth:sanctum'])->group(function () {
         Route::middleware(['superAdmin'])->group(function () {
             Route::get('/add-car', CarAdd::class)->name('add-car');
 Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
+Route::get('/control', ControlRental::class)->name('control');
+
+
         });
         // end cars
         // admins
