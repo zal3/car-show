@@ -5,11 +5,11 @@
             {{-- add committee --}}
             @if (auth()->user()->id == 1)
                 <div class="cursor-pointer justify-center xl:mr-4 flex">
-                    <button wire:click="add"
+                    <a href="{{ route('addadmin') }}"
                         class="text-black text-md xl:text-xl duration-200 bg-primary-500 hover:bg-white border border-transparent hover:border-gray-500 hover:text-primary-500 focus:ring-4 focus:ring-primary-300 rounded-lg px-3 py-2 md:px-5 md:py-2.5">
                         <i class="fa-solid fa-plus"></i>
                         إضافة عضو
-                    </button>
+                    </a>
                 </div>
             @endif
         </div>

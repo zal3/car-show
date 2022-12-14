@@ -23,7 +23,8 @@ use App\Http\Livewire\Pages\Rental\{
 
 };
 use App\Http\Livewire\Pages\Admins\{
-    main as Admins
+    main as Admins,
+    Add as AdminAdd,
 };
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +41,7 @@ Route::get('/', Home::class)->name('home');
 
 //about
 Route::get('/about', About::class)->name('about');
+//register
 
 //car
 Route::get('/car', CarMain::class)->name('car');
@@ -63,6 +65,7 @@ Route::get('/control', ControlRental::class)->name('control');
         // end cars
         // admins
         Route::get('/admins', Admins::class)->name('admins');
+        Route::get('/add-admin', AdminAdd::class)->name('addadmin');
         // end admins
 
 
