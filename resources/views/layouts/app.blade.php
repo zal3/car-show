@@ -88,7 +88,7 @@
             </div>
         </main>
 
-        <div class="bottom-0 left-0 fixed z-10">@livewire('components.footer')</div>
+        <div class="bottom-0 md:left-0 w-full md:w-fit  fixed z-10">@livewire('components.footer')</div>
     </div>
 
 
