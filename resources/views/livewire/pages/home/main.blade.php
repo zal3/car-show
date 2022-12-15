@@ -1,13 +1,13 @@
 <div class="overflow-hidden ">
-    <img src="{{ asset('img/car.png') }}" alt="hero" class="car">
+    <img src="{{ asset('img/car.png') }}" alt="hero" class="car top-14 lg:top-0">
     {{-- home --}}
-    <div class="ho w-full relative grid items-center mx-4 px-4">
-        <div class="text">
-            <h1 class="font-bold " data-aos="fade-up" data-aos-delay="150"><span class="text-orange">معرض</span>
+    <div class="min-h-[30vh] sm:min-h-[80vh]  lg:min-h-[100vh]  w-full relative grid items-center mx-4 px-4">
+        <div class=" ">
+            <h1 class=" mb-3 font-bold text-sm sm:text-2xl md:text-5xl lg:text-6xl " data-aos="fade-up" data-aos-delay="150"><span class="text-orange ">معرض</span>
             الريــــــان  <br> للسيارات</h1>
-            <h5 class="px-5" data-aos="fade-up" data-aos-delay="300">للحصول على أفضل سيارة في المدينة
+            <div class="md:px-5  text-sm sm:text-md md:text-xl " data-aos="fade-up" data-aos-delay="300">للحصول على أفضل سيارة في المدينة
                 <br> بأفضل سعر وجودة
-            </h5>
+            </div>
             {{-- <div class="bttn flex  " data-aos="fade-up" data-aos-delay="400">
                 <a href="{{ route('car') }}">
                     <button class="btn w-48   cursor-pointer bg-orange  text-white"> السيارات</button>
@@ -20,13 +20,13 @@
 
     </div>
     {{-- about section  --}}
-    <div class="about flex" id="about">
+    <div class="about md:flex" id="about">
         <div class="video-container" data-aos="fade-left" data-aos-delay="300">
             <video src="{{ asset('img/car.mp4') }}" muted autoplay loop class="video"></video>
         </div>
         <div class="content2" data-aos="fade-right" data-aos-delay="600">
             <span class="aboutspan">لماذا نحن !!</span>
-            <h3 class="about">البصرة ,شارع الوفود </h3>
+            <h3 class="about text-md sm:text-xl md:text-2xl ">البصرة ,شارع الوفود </h3>
             <p>
                 معرضنا عام لنماذج السيارات الحالية، أو الظهور الأول، أو السيارات المبتكرة، <br>أو الكلاسيكيات خارج
                 الإنتاج
@@ -146,7 +146,7 @@
     }
 
     .ho {
-        min-height: 100vh;
+        /* min-height: 50vh; */
     }
 
     .car {
@@ -157,7 +157,6 @@
         position: absolute;
         -webkit-transform: scaleX(-1);
         display: grid;
-        top: 0;
         display: absolute;
     }
 
@@ -165,12 +164,12 @@
         margin-bottom: 8rem;
     } */
 
-    .text h1 {
-        font-size: 3.5rem;
+    .t {
+        /* font-size: 3.5rem; */
         letter-spacing: 2px;
     }
 
-    .bttn {
+    /* .bttn {
         gap: 1rem;
         margin-top: 30px;
         margin-right: 30px;
@@ -187,35 +186,6 @@
         box-shadow: 0 4px 50px #d3543e;
     }
 
-    /* form-container
-    .form-container form {
-        gap: 1rem;
-        bottom: 8rem;
-        left: 400px;
-        
-        padding: 20px;
-        border-radius: 0.5rem;
-    }
-
-    .input-box {
-        flex: 1 1 7rem;
-        flex-direction: column;
-        display: flex;
-    }
-
-    .input-box span {
-        font-weight: 500;
-    }
-
-    .input-box input {
-        padding: 7px;
-        outline: none;
-        background: #eeeff1;
-        border-radius: 0.5rem;
-        outline: none;
-        font-size: 1rem;
-    } */
-
     .btnn {
         padding: 10px 36px;
         margin-top: 1rem;
@@ -229,7 +199,7 @@
 
     .btnn:hover {
         background: #ED563B;
-    }
+    } */
 
     /* about */
     .about {
@@ -258,7 +228,7 @@
 
     .about .content2 h3 {
         color: #000000;
-        font-size: 2rem;
+        /* font-size: 2rem; */
         margin: .5rem 0 .5rem 0;
     }
 
