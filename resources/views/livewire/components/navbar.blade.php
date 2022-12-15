@@ -70,7 +70,7 @@
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul
-                    class="flex flex-col p-4 mt-4   md:flex-row md:space-x-3 md:mt-0 md:text-sm md:font-medium  md:bg-white ">
+                    class="flex flex-col p-4 mt-4   md:flex-row md:space-x-3 md:mt-0 md:text-md md:font-medium  md:bg-white ">
                     @foreach ($menu->items as $item)
                         @if ($item->id == 1)
                         <a href="{{ route($item->route) }}" @if ($item->active) class=" text-orange-600 px-3 md:border-b
