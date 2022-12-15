@@ -2,7 +2,7 @@
 
     <nav
         class="bg-white px-2 sm:px-4 py-2 md:py-0  fixed w-full z-20 top-0 left-0 md:border-b md:border-gray-200 ">
-        <div class=" container flex  items-center justify-between mx-auto">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="/" class="flex items-center">
                 <img src="{{ asset('/img/lg.png') }}" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
             </a>
@@ -68,7 +68,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul
                     class="flex flex-col p-4 mt-4   md:flex-row md:space-x-3 md:mt-0 md:text-sm md:font-medium  md:bg-white ">
                     @foreach ($menu->items as $item)
