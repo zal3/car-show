@@ -1,38 +1,29 @@
 <div class="overflow-y-hidden ">
-    {{-- video --}}
-    <div>
-        <!-- <div class="absolute inset-0 flex items-center justify-center ">
-            <img src="{{ asset('img/back.jpg') }}" muted autoplay loop
-                class=" mx-auto w-full h-96 object-cover opacity-60"></img></img>
-        </div> -->
-
-    </div>
     {{-- /* serves */ --}}
     <div class="h-44 bg-slate-900">
         <div class=" mt-12 px-12 overflow-hidden ">
             <div>
-                <h1 class="aa flex justify-center mt-12 text-center font-bold text-3xl md:text-5xl lg:text-7xl  ">معرض الريان للسيارات </h1>
+                <h1 class="aa flex justify-center mt-12 text-center font-bold text-3xl md:text-5xl lg:text-7xl  ">معرض
+                    الريان للسيارات </h1>
             </div>
         </div>
     </div>
     {{-- brand --}}
-    <div class="flex gap-12 justify-center items-center mt-40 mb-8">
-        <img src="{{ asset('img/about/BMW.png') }}" alt="">
-        <img src="{{ asset('img/about/Jeep.png') }}" alt="">
-        <img src="{{ asset('img/about/Audi.png') }}" alt="">
-        <img src="{{ asset('img/about/Kia-1.png') }}" alt="">
-        <img src="{{ asset('img/about/Hyundai.png') }}" alt="">
-        <img src="{{ asset('img/about/Ford.png') }}" alt="">
-        <img src="{{ asset('img/about/Jaguar.png') }}" alt="">
-
+    <div class="flex justify-center mx-auto items-center">
+        <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7   gap-12 justify-center mx-auto items-center mt-20 mb-8">
+            <img src="{{ asset('img/about/BMW.png') }}" alt="">
+            <img src="{{ asset('img/about/Jeep.png') }}" alt="">
+            <img src="{{ asset('img/about/Audi.png') }}" alt="">
+            <img src="{{ asset('img/about/Kia-1.png') }}" alt="">
+            <img src="{{ asset('img/about/Hyundai.png') }}" alt="">
+            <img src="{{ asset('img/about/Ford.png') }}" alt="">
+            <img src="{{ asset('img/about/Jaguar.png') }}" alt="">
+        </div>
     </div>
-
-
     {{-- /* serves */ --}}
-    <main class="main">
-
-        <section class="card-area">
-
+    <main class="main h-[200vh] sm:h-[100vh] md:h-[100vh] lg:h-[70vh]">
+        <section class="card-area grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <!-- Card: City -->
             <section class="card-section ">
                 <div class="card">
@@ -52,13 +43,10 @@
                                         <path
                                             d="M6 10h2l2 -2h3.382a1 1 0 0 1 .894 .553l1.448 2.894a1 1 0 0 0 .894 .553h1.382v-2h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2v-2h-3v2a1 1 0 0 1 -1 1h-3.465a1 1 0 0 1 -.832 -.445l-1.703 -2.555h-2v-6z" />
                                     </svg>
-
                                     <h2 class="card-front__heading">
                                         المحرك
                                     </h2>
-
                                 </div>
-
                                 <div class="card-front__bt">
                                     <p class="card-front__text-view card-front__text-view--city">
                                         عرض
@@ -70,22 +58,17 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="inside-page">
                         <div class="inside-page__container">
-
                             <p class="inside-page__text mt-8">
-
                                 , يمكنك الحصول على احدث المحركات مع سيارتك بارخص الاسعار إن بنية محرك 6
                                 سلندر يجعله مناسب للتكامل المستقبلي للدعم الكهربائي في سيارات هايبرد و سيارات بلج ان
                                 هايبرد
                             </p>
-
                         </div>
                     </div>
                 </div>
             </section>
-
             <!-- Card: Ski -->
             <section class="card-section">
                 <div class="card">
@@ -102,22 +85,18 @@
                                     <h2 class="card-front__heading">
                                         الاطارات
                                     </h2>
-
                                 </div>
-
                                 <div class="card-front__bt">
                                     <p class="card-front__text-view card-front__text-view--ski">
                                         عرض
                                     </p>
                                 </div>
                             </div>
-
                             <div class="card-back">
                                 <img src="{{ asset('img/about/tire.jpg') }}" alt="engines" class="h-full">
                             </div>
                         </div>
                     </div>
-
                     <div class="inside-page">
                         <div class="inside-page__container">
                             <p class="inside-page__text mt-8">
@@ -128,7 +107,6 @@
                     </div>
                 </div>
             </section>
-
             <!-- Card: Beach -->
             <section class="card-section">
                 <div class="card">
@@ -145,9 +123,7 @@
                                     <h2 class="card-front__heading">
                                         اصلاح
                                     </h2>
-
                                 </div>
-
                                 <div class="card-front__bt">
                                     <p class="card-front__text-view card-front__text-view--beach">
                                         عرض
@@ -159,12 +135,9 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="inside-page">
                         <div class="inside-page__container">
-
                             <p class="inside-page__text mt-8">
-
                                 قد يحتاج الفرد فقط إلى خدمات من شركة إصلاح السيارات مرة واحدة في السنة
                                 ,لدينا
                                 قسم إصلاح المحرك و التشخيص الإلكتروني
@@ -173,7 +146,6 @@
                     </div>
                 </div>
             </section>
-
             <!-- Card: Camping -->
             <section class="card-section">
                 <div class="card">
@@ -190,9 +162,7 @@
                                     <h2 class="card-front__heading">
                                         تاجير سيارة
                                     </h2>
-
                                 </div>
-
                                 <div class="card-front__bt">
                                     <p class="card-front__text-view card-front__text-view--camping">
                                         عرض
@@ -201,16 +171,12 @@
                             </div>
                             <div class="card-back">
                                 <img src="{{ asset('img/about/reet.webp') }}" alt="engines" class="h-full">
-
                             </div>
                         </div>
                     </div>
-
                     <div class="inside-page">
                         <div class="inside-page__container">
-
                             <p class="inside-page__text mt-8">
-
                                 سيارات للإيجار اليومي والشهري وتوصيل لكافة أنحاء العراق مشوارك معنا صار اسهل
                                 (مصداقية - موثوقية - امان) <br><a class="text-blue-400">المزيد</a> </p>
                         </div>
@@ -219,7 +185,6 @@
             </section>
         </section>
     </main>
-
     {{-- show --}}
     <div class="flex relative  justify-center items-center">
         <div class="grid grid-cols-2  basis-1/2 mx-28 ">
@@ -261,7 +226,6 @@
             <img src="{{ asset('img/about/car-shoow.jpg') }}" alt="hero" class="h-1/2 ">
         </div>
     </div>
-
     {{-- contact --}}
     <div class="bg-slate-900 p-12 ">
         <h1 class="flex  justify-center mb-8 text-5xl text-white  "> هل انت مهتم بخدماتنا ؟</h1>
@@ -269,7 +233,6 @@
             <button class="flex  font-bold justify-center m-auto bg-white rounded-full px-6 py-2  "> اتصل بنا </button>
         </a>
     </div>
-
     {{-- team --}}
     <div class="my-9">
         <h6 class=" font-bold px-4 mx-4 text-3xl ">فريق التنفيذ</h6>
@@ -285,11 +248,9 @@
                             </i>
                         </a>
                         <i class="fa-brands fa-github hover:text-orange-700"></i>
-
                     </div>
                 </div>
             </div>
-
             <div class="w-full max-w-sm     ">
                 <div class="flex flex-col items-center pb-10">
                     <img class="w-24 h-24 mb-3 mt-3 rounded-full border border-gray-600 shadow-lg"
@@ -301,11 +262,9 @@
                             </i>
                         </a>
                         <i class="fa-brands fa-github hover:text-orange-700"></i>
-
                     </div>
                 </div>
             </div>
-
             <div class="w-full max-w-sm     ">
                 <div class="flex flex-col items-center pb-10">
                     <img class="w-24 h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg"
@@ -316,13 +275,11 @@
                             <i class="fa-solid fa-envelope hover:text-orange-700 "></i>
                         </a>
                         <i class="fa-brands fa-github hover:text-orange-700"></i>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 
 <style scoped>
@@ -507,15 +464,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80vh;
+    /* height: 80vh; */
     width: 100%;
 }
 
 /* Container to hold all cards in one place */
 .card-area {
     align-items: center;
-    display: flex;
-    flex-wrap: nowrap;
     height: 100%;
     justify-content: space-evenly;
     padding: 1rem;
