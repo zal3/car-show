@@ -187,7 +187,7 @@
     </main>
     {{-- show --}}
     <div class="flex relative  justify-center items-center">
-        <div class="grid grid-cols-2  basis-1/2 mx-28 ">
+        <div class="grid grid-cols-1 sm:grid-cols-2  basis-1/2 mx-28 ">
             <div class=" flex gap-5 font-bold  items-center h-16">
                 <img src="{{ asset('img/about/1.png') }}" alt="" class="w-10 h-12 ">
                 <div>خدمات موثوقة</div>
@@ -222,7 +222,7 @@
                 <div>مراجعات إيجابية</div>
             </div>
         </div>
-        <div class="basis-1/2 ml-16">
+        <div class="basis-1/2 ml-16 hidden md:block">
             <img src="{{ asset('img/about/car-shoow.jpg') }}" alt="hero" class="h-1/2 ">
         </div>
     </div>
