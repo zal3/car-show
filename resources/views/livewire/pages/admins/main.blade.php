@@ -1,5 +1,5 @@
 <div class="overflow-hidden">
-    <div class="px-4 md:px-8 xl:px-12  bg-white text-gray-800 ">
+    <div class="px-4 md:px-8 xl:px-12   bg-white text-gray-800 ">
         <div class="flex justify-between mt-6 md:mt-6 pt-9">
             <h2 class="text-center font-semibold text-xl md:text-xl xl:text-4xl">فريق العمل </h2>
             {{-- add committee --}}
@@ -13,7 +13,8 @@
                 </div>
             @endif
         </div>
-        <div class=" mt-16 w-5/6 m-auto grid grid-cols-2 ">
+       
+        <div class="w-5/6 m-auto grid grid-cols-1 lg:grid-cols-2 justify-center items-center  ">
             @forelse($admins as $item)
                 <livewire:pages.admins.card :item="$item" key="{{ now() }}" />
             @empty
@@ -22,6 +23,7 @@
                 </div>
             @endforelse
         </div>
+        
 
     </div>
 </div>

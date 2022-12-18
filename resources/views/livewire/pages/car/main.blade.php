@@ -16,9 +16,9 @@
 
             @admin
             <a href="{{ route('add-car') }}"
-                class="text-black  text-md xl:text-xl duration-200 bg-primary-500 hover:bg-white border border-transparent hover:border-gray-500 hover:text-primary-500 focus:ring-2 focus:ring-gray-900 ml-7  rounded-lg px-3 py-1 md:px-4 md:py-1">
+                class="text-black flex items-center gap-3 text-md xl:text-xl duration-200 bg-primary-500 hover:bg-white border border-transparent hover:border-gray-500 hover:text-primary-500 focus:ring-2 focus:ring-gray-900 ml-7  rounded-lg px-3 py-1 md:px-4 md:py-1">
                 <i class="fa-solid fa-plus"></i>
-                إضافة سيارة
+                <div class=" hidden sm:block">  إضافة سيارة</div> 
 
             </a>
             @endadmin
