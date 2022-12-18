@@ -234,12 +234,13 @@
         </a>
     </div>
     {{-- team --}}
-    <div class="my-9">
-        <h6 class=" font-bold px-4 mx-4 text-3xl ">فريق التنفيذ</h6>
-        <div class="px-40 flex justify-center   mx-40 ">
+    <div class="my-9 ">
+        <h6 class=" font-bold px-4 mx-4  text-3xl ">فريق التنفيذ</h6>
+        <div class=" flex justify-center mx-auto text-center items-center gap-6 mt-6">
+        <div class=" grid grid-cols-1 md:grid-cols-3  justify-center items-center  gap-6 ">
             <div class="w-full max-w-sm     rounded-br-3xl rounded-tl-3xl  ">
                 <div class="flex flex-col items-center pb-10">
-                    <img class="w-24 h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg"
+                    <img class="w-14 h-14 md:w-24 md:h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg"
                         src="{{ asset('img/team/girl1 1.png') }}" alt="Bonnie image" />
                     <h5 class="mb-1 text-xl font-medium text-gray-900 ">حوراء محسن جاسم</h5>
                     <div class="flex justify-center  ggg ">
@@ -253,7 +254,7 @@
             </div>
             <div class="w-full max-w-sm     ">
                 <div class="flex flex-col items-center pb-10">
-                    <img class="w-24 h-24 mb-3 mt-3 rounded-full border border-gray-600 shadow-lg"
+                    <img class="w-14 h-14 md:w-24 md:h-24 mb-3 mt-3 rounded-full border border-gray-600 shadow-lg"
                         src="{{ asset('img/team/girl2 1.png') }}" alt="Bonnie image" />
                     <h5 class="mb-1 text-xl font-medium text-gray-900 ">حوراء محمد عبد الزهرة</h5>
                     <div class="flex justify-center  ggg ">
@@ -267,7 +268,7 @@
             </div>
             <div class="w-full max-w-sm     ">
                 <div class="flex flex-col items-center pb-10">
-                    <img class="w-24 h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg"
+                    <img class="w-14 h-14 md:w-24 md:h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg"
                         src="{{ asset('img/team/girl3 1.png') }}" alt="Bonnie image" />
                     <h5 class="mb-1 text-xl font-medium text-gray-900 ">زينب فوزي حميد</h5>
                     <div class="flex justify-center  ggg ">
@@ -279,6 +280,8 @@
                 </div>
             </div>
         </div>
+        </div>
+        
     </div>
 </div>
 
