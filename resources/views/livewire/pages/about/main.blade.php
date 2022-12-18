@@ -5,65 +5,14 @@
             <img src="{{ asset('img/back.jpg') }}" muted autoplay loop
                 class=" mx-auto w-full h-96 object-cover opacity-60"></img></img>
         </div> -->
-        
+
     </div>
     {{-- /* serves */ --}}
-    <div class="p-12 bg-slate-900">
-        <div class=" m-auto px-12 overflow-hidden ">
-        <div>
-            <h1 class="aa flex justify-center  font-bold text-7xl   ">معرض البصرة للسيارات </h1>
-        </div>
-            {{-- <div class="help-container">
-                <div class="help-box">
-                    <div class="help-icon text-5xl  ">
-                        <iconify-icon icon="mdi:engine" class="mt-2 -rotate-45 "></iconify-icon>
-                    </div>
-                    <div class="help-title">المحرك </div>
-                    <div class="help-desc">
-                        , يمكنك الحصول على احدث المحركات مع سيارتك بارخص الاسعار إن بنية محرك 6
-                        سلندر يجعله مناسب للتكامل المستقبلي للدعم الكهربائي في سيارات هايبرد و سيارات بلج ان هايبرد
-                    </div>
-                </div>
-                <div class="help-box">
-                    <div class="help-icon text-5xl mt-4">
-                        <iconify-icon icon="game-icons:car-wheel" class="mt-2"></iconify-icon>
-                    </div>
-                    <div class="help-title">الاطارات</div>
-                    <div class="help-desc">
-                        إذا كانت رحلتك علي طرق جافة أو رطبة أو غير معبدة إطاراتنا ستساعدك علي المضي
-                        قدما دون توقف. لتحصل على أفضل إطارات السيارات
-                    </div>
-                </div>
-                <div class="help-box">
-                    <div class="help-icon">
-                        <i class="fa-solid fa-tools"></i>
-                    </div>
-                    <div class="help-title">اصلاح</div>
-                    <div class="help-desc">
-                        قد يحتاج الفرد فقط إلى خدمات من شركة إصلاح السيارات مرة واحدة في السنة
-                        ,لدينا
-                        قسم إصلاح المحرك و التشخيص الإلكتروني
-                    </div>
-                </div>
-                <div class="help-box">
-                    <div class="help-icon">
-                        <i class="fa-solid fa-car"></i>
-                    </div>
-                    <div class="help-title">تاجير سيارة</div>
-                    <div class="help-desc">
-                        سيارات للإيجار اليومي والشهري وتوصيل لكافة أنحاء العراق مشوارك معنا صار اسهل
-                        (مصداقية - موثوقية - امان) <br><a class="text-blue-400">المزيد</a></div>
-                </div>
-                <div class="help-box">
-                    <div class="help-icon">
-                        <i class="fa-solid fa-car-battery"></i>
-                    </div>
-                    <div class="help-title">بطاريات </div>
-                    <div class="help-desc">نقدم خدمة تبديل البطاريات في مكانك افضل انواع البطاريات
-                        تسريع عمليات الشحن 200 مرة، مقارنةً بمعدلات شحن البطاريات الكلاسيكية الموجودة اليوم.
-                    </div>
-                </div>
-            </div> --}}
+    <div class="h-44 bg-slate-900">
+        <div class=" mt-12 px-12 overflow-hidden ">
+            <div>
+                <h1 class="aa flex justify-center mt-12 text-center font-bold text-3xl md:text-5xl lg:text-7xl  ">معرض الريان للسيارات </h1>
+            </div>
         </div>
     </div>
     {{-- brand --}}
@@ -78,7 +27,7 @@
 
     </div>
 
-    
+
     {{-- /* serves */ --}}
     <main class="main">
 
