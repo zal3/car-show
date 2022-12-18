@@ -49,8 +49,3 @@
         </div>
     </section>
 </div>
-<style scoped>
-    .bg-oo {
-        background-color: #FF6B45;
-    }
-</style>

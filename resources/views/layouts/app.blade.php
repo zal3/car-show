@@ -39,15 +39,10 @@
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="/resources/css/swiper-bundle.min.css">
 
-    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    {{-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    /> --}}
     {{-- ////////// --}}
     <!-- Fonts -->
 
@@ -77,8 +72,8 @@
 <body id="home" class="bg-white h-screen home " dir="rtl">
     <x-jet-banner />
 
-    <div class=" w-full  ">
-        <div class="">@livewire('components.navbar')</div>
+    <div class=" w-full ">
+    <livewire:components.navbar />
 
         <!-- Page Content -->
         <main class="   overflow-y-auto  overflow-x-hidden  bg-white ">

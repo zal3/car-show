@@ -1,7 +1,7 @@
 <div>
-    <div class="  m-auto justify-center  items-center px-8 pb-8  ">
+    <div class=" m-auto  items-center px-8 pb-8 ">
         <div class=" flex justify-center  items-center">
-            {{-- <img class="" src=" {{ asset('img/cars/car6.jpg') }}"> --}}
+            
             <div class="container">
                 <img src="{{ asset($car->image_path ?? 'img/cars/car1.jpg') }}" alt=" " class="h-full" />
                 <p class="title">{{ $car->type }}</p>

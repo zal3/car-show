@@ -1,6 +1,6 @@
-<nav class=" bg-white fixed z-10 w-full">
+<nav class=" bg-white fixed  z-10 w-full">
     <nav
-        class="bg-white px-2 sm:px-4 py-2 md:py-0  fixed w-full z-20 top-0 left-0 ">
+        class="bg-white  px-2 sm:px-4 py-2 md:py-0  fixed w-full z-20 top-0 left-0 ">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="/" class="flex items-center">
                 <img src="{{ asset('/img/lg.png') }}" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
@@ -145,18 +145,3 @@
         </div>
     </nav>
 </nav>
-
-<style scoped>
-.bt {
-
-    border-radius: 4px;
-    font-weight: 600;
-    padding: 10 5;
-    transition: 0.4s;
-}
-
-.bt:hover {
-    color: white;
-    background-color: rgb(207, 103, 18);
-}
-</style>
