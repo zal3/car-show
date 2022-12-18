@@ -1,5 +1,8 @@
 <div class=" m-auto  items-center px-8 pb-8 ">
     <div class=" flex justify-center  items-center">
+    <a href="{{ route('car-page', ['car_id' => $car->id + 1]) }}">
+        <div class="swiper-button-next lg:w-1/2 md:3/4 "></div>
+    </a>
         <div class="container relative mt-[50px] w-[500px] h-[300px] ">
             <img src="{{ asset($car->image_path ?? 'img/cars/car1.jpg') }}" alt=" "
                 class="h-full absolute left-0 w-[500px] " />
@@ -9,10 +12,10 @@
                 <a href="#" class="w-[200px] px-[48px] py-[12px] text-center text-white"> {{ $car->sale_price }}$ </a>
             </div>
         </div>
+        <a href="{{ route('car-page', ['car_id' => $car->id - 1]) }}">
+        <div class="swiper-button-prev  lg:w-1/2 md:3/4"></div>
+    </a>
     </div>
-    <!--   -->
-    <!-- component -->
-
     <body class="flex items-center justify-center">
         <div class="container">
             <table class="w-full flex flex-row flex-no-wrap sm:bg-white  overflow-hidden sm:shadow-lg my-5">
@@ -100,29 +103,13 @@
                             </a>
                         </div></td>
                         @endadmin
-
-
-
                 </tbody>
             </table>
         </div>
     </body>
-
-
-    <!--  -->
-   
-
-
-    {{-- route sent to next cardpage  --}}
-    <a href="{{ route('car-page', ['car_id' => $car->id + 1]) }}">
-        <div class="swiper-button-next mr-72 "></div>
-    </a>
-    <a href="{{ route('car-page', ['car_id' => $car->id - 1]) }}">
-        <div class="swiper-button-prev  ml-72"></div>
-    </a>
+    
+    
 </div>
-
-
 <style scoped>
 .overlay {
     background: rgba(0, 0, 0, 0);
