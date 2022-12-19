@@ -91,20 +91,19 @@ class User extends Authenticatable
     }
 
     public function addProfile($file ){
-
-        // $type = $type ?? 'student';
+        
         $ext = $file->extension();
         $name=\Str::random(10).'.'.$ext;
         $file->storeAs('public/' . '/profile/'. $this->id .'/' ,$name);
-        $this->profile_photo_path = 'storage/' . '/profile/'.$this->id.'/'.$name;
+        $this->profile_photo_path = 'storage/'  . '/profile/'.$this->id.'/'.$name;
         $this->save();
     }
     public function add($data){
         $this->fill($data);
         $this->save();
     }
-    public function getProfilePhotoUrlAttribute()
-    {
-        return $this->profile_photo_path ?? 'https://www.gravatar.com/avatar/'.md5($this->email).'?s=200&d=mm';
-    }
+    // public function getProfilePhotoUrlAttribute()
+    // {
+    //     return $this->profile_photo_path ?? 'https://www.gravatar.com/avatar/'.md5($this->email).'?s=200&d=mm';
+    // }
 }
