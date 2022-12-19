@@ -26,66 +26,52 @@
         </ul>
     </div>
     <div id="myTabContent">
-        <div class="hidden px-4  rounded-lg " id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-            <div>
-                <div class="      mt-9  flex justify-center  items-center ">
-                    <table class="  text-sm text-center text-left text-gray-500 p-4  ">
-                        <thead class="text-xs text-gray-100 uppercase bg-black ">
-                            <tr>
-                                <th scope="col" class="py-3 px-6">
+        <div class="hidden px-4   " id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <body class="flex items-center justify-center">
+                <div class="container">
+                    <table class="w-full text-center flex flex-row flex-no-wrap sm:bg-white  overflow-hidden my-5">
+                        <thead class="text-white text-center">
+                            @foreach ($rents as $rent)
+                            <tr class="bg-black flex flex-col text-center  flex-no wrap sm:table-row   mb-2 sm:mb-0">
+                                <th class="p-3 "> .. </th>
+                                <th class="p-3 ">الموقع</th>
+                                <th class="p-3 ">السيارة</th>
+                                <th class="p-3 ">الاسم</th>
+                                <th class="p-3 ">الايميل</th>
+                                <th class="p-3 "> تاريخ التاجير
                                 </th>
-                                <th scope="col" class="py-3 px-6">
-                                    الموقع </th>
-                                <th scope="col" class="py-3 px-6">
-                                    السيارة </th>
-                                <th scope="col" class="py-3 px-6">
-                                    الاسم </th>
-                                <th scope="col" class="py-3 px-6">
-                                    الايميل </th>
-                                <th scope="col" class="py-3 px-6">
-                                    تاريخ التاجير </th>
-                                <th scope="col" class="py-3 px-6">
-                                    تاريخ الاعادة </th>
-                                <th scope="col" class="py-3 px-6">
-                                    رقم الهاتف </th>
-                                <th scope="col" class="py-3 px-6">
-                                    رخصة القيادة </th>
-                                <th scope="col" class="py-3 px-6">
-                                    ..</th>
+                                <th class="p-3 "> تاريخ الاعادة
+                                </th>
+                                <th class="p-3 "> رقم الهاتف
+                                </th>
+                                <th class="p-3 ">
+                                    رخصة القيادة
+                                </th>
+                                <th class="p-3 "> ..
+                                </th>
                             </tr>
+                            @endforeach
                         </thead>
-                        @foreach ($rents as $rent)
-                        <tbody>
-                            <tr class="bg-white border-b  ">
-                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap ">
-                                    <img class="h-10 w-10 rounded-full"
+                        <tbody class="flex-1 sm:flex-none">
+                            @foreach ($rents as $rent)
+                            <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
+                                <td class="border-grey-light border hover:bg-gray-100 p-3"><img
+                                        class="h-10 w-10 rounded-full"
                                         src="@if (auth()->user()->profile_photo_path) {{ asset(auth()->user()->profile_photo_path) }} @else {{ asset('/img/man.jpg') }} @endif">
-                                </th>
-                                <td class="py-4 px-6">
-                                    {{ $rent->location }} </td>
-                                <td class="py-4 px-6">
-                                    {{$rent->car->type}}
                                 </td>
-                                <td class="py-4 px-6">
-                                    {{$rent->user->name}}
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{ $rent->location }} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{$rent->car->type}} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{$rent->user->name}} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{$rent->user->email}} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $rent->rent_date }} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{ $rent->return_date }}
                                 </td>
-                                <td class="py-4 px-6">
-                                    {{$rent->user->email}}
-                                </td>
-                                <td class="py-4 px-6">
-                                    {{ $rent->rent_date }}
-                                </td>
-                                <td class="py-4 px-6">
-                                    {{ $rent->return_date }}
-                                </td>
-                                <td class="py-4 px-6">
-                                    {{ $rent->phone_num }}
-                                </td>
-                                <td class="py-4 px-6">
+                                <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $rent->phone_num }} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">
                                     <!-- {{ $rent->image_path }} -->
                                 </td>
-                                <td class="py-4 px-6 flex text-white">
-                                    <button wire:click="accebted({{ $rent->id }})" class="border p-3 bg-blue-600 ">
+                                <td class="border-grey-light border hover:bg-gray-100 p-3"> <button
+                                        wire:click="accebted({{ $rent->id }})" class="border p-3 bg-blue-600 ">
                                         قبول
                                     </button>
                                     <button wire:click="rejected({{ $rent->id }})" class="border p-3 bg-red-600">
@@ -93,147 +79,148 @@
                                     </button>
                                 </td>
                             </tr>
+                            @endforeach
                         </tbody>
-                        @endforeach
                     </table>
                 </div>
-            </div>
+            </body>
         </div>
         <div class="hidden px-4 " id="settings" role="tabpanel" aria-labelledby="settings-tab">
-            <div class="      mt-9  flex justify-center  items-center ">
-                <table class="  text-sm text-center text-left text-gray-500 p-4  ">
-                    <thead class="text-xs text-gray-100 uppercase bg-black ">
-                        <tr>
-                            <th scope="col" class="py-3 px-6">
-                            </th>
-                            <th scope="col" class="py-3 px-6">
-                                الموقع </th>
-                            <th scope="col" class="py-3 px-6">
-                                السيارة </th>
-                            <th scope="col" class="py-3 px-6">
-                                الاسم </th>
-                            <th scope="col" class="py-3 px-6">
-                                الايميل </th>
-                            <th scope="col" class="py-3 px-6">
-                                تاريخ التاجير </th>
-                            <th scope="col" class="py-3 px-6">
-                                تاريخ الاعادة </th>
-                            <th scope="col" class="py-3 px-6">
-                                رقم الهاتف </th>
-                            <th scope="col" class="py-3 px-6">
-                                رخصة القيادة </th>
-                            <th scope="col" class="py-3 px-6">
-                                ..</th>
-                        </tr>
-                    </thead>
-                    @foreach ($rents1 as $rent)
-                    <tbody>
-                        <tr class="bg-white border-b  ">
-                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap ">
-                                <img class="h-10 w-10 rounded-full"
-                                    src="@if (auth()->user()->profile_photo_path) {{ asset(auth()->user()->profile_photo_path) }} @else {{ asset('/img/man.jpg') }} @endif">
-                            </th>
-                            <td class="py-4 px-6">
-                                {{ $rent->location }} </td>
-                            <td class="py-4 px-6">
-                                {{$rent->car->type}}
-                            </td>
-                            <td class="py-4 px-6">
-                                {{$rent->user->name}}
-                            </td>
-                            <td class="py-4 px-6">
-                                {{$rent->user->email}}
-                            </td>
-                            <td class="py-4 px-6">
-                                {{ $rent->rent_date }}
-                            </td>
-                            <td class="py-4 px-6">
-                                {{ $rent->return_date }}
-                            </td>
-                            <td class="py-4 px-6">
-                                {{ $rent->phone_num }}
-                            </td>
-                            <td class="py-4 px-6">
-                                <!-- {{ $rent->image_path }} -->
-                            </td>
-                            <td class="py-4 px-6 flex text-white">
-                                <button wire:click="rejected({{ $rent->id }})" class="border p-3 bg-red-600">
-                                    رفض
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                    @endforeach
-                </table>
-            </div>
+            <body class="flex items-center justify-center">
+                <div class="container">
+                    <table class="w-full text-center flex flex-row flex-no-wrap sm:bg-white  overflow-hidden my-5">
+                        <thead class="text-white text-center">
+                            @foreach ($rents1 as $rent)
+                            <tr class="bg-black flex flex-col text-center  flex-no wrap sm:table-row   mb-2 sm:mb-0">
+                                <th class="p-3 "> .. </th>
+                                <th class="p-3 ">الموقع</th>
+                                <th class="p-3 ">السيارة</th>
+                                <th class="p-3 ">الاسم</th>
+                                <th class="p-3 ">الايميل</th>
+                                <th class="p-3 "> تاريخ التاجير
+                                </th>
+                                <th class="p-3 "> تاريخ الاعادة
+                                </th>
+                                <th class="p-3 "> رقم الهاتف
+                                </th>
+                                <th class="p-3 ">
+                                    رخصة القيادة
+                                </th>
+                                <th class="p-3 "> ..
+                                </th>
+                            </tr>
+                            @endforeach
+                        </thead>
+                        <tbody class="flex-1 sm:flex-none">
+                            @foreach ($rents1 as $rent)
+                            <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
+                                <td class="border-grey-light border hover:bg-gray-100 p-3"><img
+                                        class="h-10 w-10 rounded-full"
+                                        src="@if (auth()->user()->profile_photo_path) {{ asset(auth()->user()->profile_photo_path) }} @else {{ asset('/img/man.jpg') }} @endif">
+                                </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{ $rent->location }} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{$rent->car->type}} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{$rent->user->name}} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{$rent->user->email}} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $rent->rent_date }} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{ $rent->return_date }}
+                                </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $rent->phone_num }} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">
+                                    <!-- {{ $rent->image_path }} -->
+                                </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">
+                                    <button wire:click="rejected({{ $rent->id }})" class="border p-3 bg-red-600">
+                                        رفض
+                                    </button>
+                                </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </body>
         </div>
         <div class="hidden px-4 " id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-            <div class="      mt-9  flex justify-center  items-center ">
-                <table class="  text-sm text-center text-left text-gray-500 p-4  ">
-                    <thead class="text-xs text-gray-100 uppercase bg-black ">
-                        <tr>
-                            <th scope="col" class="py-3 px-6">
-                            </th>
-                            <th scope="col" class="py-3 px-6">
-                                الموقع </th>
-                            <th scope="col" class="py-3 px-6">
-                                السيارة </th>
-                            <th scope="col" class="py-3 px-6">
-                                الاسم </th>
-                            <th scope="col" class="py-3 px-6">
-                                الايميل </th>
-                            <th scope="col" class="py-3 px-6">
-                                تاريخ التاجير </th>
-                            <th scope="col" class="py-3 px-6">
-                                تاريخ الاعادة </th>
-                            <th scope="col" class="py-3 px-6">
-                                رقم الهاتف </th>
-                            <th scope="col" class="py-3 px-6">
-                                رخصة القيادة </th>
-                            <th scope="col" class="py-3 px-6">
-                                ..</th>
-                        </tr>
-                    </thead>
-                    @foreach ($rents2 as $rent)
-                    <tbody>
-                        <tr class="bg-white border-b  ">
-                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap ">
-                                <img class="h-10 w-10 rounded-full"
-                                    src="@if (auth()->user()->profile_photo_path) {{ asset(auth()->user()->profile_photo_path) }} @else {{ asset('/img/man.jpg') }} @endif">
-                            </th>
-                            <td class="py-4 px-6">
-                                {{ $rent->location }} </td>
-                            <td class="py-4 px-6">
-                                {{$rent->car->type}}
-                            </td>
-                            <td class="py-4 px-6">
-                                {{$rent->user->name}}
-                            </td>
-                            <td class="py-4 px-6">
-                                {{$rent->user->email}}
-                            </td>
-                            <td class="py-4 px-6">
-                                {{ $rent->rent_date }}
-                            </td>
-                            <td class="py-4 px-6">
-                                {{ $rent->return_date }}
-                            </td>
-                            <td class="py-4 px-6">
-                                {{ $rent->phone_num }}
-                            </td>
-                            <td class="py-4 px-6">
-                                <!-- {{ $rent->image_path }} -->
-                            </td>
-                            <td class="py-4 px-6 flex text-white">
-                                <button wire:click="no({{ $rent->id }})" class="border p-3 bg-blue-600 ">
-                                    استرجاع
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                    @endforeach
-                </table>
-            </div>
+            <body class="flex items-center justify-center">
+                <div class="container">
+                    <table class="w-full text-center flex flex-row flex-no-wrap sm:bg-white  overflow-hidden my-5">
+                        <thead class="text-white text-center">
+                            @foreach ($rents2 as $rent)
+                            <tr class="bg-black flex flex-col text-center  flex-no wrap sm:table-row   mb-2 sm:mb-0">
+                                <th class="p-3 "> .. </th>
+                                <th class="p-3 ">الموقع</th>
+                                <th class="p-3 ">السيارة</th>
+                                <th class="p-3 ">الاسم</th>
+                                <th class="p-3 ">الايميل</th>
+                                <th class="p-3 "> تاريخ التاجير
+                                </th>
+                                <th class="p-3 "> تاريخ الاعادة
+                                </th>
+                                <th class="p-3 "> رقم الهاتف
+                                </th>
+                                <th class="p-3 ">
+                                    رخصة القيادة
+                                </th>
+                                <th class="p-3 "> ..
+                                </th>
+                            </tr>
+                            @endforeach
+                        </thead>
+                        <tbody class="flex-1 sm:flex-none">
+                            @foreach ($rents2 as $rent)
+                            <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
+                                <td class="border-grey-light border hover:bg-gray-100 p-3"><img
+                                        class="h-10 w-10 rounded-full"
+                                        src="@if (auth()->user()->profile_photo_path) {{ asset(auth()->user()->profile_photo_path) }} @else {{ asset('/img/man.jpg') }} @endif">
+                                </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{ $rent->location }} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{$rent->car->type}} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{$rent->user->name}} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{$rent->user->email}} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $rent->rent_date }} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">{{ $rent->return_date }}
+                                </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $rent->phone_num }} </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3">
+                                    <!-- {{ $rent->image_path }} -->
+                                </td>
+                                <td class="border-grey-light border hover:bg-gray-100 p-3"> <button
+                                        wire:click="no({{ $rent->id }})" class="border p-3 bg-blue-600 ">
+استرجاع                                    </button>
+                                    
+                                </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </body>
         </div>
     </div>
 </div>
+
+<style>
+html,
+body {
+    height: 100%;
+}
+
+@media (min-width: 640px) {
+    table {
+        display: inline-table !important;
+    }
+
+    thead tr:not(:first-child) {
+        display: none;
+    }
+}
+
+td:not(:last-child) {
+    border-bottom: 0;
+}
+
+th:not(:last-child) {
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+}
+</style>

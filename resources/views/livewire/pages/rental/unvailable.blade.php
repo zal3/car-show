@@ -5,7 +5,7 @@
     </div>
     @foreach ($cars as $car)
     <div
-        class="p-4 mb-3 flex justify-between items-center gap-10  hover:bg-black hover:bg-opacity-70  transition duration-500 ease-in-out">
+        class="p-4 mb-3 flex justify-between items-center gap-10  hover:bg-black hover:bg-opacity-70 hover:text-white  transition duration-500 ease-in-out">
         <div>
             <img src="{{ asset($car->image_path ?? 'img/cars/encar3.png') }}" class="   w-40 h-26 ">
         </div>
