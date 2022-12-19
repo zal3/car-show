@@ -51,7 +51,7 @@
             <div class="swiper-slide  ss">
                 <a href="{{ route('car-page', ['car_id' => $car->id]) }}">
                     <article class=" popular__card  px-6 py-6   overflow-hidden relative w-56 ">
-                        <img src="{{ asset($car->image_path ?? 'img/cars/car1.jpg') }}" alt="" class="popular__img">
+                        <img src="{{ asset($car->image_path ?? 'img/cars/encar3.png') }}" alt="" class="popular__img">
                         <div class="shape shape__smaller">dd</div>
                         <h1 class="popular__title text-orange  ">{{ $car->type }}</h1>
                         <h3 class="popular__subtitle">$ {{ $car->sale_price }} </h3>

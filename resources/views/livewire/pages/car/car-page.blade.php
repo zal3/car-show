@@ -4,7 +4,7 @@
             <div class="swiper-button-next lg:w-1/2 md:3/4 "></div>
         </a>
         <div class="container relative mt-[50px] w-[500px] h-[300px] ">
-            <img src="{{ asset($car->image_path ?? 'img/cars/car1.jpg') }}" alt=" "
+            <img src="{{ asset($car->image_path ?? 'img/cars/encar3.png') }}" alt=" "
                 class="h-full absolute left-0 w-[500px] " />
             <p class="title absolute  left-0 w-[500px] top-[120px] text-white ">{{ $car->type }}</p>
             <div class="overlay absolute top-0 left-0 w-[100%] h-[100%] "></div>
