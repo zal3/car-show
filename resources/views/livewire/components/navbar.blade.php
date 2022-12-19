@@ -45,10 +45,10 @@
                     @else
                     <div class="">
                         @foreach ($leftMenu->items as $item)
-                        <a href="{{ route($item->route) }}"
-                            class="bt text-xs md:text-sm py-1 pl-3 pr-4 lg:mx-2 text-primary-700 @if ($item->route == 'login') md:border md:border-primary-500 @else  lg:inline @endif rounded-lg">
+                        <a href="{{ route($item->route) }}" style="transition: 0.4s;"
+                            class="bt text-xs md:text-sm py-1 pl-3 pr-4 lg:mx-2 text-primary-700  hover:bg-orange-600 hover:text-white @if ($item->route == 'login') md:border md:border-primary-500 @else  lg:inline @endif ">
                             {{ $item->name }}
-                            {{-- <i class="fa-solid fa-{{ $item->icon }}"></i> --}}
+                            
                         </a>
                         @endforeach
                     </div>

@@ -3,7 +3,8 @@
         <h1 class="text-md md:text-2xl font-bold">السيارات المؤجرة</h1>
         <livewire:ui.search />
     </div>
-    @foreach ($cars as $car)
+    
+    @forelse ($cars as $car)
     <div
         class="p-4 mb-3 flex justify-between items-center gap-10  hover:bg-black hover:bg-opacity-70 hover:text-white  transition duration-500 ease-in-out">
         <div>
@@ -36,5 +37,8 @@
             {{ $car->rent->return_date }}
         </div>
     </div>
-    @endforeach
+    @empty
+    <div class="text-center">
+        <h1 class="text-2xl font-bold">لا يوجد سيارات مؤجرة</h1>
+    @endforelse
 </div>

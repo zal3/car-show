@@ -53,7 +53,7 @@
                             @endforeach
                         </thead>
                         <tbody class="flex-1 sm:flex-none">
-                            @foreach ($rents as $rent)
+                            @forelse ($rents as $rent)
                             <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
                                 <td class="border-grey-light border hover:bg-gray-100 p-3"><img
                                         class="h-10 w-10 rounded-full"
@@ -70,7 +70,7 @@
                                 <td class="border-grey-light border hover:bg-gray-100 p-3">
                                     <!-- {{ $rent->image_path }} -->
                                 </td>
-                                <td class="border-grey-light border hover:bg-gray-100 p-3"> <button
+                                <td class="border-grey-light border text-white hover:bg-gray-100 p-3"> <button
                                         wire:click="accebted({{ $rent->id }})" class="border p-3 bg-blue-600 ">
                                         قبول
                                     </button>
@@ -79,7 +79,11 @@
                                     </button>
                                 </td>
                             </tr>
-                            @endforeach
+                            @empty
+                            <tr>
+                                <td colspan="10" class="border-grey-light border hover:bg-gray-100 p-3">لا يوجد
+                                    اي تاجيرات</td>
+                            @endforelse
                         </tbody>
                     </table>
                 </div>
@@ -112,7 +116,7 @@
                             @endforeach
                         </thead>
                         <tbody class="flex-1 sm:flex-none">
-                            @foreach ($rents1 as $rent)
+                            @forelse ($rents1 as $rent)
                             <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
                                 <td class="border-grey-light border hover:bg-gray-100 p-3"><img
                                         class="h-10 w-10 rounded-full"
@@ -129,13 +133,17 @@
                                 <td class="border-grey-light border hover:bg-gray-100 p-3">
                                     <!-- {{ $rent->image_path }} -->
                                 </td>
-                                <td class="border-grey-light border hover:bg-gray-100 p-3">
+                                <td class="border-grey-light border text-white hover:bg-gray-100 p-3">
                                     <button wire:click="rejected({{ $rent->id }})" class="border p-3 bg-red-600">
                                         رفض
                                     </button>
                                 </td>
                             </tr>
-                            @endforeach
+                            @empty
+                            <tr>
+                                <td colspan="10" class="border-grey-light border hover:bg-gray-100 p-3">لا يوجد
+                                    اي تاجيرات</td>
+                            @endforelse
                         </tbody>
                     </table>
                 </div>
@@ -168,7 +176,7 @@
                             @endforeach
                         </thead>
                         <tbody class="flex-1 sm:flex-none">
-                            @foreach ($rents2 as $rent)
+                            @forelse ($rents2 as $rent)
                             <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
                                 <td class="border-grey-light border hover:bg-gray-100 p-3"><img
                                         class="h-10 w-10 rounded-full"
@@ -185,13 +193,17 @@
                                 <td class="border-grey-light border hover:bg-gray-100 p-3">
                                     <!-- {{ $rent->image_path }} -->
                                 </td>
-                                <td class="border-grey-light border hover:bg-gray-100 p-3"> <button
+                                <td class="border-grey-light border text-white hover:bg-gray-100 p-3"> <button
                                         wire:click="no({{ $rent->id }})" class="border p-3 bg-blue-600 ">
 استرجاع                                    </button>
                                     
                                 </td>
                             </tr>
-                            @endforeach
+                            @empty
+                            <tr>
+                                <td colspan="10" class="border-grey-light  border hover:bg-gray-100 p-3">لا يوجد
+                                    اي تاجيرات</td>
+                            @endforelse
                         </tbody>
                     </table>
                 </div>
