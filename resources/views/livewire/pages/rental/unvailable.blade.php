@@ -1,7 +1,6 @@
 <div class="m-4 md:m-40">
     <div class="relative flex justify-between gap-3 mb-6 ">
         <h1 class="text-md md:text-2xl font-bold">السيارات المؤجرة</h1>
-
         <livewire:ui.search />
     </div>
     @foreach ($cars as $car)
@@ -35,7 +34,6 @@
         <div>
             <!-- car return date -->
             {{ $car->rent->return_date }}
-
         </div>
     </div>
     @endforeach

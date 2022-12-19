@@ -41,14 +41,7 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <!-- <div class="mt-9 text-2xl flex gap-3  items-center justify-center">
-                    <div>
-                        هل انت مهتم بالعمل معنا ؟
-                    </div>
-                    <button class="bg-blue-600 text-white text-xl  p-2 rounded-md">ارسال طلب توظيف </button>
-                </div> -->
             </div>
         </section>
     </div>

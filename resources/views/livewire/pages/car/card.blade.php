@@ -1,10 +1,10 @@
 <div>
     <article class="hov bg-gray mr-5 pb-2  w-60  bg-gray-200 relative ">
         @if($car->state == 1 && $car->rent->state != 1)
-        <a href="{{ route('rental')}}" class="absolute pr-4 z-1 w-16 bg-red-500 p-2  rounded-b-full rounded-l-full ">تاجير</a>
+        <a href="{{ route('rental')}}"
+            class="absolute pr-4 z-1 w-16 bg-red-500 p-2  rounded-b-full rounded-l-full ">تاجير</a>
         @endif
-        <img src="{{ asset($car->image_path ?? 'img/cars/encar3.png') }}"
-            class="   w-60 h-36    ">
+        <img src="{{ asset($car->image_path ?? 'img/cars/encar3.png') }}" class="   w-60 h-36    ">
         <!-- {{-- <img src="{{ asset('img/cars/car1.jpg') }}" class=""> --}} -->
         <div class="p-4">
             <h3 class="flex justify-center mb-4 font-bold text-xl">{{ $car->type }}</h3>
@@ -27,7 +27,7 @@
                     <div class="flex justify-between gap-2 items-center ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
                             <title>ionicons-v5-m</title>
-                            <path 
+                            <path
                                 d="M419.1,337.45a3.94,3.94,0,0,0-6.1,0c-10.5,12.4-45,46.55-45,77.66,0,27,21.5,48.89,48,48.89h0c26.5,0,48-22,48-48.89C464,384,429.7,349.85,419.1,337.45Z"
                                 style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px " />
                             <path
@@ -36,22 +36,20 @@
                         </svg>
                         <div
                             class=" @if ($car->color == 1) text-red-500 @endif @if ($car->color == 2) text-white @endif @if ($car->color == 3) text-black @endif @if ($car->color == 4) text-yellow-500 @endif @if ($car->color == 5) text-green-500 @endif @if ($car->color == 6) text-blue-500 @endif @if ($car->color == 7) @endif ">
-
                             @if ($car->color == 1)
-                                احمر
+                            احمر
                             @elseif($car->color == 2)
-                                ابيض
+                            ابيض
                             @elseif($car->color == 3)
-                                اسود
+                            اسود
                             @elseif($car->color == 4)
-                                اصفر
+                            اصفر
                             @elseif($car->color == 5)
-                                اخضر
+                            اخضر
                             @elseif($car->color == 6)
-                                ازرق
+                            ازرق
                             @endif
                         </div>
-
                     </div>
                 </div>
                 <div>
@@ -71,88 +69,85 @@
                         </svg> {{ $car->sale_price }}$
                     </div>
                 </div>
-
-
             </div>
         </div>
         <div class="box ">
             <a href="{{ route('car-page', ['car_id' => $car->id]) }}"
                 class=" flex justify-between  p-3 bg-black text-white car  ">
-
                 <div class="font-bold">عرض السيارة </div>
             </a>
         </div>
     </article>
 </div>
 <style scoped>
-    .hov:hover {
-        animation: pulse 5s linear infinite;
-    }
+.hov:hover {
+    animation: pulse 5s linear infinite;
+}
 
-    @import url(" https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url(" https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
-    .box {
-        width: 440px;
-        height: 50px;
-        position: relative;
-        display: flex;
-        margin-right: 0.8rem;
-        place-items: center;
-        overflow: hidden;
-    }
+.box {
+    width: 440px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    margin-right: 0.8rem;
+    place-items: center;
+    overflow: hidden;
+}
 
-    .car {
-        position: absolute;
-        width: 190px;
-        height:
-            90%;
-        background: #ffffff;
-        z-index: 5;
-        display: flex;
-        justify-content: center;
-        align-items:
-            center;
-        flex-direction: column;
-        text-align: center;
-        color: #1f1818;
-        overflow: hidden;
-        padding: 20px;
-        cursor: pointer;
-    }
+.car {
+    position: absolute;
+    width: 190px;
+    height:
+        90%;
+    background: #ffffff;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items:
+        center;
+    flex-direction: column;
+    text-align: center;
+    color: #1f1818;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;
+}
 
-    .car:hover {
-        background-color: #000000;
-        color: #ffffff;
-    }
+.car:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
 
-    .box::before {
-        content: "";
-        position: absolute;
-        width: 40%;
-        height: 150%;
-        background:
-            #40E0D0;
-        background: -webkit-linear-gradient(to right, #ff7300, #463117, #bfe6e2);
-        background: linear-gradient(to right, #ddd7ce, #e97426, #020a09);
-        animation: glowing01 5s linear infinite;
-        transform-origin: center;
-        animation: glowing 5s linear infinite;
-    }
+.box::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 150%;
+    background:
+        #40E0D0;
+    background: -webkit-linear-gradient(to right, #ff7300, #463117, #bfe6e2);
+    background: linear-gradient(to right, #ddd7ce, #e97426, #020a09);
+    animation: glowing01 5s linear infinite;
+    transform-origin: center;
+    animation: glowing 5s linear infinite;
+}
 
-    .hov:hover {
-        transform: scale(1.1);
-        transition: all 1s;
-        /* shadow: rgba(0, 0, 0, 0.4) 0px
+.hov:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+    /* shadow: rgba(0, 0, 0, 0.4) 0px
                             30px 60px -12px inset, rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset; */
+}
+
+@keyframes glowing {
+    0% {
+        transform: rotate(0);
     }
 
-    @keyframes glowing {
-        0% {
-            transform: rotate(0);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
+    100% {
+        transform: rotate(360deg);
     }
+}
 </style>

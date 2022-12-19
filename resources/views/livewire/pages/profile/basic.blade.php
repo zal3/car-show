@@ -1,4 +1,3 @@
-
 <section class="w-full p-6 mx-auto bg-white rounded-md shadow-md  ">
     <h1 class="text-xl font-bold text-black capitalize "> اعدادات الحساب </h1>
     <form wire:submit.prevent="edit">
@@ -19,7 +18,6 @@
                 <span class="text-red-500 error">{{ $message }}</span>
                 @enderror
             </div>
-
             <div>
                 <label class="text-black ">رقم الهاتف</label>
                 <input wire:model="phone_number" type="text"
@@ -28,7 +26,6 @@
                 <span class="text-red-500 error">{{ $message }}</span>
                 @enderror
             </div>
-
             <div>
                 <label class="text-black "> معرف التليكرام</label>
                 <input wire:model="telegram_username" type="text"
@@ -68,7 +65,6 @@
                 </div>
             </div>
         </div>
-
         <div class="flex justify-end mt-6">
             <button type="submit"
                 class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-black rounded-md hover:bg-orange-700 focus:outline-none focus:bg-gray-600">حفظ</button>

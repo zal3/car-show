@@ -1,8 +1,8 @@
 <div class=" m-auto  items-center px-8 pb-8 ">
     <div class=" flex justify-center  items-center">
-    <a href="{{ route('car-page', ['car_id' => $car->id + 1]) }}">
-        <div class="swiper-button-next lg:w-1/2 md:3/4 "></div>
-    </a>
+        <a href="{{ route('car-page', ['car_id' => $car->id + 1]) }}">
+            <div class="swiper-button-next lg:w-1/2 md:3/4 "></div>
+        </a>
         <div class="container relative mt-[50px] w-[500px] h-[300px] ">
             <img src="{{ asset($car->image_path ?? 'img/cars/car1.jpg') }}" alt=" "
                 class="h-full absolute left-0 w-[500px] " />
@@ -13,8 +13,8 @@
             </div>
         </div>
         <a href="{{ route('car-page', ['car_id' => $car->id - 1]) }}">
-        <div class="swiper-button-prev  lg:w-1/2 md:3/4"></div>
-    </a>
+            <div class="swiper-button-prev  lg:w-1/2 md:3/4"></div>
+        </a>
     </div>
     <body class="flex items-center justify-center">
         <div class="container">
@@ -48,8 +48,8 @@
                         @admin
                         <th class="p-3 text-left">
                             سعر الاستيراد </th>
-                            @endadmin
-                            <th class="p-3 text-left">
+                        @endadmin
+                        <th class="p-3 text-left">
                             دولة الاستيراد
                         </th>
                         <th class="p-3 text-left">
@@ -67,7 +67,7 @@
                 </thead>
                 <tbody class="flex-1 sm:flex-none">
                     <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
-                        <td class="border-grey-light border hover:bg-gray-100 p-3">  {{ $car->type }} </td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->type }} </td>
                         <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->model }} </td>
                         <td class="border-grey-light border hover:bg-gray-100 p-3">{{ $car->category }} </td>
                         <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->sale_price }} </td>
@@ -76,39 +76,39 @@
                         <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->chassis_number }} </td>
                         @endadmin
                         <td class="border-grey-light border hover:bg-gray-100 p-3">@if ($car->color == 1)
-                        احمر
-                        @elseif($car->color == 2)
-                        ابيض
-                        @elseif($car->color == 3)
-                        اسود
-                        @elseif($car->color == 4)
-                        اصفر
-                        @elseif($car->color == 5)
-                        اخضر
-                        @elseif($car->color == 6)
-                        ازرق
-                        @endif</td>
+                            احمر
+                            @elseif($car->color == 2)
+                            ابيض
+                            @elseif($car->color == 3)
+                            اسود
+                            @elseif($car->color == 4)
+                            اصفر
+                            @elseif($car->color == 5)
+                            اخضر
+                            @elseif($car->color == 6)
+                            ازرق
+                            @endif</td>
                         @admin
                         <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->import_price }}$</td>
                         @endadmin
                         <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->import_place }}</td>
                         <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->import_date }}</td>
                         @admin
-                        <td class="border-grey-light border hover:bg-gray-100 p-3">  {{ $car->note }}</td>
-                        <td class="border-grey-light border hover:bg-gray-100 p-3"><div class="  opacity-70">
-                            <button wire:click="confirm({{ $car->id }})"><i
-                                    class="fa-solid fa-trash text-gray-600  hover:text-red-700 "></i></button>
-                            <a href="{{ route('edit-car', ['car_id' => $car->id]) }}">
-                                <i class="fa-solid fa-pen-to-square text-gray-600   hover:text-blue-700"></i>
-                            </a>
-                        </div></td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->note }}</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">
+                            <div class="  opacity-70">
+                                <button wire:click="confirm({{ $car->id }})"><i
+                                        class="fa-solid fa-trash text-gray-600  hover:text-red-700 "></i></button>
+                                <a href="{{ route('edit-car', ['car_id' => $car->id]) }}">
+                                    <i class="fa-solid fa-pen-to-square text-gray-600   hover:text-blue-700"></i>
+                                </a>
+                            </div>
+                        </td>
                         @endadmin
                 </tbody>
             </table>
         </div>
     </body>
-    
-    
 </div>
 <style scoped>
 .overlay {

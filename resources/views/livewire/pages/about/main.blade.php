@@ -192,7 +192,6 @@
                 <img src="{{ asset('img/about/1.png') }}" alt="" class="w-10 h-12 ">
                 <div>خدمات موثوقة</div>
             </div>
-
             <div class=" flex gap-5 font-bold  items-center h-16">
                 <img src="{{ asset('img/about/2.png') }}" alt="" class="w-10 h-12">
                 <div>العمال الموهوبين</div>
@@ -228,7 +227,8 @@
     </div>
     {{-- contact --}}
     <div class="bg-slate-900 p-12 ">
-        <h1 class="flex  justify-center mb-8 text-center text-xl sm:text-3xl md:text-5xl text-white  "> هل انت مهتم بخدماتنا ؟</h1>
+        <h1 class="flex  justify-center mb-8 text-center text-xl sm:text-3xl md:text-5xl text-white  "> هل انت مهتم
+            بخدماتنا ؟</h1>
         <a href="{{ route('contact') }}">
             <button class="flex  font-bold justify-center m-auto bg-white rounded-full px-6 py-2  "> اتصل بنا </button>
         </a>
@@ -237,54 +237,52 @@
     <div class="my-9 ">
         <h6 class=" font-bold px-4 mx-4  text-3xl ">فريق التنفيذ</h6>
         <div class=" flex justify-center mx-auto text-center items-center gap-6 mt-6">
-        <div class=" grid grid-cols-1 md:grid-cols-3  justify-center items-center  gap-6 ">
-            <div class="w-full max-w-sm     rounded-br-3xl rounded-tl-3xl  ">
-                <div class="flex flex-col items-center pb-10">
-                    <img class="w-14 h-14 md:w-24 md:h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg"
-                        src="{{ asset('img/team/girl1 1.png') }}" alt="Bonnie image" />
-                    <h5 class="mb-1 text-xl font-medium text-gray-900 ">حوراء محسن جاسم</h5>
-                    <div class="flex justify-center  ggg ">
-                        <a href="mailto:hawraaaltamimi49@gmail.com">
-                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
-                            </i>
-                        </a>
-                        <i class="fa-brands fa-github hover:text-orange-700"></i>
+            <div class=" grid grid-cols-1 md:grid-cols-3  justify-center items-center  gap-6 ">
+                <div class="w-full max-w-sm     rounded-br-3xl rounded-tl-3xl  ">
+                    <div class="flex flex-col items-center pb-10">
+                        <img class="w-14 h-14 md:w-24 md:h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg"
+                            src="{{ asset('img/team/girl1 1.png') }}" alt="Bonnie image" />
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 ">حوراء محسن جاسم</h5>
+                        <div class="flex justify-center  ggg ">
+                            <a href="mailto:hawraaaltamimi49@gmail.com">
+                                <i class="fa-solid fa-envelope hover:text-orange-700 ">
+                                </i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="w-full max-w-sm     ">
-                <div class="flex flex-col items-center pb-10">
-                    <img class="w-14 h-14 md:w-24 md:h-24 mb-3 mt-3 rounded-full border border-gray-600 shadow-lg"
-                        src="{{ asset('img/team/girl2 1.png') }}" alt="Bonnie image" />
-                    <h5 class="mb-1 text-xl font-medium text-gray-900 ">حوراء محمد عبد الزهرة</h5>
-                    <div class="flex justify-center  ggg ">
-                        <a href="mailto:huraama2000@gmail.com.com">
-                            <i class="fa-solid fa-envelope hover:text-orange-700 ">
-                            </i>
-                        </a>
-                        <i class="fa-brands fa-github hover:text-orange-700"></i>
+                <div class="w-full max-w-sm     ">
+                    <div class="flex flex-col items-center pb-10">
+                        <img class="w-14 h-14 md:w-24 md:h-24 mb-3 mt-3 rounded-full border border-gray-600 shadow-lg"
+                            src="{{ asset('img/team/girl2 1.png') }}" alt="Bonnie image" />
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 ">حوراء محمد عبد الزهرة</h5>
+                        <div class="flex justify-center  ggg ">
+                            <a href="mailto:huraama2000@gmail.com.com">
+                                <i class="fa-solid fa-envelope hover:text-orange-700 ">
+                                </i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="w-full max-w-sm     ">
-                <div class="flex flex-col items-center pb-10">
-                    <img class="w-14 h-14 md:w-24 md:h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg"
-                        src="{{ asset('img/team/girl3 1.png') }}" alt="Bonnie image" />
-                    <h5 class="mb-1 text-xl font-medium text-gray-900 ">زينب فوزي حميد</h5>
-                    <div class="flex justify-center  ggg ">
-                        <a href="mailto:zainab.fawzy001@gmail.com">
-                            <i class="fa-solid fa-envelope hover:text-orange-700 "></i>
-                        </a>
-                        <i class="fa-brands fa-github hover:text-orange-700"></i>
+                <div class="w-full max-w-sm     ">
+                    <div class="flex flex-col items-center pb-10">
+                        <img class="w-14 h-14 md:w-24 md:h-24 mb-3 mt-3 border border-gray-600 rounded-full shadow-lg"
+                            src="{{ asset('img/team/girl3 1.png') }}" alt="Bonnie image" />
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 ">زينب فوزي حميد</h5>
+                        <div class="flex justify-center  ggg ">
+                            <a href="mailto:zainab.fawzy001@gmail.com">
+                                <i class="fa-solid fa-envelope hover:text-orange-700 "></i>
+                            </a>
+                            <i class="fa-brands fa-github hover:text-orange-700"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        
     </div>
 </div>
-
 <style scoped>
 .aa {
     animation: pulse 6s infinite;
@@ -378,12 +376,6 @@
     }
 }
 
-/* ////////////////////////////////////////// */
-
-/* Typography =======================*/
-
-/* Headings */
-
 /* Main heading for card's front cover */
 .card-front__heading {
     font-size: 1.5rem;
@@ -454,15 +446,6 @@
     margin-top: -.5rem;
     width: 3.25rem;
 }
-
-/* Buttons =================================================*/
-
-
-
-
-
-/* Layout Structure=========================================*/
-
 .main {
     display: flex;
     flex-direction: column;

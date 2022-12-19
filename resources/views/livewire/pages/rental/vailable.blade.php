@@ -1,4 +1,3 @@
-
 <div class="m-4 md:m-40">
     <div class="relative flex justify-between gap-3 mb-6 ">
         <h1 class="text-md md:text-2xl font-bold">السيارات المتاحة للتاجير</h1>
@@ -27,7 +26,6 @@
                     @elseif($car->color == 5)
                     اخضر
                     @elseif($car->color == 6)
-
                     ازرق
                     @endif
                 </div>
@@ -37,5 +35,4 @@
     </div>
     <hr>
     @endforeach
-
 </div>

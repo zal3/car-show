@@ -20,7 +20,6 @@
             </a>
         </div> --}}
     </div>
-
 </div>
 {{-- about section  --}}
 <div class="about md:flex" id="about">
@@ -52,23 +51,11 @@
             <div class="swiper-slide  ss">
                 <a href="{{ route('car-page', ['car_id' => $car->id]) }}">
                     <article class=" popular__card  px-6 py-6   overflow-hidden relative w-56 ">
-
-                        <!-- {{-- <img src="{{ asset('img/cars/popular1.png') }}" alt="" class="popular__img"> --}} -->
                         <img src="{{ asset($car->image_path ?? 'img/cars/car1.jpg') }}" alt="" class="popular__img">
                         <div class="shape shape__smaller">dd</div>
                         <h1 class="popular__title text-orange  ">{{ $car->type }}</h1>
                         <h3 class="popular__subtitle">$ {{ $car->sale_price }} </h3>
                         <div class=" text-black left-2 bottom-2 absolute"> </div>
-
-                        <!-- {{-- <div class="popular___data text-black text-md grid grid-cols-2  mb-6">
-                                <div class="popular___data-group ">
-                                    <i class="fa-solid fa-gauge-high"></i> {{ $car->model }}
-                                </div>
-                                <div class="popular___data-group ">
-                                    <i class="fa-solid fa-bolt"></i> {{ $car->color }}
-                                </div>
-
-                            </div> --}} -->
                         <div class="grid grid-cols-2 justify-between">
                             <button class="button popular__button bg-orange ">
                                 <i class="fa-solid fa-bag-shopping"></i>
@@ -84,7 +71,8 @@
 </div>
 {{-- car rate  --}}
 <div class="rate mb-10 md:mb-5">
-    <h1 class="text-xl md:text-3xl text-black font-bold px-4 mx-4 flex text-center justify-center items-center">أجر سيارة بثلاث خطوات سهلة </h1>
+    <h1 class="text-xl md:text-3xl text-black font-bold px-4 mx-4 flex text-center justify-center items-center">أجر
+        سيارة بثلاث خطوات سهلة </h1>
     <div class="sm:flex  sm:justify-center sm:gap-6 sm:m-auto">
         <div class="block p-6 max-w-4xl text-center ">
             <i class="fa-solid fa-location-dot text-4xl text-orange my-4  "></i>
@@ -111,15 +99,10 @@
     </a>
 </div>
 </div>
-
 <style scoped>
 .gg {
     gap: 1rem;
 }
-
-
-
-
 
 .banner .content span {
     font-size: 1.5rem;
