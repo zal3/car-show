@@ -32,7 +32,7 @@
         margin-top: 4.5rem;
     }
     </style>
-    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="icon" type="image/png" href="img/lg2.png">
     <link rel="stylesheet" href="/resources/css/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     {{-- swiper --}}
