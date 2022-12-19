@@ -41,9 +41,9 @@
 {{-- last car --}}
 <div class="popular section " id="popular">
     <div class="flex justify-between items-center ">
-        <h2 class="text-xl lg:text-5xl text-black font-bold px-4 mx-4">احدث السيارات</h2>
+        <h2 class="text-xl lg:text-3xl text-black font-bold px-4 mx-4">احدث السيارات</h2>
         <a href="{{ route('car') }}">
-            <button class="text-blue  text-xl mt-4"> لرؤية المزيد </button>
+            <button class="text-blue  text-xl ml-4"> استعرض المزيد </button>
         </a>
     </div>
     <div class="popular__container container swiper  " data-aos="fade-left">

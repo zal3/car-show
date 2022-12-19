@@ -32,8 +32,8 @@
     </div>
     {{-- form-container --}}
     <div class="form-container flex m-auto justify-center items-center  ">
-        <form wire:submit.prevent="save" class=" flex-col w-1/2  bg-white">
-            <div class="grid grid-cols-2 gap-y-3 ">
+        <form wire:submit.prevent="save" class=" flex-col lg:w-1/2  bg-white">
+            <div class="md:grid md:grid-cols-2 gap-y-3 ">
                 <div class=" ">
                     <div>الموقع</div>
                     <input wire:model.lazy="location" type="text" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50"
