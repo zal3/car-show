@@ -1,11 +1,11 @@
 <div>
     <div class="p-9">
         <h2 class="text-xl text-black   flex justify-center mb-3">طريقة التأجير</h2>
-        <h1 class="text-3xl text-black font-bold px-4  flex justify-center">أجر سيارة بثلاث خطوات سهلة </h1>
-        <div class="flex  justify-between gap-4 items-center">
+        <h1 class="text-xl md:text-3xl text-black text-center font-bold px-4  flex justify-center">أجر سيارة بثلاث خطوات سهلة </h1>
+        <div class="md:flex  justify-between gap-4 items-center">
             <div class="block p-6 max-w-4xl text-center hov">
-                <i class="fa-solid fa-location-dot text-6xl text-orange my-4  "></i>
-                <h1 class=" text-3xl text-black my-4 ">أختر الموقع </h1>
+                <i class="fa-solid fa-location-dot md:text-6xl text-3xl text-orange my-4  "></i>
+                <h1 class=" text-xl md:text-3xl font-bold text-black my-4 ">أختر الموقع </h1>
                 <h1>
                     اختر موقع رحلتك لحجز السيارة التي
                     <br> تود تجربتها في رحلتك مع
@@ -14,16 +14,16 @@
                 </h1>
             </div>
             <div class="block p-6 max-w-4xl text-center hov">
-                <i class="fa-solid fa-calendar-check text-6xl my-4 text-orange "></i>
-                <h1 class="text-3xl text-black my-4"> أختر الموعد</h1>
+                <i class="fa-solid fa-calendar-check md:text-6xl text-3xl my-4 text-orange "></i>
+                <h1 class="text-xl md:text-3xl font-bold text-black my-4"> أختر الموعد</h1>
                 <h1>
                     حدد وقت حجز السيارة مع وقت انتهاء التأجير والاهتمام بوقت استلام وتسليم السيارة في الوقت الذي تم
                     تحديده
                 </h1>
             </div>
             <div class="block p-6 max-w-4xl text-center hov">
-                <i class="fa-solid fa-car-side text-6xl my-4 text-orange "></i>
-                <h1 class="text-3xl text-black my-4">أجر سيارة </h1>
+                <i class="fa-solid fa-car-side md:text-6xl text-3xl my-4 text-orange "></i>
+                <h1 class="text-xl md:text-3xl font-bold text-black my-4">أجر سيارة </h1>
                 <h1>
                     اختر السيارة التي ترغب في تأجيرها لطفاً نرجو الاهتمام
                     بنظافه السيارة ونتمنى لكم وقت ممتع</h1>
@@ -36,9 +36,8 @@
             <div class="grid grid-cols-2 gap-y-3 ">
                 <div class=" ">
                     <div>الموقع</div>
-                    <input wire:model.lazy="location" type="text"
-                        class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value=""
-                        placeholder=" اختر المكان" />
+                    <input wire:model.lazy="location" type="text" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50"
+                        value="" placeholder=" اختر المكان" />
                     @error('location')
                     <div class=" text-sm text-red-700 ">يجب ملئ هذا الحقل</div>
                     @enderror
@@ -64,8 +63,8 @@
 
                 <div class="flex-col">
                     <div> وقت الاعادة</div>
-                    <input wire:model.lazy="return_date" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50"
-                        value="" type="date" />
+                    <input wire:model.lazy="return_date" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value=""
+                        type="date" />
                     @error('return_date')
                     <div class=" text-sm text-red-700 ">يجب تحديد تاريخ</div>
                     @enderror
@@ -133,20 +132,6 @@
     margin-top: 40px;
     display: flex;
 }
-
-/* . {
-    gap: .5rem;
-}
-
-
-. input {
-    padding: 7px;
-    outline: none;
-    background: #eeeff1;
-    border-radius: 0.5rem;
-    outline: none;
-    font-size: 1rem;
-} */
 
 .btn {
     padding: 10px 36px;
