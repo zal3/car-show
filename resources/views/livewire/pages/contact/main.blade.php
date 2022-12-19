@@ -48,11 +48,11 @@
 </div>
 <style>
 .map-container {
-    height: 400px;
+    height: 500px;
 }
 
 .hh {
-    height: 400px;
+    height: 500px;
 }
 
 .bgck {
