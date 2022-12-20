@@ -16,7 +16,7 @@ class Control extends Component
     public  $location ,$rent_date ,$return_date ,$phone_num ,$image_path,$state;
     public function no($id)
     {
-        $rent = Rent::find($id);
+    $rent = Rent::find($id);
         $rent->update([
             'state' => 0
         ]);

@@ -27,6 +27,7 @@
     </div>
     <div id="myTabContent">
         <div class="hidden px-4   " id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+
             <body class="flex items-center justify-center">
                 <div class="container">
                     <table class="w-full text-center flex flex-row flex-no-wrap sm:bg-white  overflow-hidden my-5">
@@ -83,13 +84,14 @@
                             <tr>
                                 <td colspan="10" class="border-grey-light border hover:bg-gray-100 p-3">لا يوجد
                                     اي تاجيرات</td>
-                            @endforelse
+                                @endforelse
                         </tbody>
                     </table>
                 </div>
             </body>
         </div>
         <div class="hidden px-4 " id="settings" role="tabpanel" aria-labelledby="settings-tab">
+
             <body class="flex items-center justify-center">
                 <div class="container">
                     <table class="w-full text-center flex flex-row flex-no-wrap sm:bg-white  overflow-hidden my-5">
@@ -143,13 +145,14 @@
                             <tr>
                                 <td colspan="10" class="border-grey-light border hover:bg-gray-100 p-3">لا يوجد
                                     اي تاجيرات</td>
-                            @endforelse
+                                @endforelse
                         </tbody>
                     </table>
                 </div>
             </body>
         </div>
         <div class="hidden px-4 " id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+
             <body class="flex items-center justify-center">
                 <div class="container">
                     <table class="w-full text-center flex flex-row flex-no-wrap sm:bg-white  overflow-hidden my-5">
@@ -195,15 +198,15 @@
                                 </td>
                                 <td class="border-grey-light border text-white hover:bg-gray-100 p-3"> <button
                                         wire:click="no({{ $rent->id }})" class="border p-3 bg-blue-600 ">
-استرجاع                                    </button>
-                                    
+                                        استرجاع </button>
+
                                 </td>
                             </tr>
                             @empty
                             <tr>
                                 <td colspan="10" class="border-grey-light  border hover:bg-gray-100 p-3">لا يوجد
                                     اي تاجيرات</td>
-                            @endforelse
+                                @endforelse
                         </tbody>
                     </table>
                 </div>

@@ -8,8 +8,7 @@ use App\Models\Car;
 
 
 class Unvailable extends Component
-{
-    public $search;
+{public $search;
     protected $listeners = ['$refresh', 'search'];
     public function search($search)
     {
