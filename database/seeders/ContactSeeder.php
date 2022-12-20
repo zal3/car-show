@@ -17,16 +17,16 @@ class ContactSeeder extends Seeder
     {
         //
         Contact::create([
-            'name' => 'زينب',
-            'email' => 'zainab@gmail.com',
-            'title' => 'title',
-            'subject' => 'subject',
+            'name' => 'احمد',
+            'email' => 'ahmad@gmail.com',
+            'title' => 'سوال',
+            'subject' => 'هل تتوفر سيارة موديل 2019',
         ]);
         Contact::create([
-            'name' => 'انوار',
-            'email' => 'anwar@gmail.com',
-            'title' => 'aa',
-            'subject' => 'sn',
+            'name' => 'علي',
+            'email' => 'ali@gmail.com',
+            'title' => 'اقتراح',
+            'subject' => 'قومو بتوفير سيارات اكثر انواعا',
         ]);
           
     }
