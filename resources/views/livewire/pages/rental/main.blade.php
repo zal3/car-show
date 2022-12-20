@@ -1,3 +1,4 @@
+<div>
 <div class="p-9">
     <h2 class="text-xl text-black   flex justify-center mb-3">طريقة التأجير</h2>
     <h1 class="text-xl md:text-3xl text-black text-center font-bold px-4  flex justify-center">أجر سيارة بثلاث خطوات
@@ -103,6 +104,8 @@
         <button type="submit" id="" class="btn w-full "> تأجير</button>
     </form>
 </div>
+</div>
+
 <style scoped>
 /* car rate */
 .rate {

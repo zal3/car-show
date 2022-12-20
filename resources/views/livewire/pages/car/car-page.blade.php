@@ -67,15 +67,15 @@
                 </thead>
                 <tbody class="flex-1 sm:flex-none">
                     <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
-                        <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->type }} </td>
-                        <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->model }} </td>
-                        <td class="border-grey-light border hover:bg-gray-100 p-3">{{ $car->category }} </td>
-                        <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->sale_price }} </td>
-                        <td class="border-grey-light border hover:bg-gray-100 p-3">{{ $car->number }} </td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->type }} </td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->model }} </td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3">{{ $car->category }} </td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->sale_price }} </td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3">{{ $car->number }} </td>
                         @admin
-                        <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->chassis_number }} </td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->chassis_number }} </td>
                         @endadmin
-                        <td class="border-grey-light border hover:bg-gray-100 p-3">@if ($car->color == 1)
+                        <td class="border-grey-light border hover:bg-gray-200 p-3">@if ($car->color == 1)
                             احمر
                             @elseif($car->color == 2)
                             ابيض
@@ -89,13 +89,13 @@
                             ازرق
                             @endif</td>
                         @admin
-                        <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->import_price }}$</td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->import_price }}$</td>
                         @endadmin
-                        <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->import_place }}</td>
-                        <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->import_date }}</td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->import_place }}</td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->import_date }}</td>
                         @admin
-                        <td class="border-grey-light border hover:bg-gray-100 p-3"> {{ $car->note }}</td>
-                        <td class="border-grey-light border hover:bg-gray-100 p-3">
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->note }}</td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3">
                             <div class="  opacity-70">
                                 <button wire:click="confirm({{ $car->id }})"><i
                                         class="fa-solid fa-trash text-gray-600  hover:text-red-700 "></i></button>

@@ -29,11 +29,12 @@ class Main extends Component
     public function save()
     {
         $this->validate();
+        
         $rental = new Rent();
         $rental->add($this->location, $this->rent_date, $this->return_date, $this->phone_num, $this->car_id);
-        if ($this->image_path)
+        dd('done');if ($this->image_path)
         $rental->add_image($this->image_path);
-
+        
         $this->alert('success', 'تم     ', [
                     'position' => 'center',
                     'timer' => 3000,
@@ -46,8 +47,9 @@ class Main extends Component
     public function render()
     {
         //get car state is false
-        $this->cars = Car::where('state', 1)->whereHas('rent' , function($q){
-            $q->where('state', 0 & 2);})
+        $this->cars = Car::where('state', 1)
+        ->whereHas('rent' , function($q){
+            $q->where('state',!1);})
             ->get();
         return view('livewire.pages.rental.main');
     }
