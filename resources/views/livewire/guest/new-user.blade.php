@@ -3,14 +3,11 @@
         <x-jet-authentication-card>
             <x-slot name="logo">
                 {{-- <a href="{{ route('home') }}">
-                    <img src="{{ asset('/img/lg.png') }}" class="mb-4 h-56 md:h-72">
+                <img src="{{ asset('/img/lg.png') }}" class="mb-4 h-56 md:h-72">
                 </a> --}}
             </x-slot>
-
             <x-jet-validation-errors class="mb-4" />
-
             <form wire:submit.prevent="save">
-
                 <div>
                     <x-jet-label for="name" value="{{ __('الأسم') }}" />
                     <x-jet-input wire:model="name"
@@ -20,7 +17,6 @@
                     <span class="error">{{ $message }}</span>
                     @enderror
                 </div>
-
                 <div class="mt-4">
                     <x-jet-label for="email" value="{{ __('البريد الألكتروني') }}" />
                     <x-jet-input wire:model="email"
@@ -33,7 +29,6 @@
                 <div class="flex mt-8 gap-x-2">
                     <div class=" w-full">
                         <x-jet-label for="gender" />
-
                         <select name="gender" id="gender" wire:model="gender" required
                             class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
                             <option value="0">الجنس</option>
@@ -62,7 +57,6 @@
                     <span class="error">{{ $message }}</span>
                     @enderror
                 </div>
-
                 <div class="mt-4">
                     <x-jet-label for="password_confirmation" value="{{ __('تأكيد كلمة السر') }}" />
                     <x-jet-input wire:model="password_confirmation"
@@ -76,7 +70,6 @@
                 <div class="flex mt-8 gap-x-2">
                     <div class=" w-full">
                         <x-jet-label for="department" />
-
                         <select name="department" id="department" wire:model="department" required
                             class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
                             <option value="0">القسم</option>
@@ -100,11 +93,9 @@
                         @enderror
                     </div>
                 </div>
-
                 <div class="flex mt-8 gap-x-2">
                     <div class=" w-full">
                         <x-jet-label for="stage" />
-
                         <select name="stage" id="stage" wire:model="stage" required
                             class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
                             <option value="0">المرحلة</option>
@@ -112,7 +103,6 @@
                             <option value="2">ثانية</option>
                             <option value="3">ثالثة</option>
                             <option value="4">رابعة</option>
-
                         </select>
                         @error('stage')
                         <span class="error">{{ $message }}</span>
@@ -128,7 +118,6 @@
                             <option value="3">C</option>
                             <option value="4">D</option>
                             <option value="5">E</option>
-
                         </select>
                         @error('division')
                         <span class="error">{{ $message }}</span>
@@ -136,13 +125,11 @@
                     </div>
                 </div>
                 @endif
-
                 {{-- @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
                 <div class="mt-4">
                     <x-jet-label for="terms">
                         <div class="flex items-center">
                             <x-jet-checkbox name="terms" id="terms" />
-
                             <div class="ml-2">
                                 {!! __('I agree to the :terms_of_service and :privacy_policy', [
                                 'terms_of_service' => '<a target="_blank" href="' . route('terms.show') . '"
@@ -157,12 +144,10 @@
                     </x-jet-label>
                 </div>
                 @endif --}}
-
                 <div class="flex items-center justify-between mt-4">
                     <x-jet-button type="submit" class="ml-4">
                         {{ __('أنشاء') }}
                     </x-jet-button>
-
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
                         {{ __('لديك حساب بالفعل ؟') }}
                     </a>

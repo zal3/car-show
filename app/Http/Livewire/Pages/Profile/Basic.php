@@ -29,7 +29,7 @@ class Basic extends Component
         
         
     
-        if($this->profile_photo)
+        if($this->profile_photo) 
             $this->user->addProfile($this->profile_photo);
 
         $this->alert('success', 'تم', [

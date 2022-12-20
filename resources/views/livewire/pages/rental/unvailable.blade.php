@@ -1,17 +1,17 @@
-<div class="m-40">
-    <div class="relative flex justify-between mb-6 ">
-        <h1 class="text-2xl font-bold">السيارات المؤجرة</h1>
-
+<div class="m-4 md:m-40">
+    <div class="relative flex justify-between gap-3 mb-6 ">
+        <h1 class="text-md md:text-2xl font-bold">السيارات المؤجرة</h1>
         <livewire:ui.search />
     </div>
-    @foreach ($cars as $car)
+    
+    @forelse ($cars as $car)
     <div
-        class="p-4 mb-3 flex justify-between items-center hover:bg-opacity-70 hover:bg-gray-300  transition duration-500 ease-in-out">
+        class="p-4 mb-3 flex justify-between items-center gap-10  hover:bg-black hover:bg-opacity-70 hover:text-white  transition duration-500 ease-in-out">
         <div>
             <img src="{{ asset($car->image_path ?? 'img/cars/encar3.png') }}" class="   w-40 h-26 ">
         </div>
         <div class="  text-center ">
-            <div class="flex gap-4 items-center ">
+            <div class="md:flex md:gap-4  items-center ">
                 <h>{{ $car->type}}</h>
                 <h1>{{ $car->model }}</h1>
                 <div
@@ -35,8 +35,10 @@
         <div>
             <!-- car return date -->
             {{ $car->rent->return_date }}
-
         </div>
     </div>
-    @endforeach
+    @empty
+    <div class="text-center">
+        <h1 class="text-2xl font-bold">لا يوجد سيارات مؤجرة</h1>
+    @endforelse
 </div>

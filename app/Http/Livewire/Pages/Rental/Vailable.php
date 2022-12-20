@@ -15,9 +15,10 @@ class Vailable extends Component
     }
     public function render()
     {$search = '%' . $this->search . '%';
-        $cars = Car::whereHas('rent' , function($q){
-            $q->where('state', 0 & 2);}
-         )->where('type', 'LIKE', $search)->get();
+        $cars = Car::where('state', 1)
+        ->whereHas('rent' , function($q){
+            $q->where('state', !1);})
+            ->where('type', 'LIKE', $search)->get();
         return view('livewire.pages.rental.vailable',compact('cars'));
     }
 }

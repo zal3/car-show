@@ -17,7 +17,14 @@ class Edit extends Component
             'type' => 'required',
             'category' => 'required',
             'model' => 'required',
-            'sale_price' => 'required'
+            'sale_price' => 'required',
+            'number' => 'required',
+            'chassis_number' => 'required ',
+            'color' => 'required',
+            'import_place' => 'required',
+            'import_date' => 'required',
+            'import_price' => 'required',
+            'state' => 'required',
         ];
         public function mount ($car_id)
         {

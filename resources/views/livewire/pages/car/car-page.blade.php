@@ -1,88 +1,81 @@
-<div>
-    <div class="  m-auto justify-center  items-center px-8 pb-8  ">
-        <div class=" flex justify-center  items-center">
-            {{-- <img class="" src=" {{ asset('img/cars/car6.jpg') }}"> --}}
-            <div class="container">
-                <img src="{{ asset($car->image_path ?? 'img/cars/car1.jpg') }}" alt=" " class="h-full" />
-                <p class="title">{{ $car->type }}</p>
-                <div class="overlay"></div>
-                <div class="button"><a href="#"> {{ $car->sale_price }}$ </a></div>
+<div class=" m-auto  items-center px-8 pb-8 ">
+    <div class=" flex justify-center  items-center">
+        <a href="{{ route('car-page', ['car_id' => $car->id + 1]) }}">
+            <div class="swiper-button-next lg:w-1/2 md:3/4 "></div>
+        </a>
+        <div class="container relative mt-[50px] w-[500px] h-[300px] ">
+            <img src="{{ asset($car->image_path ?? 'img/cars/encar3.png') }}" alt=" "
+                class="h-full absolute left-0 w-[500px] " />
+            <p class="title absolute  left-0 w-[500px] top-[120px] text-white ">{{ $car->type }}</p>
+            <div class="overlay absolute top-0 left-0 w-[100%] h-[100%] "></div>
+            <div class="button absolute w-[500px] left-0 text-center opacity-0 top-[180px]">
+                <a href="#" class="w-[200px] px-[48px] py-[12px] text-center text-white"> {{ $car->sale_price }}$ </a>
             </div>
         </div>
-
-        <div
-            class="overflow-x-auto  relative  mt-9  flex justify-center  items-center m-auto">
-            <table class="w-5/7 mx-6 text-sm text-center text-left text-gray-500 dark:text-gray-400 ">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
-                        <th scope="col" class="py-3 px-6">
+        <a href="{{ route('car-page', ['car_id' => $car->id - 1]) }}">
+            <div class="swiper-button-prev  lg:w-1/2 md:3/4"></div>
+        </a>
+    </div>
+    <body class="flex items-center justify-center">
+        <div class="container">
+            <table class="w-full flex flex-row flex-no-wrap sm:bg-white  overflow-hidden sm:shadow-lg my-5">
+                <thead class="text-white">
+                    <tr
+                        class="bg-gray-900 flex flex-col flex-no wrap sm:table-row shadow-lg  justify-center  items-center  text-center mb-2 sm:mb-0">
+                        <th class="p-3 text-left">
                             نوع السيارة
                         </th>
-                        <th scope="col" class="py-3 px-6">
+                        <th class="p-3 text-left">
                             الموديل
                         </th>
-                        <th scope="col" class="py-3 px-6">
+                        <th class="p-3 text-left">
                             الشركة المصنعة
                         </th>
-                        <th scope="col" class="py-3 px-6">
+                        <th class="p-3 text-left">
                             السعر
                         </th>
-                        <th scope="col" class="py-3 px-6">
+                        <th class="p-3 text-left">
                             رقم السيارة
                         </th>
                         @admin
-                        <th scope="col" class="py-3 px-6">
+                        <th class="p-3 text-left">
                             رقم الهيكل
                         </th>
                         @endadmin
-                        <th scope="col" class="py-3 px-6">
+                        <th class="p-3 text-left">
                             لون السيارة
                         </th>
                         @admin
-                        <th scope="col" class="py-3 px-6">
+                        <th class="p-3 text-left">
                             سعر الاستيراد </th>
                         @endadmin
-                        <th scope="col" class="py-3 px-6">
+                        <th class="p-3 text-left">
                             دولة الاستيراد
                         </th>
-                        <th scope="col" class="py-3 px-6">
+                        <th class="p-3 text-left">
                             تاريخ الاستيراد
                         </th>
                         @admin
-                        <th scope="col" class="py-3 px-6">
+                        <th class="p-3 text-left">
                             الوصف
                         </th>
-
-                        <th scope="col" class="py-3 px-6">
+                        <th class="p-3 text-left">
                             ..
                         </th>
                         @endadmin
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
-                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            {{ $car->type }}
-                        </th>
-                        <td class="py-4 px-6">
-                            {{ $car->model }}
-                        </td>
-                        <td class="py-4 px-6">
-                            {{ $car->category }}
-                        </td>
-                        <td class="py-4 px-6">
-                            {{ $car->sale_price }}
-                        </td>
-                        <td class="py-4 px-6">
-                            {{ $car->number }}
-                        </td>
+                <tbody class="flex-1 sm:flex-none">
+                    <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->type }} </td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->model }} </td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3">{{ $car->category }} </td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->sale_price }} </td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3">{{ $car->number }} </td>
                         @admin
-                        <td class="py-4 px-6">
-                            {{ $car->chassis_number }}
-                        </td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->chassis_number }} </td>
                         @endadmin
-                        <td class="py-4 px-6">
-                            @if ($car->color == 1)
+                        <td class="border-grey-light border hover:bg-gray-200 p-3">@if ($car->color == 1)
                             احمر
                             @elseif($car->color == 2)
                             ابيض
@@ -94,64 +87,31 @@
                             اخضر
                             @elseif($car->color == 6)
                             ازرق
-                            @endif
-                        </td>@admin
-                        <td class="py-4 px-6">
-
-                            {{ $car->import_price }}$
-                        </td>
-                        @endadmin
-                        <td class="py-4 px-6">
-                            {{ $car->import_place }}
-                        </td>
-                        <td class="py-4 px-6">
-                            {{ $car->import_date }}
-                        </td>
+                            @endif</td>
                         @admin
-                        <td class="py-4 px-6">
-                            {{ $car->note }}
-                        </td>
-                        <td class="py-4 px-6">
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->import_price }}$</td>
+                        @endadmin
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->import_place }}</td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->import_date }}</td>
+                        @admin
+                        <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->note }}</td>
+                        <td class="border-grey-light border hover:bg-gray-200 p-3">
                             <div class="  opacity-70">
                                 <button wire:click="confirm({{ $car->id }})"><i
                                         class="fa-solid fa-trash text-gray-600  hover:text-red-700 "></i></button>
                                 <a href="{{ route('edit-car', ['car_id' => $car->id]) }}">
-                                    <i
-                                        class="fa-solid fa-pen-to-square text-gray-600   hover:text-blue-700"></i>
+                                    <i class="fa-solid fa-pen-to-square text-gray-600   hover:text-blue-700"></i>
                                 </a>
                             </div>
                         </td>
                         @endadmin
-                    </tr>
                 </tbody>
             </table>
         </div>
-
-
-        {{-- route sent to next cardpage  --}}
-        <a href="{{ route('car-page', ['car_id' => $car->id + 1]) }}">
-            <div class="swiper-button-next mr-72 "></div>
-        </a>
-        <a href="{{ route('car-page', ['car_id' => $car->id - 1]) }}">
-            <div class="swiper-button-prev  ml-72"></div>
-        </a>
-    </div>
-
+    </body>
 </div>
 <style scoped>
-.container {
-    position: relative;
-    margin-top: 50px;
-    width: 500px;
-    height: 300px;
-}
-
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: rgba(0, 0, 0, 0);
     transition: background 0.5s ease;
 }
@@ -161,23 +121,11 @@
     background: rgba(0, 0, 0, .3);
 }
 
-img {
-    position: absolute;
-    width: 500px;
-    height: 250px;
-    left: 0;
-}
-
 .title {
-    position: absolute;
-    width: 500px;
-    left: 0;
-    top: 120px;
     font-weight: 700;
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
-    color: white;
     z-index: 1;
     transition: top .5s ease;
 }
@@ -187,24 +135,33 @@ img {
 }
 
 .button {
-    position: absolute;
-    width: 500px;
-    left: 0;
-    top: 180px;
-    text-align: center;
-    opacity: 0;
     transition: opacity .35s ease;
 }
 
 .button a {
-    width: 200px;
-    padding: 12px 48px;
-    text-align: center;
-    color: white;
     z-index: 1;
 }
 
 .container:hover .button {
     opacity: 1;
+}
+
+
+@media (min-width: 640px) {
+    table {
+        display: inline-table !important;
+    }
+
+    thead tr:not(:first-child) {
+        display: none;
+    }
+}
+
+td:not(:last-child) {
+    border-bottom: 0;
+}
+
+th:not(:last-child) {
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
 }
 </style>
