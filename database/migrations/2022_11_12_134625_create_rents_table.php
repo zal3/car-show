@@ -16,12 +16,13 @@ return new class extends Migration
         Schema::create('rents', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users');
-            // $table->foreignId('car_id')->constrained('cars');
+            $table->foreignId('car_id')->constrained('cars');
             $table->string('location');
-            $table->string('license');
             $table->date('rent_date');
             $table->date('return_date');
-            $table->integer('phone-num');
+            $table->integer('phone_num');
+            $table->integer('state')->default(0);
+            $table->string('image_path')->nullable();
             $table->timestamps();
         });
     }

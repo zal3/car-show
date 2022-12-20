@@ -16,8 +16,15 @@ use App\Http\Livewire\Pages\Car\{
     CarPage as CarPage,
 
 };
+use App\Http\Livewire\Pages\Rental\{
+    Vailable as AvailableRental,
+    Unvailable as UnvailableRental,
+    Control as ControlRental,
+
+};
 use App\Http\Livewire\Pages\Admins\{
-    main as Admins
+    main as Admins,
+    Add as AdminAdd,
 };
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +41,7 @@ Route::get('/', Home::class)->name('home');
 
 //about
 Route::get('/about', About::class)->name('about');
+//register
 
 //car
 Route::get('/car', CarMain::class)->name('car');
@@ -50,10 +58,15 @@ Route::middleware(['auth:sanctum'])->group(function () {
         Route::middleware(['superAdmin'])->group(function () {
             Route::get('/add-car', CarAdd::class)->name('add-car');
 Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
+
+
         });
+        Route::get('/control', ControlRental::class)->name('control');
+
         // end cars
         // admins
         Route::get('/admins', Admins::class)->name('admins');
+        Route::get('/add-admin', AdminAdd::class)->name('addadmin');
         // end admins
 
 
@@ -61,7 +74,9 @@ Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
     //Profile
 
     Route::get('/profile', Profile::class)->name('profile');
-Route::get('/rental', Rental::class)->name('rental');
+    Route::get('/rental', Rental::class)->name('rental');
+    Route::get('/available', AvailableRental::class)->name('available-rental');
+Route::get('/unavailable', UnvailableRental::class)->name('unavailable-rental');
 
     // donate
     // Route::get('/donate', Donate::class)->name('donate');
