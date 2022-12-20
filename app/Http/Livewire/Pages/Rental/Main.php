@@ -12,8 +12,7 @@ use App\Models\Car;
 
 
 class Main extends Component
-{
-    use LivewireAlert;
+{use LivewireAlert;
     use WithFileUploads;
     protected $listeners = ['$refresh'];
     public $image_path , $location,  $rent_date, $return_date, $phone_num, $car_id, $cars;

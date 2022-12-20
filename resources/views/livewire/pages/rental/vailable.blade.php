@@ -37,5 +37,5 @@
     @empty
     <div class="text-center">
         <h1 class="text-2xl font-bold">لا يوجد سيارات متاحة للتاجير</h1>
-    @endforelse
-</div>
+        @endforelse
+    </div>
