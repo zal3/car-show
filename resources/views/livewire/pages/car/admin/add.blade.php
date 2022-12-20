@@ -85,7 +85,7 @@
                                         value="" />
                                         
                                 </div>@error('chassis_number')
-                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">هذا الحقل مطلوب </span>
+                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">رقم السيارة  موجود مسبقا</span>
                                     @enderror
                             </div>
                             <div class="md:col-span-2">
@@ -97,7 +97,7 @@
                                         
                                 </div>
                                 @error('number')
-                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">هذا الحقل مطلوب </span>
+                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs"> رقم السيارة  موجود  مسبقا  </span>
                                     @enderror
                             </div>
                             <div class="md:col-span-1">
