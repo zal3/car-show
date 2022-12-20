@@ -32,7 +32,7 @@ class Main extends Component
         
         $rental = new Rent();
         $rental->add($this->location, $this->rent_date, $this->return_date, $this->phone_num, $this->car_id);
-        dd('done');if ($this->image_path)
+        if ($this->image_path)
         $rental->add_image($this->image_path);
         
         $this->alert('success', 'تم     ', [
