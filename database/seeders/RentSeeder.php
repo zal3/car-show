@@ -17,21 +17,21 @@ class RentSeeder extends Seeder
     {
         //
         Rent::create([
-            'user_id' => 1,
-            'car_id' => 4,
-            'location' => 'Budapest',
-            'rent_date' => '2021-11-12',
-            'return_date' => '2021-11-17',
+            'user_id' => 4,
+            'car_id' => 14,
+            'location' => 'مقابل شنشل مول',
+            'rent_date' => '2022-12-10',
+            'return_date' => '2022-12-17',
             'phone_num' => '123456789',
             'state' => 0,
         ]);
 
         Rent::create([
-            'user_id' => 2,
-            'car_id' => 5,
-            'location' => 'Budapest',
-            'rent_date' => '2021-11-12',
-            'return_date' => '2021-11-15',
+            'user_id' => 5,
+            'car_id' => 11,
+            'location' => 'شارع الوفود',
+            'rent_date' => '2022-12-15',
+            'return_date' => '2022-12-22',
             'phone_num' => '123456789',
             'state' => 0,
         ]);

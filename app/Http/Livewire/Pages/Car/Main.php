@@ -28,7 +28,7 @@ class Main extends Component
         if ($this->model) $cars->where('model', $this->model);
         if($this->color) $cars->where('color', $this->color);
         
-            $cars = $cars->paginate(10);
+            $cars = $cars->paginate(40);
         return view('livewire.pages.car.main' , compact('cars'));
     }
 }
