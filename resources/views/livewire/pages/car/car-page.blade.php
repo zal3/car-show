@@ -16,6 +16,7 @@
             <div class="swiper-button-prev  lg:w-1/2 md:3/4"></div>
         </a>
     </div>
+
     <body class="flex items-center justify-center">
         <div class="container">
             <table class="w-full flex flex-row flex-no-wrap sm:bg-white  overflow-hidden sm:shadow-lg my-5">
@@ -96,12 +97,22 @@
                         @admin
                         <td class="border-grey-light border hover:bg-gray-200 p-3"> {{ $car->note }}</td>
                         <td class="border-grey-light border hover:bg-gray-200 p-3">
-                            <div class="  opacity-70">
+                            <div class=" flex flex-cols-3 gap-2 ">
                                 <button wire:click="confirm({{ $car->id }})"><i
-                                        class="fa-solid fa-trash text-gray-600  hover:text-red-700 "></i></button>
+                                        class="fa-solid fa-trash text-gray-600  hover:text-red-700 "></i>
+                                </button>
                                 <a href="{{ route('edit-car', ['car_id' => $car->id]) }}">
                                     <i class="fa-solid fa-pen-to-square text-gray-600   hover:text-blue-700"></i>
                                 </a>
+                                @if ($car->archive == 0)
+                                {{-- Archive Button --}}
+                                <button wire:click="archive" class=" text-gray-600  hover:text-green-700  ">
+                                    <i class=" fa-solid fa-box-archive "></i>
+                                </button>
+                                @else
+                                {{-- UnArchive Button --}}
+                                <svg wire:click="unarchive" class="font-bold text-gray-600  hover:text-green-700  " height="21"  viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 3)"><path  d="m1.5 4.5h14v8c0 1.1045695-.8954305 2-2 2h-10c-1.1045695 0-2-.8954305-2-2zm0-3.9777832h14c.5522847 0 1 .44771525 1 1v1.9777832c0 .55228475-.4477153 1-1 1h-14c-.55228475 0-1-.44771525-1-1v-1.9777832c0-.55228475.44771525-1 1-1z"/><path d="m5.5 10.5 3-3 3 3"/></g></svg>
+                                @endif
                             </div>
                         </td>
                         @endadmin

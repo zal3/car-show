@@ -60,6 +60,34 @@ public $car_id ,$type ,$car , $category ,$model, $sale_price , $number ,$chassis
         ]);
     }
 
+    public function archive()
+    {
+        $this->car->archive = 1;
+        $this->car->save();
+        $this->alert('success', 'تم ارشفة السيارة', [
+            'position' => 'center',
+            'timer' => 3000,
+            'toast' => true,
+        ]);
+        $this->emitUp('$refresh');
+        $this->emitTo('pages.cars.main', '$refresh');
+        redirect()->route('car');
+    }
+    public function unarchive()
+    {
+        $this->car->archive = 0;
+        $this->car->save();
+        $this->alert('success', 'تم ارجاع السيارة من الارشيف', [
+            'position' => 'center',
+            'timer' => 3000,
+            'toast' => true,
+        ]);
+        $this->emitUp('$refresh');
+        $this->emitTo('pages.cars.archive', '$refresh');
+        redirect()->route('car');
+    }
+    
+
 public function render()
     {
         return view('livewire.pages.car.car-page');

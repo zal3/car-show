@@ -24,7 +24,8 @@ class Main extends Component
     public function render()
     {
         $search = '%' . $this->search . '%';
-        $cars = Car::where('type', 'LIKE', $search)->orderBy('id', 'DESC');
+        $cars = Car::where('type', 'LIKE', $search)->where('archive', 0)
+        ->orderBy('id', 'DESC');
         if ($this->model) $cars->where('model', $this->model);
         if($this->color) $cars->where('color', $this->color);
         

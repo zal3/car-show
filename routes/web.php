@@ -14,6 +14,7 @@ use App\Http\Livewire\Pages\Car\{
     Admin\Add as CarAdd,
     Admin\Edit as CarEdit,
     CarPage as CarPage,
+    Archive as ArchiveCar,
 
 };
 use App\Http\Livewire\Pages\Rental\{
@@ -61,10 +62,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
         Route::middleware(['superAdmin'])->group(function () {
             Route::get('/add-car', CarAdd::class)->name('add-car');
             Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
-
-
-
         });
+        Route::get('/archive', ArchiveCar::class)->name('archive');
         Route::get('/control', ControlRental::class)->name('control');
         Route::get('/contact-info', ContactInfo::class)->name('contact-info');
         // end cars
