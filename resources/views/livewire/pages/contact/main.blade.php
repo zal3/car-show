@@ -2,6 +2,7 @@
     <div class="container my-24 px-6 mx-auto">
         <section class="mb-32 text-gray-800 text-center">
             <div class="px-6  md:px-12">
+           
                 <div class="container mx-auto xl:px-32">
                     <div class="grid lg:grid-cols-2  gap-10 items-center">
                         <div class="bgck md:mt-12 lg:mt-0 mb-12 lg:mb-0">
@@ -40,9 +41,18 @@
                                     allowfullscreen></iframe>
                             </div>
                         </div>
+                       
                     </div>
+                    @admin
+            <a href="{{ route('contact-info') }}"
+                class="text-black flex justify-center   items-center gap-3 mt-9 mx-auto text-md xl:text-xl duration-200 bg-gray-300 hover:bg-white border border-transparent hover:border-gray-500 hover:text-primary-500 focus:ring-2 focus:ring-gray-900 ml-7  rounded-lg px-3 py-1 md:px-4 md:py-1">
+                <div class="">  عرض التواصل</div>
+            </a>
+            @endadmin
                 </div>
             </div>
+            
+            
         </section>
     </div>
 </div>
