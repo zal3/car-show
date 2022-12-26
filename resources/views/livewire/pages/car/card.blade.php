@@ -2,7 +2,7 @@
     <article class="hov bg-gray mr-5 pb-2  w-60  bg-gray-200 relative ">
         @if($car->state == 1 )
         <a
-            class="absolute pr-4 z-1 w-16 bg-red-500 p-2  rounded-b-full rounded-l-full ">تاجير</a>
+            class="absolute pr-4 z-1 w-16 text-white bg-red-600 p-2  rounded-b-full rounded-l-full ">تاجير</a>
         @endif
         <img src="{{ asset($car->image_path ?? 'img/cars/encar3.png') }}" class="   w-60 h-36    ">
         <!-- {{-- <img src="{{ asset('img/cars/car1.jpg') }}" class=""> --}} -->
