@@ -1,6 +1,6 @@
 <div>
     <article class="hov bg-gray mr-5 pb-2  w-60  bg-gray-200 relative ">
-        @if($car->state == 1 )
+        @if($car->state == 1 && $car->archive == 0)
         <a
             class="absolute pr-4 z-1 w-16 text-white bg-red-600 p-2  rounded-b-full rounded-l-full ">تاجير</a>
         @endif
