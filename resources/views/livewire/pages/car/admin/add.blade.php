@@ -62,7 +62,7 @@
                                 <input wire:model.lazy="model" type="text" name="model" id="model" placeholder="2021"
                                     class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
                                     @error('model')
-                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">هذا الحقل مطلوب </span>
+                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">الأحرف غير مسموح بها    </span>
                                     @enderror
                                 </div>
                             <div class="md:col-span-2">
@@ -84,9 +84,10 @@
                                         class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
                                         value="" />
                                         
-                                </div>@error('chassis_number')
-                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">رقم السيارة  موجود مسبقا</span>
-                                    @enderror
+                                </div>
+                                @error('chassis_number')
+                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">{{ $message }}</span>
+                                    @enderror 
                             </div>
                             <div class="md:col-span-2">
                                 <label for="number">رقم السيارة </label>
@@ -97,7 +98,7 @@
                                         
                                 </div>
                                 @error('number')
-                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs"> رقم السيارة  موجود  مسبقا  </span>
+                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-0 text-xs"> رقم السيارة  موجود  مسبقا  </span>
                                     @enderror
                             </div>
                             <div class="md:col-span-1">
@@ -122,7 +123,7 @@
                                     class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                                     placeholder="" value="" />
                                     @error('import_price')
-                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">هذا الحقل مطلوب </span>
+                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1  text-xs">الأحرف غير مسموح بها    </span>
                                     @enderror
                             </div>
                             <div class="md:col-span-2">
@@ -149,7 +150,7 @@
                                     class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                                     placeholder="" value="" />
                                     @error('sale_price')
-                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">هذا الحقل مطلوب </span>
+                                    <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">الأحرف غير مسموح بها    </span>
                                     @enderror
                             </div>
                             <div class="md:col-span-5 h-10">

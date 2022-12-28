@@ -23,12 +23,22 @@ class Add extends Component
             'model' => 'required',
             'sale_price' => 'required',
             'number' => 'required|unique:cars',
-            'chassis_number' => 'required |unique:cars',
+            'chassis_number' => 'required|numeric|unique:cars',
             'color' => 'required',
             'import_place' => 'required',
             'import_date' => 'required',
             'import_price' => 'required',
             'state' => 'required',
+            
+            
+        ];
+        protected $message = [
+            'number.required' => 'يجب ادخال رقم السيارة',
+            'number.unique' => 'رقم السيارة موجود مسبقا',
+            'number.numeric' => '   الأحرف غير مسموح بها ',
+            'chassis_number.unique' => 'رقم السيارة  موجود مسبقا   ',
+            'chassis_number.numeric' => '   الأحرف غير مسموح بها ',
+            'chassis_number.required' => 'يجب ادخال رقم السيارة',
             
         ];
 
@@ -36,6 +46,7 @@ class Add extends Component
         {
 
             $this->validate();
+            
             $data = [
                 'type' => $this->type,
                 'category' => $this->category,

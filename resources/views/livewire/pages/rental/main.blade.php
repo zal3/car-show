@@ -48,7 +48,7 @@
                     <input wire:model.lazy="phone_num" type="text"
                         class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value="" placeholder=" " />
                     @error('phone_num')
-                    <div class=" text-sm text-red-700 ">يجب ملئ هذا الحقل</div>
+                    <div class=" text-sm text-red-700 ">  الأحرف غير مسموح بها </div>
                     @enderror
                 </div>
                 <div class="flex-col">

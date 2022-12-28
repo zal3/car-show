@@ -21,7 +21,7 @@ class Main extends Component
         'location' => 'required',
         'rent_date' => 'required',
         'return_date' => 'required',
-        'phone_num' => 'required',
+        'phone_num' => 'required | numeric',
         'image_path' => 'required',
         'car_id' => 'required',
     ];
@@ -33,7 +33,7 @@ class Main extends Component
         $rental->add($this->location, $this->rent_date, $this->return_date, $this->phone_num, $this->car_id);
         if ($this->image_path)
         $rental->add_image($this->image_path);
-        
+
         $this->alert('success', 'تم     ', [
                     'position' => 'center',
                     'timer' => 3000,
