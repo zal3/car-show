@@ -1,7 +1,7 @@
 <div class="mt-4 ">
     <div class="flex  justify-between  items-center   md:m-8 m-3 p-3 mb-0 md:p-6 pb-0  ">
         <div class="text-md md:text-3xl  text-black font-bold  mr-12 ">انواع السيارات</div>
-        <div class="flex  justify-between items-center gap-3">
+        <div class="flex  justify-between items-center gap-4">
         @admin
             <a href="{{ route('archive') }}">
             <i class="text-xs fa-solid fa-box-archive text-gray-600 hover:text-gray-900 w-6 h-5"></i>
