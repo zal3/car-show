@@ -10,18 +10,14 @@
             <form wire:submit.prevent="save">
                 <div>
                     <x-jet-label for="name" value="{{ __('الأسم') }}" />
-                    <x-jet-input wire:model="name"
-                        class="block mt-1 w-full border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0"
-                        type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                    <x-jet-input wire:model="name" class="block mt-1 w-full border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
                     @error('name')
                     <span class="error">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="mt-4">
                     <x-jet-label for="email" value="{{ __('البريد الألكتروني') }}" />
-                    <x-jet-input wire:model="email"
-                        class="block mt-1 w-full border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0"
-                        type="email" name="email" :value="old('email')" required />
+                    <x-jet-input wire:model="email" class="block mt-1 w-full border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0" type="email" name="email" :value="old('email')" required />
                     @error('email')
                     <span class="error">{{ $message }}</span>
                     @enderror
@@ -29,8 +25,7 @@
                 <div class="flex mt-8 gap-x-2">
                     <div class=" w-full">
                         <x-jet-label for="gender" />
-                        <select name="gender" id="gender" wire:model="gender" required
-                            class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
+                        <select name="gender" id="gender" wire:model="gender" required class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
                             <option value="0">الجنس</option>
                             <option value="1">أنثى</option>
                             <option value="2">ذكر</option>
@@ -38,8 +33,7 @@
                     </div>
                     <div class=" w-full">
                         <x-jet-label for="type" />
-                        <select name="type" id="type" wire:model="type" required
-                            class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
+                        <select name="type" id="type" wire:model="type" required class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
                             <option value="0">النوع</option>
                             <option value="1">طالب</option>
                             <option value="2">تدريسي</option>
@@ -50,18 +44,14 @@
                 </div>
                 <div class="mt-4">
                     <x-jet-label for="password" value="{{ __('كلمة السر') }}" />
-                    <x-jet-input wire:model="password"
-                        class="block mt-1 w-full border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0"
-                        type="password" name="password" required autocomplete="new-password" />
+                    <x-jet-input wire:model="password" class="block mt-1 w-full border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0" type="password" name="password" required autocomplete="new-password" />
                     @error('password')
                     <span class="error">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="mt-4">
                     <x-jet-label for="password_confirmation" value="{{ __('تأكيد كلمة السر') }}" />
-                    <x-jet-input wire:model="password_confirmation"
-                        class="block mt-1 w-full border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0"
-                        type="password" name="password_confirmation" required autocomplete="new-password" />
+                    <x-jet-input wire:model="password_confirmation" class="block mt-1 w-full border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0" type="password" name="password_confirmation" required autocomplete="new-password" />
                     @error('password_confirmation')
                     <span class="error">{{ $message }}</span>
                     @enderror
@@ -70,8 +60,7 @@
                 <div class="flex mt-8 gap-x-2">
                     <div class=" w-full">
                         <x-jet-label for="department" />
-                        <select name="department" id="department" wire:model="department" required
-                            class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
+                        <select name="department" id="department" wire:model="department" required class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
                             <option value="0">القسم</option>
                             <option value="1">علوم حاسوب</option>
                             <option value="2">نظم المعلومات</option>
@@ -82,8 +71,7 @@
                     </div>
                     <div class=" w-full">
                         <x-jet-label for="study_type" />
-                        <select name="study_type" id="study_type" wire:model="study_type" required
-                            class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
+                        <select name="study_type" id="study_type" wire:model="study_type" required class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
                             <option value="0">الدراسة</option>
                             <option value="1">صباحي</option>
                             <option value="2">مسائي</option>
@@ -96,8 +84,7 @@
                 <div class="flex mt-8 gap-x-2">
                     <div class=" w-full">
                         <x-jet-label for="stage" />
-                        <select name="stage" id="stage" wire:model="stage" required
-                            class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
+                        <select name="stage" id="stage" wire:model="stage" required class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
                             <option value="0">المرحلة</option>
                             <option value="1">اولى </option>
                             <option value="2">ثانية</option>
@@ -110,8 +97,7 @@
                     </div>
                     <div class=" w-full">
                         <x-jet-label for="division" />
-                        <select name="division" id="division" wire:model="division" required
-                            class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
+                        <select name="division" id="division" wire:model="division" required class="px-8 py-3 w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:bg-white focus:ring-0 text-sm">
                             <option value="0">الشعبة</option>
                             <option value="1">A</option>
                             <option value="2">B</option>

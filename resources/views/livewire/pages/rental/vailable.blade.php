@@ -4,8 +4,7 @@
         <livewire:ui.search />
     </div>
     @forelse ($cars as $car)
-    <div
-        class="p-4 mb-3 flex justify-between items-center gap-10   hover:bg-black hover:bg-opacity-70 hover:text-white   transition duration-500 ease-in-out">
+    <div class="p-4 mb-3 flex justify-between items-center gap-10   hover:bg-black hover:bg-opacity-70 hover:text-white   transition duration-500 ease-in-out">
         <div>
             <img src="{{ asset($car->image_path ?? 'img/cars/encar3.png') }}" class="   w-40 h-26 ">
         </div>
@@ -13,8 +12,7 @@
             <div>
                 <h>{{ $car->type }}</h>
                 <h1>{{ $car->model }}</h1>
-                <div
-                    class=" @if ($car->color == 1) text-red-500 @endif @if ($car->color == 2) text-white @endif @if ($car->color == 3) text-black @endif @if ($car->color == 4) text-yellow-500 @endif @if ($car->color == 5) text-green-500 @endif @if ($car->color == 6) text-blue-500 @endif @if ($car->color == 7) @endif ">
+                <div class=" @if ($car->color == 1) text-red-500 @endif @if ($car->color == 2) text-white @endif @if ($car->color == 3) text-black @endif @if ($car->color == 4) text-yellow-500 @endif @if ($car->color == 5) text-green-500 @endif @if ($car->color == 6) text-blue-500 @endif @if ($car->color == 7) @endif ">
                     @if ($car->color == 1)
                     احمر
                     @elseif($car->color == 2)

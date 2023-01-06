@@ -3,10 +3,8 @@
         <h1 class="text-md md:text-2xl font-bold">السيارات المؤجرة</h1>
         <livewire:ui.search />
     </div>
-
     @forelse ($rents as $rent)
-    <div
-        class="p-4 mb-3 flex justify-between items-center gap-10  hover:bg-black hover:bg-opacity-70 hover:text-white  transition duration-500 ease-in-out">
+    <div class="p-4 mb-3 flex justify-between items-center gap-10  hover:bg-black hover:bg-opacity-70 hover:text-white  transition duration-500 ease-in-out">
         <div>
             <img src="{{ asset($rent->car->image_path ?? 'img/cars/encar3.png') }}" class="   w-40 h-26 ">
         </div>
@@ -14,8 +12,7 @@
             <div class="md:flex md:gap-4  items-center ">
                 <h>{{ $rent->car->type}}</h>
                 <h1>{{ $rent->car->model }}</h1>
-                <div
-                    class=" @if ($rent->car->color == 1) text-red-500 @endif @if ($rent->car->color == 2) text-white @endif @if ($rent->car->color == 3) text-black @endif @if ($rent->car->color == 4) text-yellow-500 @endif @if ($rent->car->color == 5) text-green-500 @endif @if ($rent->car->color == 6) text-blue-500 @endif @if ($rent->car->color == 7) @endif ">
+                <div class=" @if ($rent->car->color == 1) text-red-500 @endif @if ($rent->car->color == 2) text-white @endif @if ($rent->car->color == 3) text-black @endif @if ($rent->car->color == 4) text-yellow-500 @endif @if ($rent->car->color == 5) text-green-500 @endif @if ($rent->car->color == 6) text-blue-500 @endif @if ($rent->car->color == 7) @endif ">
                     @if ($rent->car->color == 1)
                     احمر
                     @elseif($rent->car->color == 2)
@@ -33,7 +30,6 @@
             </div>
         </div>
         <div>
-            <!-- rent->car return date -->
             {{ $rent->car->rent->return_date }}
         </div>
     </div>

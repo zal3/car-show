@@ -8,8 +8,7 @@
         </div>
     </div>
     <div class=" flex items-center justify-center mx-auto">
-        <div
-            class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 items-center justify-center mx-auto px-7 sm:px-15 md:px-15 py-12">
+        <div class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 items-center justify-center mx-auto px-7 sm:px-15 md:px-15 py-12">
             @forelse ($cars as $car)
             <livewire:pages.car.card :car="$car" key="{{ now() }}" />
             @empty

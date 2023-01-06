@@ -37,40 +37,35 @@
             <div class="md:grid md:grid-cols-2 gap-y-3 ">
                 <div class=" ">
                     <div>الموقع</div>
-                    <input wire:model.lazy="location" type="text" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50"
-                        value="" placeholder=" اختر المكان" />
+                    <input wire:model.lazy="location" type="text" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value="" placeholder=" اختر المكان" />
                     @error('location')
                     <div class=" text-sm text-red-700 ">يجب ملئ هذا الحقل</div>
                     @enderror
                 </div>
                 <div class=" ">
                     <div>رقم الهاتف</div>
-                    <input wire:model.lazy="phone_num" type="text"
-                        class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value="" placeholder=" " />
+                    <input wire:model.lazy="phone_num" type="text" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value="" placeholder=" " />
                     @error('phone_num')
-                    <div class=" text-sm text-red-700 ">  الأحرف غير مسموح بها </div>
+                    <div class=" text-sm text-red-700 "> الأحرف غير مسموح بها </div>
                     @enderror
                 </div>
                 <div class="flex-col">
                     <div>وقت التأجير</div>
-                    <input wire:model.lazy="rent_date" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value=""
-                        type="date" />
+                    <input wire:model.lazy="rent_date" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value="" type="date" />
                     @error('rent_date')
                     <div class=" text-sm text-red-700 ">يجب تحديد تاريخ</div>
                     @enderror
                 </div>
                 <div class="flex-col">
                     <div> وقت الاعادة</div>
-                    <input wire:model.lazy="return_date" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value=""
-                        type="date" />
+                    <input wire:model.lazy="return_date" class="w-60 h-10 border mt-1 rounded px-4  bg-gray-50" value="" type="date" />
                     @error('return_date')
                     <div class=" text-sm text-red-700 ">يجب تحديد تاريخ</div>
                     @enderror
                 </div>
                 <div class="lable">
                     <label for="city">نوع السيارة</label>
-                    <select wire:model="car_id" id="{{ $car_id }}" name="car_id"
-                        class=" w-60 bg-gray-50 border border-black-200 text-gray-900 text-sm rounded-lg focus:ring-blue-700 focus:border-blue-700 block pl-14     mt-2  ">
+                    <select wire:model="car_id" id="{{ $car_id }}" name="car_id" class=" w-60 bg-gray-50 border border-black-200 text-gray-900 text-sm rounded-lg focus:ring-blue-700 focus:border-blue-700 block pl-14     mt-2  ">
                         <option selected> أختر نوع السياره</option>
                         @foreach ($cars as $car)
                         <option value="{{$car->id}}" class="text-black">{{$car->type}} </option>
@@ -80,8 +75,7 @@
                 <div class=" flex flex-col-2 mt-10">
                     <div>رخصة القيادة</div>
                     <div class="">
-                        <label
-                            class="    @if ($image_path) bg-primary-700 text-black @else bg-white text-primary-700 @endif rounded-lg tracking-wide   cursor-pointer hover:bg-primary-700 hover:text-black">
+                        <label class="    @if ($image_path) bg-primary-700 text-black @else bg-white text-primary-700 @endif rounded-lg tracking-wide   cursor-pointer hover:bg-primary-700 hover:text-black">
                             <div wire:target="image_path">
                             </div>
                             <div wire.remove wire:target="image_path">
@@ -107,37 +101,36 @@
 </div>
 
 <style scoped>
-/* car rate */
-.rate {
-    margin: 4rem 4rem;
+    /* car rate */
+    .rate {
+        margin: 4rem 4rem;
 
-}
+    }
 
+    /* form-container */
+    .form-container form {
+        gap: 2rem;
+        bottom: 1rem;
+        left: 400px;
+        border-radius: 0.9rem;
+        margin-bottom: 2rem;
+        margin-top: 40px;
+        display: flex;
+    }
 
-/* form-container */
-.form-container form {
-    gap: 2rem;
-    bottom: 1rem;
-    left: 400px;
-    border-radius: 0.9rem;
-    margin-bottom: 2rem;
-    margin-top: 40px;
-    display: flex;
-}
+    .btn {
+        padding: 10px 36px;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        background: #474fa0;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
 
-.btn {
-    padding: 10px 36px;
-    margin-top: 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    background: #474fa0;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
+    }
 
-}
-
-.btn:hover {
-    background: #ED563B;
-}
+    .btn:hover {
+        background: #ED563B;
+    }
 </style>
