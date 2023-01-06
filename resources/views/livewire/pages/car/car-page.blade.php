@@ -17,7 +17,7 @@
         </a>
     </div>
 
-    <body class="flex items-center justify-center">
+    <body class="flex items-center justify-center ">
         <div class="container">
             <table class="w-full flex flex-row flex-no-wrap sm:bg-white  overflow-hidden sm:shadow-lg my-5">
                 <thead class="text-white">

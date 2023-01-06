@@ -8,7 +8,7 @@ use App\Models\Car;
 
 class Archive extends Component
 {use WithPagination;
-    protected $listeners = ['$refresh', 'search', 'filterProjects'];
+    protected $listeners = ['$refresh', 'search'];
     public $search , $model , $color   ;
     public function search($search)
     {

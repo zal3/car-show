@@ -26,7 +26,7 @@ class Main extends Component
         $search = '%' . $this->search . '%';
         $cars = Car::where('type', 'LIKE', $search)->where('archive', 0)
         ->orderBy('id', 'DESC');
-        if ($this->model) $cars->where('model', $this->model);
+        if($this->model) $cars->where('model', $this->model);
         if($this->color) $cars->where('color', $this->color);
         
             $cars = $cars->paginate(40);

@@ -61,7 +61,7 @@
                             </div>
                             <div class="md:col-span-3">
                                 <label for="model"> موديل السيارة</label>
-                                <input wire:model.lazy="model" type="text" name="model" id="model" placeholder="2021"
+                                <input wire:model.lazy="model" type="number" name="model" id="model" placeholder="2021"
                                     class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
                                     @error('model')
                                     <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">هذا الحقل مطلوب </span>
@@ -81,7 +81,7 @@
                             <div class="md:col-span-2">
                                 <label for="chassis_number">رقم هيكل السيارة </label>
                                 <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
-                                    <input wire:model.lazy="chassis_number" name="chassis_number" id="chassis_number"
+                                    <input wire:model.lazy="chassis_number" name="chassis_number" id="chassis_number" type="number"
                                         class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
                                         value="" />
                                     
@@ -90,7 +90,7 @@
                             <div class="md:col-span-2">
                                 <label for="number">رقم السيارة </label>
                                 <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
-                                    <input wire:model.lazy="number" name="number" id="number"
+                                    <input wire:model.lazy="number" name="number" id="number" type="number"
                                         class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
                                         value="" />
                                     
@@ -114,7 +114,7 @@
                             </div>
                             <div class="md:col-span-1">
                                 <label for="import_price"> سعر الاستيراد</label>
-                                <input wire:model.lazy="import_price" type="text" name="import_price" id="import_price"
+                                <input wire:model.lazy="import_price" type="number" name="import_price" id="import_price"
                                     class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                                     placeholder="" value="" />@error('import_price')
                                     <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">هذا الحقل مطلوب </span>
@@ -138,7 +138,7 @@
                             <br>
                             <div class="md:col-span-1">
                                 <label for="sale_price"> سعر السيارة</label>
-                                <input wire:model.lazy="sale_price" type="text" name="sale_price" id="sale_price"
+                                <input wire:model.lazy="sale_price" type="number" name="sale_price" id="sale_price"
                                     class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                                     placeholder="" value="" />@error('sale_price')
                                     <span class="error text-red-600 bg-primary-100 rounded-lg py-1 px-2 text-xs">هذا الحقل مطلوب </span>

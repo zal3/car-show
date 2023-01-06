@@ -12,7 +12,7 @@ class Edit extends Component
     use LivewireAlert;
     use WithFileUploads;
     public $type , $category , $model , $sale_price , $number , $chassis_number ,
-        $color , $note , $import_place , $import_date , $import_price , $state, $new_image ,$car_id;
+        $color , $note , $import_place , $import_date , $import_price , $state, $new_image ,$car_id , $image_path;
         protected $rules = [
             'type' => 'required',
             'category' => 'required',
@@ -70,7 +70,6 @@ class Edit extends Component
         $car->edit($data);
         
         if ($this->new_image){
-            
             $car->update_image($this->new_image); 
         }
         
