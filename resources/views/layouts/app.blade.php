@@ -67,7 +67,7 @@
                 {{ $slot }}
             </div>
         </main>
-        <div class="bottom-0 md:left-0 w-full md:w-fit  fixed z-10">@livewire('components.footer')</div>
+        <div class="md:bottom-36 bottom-0 md:left-0 w-full md:w-fit  fixed z-10">@livewire('components.footer')</div>
     </div>
     @stack('modals')
     @livewireScripts
