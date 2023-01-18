@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Pages\Rental;
 
 use Livewire\Component;
 use App\Models\Rent;
+use App\Models\Car;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 
@@ -13,7 +14,7 @@ class Control extends Component
     use LivewireAlert;
 
     protected $listeners = ['$refresh'];
-    public  $location ,$rent_date ,$return_date ,$phone_num ,$image_path,$state;
+    public  $location ,$rent_date ,$return_date ,$phone_num ,$image_path,$state, $rents , $rents2 , $rents1;
     public function no($id)
     {
     $rent = Rent::find($id);
@@ -34,6 +35,10 @@ class Control extends Component
         $rent->update([
             'state' => 1
         ]);
+        $car = Car::find($rent->car_id);
+        $car->update([
+            'state' => 0
+        ]);
         $this->alert('success', 'تم تاجير السيارة ', [
             'position' => 'center',
             'timer' => 3000,
@@ -46,6 +51,10 @@ class Control extends Component
         $rent = Rent::find($id);
         $rent->update([
             'state' => 2
+        ]);
+        $car = Car::find($rent->car_id);
+        $car->update([
+            'state' => 1
         ]);
         $this->alert('success', 'تم  الرفض ', [
             'position' => 'center',
