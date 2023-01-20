@@ -24,6 +24,7 @@ class RentSeeder extends Seeder
             'return_date' => '2022-12-17',
             'phone_num' => '123456789',
             'state' => 0,
+            'image_path' => 'img\rent\license.jpg',
         ]);
 
         Rent::create([
@@ -34,6 +35,8 @@ class RentSeeder extends Seeder
             'return_date' => '2022-12-22',
             'phone_num' => '123456789',
             'state' => 0,
+            'image_path' => 'img\rent\license.jpg',
+
         ]);
     }
 }

@@ -1,16 +1,15 @@
 <?php
 
 namespace App\Models;
-
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-// use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
 
 
 class Car extends Model
 {
     use HasFactory;
-    // use SoftDeletes;
+    use SoftDeletes;
 
     protected $fillable = [
         'user_id',
@@ -26,6 +25,7 @@ class Car extends Model
         'import_date',
         'import_price',
         'state',
+        'archive',
         'image_path',
     ];
 
@@ -81,4 +81,20 @@ class Car extends Model
     }
 
     ### End image ###
+    // public $ID , $model ;
+
+    // public function archive($model , $id , $function = 'delete' , $emit = null){
+    //     $this->model = $model;
+    //     $this->ID = $id;
+    //     $this->emit = $emit;
+
+    //     $this->confirm(('are_you_sure'), [
+    //         'toast' => false,
+    //         'position' => 'center',
+    //         'showConfirmButton' => "true",
+    //         'cancelButtonText' => ('ui.cancel'),
+    //         'confirmButtonText' => ('ui.confirm'),
+    //         'onConfirmed' => $function,
+    //     ]);
+    // }
 }

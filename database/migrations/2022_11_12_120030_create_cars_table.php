@@ -39,8 +39,9 @@ return new class extends Migration
             $table->date('import_date')->nullable();
             $table->integer('import_price')->nullable();
             $table->boolean('state')->default(false); // false 0 for not rent, true 1 for rent
+            $table->boolean('archive')->default(false); // false 0 for not archive, true 1 for archive
             $table->string('image_path')->nullable();
-            // $table->softDeletes();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

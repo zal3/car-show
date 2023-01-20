@@ -6,35 +6,32 @@ use Livewire\Component;
 use App\Models\Car;
 use App\Models\Rent;
 use Livewire\WithFileUploads;
-
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 
 class Add extends Component
 {
     use LivewireAlert;
-        use WithFileUploads;
+    use WithFileUploads;
 
-        public $type , $category , $model , $sale_price , $number , $chassis_number ,
+    public $type , $category , $model , $sale_price , $number , $chassis_number ,
         $color , $note , $import_place , $import_date , $import_price , $state , $image_path;
-        protected $rules = [
-            'type' => 'required',
-            'category' => 'required',
-            'model' => 'required',
-            'sale_price' => 'required',
-            'number' => 'required|unique:cars',
-            'chassis_number' => 'required |unique:cars',
-            'color' => 'required',
-            'import_place' => 'required',
-            'import_date' => 'required',
-            'import_price' => 'required',
-            'state' => 'required',
-            
-        ];
+    protected $rules = [
+        'type' => 'required',
+        'category' => 'required',
+        'model' => 'required',
+        'sale_price' => 'required',
+        'number' => 'required|unique:cars',
+        'chassis_number' => 'required|numeric|unique:cars',
+        'color' => 'required',
+        'import_place' => 'required',
+        'import_date' => 'required',
+        'import_price' => 'required',
+        'state' => 'required', 
+    ];
 
-        public function add(Car $car)
+    public function add(Car $car)
         {
-
             $this->validate();
             $data = [
                 'type' => $this->type,

@@ -29,6 +29,7 @@ class CarSeeder extends Seeder
             'import_date' => '2018-2-4',
             'import_price' => '9000',
             'state' => '0',
+            'archive' => '0',
             'image_path' => 'img\cars\car13.jpg',
         ]);
         //2
@@ -45,6 +46,7 @@ class CarSeeder extends Seeder
             'import_date' => '2019-1-6',
             'import_price' => '8777',
             'state' => '0',
+            'archive' => '0',
             'image_path' => 'img\cars\car14.jpg',
         ]);
         //3
@@ -61,6 +63,7 @@ class CarSeeder extends Seeder
             'import_date' => '2022-10-8',
             'import_price' => '8905',
             'state' => '1',
+            'archive' => '0',
             'image_path' => 'img\cars\car11.jpg',
         ]);
         //4
@@ -77,6 +80,7 @@ class CarSeeder extends Seeder
             'import_date' => '2018-5-2',
             'import_price' => '7250',
             'state' => '1',
+            'archive' => '0',
             'image_path' => 'img\cars\car7.jpg',
         ]);
         //5
@@ -93,6 +97,7 @@ class CarSeeder extends Seeder
             'import_date' => '2018-10-12',
             'import_price' => '8000',
             'state' => '0',
+            'archive' => '0',
             'image_path' => 'img\cars\car8.jpg',
         ]);
         //6
@@ -109,6 +114,7 @@ class CarSeeder extends Seeder
             'import_date' => '2020-3-12',
             'import_price' => '7100',
             'state' => '0',
+            'archive' => '0',
             'image_path' => 'img\cars\car9.jpg',
         ]);
         //7
@@ -125,6 +131,7 @@ class CarSeeder extends Seeder
             'import_date' => '2021-8-2',
             'import_price' => '9800',
             'state' => '0',
+            'archive' => '0',
             'image_path' => 'img\cars\car10.jpg',
         ]);
 
@@ -142,6 +149,7 @@ class CarSeeder extends Seeder
             'import_date' => '2022-6-3',
             'import_price' => '7100',
             'state' => '0',
+            'archive' => '0',
             'image_path' => 'img\cars\car12.jpg',
         ]);
         //9
@@ -157,6 +165,7 @@ class CarSeeder extends Seeder
             'import_place' => ' يابان  ',
             'import_date' => '2021-8-4',
             'import_price' => '7200',
+            'archive' => '1',
             'state' => '1',
             'image_path' => 'img\cars\car15.jpg',
         ]);
@@ -174,6 +183,7 @@ class CarSeeder extends Seeder
             'import_date' => '2021-11-12',
             'import_price' => '9400',
             'state' => '0',
+            'archive' => '0',
             'image_path' => 'img\cars\car1.jpg',
 
         ]);
@@ -191,6 +201,7 @@ class CarSeeder extends Seeder
             'import_date' => '2022-02-08',
             'import_price' => '9500',
             'state' => '1',
+            'archive' => '0',
             'image_path' => 'img\cars\car2.jpg',
         ]);
         //12
@@ -207,6 +218,7 @@ class CarSeeder extends Seeder
             'import_date' => '2021-11-18',
             'import_price' => '7000',
             'state' => '0',
+            'archive' => '0',
             'image_path' => 'img\cars\car3.jpg',
         ]);
         //13
@@ -223,6 +235,7 @@ class CarSeeder extends Seeder
             'import_date' => '2021-11-18',
             'import_price' => '8900',
             'state' => '0',
+            'archive' => '0',
             'image_path' => 'img\cars\car4.jpg',
         ]);
         //14
@@ -239,6 +252,7 @@ class CarSeeder extends Seeder
             'import_date' => '2022-5-22',
             'import_price' => '9500',
             'state' => '1',
+            'archive' => '0',
             'image_path' => 'img\cars\car5.jpg',
         ]);
         //15
@@ -255,6 +269,7 @@ class CarSeeder extends Seeder
             'import_date' => '2022-04-12',
             'import_price' => '9400',
             'state' => '0',
+            'archive' => '0',
             'image_path' => 'img\cars\car6.jpg',
         ]);
 

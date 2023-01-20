@@ -8,12 +8,13 @@ use App\Http\Livewire\Pages\{
     Car\Main as CarMain,
     Contact\Main as Contact,
     Rental\Main as Rental,
-     Profile\Main as Profile,
+    Profile\Main as Profile,
 };
 use App\Http\Livewire\Pages\Car\{
     Admin\Add as CarAdd,
     Admin\Edit as CarEdit,
     CarPage as CarPage,
+    Archive as ArchiveCar,
 
 };
 use App\Http\Livewire\Pages\Rental\{
@@ -21,6 +22,9 @@ use App\Http\Livewire\Pages\Rental\{
     Unvailable as UnvailableRental,
     Control as ControlRental,
 
+};
+use App\Http\Livewire\Pages\Contact\{
+    Info as ContactInfo,
 };
 use App\Http\Livewire\Pages\Admins\{
     main as Admins,
@@ -57,12 +61,11 @@ Route::middleware(['auth:sanctum'])->group(function () {
         // cars
         Route::middleware(['superAdmin'])->group(function () {
             Route::get('/add-car', CarAdd::class)->name('add-car');
-Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
-
-
+            Route::get('/edit-car/{car_id}', CarEdit::class)->name('edit-car');
         });
+        Route::get('/archive', ArchiveCar::class)->name('archive');
         Route::get('/control', ControlRental::class)->name('control');
-
+        Route::get('/contact-info', ContactInfo::class)->name('contact-info');
         // end cars
         // admins
         Route::get('/admins', Admins::class)->name('admins');
