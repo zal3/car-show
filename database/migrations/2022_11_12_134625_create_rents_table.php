@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('location');
             $table->date('rent_date');
             $table->date('return_date');
-            $table->integer('phone_num');
+            $table->bigInteger('phone_num');
             $table->integer('state')->default(0); //1 for accepted, 2 for rejected, 0 for pending
             $table->string('image_path')->nullable();
             $table->timestamps();
